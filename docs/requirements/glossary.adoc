@@ -12,7 +12,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-|ROS 2|Roboter Operating System
+|ROS 2|Roboter Operating System II|
 | xx | xx | xx
 |===
 
