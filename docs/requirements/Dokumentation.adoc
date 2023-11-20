@@ -60,6 +60,10 @@ Am 17.11.2023 konnten wir dann unser geplantes Treffen mit Herr Prof. Neugebauer
 
 Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I ist: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters prüfen. 
 
+**Vorgehen**
+So haben wir uns und um die Aufgaben besser strukturieren zu können in folgende Teams aufgeteilt:
+TEAMS NENNEN
+
 -------------------------------------------------------
 
 
