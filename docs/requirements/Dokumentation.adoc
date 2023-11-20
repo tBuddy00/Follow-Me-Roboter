@@ -1,5 +1,5 @@
 = Dokumentation: Follow-Me-Fahrroboter
-Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Projekt-Coach: Herr Christoph Zirkelbach;
+ Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
