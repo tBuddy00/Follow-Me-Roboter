@@ -1,0 +1,96 @@
+= Dokumentation: Follow-Me-Fahrroboter
+ Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Allgemein
+Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
+
+=== Fristen
+**Abgabe Belegarbeit: 26.01.2024**
+
+=== Auftraggeber
+Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
+
+=== Rollenverteilung
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. [WIRD NOCH ERGÄNZT]
+
+=== Ablauf der Kommunikation unter Verwendung von Tools
+Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
+
+=== Teammitglieder
+|===
+| Teammitglied | Tätigkeitsbeschreibung 
+|**Taylan Özer, Wirtschaftsinformatik**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
+
+|**Claire Schuster, Wirtschaftsinformatik** | Frau Schuster übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
+
+|**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
+
+|**Johann Marthaus, Wirtschaftsinformatik**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
+
+|**Jonathan Palermo, Wirtschaftsinformatik** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
+
+|**Danny Miersch, Wirtschaftsinformatik** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
+
+|**Jeremy Ziegert, Wirtschaftsinformatik** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+
+| **Luca Kurth, Verwaltungsinformatik** | Herr Kurth trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+|===
+
+
+**ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
+
+
+=== Teamstruktur zur 2. Iteration (20.11.2023 - 04.12.2023)
+
+|===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
+
+|**Entwicklungs Team II**
+|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
+|Claire Schuster, Danny Miersch
+|===
+
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
+
+ - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
+
+== Iterationen
+=== 2. Iteration 20.11.2023 - 04.12.2023 
+=== Allgemein
+==== Standerfassung aus 1. Iteration
+Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hielten wir zeitnah am 21.11.2023 (Dienstag) ein Gruppenmeeting zur Erfassung unserer aktuellen Projektstruktur ab und berieten uns auch um Allgemeinheiten. 
+
+ - **Erster Punkt:** Unserer Agenda zu o. g. Tag war, dass alle Teammitglieder, welche noch nicht Herr Prof. Ankes Video zur Organisation unserer Belegarbeit gesehen haben, dies zügigst nachzuholen haben.  -> Diese waren: Jeremy Ziegert, Jonathan Palermo, Johann Marthaus, Danny Miersch und Theresa Stasch
+
+ - **Zweiter Punkt:** ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert durch Frau Claire Schuster und die Dokumentation zur Implementierung führt Herr Danny Miersch.
+
+ - **Dritter Punkt:** Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt werden und so sind wie o. g. Entwicklerteam I und II hierfür zuständig.
+
+ - **Vierter Punkt:** Unser Projekt-Coach Herr Zirkelbach wird von unserem Projektleiter Herr Özer kontaktiert, um einen zeitnahen Termin für ein gemeinsames Gruppenmeeting zu finden -> Vorzugsweise: 05.12.2023 (Dienstag). 
+
+==== Probleme und weitere Belange
+- **Erster Punkt:** Der Fahrroboter welcher uns von unserem Auftraggeber Herr Prof. Neugebauer bei unserem ersten Treffen an uns übergeben wurde, enthielt zunächst keinen Akku. Dieser wurde nun durch ihn bestellt -> Verzögerung der Bilderkennung erwartet
+
+- **Zweiter Punkt:** Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. Ergebnis: Englisch.
+
+- **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch)
+
+==== Zielstellung zur 2. Iteration
+Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 04.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
+
+- 1. Wir wollen alle Roboterfunktionen im Sinne der Ansprechbarkeit der einzelnen Glieder ansprechen und ROS II implementieren -> wie o. g. übernimmt Frau Claire Schuster beide genannten Ziele.
+
+- 2. Wir wollen eine Bilderkennungsdemo mittels Open CV kreieren und demnach erst einmal aufgrund der Schwierigkeiten des Akkus, erst einmal ein Videoähnlichen Feed hierfür nutzen. Dies übernimmt das Entwicklungsteam II.
+
+- 3. Wir haben als Team geklärt, dass eine Anwesenheitspflicht zur Beginn einer Iteration besteht, um eine allgemeine Standerfassung durchführen zu können und unseren Pläne bzw. Ziele zu besprechen.
+
+- 4. Wir planen den Akku von Herr Prof. Neugebauer etwa zum 23.11.2023 (Donnerstag) zu erhalten. Ansonsten ist dies weiterhin mit Verzögerungen verbunden.
+
+==== Ausblick
+Unser Ausblick bis zum Ende der 2. Iteration und mit Beginn der 3. Iteration als Team ist die Zusammenführung der Bilderkennungssoftware und die Garantie der Funktionalität des Fahrroboters ins seiner Gesamtheit. 
+[WEITERS FOLGT !!!] 
