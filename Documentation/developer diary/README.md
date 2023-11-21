@@ -17,19 +17,12 @@ Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. 
 | Teammitglied | Tätigkeitsbeschreibung |
 |--------------|------------------------|
 |**Taylan Özer** | Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.|
-
 |**Claire Schuster** | Frau Schuster übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. |
-
 |**Theresa Stasch**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] |
-
 |**Johann Marthaus**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.|
-
 |**Jonathan Palermo** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.|
-
 |**Danny Miersch** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.|
-
 |**Jeremy Ziegert** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.|
-
 | **Luca Kurth** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.|
 
 
