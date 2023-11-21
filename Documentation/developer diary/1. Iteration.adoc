@@ -84,3 +84,5 @@ Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kam
 In Zustimmung mit unserem Auftraggeber sind für unser 3. Semester die Zielstellung wie folgt:
 
 Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters kümmern. 
+
+- Ein zweites Auftraggebergespräch ist zum 15.12.2023 (Freitag) um 10:30 Uhr anberaumt.
