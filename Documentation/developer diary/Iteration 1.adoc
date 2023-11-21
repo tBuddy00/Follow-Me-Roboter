@@ -1,0 +1,31 @@
+=== 1. Iteration 06.11.2023 - 19.11.2023 
+=== Allgemein
+Die Hürde mit Herausgabe aller Projekte und Ihrer Projektleiter am 30.10.2023 bestand darin, zunächst das Team in seiner Gesamtheit erst einmal zusammenzutragen.
+
+**Projektleiter (Taylan Özer):**
+So schrieb ich zunächst erst einmal jene Beteiligten für unser Projekt an und wartete circa eine Woche auf eine Rückmeldung aller aus unserem Team - jeder hat sich bei mir zurückgemeldet. Im Anschluss entstand eine WhatsApp-Gruppe, ein GitHub-Repository (geforked von Herr Prof. Anke und Herr Zirkelbach) und ein Discord-Server - unsere interne Kommunikation stand. Ich kümmerte mich demnach auch um unser erstes Auftraggeber-Gespräch mit Herr Prof. Neugebauer und etwa zwei Tage später um ein Projekt-Coach Gespräch.
+
+**Schwierigkeiten Projektleiter**
+Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kamen wir auch zeitnah nach. Herr Zirkelbach erklärte uns als Team, dass es zunächst wichtig ist Rollen festzulegen und nicht all zu steif auf ein Konzept zu beharren, nicht bevor wir das erste Auftraggebergespräch geführt hätten. Wir gingen Herr Zirkelbachs Tipps nach und warteten auf das sehnlichst herbeigesehnte erste Gespräch mit Herr Prof. Neugebauer als unser Auftraggeber. 
+
+Zu diesem Zeitpunkt stand für uns als Team erst einmal die Rollenverteilung und die allgemeine Arbeitsstruktur klar und danach orientierten wir uns zunächst.
+
+Erwähntes Auftraggebergespräch fand zunächst erst einmal an zwei der geplanten Zieltage nicht statt, aufgrund dessen das Herr Neugebauer diese aus persönlichen Gründen hat verschieben müssen. 
+
+Am 17.11.2023 konnten wir dann unser geplantes Treffen mit Herr Prof. Neugebauer nachgehen und diese ergaben dann so auch folgende Punkte für uns:
+
+- Klärung Aufbau des Alphabot 2 (Fahrroboter),
+- Klärung Betriebssystem -> Raspi OS oder ROS 2?,
+- Klärung OpenCV, zwecks Bilderkennung,
+- Zielstellung für dieses 3. Semester -> Hr. Prof. Neugebauer stimmte uns wie folgt zu: 
+
+Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I ist: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters prüfen. 
+
+**Vorgehen**
+So haben wir uns und um die Aufgaben besser strukturieren zu können in folgende Teams aufgeteilt:
+TEAMS NENNEN
+
+-------------------------------------------------------
+
+
+In der ersten Iteration, die vom 06.11 bis zum 19.11.2023 stattfand, kam es zum ersten Treffen mit dem Auftraggeber (Herr Prof. Dr. Ing. Neugebauer). Dabei wurden wesentliche Informationen über das bevorstehende Projekt ausgetauscht. Während des Treffens erhielt unsere Gruppe, den für den Follow-Me-Fahrroboter benötigten, Bausatz. Der Auftraggeber schlug vor bei der Erstellung der Software mit dem Roboterbetriebssystem ROS 2 zu arbeiten. Hierbei benötigt es jedoch weiterer Klärung in der Gruppe, ob das Arbeiten mit diesem System mit zu viel Aufwand verbunden ist. Jedes Team Mitglied setzt sich mit ROS 2 auseinander und dann wird in der Gruppe gemeinschaftlch über die Verwendung des Systems entschieden. Von hoher Bedeutung für unser Projekt ist die Bilderkennung. Der Auftraggeber empfiel die Arbeit mit Open CV. Da jedoch in unsere Gruppe bereits eine Idee für die Bilderkennung vorlag, teilten wir dem Auftraggeber dies mit. Das Prinzip berut dabei auf der Bestimmung eines Winkels. Mit der X Koordinate und dem Kamerawinkel wird nun bestimmt in welchem Winkel sich die Person zum Roboter befindet. Mit diesem X-Winkel und dem Y-Winkel der sich genau wie der X-Winkel aus diesem Verfahren zusammensetzt können nun die Servomotoren so angepasst werden, dass die Person sich in der Mitte des Bildes befindet.  Grundsätzlich besteht die Kamera Steurung aus zwei Servomotoren bei denen jeweils ein Winkel eingestellt werden kann. Der Winkel wird bestimmt, indem ein Bild-Analyseprogramm ermittelt, welche Objekte sich im Bild befinden. Auf dieser Basis können die X - und Y-Koordinaten ausgemacht werden. Der Roboter steht zunächst einmal, jedoch scheint der Akku nicht mit enthalten gewesen zu sein aus der Packung die wir von Hr. Prof. Neugebauer erhalten haben. Die mitgelieferte Kamera scheint auch eher am Kabel fragil befestigt gewesen zu sein. Hr. Prof. Neugebauer wurde durch mich (Taylan Özer) informiert das wir keine Akkus mitgeliefert bekommen haben und das wir dann nochmal eine Mail an ihn in aller Gesamtheit nach schreiben. Demnach verschiebt sich die Installation der Rasberry Pi-Software etwas weiter zeitlich nach hinten und die allgemeine Testung der Funktionalitäten. ROS 2 ist ja auch noch zu berücksichtigen als OS. 

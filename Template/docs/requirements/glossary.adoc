@@ -1,0 +1,44 @@
+= Glossar: Follow-Me-Fahrroboter
+Luca Kurth <s85459@htw-dresden.de>; Jonathan Palermo <s85287@htw-dresden.de>; Jeremy Ziegert <s85299@htw-dresden.de>; Taylan Özer <s85500@htw-dresden.de>; Danny Miersch <s85567@htw-dresden.de>; Johann Marthaus <s85892@htw-dresden.de>; Theresa Stasch <s82413@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+
+== Begriffe
+[%header]
+|===
+| Begriff | Definition und Erläuterung | Synonyme
+|ROS 2|Roboter Operating System, ist ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
+| Open CV  | Open Source Computer Vision, ist eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung |-
+|===
+
+
+== Abkürzungen und Akronyme
+[%header]
+|===
+| Abkürzung | Bedeutung | Erläuterung
+//| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+| xx | xx | xx
+|===
+
+== Verzeichnis der Datenstrukturen
+[%header]
+|===
+| Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
+
+| Anmeldedaten
+| Zusammensetzung von Benutzername und Passwort.
+| String
+| Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
+| Login
+
+| xx
+| xx
+| xx
+| xx
+| xx
+|===
