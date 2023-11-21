@@ -8,31 +8,54 @@ Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von ac
 
 === Fristen
 **Abgabe Belegarbeit: 26.01.2024**
-WEITERE FRISTEN FOLGEN
 
 === Auftraggeber
 Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
 
+=== Rollenverteilung
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. [WIRD NOCH ERGÄNZT]
+
+=== Ablauf der Kommunikation unter Verwendung von Tools
+Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
+
 === Teammitglieder
 |===
 | Teammitglied | Tätigkeitsbeschreibung 
-|**Taylan Özer** | Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
+|**Taylan Özer, Wirtschaftsinformatik**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
 
-|**Claire Schuster** | Frau Schuster übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
+|**Claire Schuster, Wirtschaftsinformatik** | Frau Schuster übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
+|**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
 
-|**Johann Marthaus**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
+|**Johann Marthaus, Wirtschaftsinformatik**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
 
-|**Jonathan Palermo** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
+|**Jonathan Palermo, Wirtschaftsinformatik** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
-|**Danny Miersch** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
+|**Danny Miersch, Wirtschaftsinformatik** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
 
-|**Jeremy Ziegert** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+|**Jeremy Ziegert, Wirtschaftsinformatik** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 
-| **Luca Kurth** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.
+| **Luca Kurth, Verwaltungsinformatik** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.
+|===
+
+
+**ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
+
+
+=== Teamstruktur zur 1. Iteration (06.11.2023 - 19.11.2023)
 
 |===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
+
+|**Entwicklungs Team II**
+|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
+|Claire Schuster, Danny Miersch
+|===
+
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
 
 **ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
 
@@ -47,35 +70,17 @@ So schrieb ich zunächst erst einmal jene Beteiligten für unser Projekt an und 
 **Schwierigkeiten Projektleiter**
 Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kamen wir auch zeitnah nach. Herr Zirkelbach erklärte uns als Team, dass es zunächst wichtig ist Rollen festzulegen und nicht all zu steif auf ein Konzept zu beharren, nicht bevor wir das erste Auftraggebergespräch geführt hätten. Wir gingen Herr Zirkelbachs Tipps nach und warteten auf das sehnlichst herbeigesehnte erste Gespräch mit Herr Prof. Neugebauer als unser Auftraggeber. 
 
-Zu diesem Zeitpunkt stand für uns als Team erst einmal die Rollenverteilung und die allgemeine Arbeitsstruktur klar und danach orientierten wir uns zunächst.
+- Zu diesem Zeitpunkt stand für uns als Team erst einmal die Rollenverteilung und die allgemeine Arbeitsstruktur klar und danach orientierten wir uns zunächst.
 
-Erwähntes Auftraggebergespräch fand zunächst erst einmal an zwei der geplanten Zieltage nicht statt, aufgrund dessen das Herr Neugebauer diese aus persönlichen Gründen hat verschieben müssen. 
+- Erwähntes Auftraggebergespräch fand zunächst erst einmal an zwei der geplanten Zieltage nicht statt, aufgrund dessen das Herr Neugebauer diese aus persönlichen Gründen hat verschieben      müssen. 
 
-Am 17.11.2023 konnten wir dann unser geplantes Treffen mit Herr Prof. Neugebauer nachgehen und diese ergaben dann so auch folgende Punkte für uns:
+=== Zielstellung mit dem Ende der 1. Iteration (06.11.2023 - 19.11.2023) in Übergang zur 2. Iteration (20.11.2023 - 04.12.2023) 
+- Am 17.11.2023 konnten wir unser geplantes Treffen mit Herr Prof. Neugebauer nachgehen und dieses ergab dann auch folgende Punkte für uns:
 
 - Klärung Aufbau des Alphabot 2 (Fahrroboter),
 - Klärung Betriebssystem -> Raspi OS oder ROS 2?,
-- Klärung OpenCV, zwecks Bilderkennung,
-- Zielstellung für dieses 3. Semester -> Hr. Prof. Neugebauer stimmte uns wie folgt zu: 
+- Klärung OpenCV -> zwecks Bilderkennung,
 
-Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I ist: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters prüfen. 
+In Zustimmung mit unserem Auftraggeber sind für unser 3. Semester die Zielstellung wie folgt:
 
-**Vorgehen**
-So haben wir uns und um die Aufgaben besser strukturieren zu können in folgende Teams aufgeteilt:
-TEAMS NENNEN
-
--------------------------------------------------------
-
-
-In der ersten Iteration, die vom 06.11 bis zum 19.11.2023 stattfand, kam es zum ersten Treffen mit dem Auftraggeber (Herr Prof. Dr. Ing. Neugebauer). Dabei wurden wesentliche Informationen über das bevorstehende Projekt ausgetauscht. Während des Treffens erhielt unsere Gruppe, den für den Follow-Me-Fahrroboter benötigten, Bausatz. Der Auftraggeber schlug vor bei der Erstellung der Software mit dem Roboterbetriebssystem ROS 2 zu arbeiten. Hierbei benötigt es jedoch weiterer Klärung in der Gruppe, ob das Arbeiten mit diesem System mit zu viel Aufwand verbunden ist. Jedes Team Mitglied setzt sich mit ROS 2 auseinander und dann wird in der Gruppe gemeinschaftlch über die Verwendung des Systems entschieden. Von hoher Bedeutung für unser Projekt ist die Bilderkennung. Der Auftraggeber empfiel die Arbeit mit Open CV. Da jedoch in unsere Gruppe bereits eine Idee für die Bilderkennung vorlag, teilten wir dem Auftraggeber dies mit. Das Prinzip berut dabei auf der Bestimmung eines Winkels. Mit der X Koordinate und dem Kamerawinkel wird nun bestimmt in welchem Winkel sich die Person zum Roboter befindet. Mit diesem X-Winkel und dem Y-Winkel der sich genau wie der X-Winkel aus diesem Verfahren zusammensetzt können nun die Servomotoren so angepasst werden, dass die Person sich in der Mitte des Bildes befindet.  Grundsätzlich besteht die Kamera Steurung aus zwei Servomotoren bei denen jeweils ein Winkel eingestellt werden kann. Der Winkel wird bestimmt, indem ein Bild-Analyseprogramm ermittelt, welche Objekte sich im Bild befinden. Auf dieser Basis können die X - und Y-Koordinaten ausgemacht werden. Der Roboter steht zunächst einmal, jedoch scheint der Akku nicht mit enthalten gewesen zu sein aus der Packung die wir von Hr. Prof. Neugebauer erhalten haben. Die mitgelieferte Kamera scheint auch eher am Kabel fragil befestigt gewesen zu sein. Hr. Prof. Neugebauer wurde durch mich (Taylan Özer) informiert das wir keine Akkus mitgeliefert bekommen haben und das wir dann nochmal eine Mail an ihn in aller Gesamtheit nach schreiben. Demnach verschiebt sich die Installation der Rasberry Pi-Software etwas weiter zeitlich nach hinten und die allgemeine Testung der Funktionalitäten. ROS 2 ist ja auch noch zu berücksichtigen als OS. 
-
-
-=== 2. Iteration 20.11.2023 - 04.12.2023
-=== Allgemein
-
---------------------------------------------------------------
-Hey Theresa, 
-
-Taylan hier und hier sind meine Anmerkungen: 
-
-Du hast ausführlich geschrieben das ist gut und Du meintest ja auch Du willst das gerne noch einmal überarbeiten und mein Gedanken hierzu waren weiterhin, dass wir das noch sauberer Untergliedern müssen. Ich arbeite auch einige Sachen ein und wir können dazu gerne Morgen einmal sprechen oder als Team.
+Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters kümmern. 
