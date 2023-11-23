@@ -83,7 +83,7 @@ Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kam
 - Klärung unseres Bilderkennungskonzepts (angehängt in der Dokumentation)
 
 === Einbindung Bilderkennungskonzept
-image:Bilderkennung_Konzept.svg[]
+image:Bilderkennung_Konzept.drawio[]
 
 *Hinweis:*
  Das Bilderkennungskonzept wurde durch Frau Schuster entwickelt und durch unseren Auftraggeber in unserem ersten Auftraggebergespräch am 17.11.2023 bestätigt.
