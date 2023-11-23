@@ -80,6 +80,13 @@ Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kam
 - Klärung Aufbau des Alphabot 2 (Fahrroboter),
 - Klärung Betriebssystem -> Raspi OS oder ROS 2?,
 - Klärung OpenCV -> zwecks Bilderkennung,
+- Klärung unseres Bilderkennungskonzepts (angehängt in der Dokumentation)
+
+=== Einbindung Bilderkennungskonzept
+image:Bilderkennung_Konzept.svg[]
+
+*Hinweis:*
+ Das Bilderkennungskonzept wurde durch Frau Schuster entwickelt und durch unseren Auftraggeber in unserem ersten Auftraggebergespräch am 17.11.2023 bestätigt.
 
 In Zustimmung mit unserem Auftraggeber sind für unser 3. Semester die Zielstellung wie folgt:
 
