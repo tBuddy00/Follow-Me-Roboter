@@ -74,11 +74,16 @@ Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hie
  - **Vierter Punkt:** Unser Projekt-Coach Herr Zirkelbach wird von unserem Projektleiter Herr Özer kontaktiert, um einen zeitnahen Termin für ein gemeinsames Gruppenmeeting zu finden -> Vorzugsweise: 05.12.2023 (Dienstag). 
 
 ==== Probleme und weitere Belange
-- **Erster Punkt:** Der Fahrroboter welcher uns von unserem Auftraggeber Herr Prof. Neugebauer bei unserem ersten Treffen an uns übergeben wurde, enthielt zunächst keinen Akku. Dieser wurde nun durch ihn bestellt -> Verzögerung der Bilderkennung erwartet
+- **Erster Punkt:** Der Fahrroboter welcher uns von unserem Auftraggeber Herr Prof. Neugebauer bei unserem ersten Treffen an uns übergeben wurde, enthielt zunächst keinen Akku. Dieser wurde nun durch ihn bestellt -> Verzögerung der Bilderkennung erwartet.
 
 - **Zweiter Punkt:** Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. Ergebnis: Englisch.
 
-- **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch)
+- **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch).
+
+- **Vierter Punkt:** Unsere Codeformatierungsguidlines haben wir auf pep8 in Python festgelegt.
+
+- **Fünfter Punkt:** Herr Marthaus hat es sich zur Aufgabe gemacht in unserem Team Sorge dafür zu tragen, dass wir eine ordentliche Programmierumgebung eingerichtet haben. 
+ - Wir entschieden uns überwiegend für Microsoft Visual Studio Code und u. a. PyCharm, sofern der Wunsch ist hiermit arbeiten zu wollen.
 
 ==== Zielstellung zur 2. Iteration
 Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 04.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
