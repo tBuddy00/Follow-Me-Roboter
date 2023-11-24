@@ -5,12 +5,49 @@
 #Make sure you have a locale which supports UTF-8
 locale  # check for UTF-8
 
+
+while :
+do
+  echo 'Make sure you have a locale which supports UTF-8 - continue [y/n]'
+  read INPUT_STRING
+  case $INPUT_STRING in
+	j||J)
+        break
+		;;
+	n||N)
+		echo 'instal UTF-8 and Repeat the instalation' 
+		exit 1
+		;;
+	*)
+		echo "Wrong imput"
+		;;
+  esac
+done
+
 sudo apt update && sudo apt install locales
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 locale  # verify settings
+
+while :
+do
+  echo 'Veryfy your settings if they have been sett to en_US.UTF-8 - continue [y/n]'
+  read INPUT_STRING
+  case $INPUT_STRING in
+	j||J)
+        break
+		;;
+	n||N)
+		echo 'look at the instalation guide for help' 
+		exit 1
+		;;
+	*)
+		echo "Wrong imput"
+		;;
+  esac
+done
 
 
 #Setup Sources
@@ -35,8 +72,6 @@ sudo apt update
 sudo apt upgrade
 
 
-
-
 while :
 do
   echo 'Wich version do you want to install - Desktop Install (Recommended)[D] / ROS-Base Install (Bare Bones) [B]'
@@ -57,11 +92,6 @@ do
 		;;
   esac
 done
-
-if [$input]
-
-
-
 
 #Development tools: Compilers and other tools to build ROS packages
 sudo apt install ros-dev-tools
