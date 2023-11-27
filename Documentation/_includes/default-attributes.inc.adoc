@@ -1,5 +1,5 @@
 // Meta
-:project-name: <Projektthema (T00)>
+:project-name: Follow-Me-Fahrroboter
 :project-system-name: <Projektname-System>
 // Settings:
 :toc:
