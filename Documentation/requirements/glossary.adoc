@@ -1,4 +1,4 @@
-= Glossar: Follow-Me-Fahrroboter
+= Glossar: {project-name}
 Luca Kurth <s85459@htw-dresden.de>; Jonathan Palermo <s85287@htw-dresden.de>; Jeremy Ziegert <s85299@htw-dresden.de>; Taylan Özer <s85500@htw-dresden.de>; Danny Miersch <s85567@htw-dresden.de>; Johann Marthaus <s85892@htw-dresden.de>; Theresa Stasch <s82413@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -12,10 +12,47 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-|ROS 2|Roboter Operating System, ist ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
-| Open CV  | Open Source Computer Vision, ist eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung |-
-|===
+|ROS 2|_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll|-
 
+| Open CV  | _Open Source Computer Vision_ - eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung |-
+
+| Implementierung/ +
+Implementation  | Prozess in dem Programmcode gemäß den Spezifikationen erstellt, getestet und in das System integriert wird | Verwirklichung, Einsetzung
+
+| Philosophie | bezeichnet die grundlegenden Prinzipien und Werte, die die Gestaltung und Entwicklung von Software leiten | Grund-/ Leitprinzipien, Kernwerte 
+
+| Architektur | beschreibt Philosophie, Entscheidungen, Einschränkungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben | Struktur, Vorgehensweise
+
+| Architectural Mechanisms/ +
+Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die Komplexität minimieren und Entwicklung konsistenter Dienste fördern |-
+
+// | Abstraktionen | falls architecture_notebook 7-9 bearbeitet wird |- 
+// | Architektur-Framework | falls architecture_notebook 7-9 bearbeitet wird |-
+// | Architektursichten (Views) | falls architecture_notebook 7-9 bearbeitet wird |-
+// | logische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
+// | physische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
+
+| Product Owner | _Produktbesitzer_ - Rolle im agilen Projektmanagement, die für die Definition und Priorisierung von Anforderungen verantwortlich ist | Auftraggeber
+
+| Projekt-Coach | Person, die das Team bei der Umsetzung des Projekts unterstützt und berät |Projektberater, Projektmentor, Projektbegleiter
+
+| Iteration | Zyklus wiederholter Prozesse, um schrittweise Fortschritte zu erzielen| Zyklus, Durchgang, Durchlauf
+
+| Creative Lead | Person, die kreative Aspekte des Projekts leitet und innovative Ideen einbringt | Kreativleiter, Kreativdirektor
+
+| Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen | Architekt
+
+| Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich | Hauptentwickler, Leitender Entwickler
+
+| Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind | Programmierer, Developer
+
+| Discord | Plattform für Chat, Sprach- und Videokommunikation, hier für Austausch im Team verwendet| -
+
+| GitHub | Plattform für Versionsverwaltung und Zusammenarbeit an Softwareprojekten | -
+
+| Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert | -
+
+|===
 
 == Abkürzungen und Akronyme
 [%header]
