@@ -4,7 +4,8 @@ README im root folder
 	• Algemeine info zum Project 
 		○ Funktionalität
 		○ Credit für benutzte software
-	• Link zum instalation guide
+	• [Installation Guide (German)](installation%20guide%20(german).adoc)
+	• [Installation Guide (English)](installation%20guide%20(german).adoc)
 	• Link zur Documentation 
 	• Link zur Projecktforlage 
 	• Link zum Glosary 
