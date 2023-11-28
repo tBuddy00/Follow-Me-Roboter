@@ -63,6 +63,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 === 2. Iteration 20.11.2023 - 04.12.2023 
 === Allgemein
 ==== Standerfassung aus 1. Iteration
+
 Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hielten wir zeitnah am 21.11.2023 (Dienstag) ein Gruppenmeeting zur Erfassung unserer aktuellen Projektstruktur ab und berieten uns auch um Allgemeinheiten. 
 
  - **Erster Punkt:** Unserer Agenda zu o. g. Tag war, dass alle Teammitglieder, welche noch nicht Herr Prof. Ankes Video zur Organisation unserer Belegarbeit gesehen haben, dies zügigst nachzuholen haben.  -> Diese waren: Jeremy Ziegert, Jonathan Palermo, Johann Marthaus, Danny Miersch und Theresa Stasch
@@ -87,7 +88,7 @@ Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hie
 
 === Gruppenmeeting am 28.11.2023
 ==== Anlass 
-Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Geheiß von Teamleiter für das Entwicklerteam II Herr Marthaus eine nicht ausreichende Zuarbeit von einigen Teammitgliedern aus seinem Team war.
+Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Geheiß von einigen Gruppenmitgliedern im Entwicklerteam II Unmut wegen Ihrer jetzigen Tätigkeiten anberaumt hat.
 
 **Anwesenheitsliste:**
 
@@ -103,7 +104,12 @@ Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Gehei
 
 - **Es wurde festgelegt* nach beidseitigem Einverständnis, das Herr Ziegert Herr Marthaus in der Dokumentierung seiner Bilderkennungssoftware unterstützt
 
+-> **Neue Rolle: Dokumentierung Bilderkennungssoftware** für Herr Marthaus
+
 - **Es wurde festgelegt** nach beidseitige Einverständnis, das Herr Kurth Frau Schubert bei Ihrer Bilderkennungssoftware unterstützt -> Teil dieses Vorhabens sind bereits Frau Schubert selbst und Herr Miersch
+
+-> **Neue Rolle: Dokumentierung Bilderkennungssoftware** für Frau Schubert
+
 
 - Weiterhin wurde über fehlende Akkus für den Fahrroboter besprochen und das dies die Code-Testung weiter hinter verschiebt
 
