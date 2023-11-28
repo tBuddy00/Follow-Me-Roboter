@@ -23,7 +23,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 | Teammitglied | Tätigkeitsbeschreibung 
 |**Taylan Özer, Wirtschaftsinformatik**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
 
-|**Claire Schuster, Wirtschaftsinformatik** | Frau Schuster übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
+|**Claire Schubert, Wirtschaftsinformatik** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
 |**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
 
@@ -52,7 +52,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Entwicklungs Team II**
 |Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
-|Claire Schuster, Danny Miersch
+|Claire Schubert, Danny Miersch
 |===
 
 Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
@@ -67,7 +67,7 @@ Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hie
 
  - **Erster Punkt:** Unserer Agenda zu o. g. Tag war, dass alle Teammitglieder, welche noch nicht Herr Prof. Ankes Video zur Organisation unserer Belegarbeit gesehen haben, dies zügigst nachzuholen haben.  -> Diese waren: Jeremy Ziegert, Jonathan Palermo, Johann Marthaus, Danny Miersch und Theresa Stasch
 
- - **Zweiter Punkt:** ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert durch Frau Claire Schuster und die Dokumentation zur Implementierung führt Herr Danny Miersch.
+ - **Zweiter Punkt:** ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert durch Frau Claire Schubert und die Dokumentation zur Implementierung führt Herr Danny Miersch.
 
  - **Dritter Punkt:** Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt werden und so sind wie o. g. Entwicklerteam I und II hierfür zuständig.
 
@@ -85,16 +85,40 @@ Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 04.12.2023 hie
 - **Fünfter Punkt:** Herr Marthaus hat es sich zur Aufgabe gemacht in unserem Team Sorge dafür zu tragen, dass wir eine ordentliche Programmierumgebung eingerichtet haben. 
  - Wir entschieden uns überwiegend für Microsoft Visual Studio Code und u. a. PyCharm, sofern der Wunsch ist hiermit arbeiten zu wollen.
 
+=== Gruppenmeeting am 28.11.2023
+==== Anlass 
+Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Geheiß von Teamleiter für das Entwicklerteam II Herr Marthaus eine nicht ausreichende Zuarbeit von einigen Teammitgliedern aus seinem Team war.
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleiter),
+- Herr Marthaus (Leiter Entwicklungsteam II),
+- Herr Ziegert (Entwickler),
+- Herr Kurth (Entwickler)
+
+**Verlauf:**
+
+- Klärung der Motivation und arbeitsmäßgen Standerfassung von Herr Ziegert und Herr Kurth
+- Herr Ziegert und Herr Kurth einverstanden mit der Umgestaltung ihrer Tätigkeiten, von Programmierung weg bzw. allgemeiner Entwicklung hin zur Dokumentation 
+
+- **Es wurde festgelegt* nach beidseitigem Einverständnis, das Herr Ziegert Herr Marthaus in der Dokumentierung seiner Bilderkennungssoftware unterstützt
+
+- **Es wurde festgelegt** nach beidseitige Einverständnis, das Herr Kurth Frau Schubert bei Ihrer Bilderkennungssoftware unterstützt -> Teil dieses Vorhabens sind bereits Frau Schubert selbst und Herr Miersch
+
+- Weiterhin wurde über fehlende Akkus für den Fahrroboter besprochen und das dies die Code-Testung weiter hinter verschiebt
+
+
 ==== Zielstellung zur 2. Iteration
 Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 04.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
 
-- 1. Wir wollen alle Roboterfunktionen im Sinne der Ansprechbarkeit der einzelnen Glieder ansprechen und ROS II implementieren -> wie o. g. übernimmt Frau Claire Schuster beide genannten Ziele.
+- 1. Wir wollen alle Roboterfunktionen im Sinne der Ansprechbarkeit der einzelnen Glieder ansprechen und ROS II implementieren -> wie o. g. übernimmt Frau Claire Schubert beide genannten Ziele.
 
 - 2. Wir wollen eine Bilderkennungsdemo mittels Open CV kreieren und demnach erst einmal aufgrund der Schwierigkeiten des Akkus, erst einmal ein Videoähnlichen Feed hierfür nutzen. Dies übernimmt das Entwicklungsteam II.
 
 - 3. Wir haben als Team geklärt, dass eine Anwesenheitspflicht zur Beginn einer Iteration besteht, um eine allgemeine Standerfassung durchführen zu können und unseren Pläne bzw. Ziele zu besprechen.
 
-- 4. Wir planen den Akku von Herr Prof. Neugebauer etwa zum 23.11.2023 (Donnerstag) zu erhalten. Ansonsten ist dies weiterhin mit Verzögerungen verbunden.
+- 4. Wir planen den Akku von Herr Prof. Neugebauer etwa zum 23.11.2023 (Donnerstag) zu erhalten. Ansonsten ist dies weiterhin mit Verzögerungen verbunden. 
+
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 2. Iteration und mit Beginn der 3. Iteration als Team ist die Zusammenführung der Bilderkennungssoftware und die Garantie der Funktionalität des Fahrroboters ins seiner Gesamtheit. 
