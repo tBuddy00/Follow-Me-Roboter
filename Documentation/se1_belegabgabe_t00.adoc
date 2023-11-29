@@ -29,10 +29,11 @@ include::_includes/default-attributes.inc.adoc[]
 :imagesdir-reset: {imagesdir}
 :docs-test2: /test2
 :docs-requirements: /requirements
-:docs-project-management: {docs}/project_management
-:docs-architecture: {docs}/architecture
-:docs-test: {docs}/test
-:docs-development: {docs}/development
+:docs-project-management: /project_management
+:docs-developer diary: /developer diary
+:docs-architecture: /architecture
+:docs-test: /test
+:docs-development: /development
 
 <<<
 
@@ -46,7 +47,7 @@ include::_includes/default-attributes.inc.adoc[]
 * Glossar
 * Domänenmodel
 
-:imagesdir: {docs-requirements}/images
+:imagesdir: requirements/images
 
 // Vision
 include::requirements/vision.adoc[lines=1..1;4..-1,leveloffset=+1]
@@ -83,11 +84,28 @@ include::project_management/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 include::project_management/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 2
-//include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
+//include::project_management/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 3
-//include::{docs-project-management}/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
+//include::project_management/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
+
+// --- Developer diary
+= Developer diary
+* 1.Iteration
+* 2.Iteration
+//* 3.Iteration
+
+//1. Iteration
+include::developer diary/1. Iteration.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+//2. Iteration
+include::developer diary/2. Iteration.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+//3. Iteration
+//include::developer diary/1. Iteration.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+
 
 // --- Entwurfsdokumentation ---
 = Entwurfsdokumentation
@@ -96,15 +114,15 @@ include::project_management/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=
 * Design
 
 // Architektur-Notizbuch
-:imagesdir: {docs-architecture}/images
+:imagesdir: architecture/images
 include::architecture/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Test Cases
-:imagesdir: {docs-test}/images
+:imagesdir: test/images
 include::test/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Design
-:imagesdir: {docs-development}/images
+:imagesdir: development/images
 include::development/design.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 
