@@ -27,13 +27,13 @@ include::_includes/default-attributes.inc.adoc[]
 :experimental:
 // Folders
 :imagesdir-reset: {imagesdir}
-:docs-test2: /test2
-:docs-requirements: /requirements
-:docs-project-management: /project_management
-:docs-developer diary: /developer diary
-:docs-architecture: /architecture
-:docs-test: /test
-:docs-development: /development
+:test2: /test2
+:requirements: /requirements
+:project-management: /project_management
+:developer diary: /developer diary
+:architecture: /architecture
+:test: /test
+:development: /development
 
 <<<
 
