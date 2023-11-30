@@ -52,6 +52,18 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 | Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert | -
 
+|Raspberry Pi OS| Raspberry Pi OS (ehemals Raspbian) ist die offiziell empfohlene Linux-Distributionen für den Raspberry Pi. Raspberry Pi OS basiert auf der Linux-Distribution Debian und enthält jede Menge vorinstallierter Software. |-
+
+|Waveshare | International Limited ist ein führender technischer Anbieter von Hardware-Innovationen. Mit personalisierten Dienstleistungen und breit gefächerten Lösungen, die unsere Kunden in die Lage versetzen, ihre Ideen und Projekte zu verwirklichen, sind wir bestrebt, ein wichtiger Enabler im Ökosystem der Forschung und Entwicklung zu sein.|-
+
+|ReadMe Datei |Eine Readme-Datei – häufig als Readme.txt oder Readme.md erstellt – enthält üblicherweise wichtige Informationen zu dem jeweiligen System, Projekt oder der jeweiligen Software. Damit Nutzer die Datei direkt sehen, liegt sie im Idealfall in der obersten Verzeichnisebene.|-
+
+|Pep8 Python |PEP 8  ist der "Style Guide for Python Code", also die Richtlinie zum Formatieren von Python-Code, deren Einhaltung für das saubere Verfassen von Python-Programmen erforderlich ist.|-
+
+|PyCharm |PyCharm ist eine dedizierte integrierte Entwicklungsumgebung (IDE) für Python, die eine breite Palette an wichtigen Werkzeugen für Python-Entwickler bietet, die eng integriert sind, um eine komfortable Umgebung für die produktive Entwicklung von Python, Web und Data Science zu schaffen.|-
+
+|||
+
 |===
 
 == Abkürzungen und Akronyme
@@ -59,7 +71,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 |===
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
-| xx | xx | xx
+| ROS II | Roboter Operating System 2 | xx
 |===
 
 == Verzeichnis der Datenstrukturen
