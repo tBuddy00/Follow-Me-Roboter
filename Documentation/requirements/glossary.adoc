@@ -12,16 +12,16 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-|ROS 2|_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll|-
+|ROS 2|_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
 
-| Open CV  | _Open Source Computer Vision_ - eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung |-
+| Open CV  | _Open Source Computer Vision_ - eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung. |-
 
 | Implementierung/ +
-Implementation  | Prozess in dem Programmcode gemäß den Spezifikationen erstellt, getestet und in das System integriert wird | Verwirklichung, Einsetzung
+Implementation  | Prozess in dem Programmcode gemäß den Spezifikationen erstellt, getestet und in das System integriert wird. | Verwirklichung, Einsetzung.
 
-| Philosophie | bezeichnet die grundlegenden Prinzipien und Werte, die die Gestaltung und Entwicklung von Software leiten | Grund-/ Leitprinzipien, Kernwerte 
+| Philosophie | bezeichnet die grundlegenden Prinzipien und Werte, die die Gestaltung und von Softwareentwicklung leitet.| Grund-/ Leitprinzipien, Kernwerte 
 
-| Architektur | beschreibt Philosophie, Entscheidungen, Einschränkungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben | Struktur, Vorgehensweise
+| Architektur | beschreibt Philosophie, Entscheidungen, Einschränkungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben. | Struktur, Vorgehensweise
 
 | Architectural Mechanisms/ +
 Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die Komplexität minimieren und Entwicklung konsistenter Dienste fördern |-
@@ -32,25 +32,25 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 // | logische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
 // | physische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
 
-| Product Owner | _Produktbesitzer_ - Rolle im agilen Projektmanagement, die für die Definition und Priorisierung von Anforderungen verantwortlich ist | Auftraggeber
+| Product Owner | _Produktbesitzer_ - Rolle im agilen Projektmanagement, die für die Definition und Priorisierung von Anforderungen verantwortlich ist. | Auftraggeber
 
-| Projekt-Coach | Person, die das Team bei der Umsetzung des Projekts unterstützt und berät |Projektberater, Projektmentor, Projektbegleiter
+| Projekt-Coach | Person, die das Team bei der Umsetzung des Projekts unterstützt und berät. |Projektberater, Projektmentor, Projektbegleiter
 
-| Iteration | Zyklus wiederholter Prozesse, um schrittweise Fortschritte zu erzielen| Zyklus, Durchgang, Durchlauf
+| Iteration | Zyklus wiederholter Prozesse, um schrittweise Fortschritte zu erzielen. | Zyklus, Durchgang, Durchlauf
 
-| Creative Lead | Person, die kreative Aspekte des Projekts leitet und innovative Ideen einbringt | Kreativleiter, Kreativdirektor
+| Creative Lead | Person, die kreative Aspekte des Projekts leitet und innovative Ideen einbringt. | Kreativleiter, Kreativdirektor
 
-| Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen | Architekt
+| Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen. | Architekt
 
-| Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich | Hauptentwickler, Leitender Entwickler
+| Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich. | Hauptentwickler, Leitender Entwickler
 
-| Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind | Programmierer, Developer
+| Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind. | Programmierer, Developer
 
-| Discord | Plattform für Chat, Sprach- und Videokommunikation, hier für Austausch im Team verwendet| -
+| Discord | Plattform für Chat, Sprach- und Videokommunikation, wird hier für den Austausch im Team verwendet. | -
 
-| GitHub | Plattform für Versionsverwaltung und Zusammenarbeit an Softwareprojekten | -
+| GitHub | Plattform für Versionsverwaltung und Zusammenarbeit an Softwareprojekten. | -
 
-| Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert | -
+| Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert. | -
 
 |Raspberry Pi OS| Raspberry Pi OS (ehemals Raspbian) ist die offiziell empfohlene Linux-Distributionen für den Raspberry Pi. Raspberry Pi OS basiert auf der Linux-Distribution Debian und enthält jede Menge vorinstallierter Software. |-
 
@@ -58,9 +58,21 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |ReadMe Datei |Eine Readme-Datei – häufig als Readme.txt oder Readme.md erstellt – enthält üblicherweise wichtige Informationen zu dem jeweiligen System, Projekt oder der jeweiligen Software. Damit Nutzer die Datei direkt sehen, liegt sie im Idealfall in der obersten Verzeichnisebene.|-
 
-|Pep8 Python |PEP 8  ist der "Style Guide for Python Code", also die Richtlinie zum Formatieren von Python-Code, deren Einhaltung für das saubere Verfassen von Python-Programmen erforderlich ist.|-
+|Pep8 Python |_PEP 8_ ist der "Style Guide for Python Code", also die Richtlinie zum Formatieren von Python-Code, deren Einhaltung für das saubere Verfassen von Python-Programmen erforderlich ist.|-
 
 |PyCharm |PyCharm ist eine dedizierte integrierte Entwicklungsumgebung (IDE) für Python, die eine breite Palette an wichtigen Werkzeugen für Python-Entwickler bietet, die eng integriert sind, um eine komfortable Umgebung für die produktive Entwicklung von Python, Web und Data Science zu schaffen.|-
+
+|Integrated Development Enviroment| Kurz: _IDE_; Ist eine integrierte Entwicklungsumgebung für Software und für die Anwendungsentwicklung, die gängige Entwicklertools in einer zentralen grafischen Oberfläche vereint.| -
+
+|Linux-Distribution | Eine Linux-Distribution ist die Auswahl bestimmter Software und einem Kernel von Linux, die aufeinander abgestimmt sind. Je nach Anwendungszweck werden verschiedene Anwenderprogramme hinzugefügt | - 
+
+|Kernel | Der Kernel ist ein elementares, zentrales Modul eines Betriebssystems, mit anderen Worten: der Betriebssystemkern. | - 
+
+|Linux | Linux ist ein kostenloses Betriebssystem, das unter der GNU General Public License (GPL) veröffentlicht wird.| 
+
+| Wireframe[s] | Wireframes repräsentieren Teile der Informationsarchitektur, der Benutzerführung und der Navigation in einem Softwareprojekt.| Drahtgittermodell
+
+| Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
 
 |||
 
@@ -72,6 +84,8 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 | ROS II | Roboter Operating System 2 | xx
+| IDE| Integrated Development Enviroment | xx
+
 |===
 
 == Verzeichnis der Datenstrukturen
