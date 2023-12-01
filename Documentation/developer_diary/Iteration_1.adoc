@@ -83,6 +83,7 @@ Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kam
 - Klärung unseres Bilderkennungskonzepts (angehängt in der Dokumentation)
 
 === Einbindung Bilderkennungskonzept
+.Bemerkung: Dieses Konzept diente dem allgemeinen Verständnis für Auftraggeber und Entwickler
 image::Bilderkennung_Konzept.drawio.png[]
 
 *Hinweis:*
