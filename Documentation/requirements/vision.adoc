@@ -1,21 +1,21 @@
-= Vision: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Vision: Follow-Me Fahrroboter
+
 {localdatetime}
+
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems {project-system-name} zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System {project-system-name} diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems Follow-Me zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System Follow-Me Fahrroboter diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System {project-system-name}, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das von I01_Follow-Me-Team entwickelt wird. Das System wird es Herr Prof. Dr.-Ing. Neugebauer erlauben, den Fahrroboter ihn folgen zu lassen mittels der eigens entwickelten Bilderkennungssoftware durch das o. g. Team, um damit die Hürden des Alltags zu meistern. Die Hauptaufgabe besteht darin, demjenigen zu folgen der den Ton angibt. Dementsprechend ist so das Problem, eines untreuen Gefährten gelöst.
 
 === Definitionen, Akronyme und Abkürzungen
-//Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
 Siehe <<#glossary, Glossar>>.
 
 === Referenzen
@@ -25,57 +25,32 @@ Siehe <<#glossary, Glossar>>.
 == Positionierung
 
 === Fachliche Motivation
-//Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrroboterprojekt die ineffizienten Aspekte innerhalb des Campus-Transportsystems. Die zunehmende Komplexität von Lehr- und Forschungseinrichtungen hat ineffiziente Transportabläufe hervorgebracht. Das angestrebte Ziel ist die Integration modernster Technologie zur Steigerung der betriebswirtschaftlichen Effizienz im hochschulischen Umfeld. Durch die Automatisierung von Transportaufgaben sollen nicht nur physische Belastungen gemildert, sondern auch zeitliche Engpässe überwunden werden. Die Implementierung des Fahrroboters wird als entscheidender Schritt betrachtet, um eine nachhaltige Optimierung von Campus-Arbeitsabläufen und eine Reduzierung der operativen Kosten zu erreichen.
+
+
 
 === Problem Statement
-//Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
-|===
-| Das Problem | [beschreiben Sie das Problem]
-| betrifft | [die Stakeholder, die vom Problem betroffen sind]
-| die Auswirkung davon ist | [welche Auswirkungen hat das Problem?]
-| eine erfolgreiche Lösung wäre | Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
-|===
 
-////
-Beispiel:
-[cols="1,3"]
 |===
-|Das Problem | aktuelle Informationen zum Stundenplan und Noten einfach zu erhalten
-|betrifft | Studierende der HTW Dresden
-|die Auswirkung davon ist | umständliche und aufwändige Suche nach Noten, Zeiten und Räumen
-|eine erfolgreiche Lösung wäre | die Zusammenführung und benutzer-individuelle Darstellung auf einem mobilen Endgerät
+| Das Problem | Herr Prof. Dr.-Ing. Neugebauer besitzt aktuell noch keinen ähnlichen Roboter.
+| betrifft | Prof. Dr.-Ing. Neugebauer HTW Dresden
+| die Auswirkung davon ist | kein Weggfährte, niemanden der einen begleitet.
+| eine erfolgreiche Lösung wäre | die Realisierung des Fahrroboters mittels einer Bilderkennungssoftware auf einem Raspberry-Pi und einem Alphabot 2.
 |===
-////
 
 === Positionierung des Produkts
-//Ein Positionierung des Produkts beschreibt das Einsatzziel der Anwendung und die Bedeutung das Projekts an alle beteiligten Mitarbeiter.
-
-//Geben Sie in knapper Form übersichtsartig die Positionierung der angestrebten Lösung im Vergleich zu verfügbaren Alternativen dar. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
 |===
-| Für | [Zielkunde / Nutzer]
-| der / die | [Angabe des Bedarfs oder Chance]
-| Das Produkt / die Lösung ist ein | [Produktkategorie]
-| Die / Das | [Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-| Im Gegensatz zu | [wesentliche Lösungsalternative]
-| Unser Produkt | [Aussage zum Hauptunterschied]
+| Für | Prof. Dr.-Ing. Neugebauer
+| die | einen Fahrroboter benötigt, um einen Begleiter zu haben
+| die Lösung ist ein | Fahrroboter, basierend auf einem Alphabot 2 und dem OS ROS II
+| Das | Herr Prof. Dr.-Ing. Neugebauer im Leben unterstützt
+| Im Gegensatz zu | bisherigen Lösungen haben wir einen Follow-Me-Ansatz gewählt
+| Unser Produkt | Fahrroboter begleitet mittels Bilderkennungssoftware sein Ziel an jeden Ort
 |===
-
-////
-Beispiel Produkt:
-|===
-| Für | Studierende der HTW
-| die | die ihren Studienalltag effizienter organisieren möchten
-| Das Produkt ist eine | mobile App für Smartphones
-| Die | für den Nutzer Informationen zum Stundenplan und Noten darstellt
-| Im Gegensatz zu | Stundenplänen der Website und HIS-Noteneinsicht
-| Unser Produkt | zeigt nur die für den Nutzer relevanten Informationen komfortabel auf dem Smartphone an.
-|===
-////
-
 
 == Stakeholder Beschreibungen
 
@@ -85,48 +60,70 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+| Prof. Dr.-Ing. Neugebauer | Vergab den Auftrag des Follow-Me Fahrroboters und will diesen gerne als Begleiter nutzen
+| Legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht dies auch. Stellte den Fahrroboter Alphabot 2 und den Raspberry-Pi zur Verfügung
+
+|Entwicklungsteam I/II | Streben die Entwicklung der | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
+Bilderkennungssoftware für den Fahrroboter an
+
+|**BITTE ERGÄNZEN!** | |
+
 |===
 
 === Benutzerumgebung
-Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
-//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
+ - 8 Personen; Mit Abschluss 3. Semester - 7 Personen
+
 . Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
+ - Jede Iteration ist auf 2 Wochen ausgelegt; Arbeitsschritte sind i. d. R. innerhalb einer jeden Woche zu erledigen; Anpassungen können folgen
+
 . Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
+ - Es gibt keine besonderen Umgebungsbedingungen
+
 . Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
+    - Es wird Microsoft VS-Code zur allgemeinen Struktur genutzt, GitHub als Versionsverwaltungssoftware und Py-Charm und wie schon genannt Microsoft VS-Code zur Entwicklung.
+
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
-Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+    - Das OS ROS II ist im Einsatz und muss mit dem Alphabot 2 kombiniert werden.
+
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 
 == Produkt-/Lösungsüberblick
 
 === Bedarfe und Hauptfunktionen
-//Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
 
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| xx | xx | xx | xx
+
+| Bilderkennungssoftware | hoch | Erkennung einer Person | -
+
+|Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| -
+
+|**BITTE ERGÄNZEN** | |
+
 |===
 
 
 == Zusätzliche Produktanforderungen
-//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-Hinweise:
 
-. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
-. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
-. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
-. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+//Hinweise:
+
+//. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
+//. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
+//. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
+//. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+//. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+
 
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| xx | xx | xx
+| Erkennung des Abstandes zu einer Person im Bild und folgen | hoch | -
+|einwandfreie bzw. einfache Nutzung | hoch | -
+|**BITTE ERGÄNZEN** | |
+
 |===
