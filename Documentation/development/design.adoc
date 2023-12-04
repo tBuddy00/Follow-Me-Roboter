@@ -8,4 +8,32 @@ include::../_includes/default-attributes.inc.adoc[]
 == Allgemeine Informationen
 
 
-== ...
+== Ubuntu Server 22.04.03 LTS (64 bit)
+
+Ubuntu Server ist eine Variante des Ubuntu-Betriebssystems, die speziell für den Einsatz auf Servern entwickelt wurde. + 
+Ubuntu Server basiert auf dem Linux-Kernel, einem Open-Source-Betriebssystemkern. Dazu bietet es Stabilität, Sicherheit und Skalierbarkeit. +
+
+
+== Ros2 humble 
+
+ROS2 humble ist eine Weiterentwicklung des ursprünglichen ROS und wurde entwickelt, um die Anforderungen moderner Roboteranwendungen besser zu erfüllen. 
+
+Es ist ein Open-Source-Framework, das Werkzeuge und Bibliotheken für die Entwicklung von Roboteranwendungen bereitstellt. 
+
+ROS2 unterstützt verschiedene Programmiersprachen, ermöglicht die Kommunikation zwischen verschiedenen Teilen eines Robotersystems und bietet Funktionen für die Sensordatenverarbeitung, Steuerung und Aktorsteuerung.
+
+== Raspberry pi 4 8gb
+
+Der Raspberry Pi ist ein kostengünstiger, kleinen Computer, der vielseitig einsetzbar ist und gleichzeitig einfach zu bedienen ist.
+
+Der Raspberry Pi ist eine kleine Platine, die alle 
+wesentlichen Komponenten eines Computers enthält. Dazu gehören ein Prozessor, RAM, USB-Anschlüsse, HDMI-Ausgang, GPIO-Pins (General Purpose Input/Output), Ethernet-Anschluss und mehr, je nach Modell.
+
+Der Raspberry Pi kann mit verschiedenen Betriebssystemen betrieben werden, darunter Raspbian (jetzt als Raspberry Pi OS bekannt), Ubuntu und andere Linux-Distributionen.
+
+Anwendungsbereiche des Raspberry Pi`s sind Desktop-Computing, Heimautomatisierung, Robotik, IoT-Projekte (Internet der Dinge), Bildungszwecke, Serveranwendungen, Mediacenter und vieles mehr.
+
+== Alphabot 2 
+
+Der Alphabot 2 ist für die Verwendung mit Raspberry Pikonzipiert.
+Der Alphbapt 2 beinhaltet bereits sehr umfangreiche Funktionen bzw. Fähigkeiten, wie z.B. die Linienverfolgung, Hindernisvermeidung, Bluetooth/Infrarot/WiFi-Fernbedienung, Videoüberwachung etc.
