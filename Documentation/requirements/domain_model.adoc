@@ -7,5 +7,36 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 
+Ein Domänenmodell ist ein Konzept aus der Softwareentwicklung, das dazu dient, die Struktur und das Verhalten eines bestimmten Anwendungsbereichs oder einer Domäne zu modellieren. Es bietet eine abstrakte Darstellung der relevanten Entitäten (Objekte oder Konzepte) und deren Beziehungen in einem bestimmten Problemfeld. Das Domänenmodell ist ein zentrales Instrument im Bereich der objektorientierten Analyse und Design, das dazu beiträgt, ein tiefes Verständnis für die Anforderungen und Strukturen einer Softwareanwendung zu entwickeln.
 
-== ...
+== Grundlegende Schritte zum Aufbau eines Domainmodells
+
+=== Identifizierung der Entitäten:
+
+* Identifiziere die wesentlichen Objekte oder Konzepte, die in der Domäne existieren. Dies könnten reale oder abstrakte Dinge wie Personen, Produkte, Bestellungen, usw. sein.
+
+=== Definieren der Eigenschaften:
+
+* Für jede identifizierte Entität werden die relevanten Eigenschaften definiert. Dies können Attribute oder Merkmale sein, die die Entität beschreiben.
+
+=== Festlegen von Beziehungen:
+
+* Bestimme, wie die identifizierten Entitäten miteinander in Beziehung stehen. Beziehungen können eins zu eins, eins zu viele oder viele zu viele sein und können gerichtet oder ungerichtet sein.
+
+=== Festlegen von Verhalten:
+
+* Bestimme, welche Aktionen oder Aktivitäten von den Entitäten ausgeführt werden können. Dies könnte beispielsweise durch Methoden oder Funktionen repräsentiert werden.
+
+=== Verfeinerung und Iteration:
+
+* Verfeinere das Modell im Laufe der Zeit durch Feedback und Erfahrungen. Das Domänenmodell ist nicht in Stein gemeißelt und kann sich entwickeln, wenn ein tieferes Verständnis der Domäne gewonnen wird.
+
+=== Abstraktionsebenen:
+
+* Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
+
+=== Visualisierung:
+
+* Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
+
+
