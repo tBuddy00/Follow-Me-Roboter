@@ -25,25 +25,88 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
+Die Bedienung des Alphbots wird so leicht wie möglich gestaltet so das keine großen Vorkenntnisse benötigt werden. 
+Ebenso gibt es eine klare und gut strukturierte Dokumentation welche das Erlernen der Software erleichtert.
+Die Dokumentation wird in Deutscher Sprache durchgeführt, jedoch werden die Kommentare im Prokrammcode auf englisch sein.
+
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
+**Verfügbarkeit ** +
+Das System muss eine hohe Verfügbarkeit aufweisen, um sicherzustellen, dass es für Benutzer zugänglich ist, wenn es benötigt wird. 
+Die Verfügbarkeit kann in Prozent gemessen werden (z.B. 99,9% Verfügbarkeit bedeutet, dass das System 99,9% der Zeit verfügbar ist).
+Überwachung der Systemverfügbarkeit über einen definierten Zeitraum und Identifizierung von Ausfallzeiten.
+
+**Häufigkeit und Schwere von Fehlern** +
+Das System soll eine minimale Häufigkeit von Fehlern aufweisen, und wenn Fehler auftreten, sollten sie eine geringe Auswirkung haben.
+Die Fehlerhäufigkeit kann als Anzahl der Fehler pro Zeiteinheit gemessen werden. Die Schwere von Fehlern kann auf einer Skala bewertet werden.
+Regelmäßige Überprüfung von Fehlerprotokollen und -berichten, um Muster zu identifizieren. Implementierung von Maßnahmen zur Fehlerbehebung und -prävention.
+
+**Wiederherstellbarkeit** +
+Das System muss sich nach einem Fehler oder Ausfall schnell und zuverlässig wiederherstellen können.
+Die Wiederherstellungszeit nach einem Fehler kann gemessen und in einem festgelegten Zeitrahmen spezifiziert werden.
+Durchführung von Wiederherstellungstests, um sicherzustellen, dass das System effizient auf Fehler reagiert und sich innerhalb der definierten Zeit wiederherstellt.
+
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+**Antwortzeit** +  
+Das System muss eine minimale Antwortzeit für Benutzeranfragen aufweisen.
+Messung der Zeit, die vom Eingang einer Anfrage bis zur Rückgabe der entsprechenden Antwort verstrichen ist.
+Überwachung der durchschnittlichen und maximalen Antwortzeiten, um sicherzustellen, dass sie innerhalb der festgelegten Grenzen liegen.
+
+**Durschsatz** +
+Das System muss in der Lage sein, eine bestimmte Anzahl von Transaktionen oder Anfragen pro Zeiteinheit zu verarbeiten.
+Messung der Anzahl der erfolgreich abgeschlossenen Transaktionen oder Anfragen pro Sekunde/Minute/Stunde.
+Überwachung des Durchsatzes unter normalen Betriebsbedingungen und während Spitzenbelastungen.
+
+**Kapazität** +
+Das System muss eine bestimmte Menge an Daten oder Benutzerprofilen verarbeiten können.
+Messung der Datenmenge, die das System verarbeiten kann, oder der Anzahl der gleichzeitig unterstützten Benutzer.
+Überprüfung der Kapazität des Systems durch stufenweises Hinzufügen von Lasten, um die maximale Kapazität zu identifizieren.
+
+**Zeiten zum Starten oder Beenden** +
+Das System muss innerhalb einer bestimmten Zeit gestartet oder beendet werden können.
+Messung der Zeit, die benötigt wird, um das System zu starten oder zu beenden.
+Überwachung der Start- und Stoppzeiten, um sicherzustellen, dass sie den festgelegten Anforderungen entsprechen.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+
+**Anpassungsfähigkeit und Erweiterbarkeit** +
+Das System muss so gestaltet sein, dass es leicht an neue Anforderungen und Funktionen angepasst werden kann.
+Bewertung der Zeit und der Ressourcen, die für die Implementierung neuer Funktionen oder Anpassungen benötigt werden.
+Überprüfung der Flexibilität des Systems durch die erfolgreiche Integration neuer Funktionen oder Anpassungen.
+
+**Kompatibilität** +
+Das System muss mit anderen relevanten Systemen, Plattformen oder Geräten kompatibel sein.
+Überprüfung der nahtlosen Integration und Kommunikation mit externen Systemen.
+Durchführung von Kompatibilitätstests mit anderen Systemen und Aktualisierung bei Bedarf.
+
+**Skalierbarkeit** +
+Das System sollte in der Lage sein, effizient mit zunehmender Last oder Datenmenge zu skalieren.
+Überwachung der Systemleistung und Ressourcennutzung bei steigender Belastung.
+Durchführung von Skalierungstests, um sicherzustellen, dass das System unter verschiedenen Lastszenarien skalierbar ist.
+
+**Systeminstallation** +
+Die Installation des Systems muss einfach und gut dokumentiert sein. 
+Bewertung der Zeit, die für die Installation des Systems benötigt wird, und Überprüfung der Installationsdokumentation.
+Überprüfung der Benutzerfreundlichkeit und Vollständigkeit der Installationsprozesse durch Benutzerfeedback.
+
+**Maß an Support und Wartbarkeit** +
+Das System muss mit einer angemessenen Menge an Support und Wartungsdiensten bereitgestellt werden.
+Überprüfung der Reaktionszeit des Supportteams und der Effektivität von Wartungsmaßnahmen.
+Bewertung der Zufriedenheit der Benutzer mit dem bereitgestellten Support und der Wartung.
 
 
 == Zusätzliche Anforderungen
 
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+//* Ressourcenbegrenzungen
+* zu nutzende Komponenten (Alphabot 2 pi)
+* Vorgaben für die Programmiersprache (Python)
+* zu unterstützende Plattformen / Betriebssysteme (ROS 2)
+* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll ( Raspberry pi 4 8gb) 
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
