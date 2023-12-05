@@ -7,7 +7,7 @@ class HumanDetector():
         self.name = "HumanDetector"
         self.full_body_cascade = cv2.CascadeClassifier(
             cv2.data.haarcascades + 'haarcascade_fullbody.xml')
-        self.tracker = cv2.TrackerMIL_create()
+        self.tracker = None
         self.tracker_bbox = None
         self.selected_human = None
         self.frame_counter = 0
@@ -88,6 +88,6 @@ class HumanDetector():
     def get_percentage_of_height(self, location, frame_height):
         #Function to get the Percentage of the Person in the Picture
         if frame_height > 0:
-            percentage_of_height = (location[4]/frame_height*100)
+            percentage_of_height = (location[3]/frame_height*100)
             #Number is real Percent (*100)
         return percentage_of_height

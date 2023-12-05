@@ -3,6 +3,8 @@ import human_detector
 
 detector = human_detector.HumanDetector()
 cap = cv2.VideoCapture('video2.mp4')
+#cap = cv2.VideoCapture(0)
+
 while True:
     ret, frame = cap.read()
     if not ret:
