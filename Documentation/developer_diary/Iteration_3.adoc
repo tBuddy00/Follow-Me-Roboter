@@ -41,7 +41,8 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 **ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
 
-=== Teamstruktur zur 2. Iteration (20.11.2023 - 03.12.2023)
+
+=== Teamstruktur zur 3. Iteration (04.12.2023 - 18.12.2023)
 
 |===
 |Team |Teambeschreibung |Teammitglieder
@@ -59,34 +60,37 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-
 === 2. Iteration 20.11.2023 - 03.12.2023 
 === Allgemein
-==== Standerfassung aus 1. Iteration
+==== Standerfassung aus 2. Iteration
 
-Mit Beginn unserer 2. Iteration mit dem Zeitraum vom 20.11.2023 - 03.12.2023 hielten wir zeitnah am 21.11.2023 (Dienstag) ein Gruppenmeeting zur Erfassung unserer aktuellen Projektstruktur ab und berieten uns auch um Allgemeinheiten. 
+**Hallo Theresa: Bitte ergänze ab hier den Stand mit dem wir aus der 2. Iteration kommen und in die 3. Iteration hineingehen**
 
- - **Erster Punkt:** Unserer Agenda zu o. g. Tag war, dass alle Teammitglieder, welche noch nicht Herr Prof. Ankes Video zur Organisation unserer Belegarbeit gesehen haben, dies zügigst nachzuholen haben.  -> Diese waren: Jeremy Ziegert, Jonathan Palermo, Johann Marthaus, Danny Miersch und Theresa Stasch
+ - **Erster Punkt:** 
 
- - **Zweiter Punkt:** ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert durch Frau Claire Schubert und die Dokumentation zur Implementierung führt Herr Danny Miersch.
+ - **Zweiter Punkt:**
 
- - **Dritter Punkt:** Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt werden und so sind wie o. g. Entwicklerteam I und II hierfür zuständig.
+ - **Dritter Punkt:** 
 
- - **Vierter Punkt:** Unser Projekt-Coach Herr Zirkelbach wird von unserem Projektleiter Herr Özer kontaktiert, um einen zeitnahen Termin für ein gemeinsames Gruppenmeeting zu finden -> Vorzugsweise: 05.12.2023 (Dienstag). 
+ - **Vierter Punkt:**  
+
+**Alles unter diesem Punkt darf auch ergänzt werden und auf die 3. Iteration angepasst werden**
 
 ==== Probleme und weitere Belange
-- **Erster Punkt:** Der Fahrroboter welcher uns von unserem Auftraggeber Herr Prof. Neugebauer bei unserem ersten Treffen an uns übergeben wurde, enthielt zunächst keinen Akku. Dieser wurde nun durch ihn bestellt -> Verzögerung der Bilderkennung erwartet.
 
-- **Zweiter Punkt:** Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. Ergebnis: Englisch.
+- **Erster Punkt:** 
 
-- **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch).
+- **Zweiter Punkt:** 
 
-- **Vierter Punkt:** Unsere Codeformatierungsguidlines haben wir auf pep8 in Python festgelegt.
+- **Dritter Punkt:** 
 
-- **Fünfter Punkt:** Herr Marthaus hat es sich zur Aufgabe gemacht in unserem Team Sorge dafür zu tragen, dass wir eine ordentliche Programmierumgebung eingerichtet haben. 
- - Wir entschieden uns überwiegend für Microsoft Visual Studio Code und u. a. PyCharm, sofern der Wunsch ist hiermit arbeiten zu wollen.
+- **Vierter Punkt:** 
 
-=== Gruppenmeeting am 28.11.2023
+- **Fünfter Punkt:** 
+
+**Bitte auch unter diesem Punkt alles ergänzen**
+
+=== Gruppenmeeting mit Projekt-Coach am 05.12.2023
 ==== Anlass 
 Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Geheiß von einigen Gruppenmitgliedern im Entwicklerteam II Unmut wegen Ihrer jetzigen Tätigkeiten anberaumt hat.
 
@@ -114,8 +118,10 @@ Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Gehei
 - Weiterhin wurde über fehlende Akkus für den Fahrroboter besprochen und das dies die Code-Testung weiter hinter verschiebt
 
 
+**Bitte auch unbedingt hier unter diesem Punkt die Zielstellung anpassen**
+
 ==== Zielstellung zur 2. Iteration
-Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 03.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
+Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 04.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
 
 - 1. Wir wollen alle Roboterfunktionen im Sinne der Ansprechbarkeit der einzelnen Glieder ansprechen und ROS II implementieren -> wie o. g. übernimmt Frau Claire Schubert beide genannten Ziele.
 
