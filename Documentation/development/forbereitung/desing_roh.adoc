@@ -1,0 +1,130 @@
+
+
+= ROS 2 Node: MovementControl
+
+== Überblick
+
+Der bereitgestellte Python-Skript ist ein ROS 2-Knoten, der die `rclpy`-Bibliothek verwendet. Hier ist eine Aufschlüsselung dessen, was dieser Knoten tut:
+
+== Imports
+
+[source,python]
+----
+import rclpy
+from rclpy.node import Node
+import time
+from sensor_msgs.msg import Image
+from std_msgs.msg import String, Int32MultiArray, Float32
+from geometry_msgs.msg import Twist
+from ros2_for_waveshare_alphabot2.msg import PanTilt, IR, RGBLED
+----
+
+Das Skript importiert erforderliche Module und Nachrichtentypen von ROS 2.
+
+== Knotenklasse
+
+[source,python]
+----
+class MovementControl(Node):
+----
+
+Es wird eine Klasse namens `MovementControl` definiert, die von `Node` erbt, was darauf hinweist, dass dies ein ROS-Knoten ist.
+
+== Initialisierung
+
+[source,python]
+----
+def __init__(self):
+    super().__init__('movement_control')
+----
+
+Der Konstruktor initialisiert den Knoten mit dem Namen "movement_control".
+
+== Abonnenten
+
+[source,python]
+----
+self.subscription = self.create_subscription(
+    Int32MultiArray,
+    '/position_data',
+    self.listener_callback,
+    5)
+----
+
+Es wird ein Abonnent für das Thema `/position_data` vom Typ `Int32MultiArray` erstellt und eine Callback-Funktion (`listener_callback`) zum Behandeln empfangener Nachrichten festgelegt.
+
+== Publisher
+
+[source,python]
+----
+self.pantilt_pub = self.create_publisher(PanTilt, 'pan_tilt', 4)
+self.rgb_pub = self.create_publisher(RGBLED, 'rgb_leds', 4)
+self.buzz_pub = self.create_publisher(Float32, 'buzzer', 4)
+self.move_pub = self.create_publisher(Twist, 'cmd_vel', 4)
+----
+
+Das Skript erstellt Publisher für verschiedene Themen verschiedener Nachrichtentypen (z.B. `PanTilt`, `RGBLED`, `Float32`, `Twist`).
+
+== Variablen und Parameter
+
+[source,python]
+----
+self.Position = []
+self.pan_factor = self.get_parameter_or('pan_factor', 1)
+self.tilt_factor = self.get_parameter_or('tilt_factor', 1)
+----
+
+Es werden Variablen (`self.Position`) initialisiert und Parameter (`pan_factor` und `tilt_factor`) aus dem Parameter-Server abgerufen.
+
+== Callback-Funktion
+
+[source,python]
+----
+def listener_callback(self, msg):
+    # Callback-Funktion für den Abonnenten
+----
+
+Behandelt den Callback, wenn eine Nachricht auf dem Thema `/position_data` empfangen wird.
+
+== Verarbeitung von Nachrichten
+
+[source,python]
+----
+self.Position.append(msg.data)
+# Verarbeitung der empfangenen Daten und Berechnung der Pan- und Tilt-Werte
+pantilt_msg.pan = self.percetage_x
+pantilt_msg.tilt = self.percetage_y
+self.pantilt_pub.publish(pantilt_msg)
+----
+
+Das Skript verarbeitet die empfangenen Daten, berechnet Pan- und Tilt-Werte und veröffentlicht eine neue Nachricht vom Typ `PanTilt`.
+
+== Berechnungsfunktion
+
+[source,python]
+----
+def calculate(self):
+    # Funktion zur Berechnung von Pan- und Tilt-Werten basierend auf den empfangenen Daten
+----
+
+Definiert eine Funktion zur Berechnung von Pan- und Tilt-Werten basierend auf den empfangenen Daten.
+
+== Hauptfunktion
+
+[source,python]
+----
+def main(args=None):
+    # Hauptfunktion zur Initialisierung des Knotens und zum Ausführen der Schleife
+----
+
+Initialisiert den ROS-Knoten, erstellt eine Instanz von `MovementControl` und führt die Schleife aus.
+
+== Ausführung des Knotens
+
+[source,python]
+----
+if __name__ == '__main__':
+    main()
+----
+
+Das Skript führt die Hauptfunktion aus, wenn es als Hauptmodul ausgeführt wird.
