@@ -86,5 +86,8 @@ class HumanDetector():
             self.selected_human = None
 
     def get_percentage_of_height(self, location, frame_height):
-        # Placeholder method for calculating the percentage of height
-        return 'percentage of height - placeholder'
+        #Function to get the Percentage of the Person in the Picture
+        if frame_height > 0:
+            percentage_of_height = (location[4]/frame_height*100)
+            #Number is real Percent (*100)
+        return percentage_of_height
