@@ -2,21 +2,18 @@
 ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 
-== Use-Case: UC01 <use-case name>
+== Use-Case: UC01 <Alphabot 2 einschalten>
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Bei dem Use Case 1 handelt es sich darum das der Alphabot 2 der Person x nach dem Start des systems, mit etwas Abstand folgt und stehenbleibt falls Person x stehen bleibt oder keine Person erkannt wird.
+Bei dem Use Case 1 handelt es sich darum das der Alphabot 2 vom Akteur gestartet wird.
 
 === Kurzbeschreibung der Akteure
 
-==== <Person x>
+==== <Akteur>
 
-Person x ist ein 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
+Der Akteur ist ein 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
 
-==== <Alphabot 2>
-
-Ist ein Roboter welcher mit einer Kamera und einer Erkennungssoftwear ausgestattet ist.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -26,29 +23,27 @@ Bevor der Use Case beginnen kann muss sichergestellt sein das der Alphabot 2 ein
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Person x denn Alphabot 2 einschaltet
-. Das System des Alphabots fährt ohne probleme hoch
-. Person x wird von der Kamera des Alphabots erkannt
-. Person x fängt an sich vom Alphbot zu entfernen 
-. Der Aplhabot folgt Person x sobald eine gewisse Entfernung erreicht wurde 
-. Person x bleibt vor dem Alphabot stehen 
-. Der Alphabot bleibt stehen wenn ein gewisser Abstand zu Person x unterschritten wird 
-. Der Use Case ist abgeschlossen wenn der Alphabot wieder abgeschaltet wird.
+. Der Use Case beginnt, wenn Akteur denn Alphabot 2 einen Startbefehl via Konsole gibt 
+. Das System des Alphabots fährt hoch 
+. Es werden alle Sensoren des Roborters aktiviert
+. Die Programme des Roboters werden gestartet
+. Durch eine LED wird angezeigt wie der Status ist
+. Die Kamera des Alphabots 2 ritet sich nach vorn aus   
+. Der Use Case ist abgeschlossen wenn der Alphabot 2 vollkommen hochgefahren ist.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== <Alternativer Ablauf 1>
-Wenn Person x im Schritt 4 des Standardablauf aus dem Sichtfeld der Kamera entfernt, dann 
+Wenn beim Start des Alphabots 2 ein Fehler auftritt dann, 
 
-. bleibt der Alphabot 2 stehen und wartet bis sich Person x wieder im Sichtfeld der Kamera befindet 
-. Der Use Case wird im Schritt 7 fortgesetzt.
+. Gibt die LED des Roboters ein Signal aus das ein Fehler aufgetreten ist 
+. Der Use Case wird abgebrochen weil der Alphabot nicht einastatzbereit ist
 
-==== <Alternativer Ablauf >
-Wenn Personen vor Person x durch das Sichtfeld der Kamera laufen, dann
-
-. bleibt der Alphabot 2 stehen und wartet bis Person x alleine im Sichtfeld ist 
-. Der Use Case wird im Schritt 7 fortgesetzt.
+//==== <Alternativer Ablauf 2>
+//Wenn Personen vor Akteur durch das Sichtfeld der Kamera laufen, dann
+//. bleibt der Alphabot 2 stehen und wartet bis Akteur alleine im Sichtfeld ist 
+//. Der Use Case wird im Schritt 7 fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -74,8 +69,8 @@ Wenn Personen vor Person x durch das Sichtfeld der Kamera laufen, dann
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-Die Oberfläche auf der sich der Alphabot 2 befindet sollte möglicht eben sein damit die bestmöglichen ergebnisse erzielt werden können. 
+//Die Oberfläche auf der sich der Alphabot 2 befindet sollte möglicht eben sein damit die bestmöglichen ergebnisse erzielt werden können. 
 
 ==== <Besondere Anforderung 1>
 
-Wärend des Use cases dürfen keine wieteren Personen durch das Sichtfeld der Kamera laufen.
+//Wärend des Use cases dürfen keine wieteren Personen durch das Sichtfeld der Kamera laufen.
