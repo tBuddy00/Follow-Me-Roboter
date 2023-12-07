@@ -8,16 +8,17 @@
 
 === Installing the Raspberry Pi Image
 
-Download and install the official Raspberry Pi Imager from link:https://www.raspberrypi.com/software/[Raspberry Pi Software].
+Download and install the official Raspberry Pi Imager from link:https://www.raspberrypi.com/software/[Raspberry Pi Software]. +
 Choose the following parameters:
-- Operating System: Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit).
+
+* Operating System: `Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit).`
 
 === Connecting to Your Raspberry Pi Using SSH
 
-Connect the Raspberry Pi to Ethernet (either directly to your PC or to your local network).
-Find out the IP address of your Pi.
+Connect the Raspberry Pi to Ethernet either directly to your PC or to your local network. +
 
-To find the IP address of your Raspberry Pi, you can use one of the following methods:
+Find out the IP address of your Pi by using one of the following methods:
+
 - Using the Router Interface:
   1. Log in to your router's web interface. This typically involves entering the router's IP address into a web browser.
   2. Look for a section named "Connected Devices," "DHCP Clients," or similar. This section should list all devices connected to the network along with their assigned IP addresses.
@@ -36,13 +37,13 @@ Enter the password when prompted (default password: ubuntu).
 
 === Installing ROS 2 Humble
 
-Follow the installation guide at link:https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html[ROS 2 Humble Installation Guide].
-Alternatively, run the installation script from link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[this script].
+Follow the installation guide at link:https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html[ROS 2 Humble Installation Guide]. +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[ installation script].
 
 === Creating the Workspace
 
-If you encounter issues, follow the tutorial at link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial].
-Alternatively, run the installation script from link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[this script].
+If you encounter issues, follow link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial]. +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[isntallation script]. +
 To manually create the workspace, execute the following commands:
 [source,shell]
 ----
@@ -54,21 +55,21 @@ cd ~/ros2_ws/src
 
 === Installing the Camera Driver
 
-Use the _ros2_v4ls_camera_ from link:https://github.com/tier4/ros2_v4l2_camera/tree/galactic[this GitHub repository].
-Follow this link:https://gaseoustortoise.notion.site/Raspberry-Pi-Camera-bc33c733eeb4417cbd5e3db027a3a429[guide] for installation instructions.
+Use the `ros2_v4ls_camera` from link:https://github.com/tier4/ros2_v4l2_camera/tree/galactic[this GitHub repository]. +
+Follow this link:https://gaseoustortoise.notion.site/Raspberry-Pi-Camera-bc33c733eeb4417cbd5e3db027a3a429[guide] for installation instructions. +
 To check if the camera is working, open a second terminal, connect to the Pi, and run:
 [source,shell]
 ----
 ros2 topic list
 ----
 
-- If `/image_raw` shows up, the camera is working.
+If `/image_raw` shows up, the camera is working. +
 Use ctrl + c to stop the camera.
 
 === Installing OpenCV and cv_bridge
 
-Use the _vision_opencv_ repository from link:https://github.com/ros-perception/vision_opencv[this GitHub repository].
-Install dependencies:
+Use the _vision_opencv_ repository from link:https://github.com/ros-perception/vision_opencv[this GitHub repository]. +
+Install the dependencies:
 [source,shell]
 ----
 sudo apt install python3-numpy
@@ -123,7 +124,7 @@ Open a second terminal, connect to the Pi, and run:
 ros2 topic list
 ----
 
-- If `/image_raw` shows up, the camera is running.
+If `/image_raw` shows up, the camera is running. +
 Run the camera_package node:
 
 [source,shell]
@@ -131,7 +132,7 @@ Run the camera_package node:
 ros2 run camera_package camera_test
 ----
 
-- This should save an image in the previously created `image` directory.
+This saves an image in the previously created `image` directory. +
 If you see the image, the camera is working.
 
-// Line 118 might change in the future
+// Line 132 might change in the future
