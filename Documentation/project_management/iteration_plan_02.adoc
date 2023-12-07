@@ -11,21 +11,20 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | 06.11.2023
+| Beginn der Iteration | 20.11.2023
 | Erstes Teamtreffen  | 07.11.2023 
 | Festlegung der Rollenverteilung im Team | 07.11.2023 
 | Bearbeitung der zugeteilten Aufageben|07.11.2023 - 19.11.2023   
 | Treffen mit Herr Prof. Neugebauer | 17.11.2023
-| Ende der Iteration | 19.11.2023
+| Ende der Iteration | 03.12.2023
 |===
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+ * ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert + 
+ * Dokumentation zur Implementierung führen +
+ * Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt +
 
-* Klärung der Rollenverteilung im Team.  
-* Wie wird die Kommunikation im Team Stattfinden ?   
-* Wie ist die Teamstruktur aufgebaut ? 
-* Welche Tätigkeiten werden von welchem Teammitglied übernommen ?  
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -56,7 +55,7 @@ Theresa Stasch| 1 |0
 Theresa Stasch| 2 |0
 |===
 
-// Schätzung der Größe(Punkte) von 1 bis 3 wobei 1 = klein, 2 = mittel und 3 = hoch 
+// Schätzung der Größe(Punkte) von 1 bis 3 wobei 1 = klein, 2 = mittel und 3 = hoch ist
 
 == Probleme (optional)
 //Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
@@ -65,8 +64,11 @@ Theresa Stasch| 2 |0
 |===
 | Problem | Status | Notizen
 
-|Bei demm Zusammenbau des Alpbot 2 viel auf das keine Batterien im Kit enthalten sind welche für die Inbetriebnahme benötigt werden.
- | behoben | Die Batterien wurden Von Herrn Prof Neugebauer nachträglich besorgt. 
+|Bei dem Zusammenbau des Alpbot 2 viel auf das keine Batterien im Kit enthalten sind welche für die Inbetriebnahme benötigt werden.
+ | behoben | Die Batterien wurden Von Herrn Prof Neugebauer nachträglich bereitgestellt. 
+|Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. | Behoben| Ergebnis: Englisch
+
+
 |===
 
 == Bewertungskriterien
@@ -85,25 +87,26 @@ Theresa Stasch| 2 |0
 |===
 | Assessment Ziel | Gesamte Iteration
 
-| Assessment Datum | 19.11.2023
+| Assessment Datum | 4.12.2023
 | Teilnehmer | Clair Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
 | Projektstatus |grün
 |===
 
 **Beurteilung im Vergleich zu den Zielen** +
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-Innnerhalb der ersten Iteration (06.11.2023 - 19.11.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
+Innnerhalb der zweiten Iteration (20.11.2023-03.12.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
 
 **Geplante vs. erledigte Aufgaben** +
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-Wärend der ersten Iteration wurden alle Aufagben welche sich vorgenommen wurden erledigt ebenso wurde keine Aufgabe verschoben.
+Wärend der zweiten Iteration wurden alle Aufagben welche sich vorgenommen wurden erledigt, ebenso wurde keine Aufgabe verschoben.
 
 **Beurteilung im Vergleich zu den Bewertungskriterien** +
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 Der Alphabot2 wurde erfolgreich zusammengebaut und das betriebsystem ist funktionstätig. +
-Die Aufageben wurden alle erfolgreich erfüllt wobei es  keine größeren probleme gab. + 
-Es gibt eine gute Teamkoordination. +
+Bilderkennungsdemo mittels Open CV kreieren. + 
+Anwesenheitspflicht zur Beginn einer Iteration. +
+
 
 **Andere Belange und Abweichungen** +
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
