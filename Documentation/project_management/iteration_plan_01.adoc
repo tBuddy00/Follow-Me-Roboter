@@ -72,7 +72,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Assessment Ziel | Gesamte Iteration
 
 | Assessment Datum | 21.11.2023
-| Teilnehmer | Clair Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
+| Teilnehmer | Claire Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
 | Projektstatus |grün
 |===
 

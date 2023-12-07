@@ -38,15 +38,15 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | Einrichten des Lokalen Git`s| Hoch | 1 | Erledigt | ? | 1|Jedes Teammitglied | 0,5| 0
 |Programmierumgebung einrichten| Mittel |1 |Erledigt|? |1| Jedes Teammitglied| 0.5 |0
-|Kamera node erstellen | Hoch |2 |Erledigt|2 |1 |Clair Schubert, Johnathan Palermo | 4 |0
-|Betriebssystem auf dem alphabot erstellen| Hoch |3 |Erledigt|? |1|Clair Schubert |15| 0 
+|Kamera node erstellen | Hoch |2 |Erledigt|2 |1 |Claire Schubert, Johnathan Palermo | 4 |0
+|Betriebssystem auf dem alphabot erstellen| Hoch |3 |Erledigt|? |1|Claire Schubert |15| 0 
 |Alphabot 2 Zusammenbauen| Hoch |2 |Erledigt|? |1| 
-Clair Schubert| 2 |0
+Claire Schubert| 2 |0
 |Instalation guide anlegen| Mittel |1 |Erledigt|? |1| 
-Clair Schubert,
+Claire Schubert,
 Danny Miersch | 3 |0
 |Codeformatierungs Guildlines| Mittel |1 |Erledigt|? |1| 
-Clair Schubert,
+Claire Schubert,
 Taylan Özer,
 Johann Marthaus| 1 |0
 |README überarbeiten| Mittel |1 |Erledigt|? |1 |Taylan Özer,
@@ -88,7 +88,7 @@ Theresa Stasch| 2 |0
 | Assessment Ziel | Gesamte Iteration
 
 | Assessment Datum | 4.12.2023
-| Teilnehmer | Clair Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
+| Teilnehmer | Claire Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
 | Projektstatus |grün
 |===
 
