@@ -34,7 +34,9 @@
 
     ssh ubuntu@<ip address of the pi>
 
-4. Enter the password when prompted (default password: ubuntu).
+4. Enter the password when prompted 
+
+    default password: ubuntu
 
 === Installing ROS 2 Humble
 
