@@ -22,14 +22,24 @@ class HumanDetector():
         # If a person is being tracked, gather information
         if self.tracker_bbox is not None:
             bbox = self.tracker_bbox
-            center_of_person = (bbox[0] + bbox[2] // 2, bbox[1] + bbox[3] // 2)
-            frame_height = frame.shape[0]
+            frame_height, frame_width, _ = frame.shape
+            # cv_center_of_person = (bbox[0] + bbox[2] // 2, bbox[1] + bbox[3] // 2)
+            custom_x, custom_y = self.cv_to_custom_coordinates(
+                x_cv=bbox[0], y_cv=bbox[1], frame_width=frame_width, frame_height=frame_height)
+            custom_center_of_person = self.cv_to_custom_coordinates(
+                x_cv=bbox[0] + bbox[2] // 2, y_cv=bbox[1] + bbox[3] // 2, frame_width=frame_width, frame_height=frame_height)
             percentage_of_frame_height = self.get_percentage_of_height(
                 bbox, frame_height)
 
-            values.append(bbox)
-            values.append(center_of_person)
+            values.append(custom_x)  # x in centered coordinate system
+            values.append(custom_y)  # y in centered coordinate system
+            values.append(bbox[2])  # width of person
+            values.append(bbox[3])  # height of person
+            # center of person in centered coordinate system
+            values.append(custom_center_of_person)
             values.append(percentage_of_frame_height)
+            values.append(frame_width)
+            values.append(frame_height)
 
         return values
 
@@ -65,6 +75,7 @@ class HumanDetector():
         self.frame_counter += 1
 
         # Display the processed frame (for testing purposes)
+        frame = self.draw_coordinate_system(frame)
         cv2.imshow("Video Stream", frame)
 
         return frame
@@ -86,8 +97,80 @@ class HumanDetector():
             self.selected_human = None
 
     def get_percentage_of_height(self, location, frame_height):
-        #Function to get the Percentage of the Person in the Picture
+        # Function to get the Percentage of the Person in the Picture
         if frame_height > 0:
             percentage_of_height = (location[3]/frame_height*100)
-            #Number is real Percent (*100)
-        return percentage_of_height
+            # Number is real Percent (*100)
+            return round(percentage_of_height)
+        else:
+            return None
+
+    def draw_coordinate_system(self, frame):
+
+        height, width, _ = frame.shape
+
+        # draw x- and y-axes
+        cv2.line(frame, (0, height // 2), (width, height // 2),
+                 (0, 0, 255), 2)
+        cv2.line(frame, (width // 2, 0), (width // 2, height),
+                 (0, 0, 255), 2)
+
+        x = width // 2
+        count = 0
+        while x < width:
+            x += 10
+            count += 10
+            cv2.line(frame, (x, height // 2 - 2),
+                     (x, height // 2 + 2), (0, 0, 255), 2)
+            if count % 100 == 0:
+                # thin line every 100 pixel
+                cv2.line(frame, (x, 0), (x, height), (255, 100, 0), 1)
+                cv2.putText(frame, str(count), (x, height // 2 + 15),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
+
+        x = width // 2
+        count = 0
+        while x > 0:
+            x -= 10
+            count -= 10
+            cv2.line(frame, (x, height // 2 - 2),
+                     (x, height // 2 + 2), (0, 0, 255), 2)
+            if count % 100 == 0:
+                # thin line every 100 pixel
+                cv2.line(frame, (x, 0), (x, height), (255, 100, 0), 1)
+                cv2.putText(frame, str(count), (x, height // 2 + 15),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
+
+        y = height // 2
+        count = 0
+        while y < height:
+            y += 10
+            count -= 10
+            cv2.line(frame, (width // 2 - 2, y), (width // 2 + 2, y),
+                     (0, 0, 255), 2)
+            if count % 100 == 0:
+                # thin line every 100 pixel
+                cv2.line(frame, (0, y), (width, y), (255, 100, 0), 1)
+                cv2.putText(frame, str(count), (width // 2 + 5, y),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
+
+        y = height // 2
+        count = 0
+        while y > 0:
+            y -= 10
+            count += 10
+            cv2.line(frame, (width // 2 - 2, y), (width // 2 + 2, y),
+                     (0, 0, 255), 2)
+            if count % 100 == 0:
+                # thin line every 100 pixel
+                cv2.line(frame, (0, y), (width, y), (255, 100, 0), 1)
+                cv2.putText(frame, str(count), (width // 2 + 5, y),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
+
+        return frame
+
+    def cv_to_custom_coordinates(self, x_cv, y_cv, frame_width, frame_height):
+        # convert cv coordinates to coordinates in centered coordinate system
+        x_custom = x_cv - frame_width // 2
+        y_custom = frame_height // 2 - y_cv
+        return x_custom, y_custom
