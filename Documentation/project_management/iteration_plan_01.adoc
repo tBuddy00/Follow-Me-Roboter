@@ -1,4 +1,5 @@
-= Iteration Plan 02: {project-name}
+
+= Iteration Plan 01: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -11,20 +12,19 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | 20.11.2023
-| Zweites Teamtreffen  | 21.11.2023 
-| ROS II implementieren| 20.11.2023 - 3.12.2023
-| Vollständiger Zusammenbau des Roboters| 23.11.2023           
-| Bearbeitung der zugeteilten Aufageben|20.11.2023 - 3.12.2023   
-| Ende der Iteration | 03.12.2023
+| Beginn der Iteration |06.11.2023 
+| Erstes Teamtreffen  | 07.11.2023 
+| Festlegung der Rollenverteilung im Team | 07.11.2023 
+| Bearbeitung der zugeteilten Aufageben|07.11.2023 - 19.11.2023   
+| Treffen mit Herr Prof. Neugebauer | 17.11.2023
+| Ende der Iteration |  19.11.2023 
 |===
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
- * ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert + 
- * Dokumentation zur Implementierung führen +
- * Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt +
-
+* Konzept erstellen zwegs Bilderkennung +
+* Klärung der Rollenverteilung im Team + 
+* Erstellung einer Whatsapp Gruppe +
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -36,23 +36,10 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Einrichten des Lokalen Git`s| Hoch | 1 | Erledigt | ? | 1|Jedes Teammitglied | 0,5| 0
-|Programmierumgebung einrichten| Mittel |1 |Erledigt|? |1| Jedes Teammitglied| 0.5 |0
-|Kamera node erstellen | Hoch |2 |Erledigt|2 |1 |Clair Schubert, Johnathan Palermo | 4 |0
-|Betriebssystem auf dem alphabot erstellen| Hoch |3 |Erledigt|? |1|Clair Schubert |15| 0 
-|Alphabot 2 Zusammenbauen| Hoch |2 |Erledigt|? |1| 
-Clair Schubert| 2 |0
-|Instalation guide anlegen| Mittel |1 |Erledigt|? |1| 
-Clair Schubert,
-Danny Miersch | 3 |0
-|Codeformatierungs Guildlines| Mittel |1 |Erledigt|? |1| 
-Clair Schubert,
-Taylan Özer,
-Johann Marthaus| 1 |0
-|README überarbeiten| Mittel |1 |Erledigt|? |1 |Taylan Özer,
-Theresa Stasch| 1 |0
-|Developer diary| Mittel |1 |Erledigt|? |1 |Taylan Özer,
-Theresa Stasch| 2 |0
+|Kontaktaufnahme mit jedem Teammitglied| Hoch | 1 | Erledigt | ? | 1 |Taylan Özer | 0,5| 0
+|Konzept erstellen zwegs Bilderkennung | Hoch|3| Erledigt|?|1|Claire Schubert| 2|0 
+|Rollenverteilung im Team| Hoch| 1| Erledigt |?|1| Jedes Teammitglied| 0,5 |0
+|Erstes Auftraggebergespräch | Hoch |2 | Erledigt|?|1| Jedes Teammitglied|2 |0
 |===
 
 // Schätzung der Größe(Punkte) von 1 bis 3 wobei 1 = klein, 2 = mittel und 3 = hoch ist
@@ -64,19 +51,16 @@ Theresa Stasch| 2 |0
 |===
 | Problem | Status | Notizen
 
-|Bei dem Zusammenbau des Alpbot 2 viel auf das keine Batterien im Kit enthalten sind welche für die Inbetriebnahme benötigt werden.
- | behoben | Die Batterien wurden Von Herrn Prof Neugebauer nachträglich bereitgestellt. 
-|Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. | Behoben| Ergebnis: Englisch
-
-
+| Verzögerung des Auftraggebergesprächs weil Herr. Neugebauer unerwartet verhindert ist  
+| Gespräch wurde geführt | Das Gespräch wurde am  17.11.2023 gehalten
 |===
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Alphabot 2 ist fertig zusammgebaut und das Betriebssytem wurde erfolgreich instaliert.
-* Es gibt eine gute Koordination zwischen den Teams.
-* Es gab keine großen Schwierigkeiten oder Probleme mit der Bearbeitung der Aufgaben.
+* Wurde das Auftraggebergespräch gehalten +
+* Wurden die Rollen unter den Teammitgliedern verteilt + 
+* Ist das Bilderkennungskonzept vorhanden 
 
 
 
@@ -87,29 +71,35 @@ Theresa Stasch| 2 |0
 |===
 | Assessment Ziel | Gesamte Iteration
 
-| Assessment Datum | 4.12.2023
+| Assessment Datum | 21.11.2023
 | Teilnehmer | Clair Schubert, Johnathan Palermo, Taylan Özer, Theresa Stasch, Johann Marthaus, Danny Miersch, Luca Kurth, Jeremy Ziegert 
 | Projektstatus |grün
 |===
 
 **Beurteilung im Vergleich zu den Zielen** +
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-Innnerhalb der zweiten Iteration (20.11.2023-03.12.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
+Innnerhalb der ersten Iteration (06.11.2023-19.11.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
 
 **Geplante vs. erledigte Aufgaben** +
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-Wärend der zweiten Iteration wurden alle Aufagben welche sich vorgenommen wurden erledigt, ebenso wurde keine Aufgabe verschoben.
+Wärend der ersten Iteration wurden alle Aufagben welche sich vorgenommen wurden erledigt, ebenso wurde keine Aufgabe verschoben.
 
 **Beurteilung im Vergleich zu den Bewertungskriterien** +
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-Der Alphabot2 wurde erfolgreich zusammengebaut und das betriebsystem ist funktionstätig. +
-Bilderkennungsdemo mittels Open CV kreieren. + 
-Anwesenheitspflicht zur Beginn einer Iteration. +
-
+* Das Bilderkennungskonzept wurde erfolgreich erstellt und von Herr. Neugebauer abgenommen +
+* Das Auftraggebergespräch wurde erfolgreich gehalten + 
+* Die Rollenverteilung im Team verlief ohne Probleme
 
 **Andere Belange und Abweichungen** +
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+
+
+
+
+
+
 
 
 
