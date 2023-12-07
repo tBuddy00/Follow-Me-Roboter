@@ -8,110 +8,130 @@
 
 === Installing the Raspberry Pi Image
 
-1. Download and install the official Raspberry Pi Imager from https://www.raspberrypi.com/software/.
-2. Choose the following parameters:
-   - Operating System: Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit).
+Download and install the official Raspberry Pi Imager from link:https://www.raspberrypi.com/software/[Raspberry Pi Software].
+Choose the following parameters:
+- Operating System: Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit).
 
 === Connecting to Your Raspberry Pi Using SSH
 
-1. Connect the Raspberry Pi to Ethernet (either directly to your PC or to your local network).
-2. Find out the IP address of your Pi.
+Connect the Raspberry Pi to Ethernet (either directly to your PC or to your local network).
+Find out the IP address of your Pi.
 
-    To find the IP address of your Raspberry Pi, you can use one of the following methods:
+To find the IP address of your Raspberry Pi, you can use one of the following methods:
+- Using the Router Interface:
+  1. Log in to your router's web interface. This typically involves entering the router's IP address into a web browser.
+  2. Look for a section named "Connected Devices," "DHCP Clients," or similar. This section should list all devices connected to the network along with their assigned IP addresses.
+  3. Find the entry corresponding to your Raspberry Pi.
+- Using a Network Scanner App (if connected to the same network):
+  1. Use a network scanner app on your smartphone, tablet, or PC.
+  2. Scan the local network for connected devices, and look for the Raspberry Pi.
 
-    Using the Router Interface:
-    1. Log in to your router's web interface. This typically involves entering the router's IP address into a web browser.
-    2. Look for a section named "Connected Devices," "DHCP Clients," or similar. This section should list all devices connected to the network along with their assigned IP addresses.
-    3. Find the entry corresponding to your Raspberry Pi
+Open the command prompt or terminal and type the following command:
+[source,shell]
+----
+ssh ubuntu@<ip address of the pi>
+----
 
-    Using a Network Scanner App (if connected to the same network):
-    1. Use a network scanner app on your smartphone, tablet or pc.
-    2. Scan the local network for connected devices, and look for the Raspberry Pi.
-
-
-
-3. Open the command prompt or terminal and type the following command:
-
-    ssh ubuntu@<ip address of the pi>
-
-4. Enter the password when prompted (default password: ubuntu).
+Enter the password when prompted (default password: ubuntu).
 
 === Installing ROS 2 Humble
 
-1. Follow the installation guide at https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html to install ROS 2 Humble.
-2. Alternatively, run the installation script from https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh.
+Follow the installation guide at link:https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html[ROS 2 Humble Installation Guide].
+Alternatively, run the installation script from link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[this script].
 
 === Creating the Workspace
 
-1. If you encounter issues, follow the tutorial at https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html.
-2. Alternatively, run the installation script from https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh.
-3. To manually create the workspace, execute the following commands:
-
-    mkdir -p ~/ros2_ws/src
-    cd ~/ros2_ws/src
+If you encounter issues, follow the tutorial at link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial].
+Alternatively, run the installation script from link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[this script].
+To manually create the workspace, execute the following commands:
+[source,shell]
+----
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+----
 
 == Setting Up the Camera
 
 === Installing the Camera Driver
 
-1. Use the _ros2_v4ls_camera_ from https://github.com/tier4/ros2_v4l2_camera/tree/galactic.
-2. Follow this link:https://gaseoustortoise.notion.site/Raspberry-Pi-Camera-bc33c733eeb4417cbd5e3db027a3a429[guide] for installation instructions. 
-3. To check if the camera is working, open a second terminal, connect to the Pi, and run:
+Use the _ros2_v4ls_camera_ from link:https://github.com/tier4/ros2_v4l2_camera/tree/galactic[this GitHub repository].
+Follow this link:https://gaseoustortoise.notion.site/Raspberry-Pi-Camera-bc33c733eeb4417cbd5e3db027a3a429[guide] for installation instructions.
+To check if the camera is working, open a second terminal, connect to the Pi, and run:
+[source,shell]
+----
+ros2 topic list
+----
 
-    ros2 topic list
-
-- If `/image_raw` shows up, the camera is working. 
-4. Use ctrl + c to stop the camera.
+- If `/image_raw` shows up, the camera is working.
+Use ctrl + c to stop the camera.
 
 === Installing OpenCV and cv_bridge
 
-1. Use the _vision_opencv_ repository from https://github.com/ros-perception/vision_opencv.
-2. Install dependencies:
+Use the _vision_opencv_ repository from link:https://github.com/ros-perception/vision_opencv[this GitHub repository].
+Install dependencies:
+[source,shell]
+----
+sudo apt install python3-numpy
+sudo apt install libboost-python-dev
+----
 
-    sudo apt install python3-numpy
-    sudo apt install libboost-python-dev
+Clone the repository:
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/ros-perception/vision_opencv.git -b humble
+cd ~/ros2_ws
+colcon build --symlink-install
+----
 
-3. Clone the repository:
-
-    cd ~/ros2_ws/src
-    git clone https://github.com/ros-perception/vision_opencv.git -b humble
-    cd ~/ros2_ws
-    colcon build --symlink-install
-
-4. Install _Python3-opencv_:
-
-    sudo apt install python3-opencv
+Install _Python3-opencv_:
+[source,shell]
+----
+sudo apt install python3-opencv
+----
 
 === Installing the Camera Package
 
-1. Clone the camera_package repository:
-
-    cd ~/ros2_ws/src
-    git clone https://github.com/cl-ire/camera_package.git NOTE: Platzhalter, später anderer Pfad
-    cd ~/ros2_ws
-    colcon build --symlink-install
+Clone the camera_package repository:
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/cl-ire/camera_package.git NOTE: Placeholder, update the path later
+cd ~/ros2_ws
+colcon build --symlink-install
+----
 
 == Testing the Camera
 
-1. Create a directory for images:
+Create a directory for images:
+[source,shell]
+----
+cd
+mkdir image
+----
 
-    cd
-    mkdir image
+Start the camera:
+[source,shell]
+----
+cd
+ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:="[640,480]"
+----
 
-2. Start the camera:
-
-    cd
-    ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:="[640,480]"
-
-3. Open a second terminal, connect to the Pi, and run:
-
-    ros2 topic list
+Open a second terminal, connect to the Pi, and run:
+[source,shell]
+----
+ros2 topic list
+----
 
 - If `/image_raw` shows up, the camera is running.
+Run the camera_package node:
 
-4. Run the camera_package node:
-
-    ros2 run camera_package camera_s NOTE: kann sich noch ändern
+[source,shell]
+----
+ros2 run camera_package camera_test
+----
 
 - This should save an image in the previously created `image` directory.
-5. If you see the image, the camera is working.
+If you see the image, the camera is working.
+
+// Line 118 might change in the future
