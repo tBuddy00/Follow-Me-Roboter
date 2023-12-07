@@ -31,13 +31,13 @@ class HumanDetector():
             percentage_of_frame_height = self.get_percentage_of_height(
                 bbox, frame_height)
 
-            values.append(custom_x)  # x in centered coordinate system
-            values.append(custom_y)  # y in centered coordinate system
+            # custom_x center of person
+            values.append(custom_center_of_person[0])
+            # custom_y center of person
+            values.append(custom_center_of_person[1])
             values.append(bbox[2])  # width of person
             values.append(bbox[3])  # height of person
-            # center of person in centered coordinate system
-            values.append(custom_center_of_person)
-            values.append(percentage_of_frame_height)
+            # values.append(percentage_of_frame_height)
             values.append(frame_width)
             values.append(frame_height)
 
@@ -109,11 +109,11 @@ class HumanDetector():
 
         height, width, _ = frame.shape
 
-        # draw x- and y-axes
+        # Koordinatensystem zeichnen
         cv2.line(frame, (0, height // 2), (width, height // 2),
-                 (0, 0, 255), 2)
+                 (0, 0, 255), 2)  # Horizontale Linie (x-Achse)
         cv2.line(frame, (width // 2, 0), (width // 2, height),
-                 (0, 0, 255), 2)
+                 (0, 0, 255), 2)  # Vertikale Linie (y-Achse)
 
         x = width // 2
         count = 0
@@ -123,7 +123,7 @@ class HumanDetector():
             cv2.line(frame, (x, height // 2 - 2),
                      (x, height // 2 + 2), (0, 0, 255), 2)
             if count % 100 == 0:
-                # thin line every 100 pixel
+                # Alle 100 Pixel (dickere Linie)
                 cv2.line(frame, (x, 0), (x, height), (255, 100, 0), 1)
                 cv2.putText(frame, str(count), (x, height // 2 + 15),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
@@ -136,7 +136,7 @@ class HumanDetector():
             cv2.line(frame, (x, height // 2 - 2),
                      (x, height // 2 + 2), (0, 0, 255), 2)
             if count % 100 == 0:
-                # thin line every 100 pixel
+                # Alle 100 Pixel (dickere Linie)
                 cv2.line(frame, (x, 0), (x, height), (255, 100, 0), 1)
                 cv2.putText(frame, str(count), (x, height // 2 + 15),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
@@ -147,9 +147,9 @@ class HumanDetector():
             y += 10
             count -= 10
             cv2.line(frame, (width // 2 - 2, y), (width // 2 + 2, y),
-                     (0, 0, 255), 2)
+                     (0, 0, 255), 2)  # Alle 10 Pixel
             if count % 100 == 0:
-                # thin line every 100 pixel
+                # Alle 100 Pixel (dickere Linie)
                 cv2.line(frame, (0, y), (width, y), (255, 100, 0), 1)
                 cv2.putText(frame, str(count), (width // 2 + 5, y),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
@@ -160,9 +160,9 @@ class HumanDetector():
             y -= 10
             count += 10
             cv2.line(frame, (width // 2 - 2, y), (width // 2 + 2, y),
-                     (0, 0, 255), 2)
+                     (0, 0, 255), 2)  # Alle 10 Pixel
             if count % 100 == 0:
-                # thin line every 100 pixel
+                # Alle 100 Pixel (dickere Linie)
                 cv2.line(frame, (0, y), (width, y), (255, 100, 0), 1)
                 cv2.putText(frame, str(count), (width // 2 + 5, y),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 100, 0), 2)
@@ -170,7 +170,6 @@ class HumanDetector():
         return frame
 
     def cv_to_custom_coordinates(self, x_cv, y_cv, frame_width, frame_height):
-        # convert cv coordinates to coordinates in centered coordinate system
         x_custom = x_cv - frame_width // 2
         y_custom = frame_height // 2 - y_cv
         return x_custom, y_custom
