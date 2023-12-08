@@ -35,7 +35,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Jeremy Ziegert, Wirtschaftsinformatik** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 
-| **Luca Kurth, Verwaltungsinformatik** | Herr Kurth trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+| **Luca Kurth, Verwaltungsinformatik, s85459** | Herr Kurth trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 |===
 
 
