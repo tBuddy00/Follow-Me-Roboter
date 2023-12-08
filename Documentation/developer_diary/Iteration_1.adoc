@@ -21,7 +21,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 |===
 | Teammitglied | Tätigkeitsbeschreibung 
-|**Taylan Özer, Wirtschaftsinformatik**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
+|**Taylan Özer, Wirtschaftsinformatik, s85500**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
 
 |**Claire Schubert, Wirtschaftsinformatik** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
