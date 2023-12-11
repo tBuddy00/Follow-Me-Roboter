@@ -62,7 +62,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 == Iterationen
 === 3. Iteration 05.12.2023 - 19.12.2023 
 === Allgemein
-==== Standerfassung aus 1. Iteration
+==== Standerfassung aus 2. Iteration
 
 Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 05.12.2023 - 19.12.2023 hielten wir zeitnah am 05.12.2023 (Dienstag) ein Gruppenmeeting zur Erfassung des aktuellen Standes des Projektes und das weitere Vorgehen. Bei diesem Meeting  war ebenfalls Herr Zirkelbach anwesend. 
 
