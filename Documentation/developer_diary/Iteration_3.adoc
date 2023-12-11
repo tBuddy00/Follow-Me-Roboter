@@ -66,65 +66,36 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hielten wir zeitnah am 05.12.2023 (Dienstag) ein Gruppenmeeting zur Erfassung des aktuellen Projektstandes und für das weitere Vorgehen ab. Bei diesem Meeting war ebenfalls Herr Zirkelbach als Projekt-Coach anwesend. 
 
- - **Erster Punkt:** Unsere Gruppe hatte einige Fragen zur Dokumentation der Architektur. Herr Zirkelbach teilte uns mit, dass in der Dokumentation nur grobe Informationen enthalten sein müssen. Bspw. enthält das Notebook Informationen darüber, worum es geht und welche Technik verwendet wird. Hierbei sollten ebensfalls alle Entscheidungen mit ihren dazugehörigen Begründungen und Erkenntnissen berücksichtigt werden. 
- - **Zweiter Punkt:** Ebensfalls kamen Fragen bezüglich des Essence Navigator auf. Hierbei stellte sich heraus, dass der Essance Navigator uns dabei unterstützt herauszufinden wo das Projekt steht. Es ist hierbei von Vorteil in jeder Interation darauf zurückzugreifen, die Grafik zu screesnshoten und diesen dann in die Dokumentation einzufügen. 
- - **Dritter Punkt:** Unsere letzte Frage betraf das Development. Der Design Teil ist eher im 2. Semester des Projektes priorisiert. Es können jedoch bereits erste Grundgedanken hinzugefügt werden. Es können grobe Entwurfspakete erstellt werden für die Kommunikation mit der Hardware. Dieser Teil kann im 2. Semester mithilfe des Quellcode präziser generiert werden. Auch das System ROS 2 sollte erklärt werden, jedoch nicht zu komplex, sodass auch unwissende das Thema verstehen. 
- - **Vierter Punkt:** Zuletzt wurden noch grundsätzliche Ziele besprochen. Herr Zirkelbach sollte noch einmal im Januar (der letzten Iteration) eingebunden werden. Ebenfalls ist es wichtig die Use Cases richtig zu definieren und einem Diagramm darzustellen.Ein Beispiel hierfür ist das Starten des Roboter, das System wird hochgefahren und der Roboter fährt einer Person hinterher. Es muss noch geklärt werden, ob der Roboter, wenn sich die Person umdreht, ihr folgen soll oder ob er rückwärtsfährt. Nebenbei sollte dokumentiert werden welche zusätzlichen Änderungen vorgenommen wurden.
+ - **Erster Punkt:** Unsere Gruppe hatte einige Fragen zur Dokumentation der Architektur. Herr Zirkelbach teilte uns mit, dass in der Dokumentation nur grobe Informationen enthalten sein müssen. Beispielsweise enthält das Notebook Informationen darüber, worum es geht und welche Technik verwendet wird. Hierbei sollten ebenfalls alle Entscheidungen mit ihren dazugehörigen Begründungen und Erkenntnissen berücksichtigt werden. 
+
+ - **Zweiter Punkt:** Ebensfalls kamen Fragen bezüglich des Essence Navigator auf. Hierbei stellte sich heraus, dass der Essence Navigator uns dabei im Rahmen des Lehrprojektes unterstützen soll, herauszufinden in welchem Projektstand wir uns befinden. Grundlegend kann man davon ausgehen, dass es von Vorteil ist, in jeder Interation auf den Essence Navigator zurückzugreifen. Jedoch wurde durch Herr Zirkelbach mitgeteilt, dass die entstandenen Diagramme vom Essence Navigator lediglich in den Iteration Plan für zwwei vollständige Iterationen eingebunden und abgebildet werden sollen.
+
+ - **Dritter Punkt:** Unsere letzte Frage betraf das Development. Den Design-Teil priorisieren wir eher in Software Engineering II - es können jedoch bereits erste Grundgedanken hinzugefügt werden. Des Weiteren können schon erste Entwürfe erstellt werden, für die Kommunikation mit der Hardware. So auch soll das OS ROS II so erklärt werden, dass sogar ein dritter nur anhand dieser nicht all zu komplexen Orientierung sich in die Gruppe mit einfinden könnte.  
+
+ - **Vierter Punkt:** Zuletzt wurden noch grundsätzliche Ziele besprochen. Herr Zirkelbach wird noch einmal im Januar (zur letzten Iteration) mit eingebunden werden. Ebenfalls ist es wichtig die USE-CASEs richtig zu definieren und dementsprechend ein USE-CASE-Diagramm zu erstellen. Ein Beispiel hierfür ist das Starten des Fahrroboters -> das System wird hochgefahren und der Roboter fährt einer Person hinterher. Abschließend muss noch geklärt werden: Ob der Roboter, wenn sich die Person umdreht, ihr folgen soll oder ob er rückwärtsfährt, wenn eine Person sich auf ihn hinzu bewegt. Nebenbei sollte dokumentiert werden welche zusätzlichen Änderungen vorgenommen wurden.
 
 ==== Probleme und weitere Belange
-- **Erster Punkt:** Es wurde bereits ein Diagramm der Use Cases erstellt, jedoch wurde dieses vor dem Treffen nicht auf Git Hub gepusht, weshalb dieses Diagramm nicht Herr Zirkeltbach gezeigt werden konnte. Das Diagramm wurde nachträglich per Email übermittelt. 
+- **Erster Punkt:** Es wurde bereits ein USE-CASES-Diagramm von Herr Kurth erstellt, jedoch wurde dieses vor dem Treffen mit dem Projekt-Coach am 05.12.2023 (Dienstag) nicht auf GitHub gepushed. Dieses Diagramm konnte dementsprechend auch nicht Herr Zirkelbach gezeigt werden - nachträglich wurde das Diagramm an Herr Zirkelbach per Email gesendet. 
 
 - **Zweiter Punkt:** Bis zum Sonntag den 10.12.2023 sollte der erste Prototyp funktionieren. Hierbei sollte der Roboter in einem leeren Raum es schaffen einer Person u folgen. 
 
 - **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch).
 
-- **Vierter Punkt:** Unsere Codeformatierungsguidlines haben wir auf pep8 in Python festgelegt.
+- **Vierter Punkt:** Ein Prototyp ist noch nicht vollständig vorhanden -> Software-Komponente fehlt (Herr Marthaus)
 
-- **Fünfter Punkt:** Herr Marthaus hat es sich zur Aufgabe gemacht in unserem Team Sorge dafür zu tragen, dass wir eine ordentliche Programmierumgebung eingerichtet haben. 
- - Wir entschieden uns überwiegend für Microsoft Visual Studio Code und u. a. PyCharm, sofern der Wunsch ist hiermit arbeiten zu wollen.
+==== Zielstellung zur 3. Iteration
+Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
 
-=== Gruppenmeeting am 28.11.2023
-==== Anlass 
-Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Geheiß von einigen Gruppenmitgliedern im Entwicklerteam II Unmut wegen Ihrer jetzigen Tätigkeiten anberaumt hat.
+- 1. Auftraggebergespräch zum 15.12.2023 (Freitag) um 10:30 Uhr -> Mitteilung des Projektstandes
 
-**Anwesenheitsliste:**
+- 2. Vollständigkeit des 1. Prototypen
 
-- Herr Özer (Projektleiter),
-- Herr Marthaus (Leiter Entwicklungsteam II),
-- Herr Ziegert (Entwickler),
-- Herr Kurth (Entwickler)
+- 3. 
 
-**Verlauf:**
-
-- Klärung der Motivation und arbeitsmäßgen Standerfassung von Herr Ziegert und Herr Kurth
-- Herr Ziegert und Herr Kurth einverstanden mit der Umgestaltung ihrer Tätigkeiten, von Programmierung weg bzw. allgemeiner Entwicklung hin zur Dokumentation 
-
-- **Es wurde festgelegt** nach beidseitigem Einverständnis, das Herr Ziegert Herr Marthaus in der Dokumentierung seiner Bilderkennungssoftware unterstützt
-
--> **Neue Rolle: Dokumentierung Bilderkennungssoftware** für Herr Marthaus
-
-- **Es wurde festgelegt** nach beidseitige Einverständnis, das Herr Kurth Frau Schubert bei Ihrer Bilderkennungssoftware unterstützt -> Teil dieses Vorhabens sind bereits Frau Schubert selbst und Herr Miersch
-
--> **Neue Rolle: Dokumentierung Bilderkennungssoftware** für Frau Schubert
-
-
-- Weiterhin wurde über fehlende Akkus für den Fahrroboter besprochen und das dies die Code-Testung weiter hinter verschiebt
-
-
-**Bitte auch unbedingt hier unter diesem Punkt die Zielstellung anpassen**
-
-==== Zielstellung zur 2. Iteration
-Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 04.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
-
-- 1. Wir wollen alle Roboterfunktionen im Sinne der Ansprechbarkeit der einzelnen Glieder ansprechen und ROS II implementieren -> wie o. g. übernimmt Frau Claire Schubert beide genannten Ziele.
-
-- 2. Wir wollen eine Bilderkennungsdemo mittels Open CV kreieren und demnach erst einmal aufgrund der Schwierigkeiten des Akkus, erst einmal ein Videoähnlichen Feed hierfür nutzen. Dies übernimmt das Entwicklungsteam II.
-
-- 3. Wir haben als Team geklärt, dass eine Anwesenheitspflicht zur Beginn einer Iteration besteht, um eine allgemeine Standerfassung durchführen zu können und unseren Pläne bzw. Ziele zu besprechen.
-
-- 4. Wir planen den Akku von Herr Prof. Neugebauer etwa zum 23.11.2023 (Donnerstag) zu erhalten. Ansonsten ist dies weiterhin mit Verzögerungen verbunden. 
+- 4. 
 
 
 ==== Ausblick
-Unser Ausblick bis zum Ende der 2. Iteration und mit Beginn der 3. Iteration als Team ist die Zusammenführung der Bilderkennungssoftware und die Garantie der Funktionalität des Fahrroboters ins seiner Gesamtheit. 
+Unser Ausblick bis zum Ende der 3. Iteration und mit Beginn der 4. Iteration als Team ist die Konstruktion eines 1. vollständigen Prototypen. 
+
 [WEITERS FOLGT !!!] 
