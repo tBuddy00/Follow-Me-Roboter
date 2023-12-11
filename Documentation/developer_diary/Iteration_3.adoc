@@ -64,7 +64,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 === Allgemein
 ==== Standerfassung aus 2. Iteration
 
-Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 05.12.2023 - 19.12.2023 hielten wir zeitnah am 05.12.2023 (Dienstag) ein Gruppenmeeting zur Erfassung des aktuellen Standes des Projektes und das weitere Vorgehen. Bei diesem Meeting  war ebenfalls Herr Zirkelbach anwesend. 
+Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hielten wir zeitnah am 05.12.2023 (Dienstag) ein Gruppenmeeting zur Erfassung des aktuellen Projektstandes und für das weitere Vorgehen ab. Bei diesem Meeting war ebenfalls Herr Zirkelbach als Projekt-Coach anwesend. 
 
  - **Erster Punkt:** Unsere Gruppe hatte einige Fragen zur Dokumentation der Architektur. Herr Zirkelbach teilte uns mit, dass in der Dokumentation nur grobe Informationen enthalten sein müssen. Bspw. enthält das Notebook Informationen darüber, worum es geht und welche Technik verwendet wird. Hierbei sollten ebensfalls alle Entscheidungen mit ihren dazugehörigen Begründungen und Erkenntnissen berücksichtigt werden. 
  - **Zweiter Punkt:** Ebensfalls kamen Fragen bezüglich des Essence Navigator auf. Hierbei stellte sich heraus, dass der Essance Navigator uns dabei unterstützt herauszufinden wo das Projekt steht. Es ist hierbei von Vorteil in jeder Interation darauf zurückzugreifen, die Grafik zu screesnshoten und diesen dann in die Dokumentation einzufügen. 
