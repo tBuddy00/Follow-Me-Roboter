@@ -83,6 +83,8 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 
 - **Vierter Punkt:** Ein Prototyp ist noch nicht vollständig vorhanden -> Software-Komponente fehlt (Herr Marthaus)
 
+- **Fünfter Punkt:** Der Alphabot II lässt sich über seine Kamera und einzelnen Glieder ansprechen
+
 === Gruppenmeeting 12.12.2023
 ==== Anlass
 
