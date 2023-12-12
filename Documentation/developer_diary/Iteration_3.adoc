@@ -87,7 +87,7 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 
 === Gruppenmeeting 12.12.2023
 ==== Anlass
-
+Der Anlass für dieses Gruppenmeeting bestand darin, einen allgemeinen Überblick über unsere Belegstruktur zu erhalten und notwendige Dokumentationen.  
 
 **Anwesenheitsliste:**
 
@@ -99,8 +99,15 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 
 **Verlauf:**
 
+ - In Klärung mit den anwesenden Teammitgliedern wurde erfragt, ob Frau Schubert ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten darlegen kann, um diesen später als Guide niederschreiben zu können. 
 
-**Es wurde festgelegt*
+ - Wir diskutierten über das OpenUP und die Relevanz für uns, zwecks Developer Diary
+
+**Es wurde festgelegt* das Frau Schubert, wie o. g. ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten niederschreibt zur späteren Weiterbearbeitung
+
+- Wir beschlossen, dass wir zwecks Belegstruktur uns mehr in das OpenUP reinzulesen
+
+- Herr Özer wird Frau Schubert mitteilen das erst genanntes umgesetzt werden soll
 
 ==== Zielstellung zur 3. Iteration
 Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
