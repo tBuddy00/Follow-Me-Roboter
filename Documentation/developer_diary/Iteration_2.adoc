@@ -102,7 +102,7 @@ Der Anlass für dieses außerplanmäßge Gruppenmeeting war, dass sich auf Gehei
 - Klärung der Motivation und arbeitsmäßgen Standerfassung von Herr Ziegert und Herr Kurth
 - Herr Ziegert und Herr Kurth einverstanden mit der Umgestaltung ihrer Tätigkeiten, von Programmierung weg bzw. allgemeiner Entwicklung hin zur Dokumentation 
 
-- **Es wurde festgelegt* nach beidseitigem Einverständnis, das Herr Ziegert Herr Marthaus in der Dokumentierung seiner Bilderkennungssoftware unterstützt
+**Es wurde festgelegt* nach beidseitigem Einverständnis, das Herr Ziegert Herr Marthaus in der Dokumentierung seiner Bilderkennungssoftware unterstützt
 
 -> **Neue Rolle: Dokumentierung Bilderkennungssoftware** für Herr Marthaus
 

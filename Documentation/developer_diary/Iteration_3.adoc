@@ -83,6 +83,23 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 
 - **Vierter Punkt:** Ein Prototyp ist noch nicht vollständig vorhanden -> Software-Komponente fehlt (Herr Marthaus)
 
+=== Gruppenmeeting 12.12.2023
+==== Anlass
+
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleiter),
+- Herr Miersch (Entwickler),
+- Herr Ziegert (Dokum. Bilderkennung/Entwicklung),
+- Frau Stasch (Entwicklerin)
+
+
+**Verlauf:**
+
+
+**Es wurde festgelegt*
+
 ==== Zielstellung zur 3. Iteration
 Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
 
