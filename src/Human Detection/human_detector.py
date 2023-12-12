@@ -2,7 +2,7 @@ import cv2
 
 
 class HumanDetector():
-    def __init__(self):
+    def __init__(self, show_frame = False):
         # Initialize the HumanDetector class with necessary attributes
         self.name = "HumanDetector"
         self.full_body_cascade = cv2.CascadeClassifier(
@@ -11,6 +11,7 @@ class HumanDetector():
         self.tracker_bbox = None
         self.selected_human = None
         self.frame_counter = 0
+        self.show_frame = show_frame
 
     def locate_person(self, frame):
         # Locate a person in the frame and retrieve relevant information
@@ -73,10 +74,10 @@ class HumanDetector():
 
         # Increment the frame counter
         self.frame_counter += 1
-
-        # Display the processed frame (for testing purposes)
-        frame = self.draw_coordinate_system(frame)
-        cv2.imshow("Video Stream", frame)
+        if self.show_frame == True:
+            # Display the processed frame (for testing purposes)
+            frame = self.draw_coordinate_system(frame)
+            cv2.imshow("Video Stream", frame)
 
         return frame
 

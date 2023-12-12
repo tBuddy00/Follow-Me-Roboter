@@ -1,7 +1,7 @@
 import cv2
 import human_detector
 
-detector = human_detector.HumanDetector()
+detector = human_detector.HumanDetector(show_frame= True)
 cap = cv2.VideoCapture('video2.mp4')
 #cap = cv2.VideoCapture(0)
 
