@@ -142,7 +142,7 @@ Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.20
 
 - 2. Vollständigkeit des 1. Prototypen
 
-- 3. 
+- 3. Einarbeitung von Mitschriften in das Architecture Notebook
 
 - 4. 
 
