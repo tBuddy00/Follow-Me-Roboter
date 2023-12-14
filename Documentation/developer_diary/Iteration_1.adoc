@@ -23,17 +23,17 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 | Teammitglied | Tätigkeitsbeschreibung 
 |**Taylan Özer, Wirtschaftsinformatik, s85500**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
 
-|**Claire Schubert, Wirtschaftsinformatik** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
+|**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
 |**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
 
-|**Johann Marthaus, Wirtschaftsinformatik**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
+|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
 
-|**Jonathan Palermo, Wirtschaftsinformatik** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
+|**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
-|**Danny Miersch, Wirtschaftsinformatik** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
+|**Danny Miersch, Wirtschaftsinformatik, s85567** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
 
-|**Jeremy Ziegert, Wirtschaftsinformatik** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+|**Jeremy Ziegert, Wirtschaftsinformatik, s85299** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 
 | **Luca Kurth, Verwaltungsinformatik, s85459** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.
 |===
