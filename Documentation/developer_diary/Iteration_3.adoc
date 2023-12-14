@@ -130,9 +130,9 @@ Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen f
 
 - Zum 15.12. wird die Thematik einer neuen Kamera angesprochen
 
-- Unser bisheriger Projektstand ergibt sogar schon einen Prototypen 
+- Unser bisheriger Projektstand ergibt sogar schon einen funktionalen und ansprechbaren Prototypen 
 
-- Einarbeitung von Notizen durch Herr Miersch und Herr Özer
+- Einarbeitung von Notizen durch Herr Miersch und Herr Özer in das Architecture Notebook
 
 
 ==== Zielstellung zur 3. Iteration
