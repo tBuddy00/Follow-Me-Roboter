@@ -77,13 +77,14 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 ==== Probleme und weitere Belange
 - **Erster Punkt:** Es wurde bereits ein USE-CASES-Diagramm von Herr Kurth erstellt, jedoch wurde dieses vor dem Treffen mit dem Projekt-Coach am 05.12.2023 (Dienstag) nicht auf GitHub gepushed. Dieses Diagramm konnte dementsprechend auch nicht Herr Zirkelbach gezeigt werden - nachträglich wurde das Diagramm an Herr Zirkelbach per Email gesendet. 
 
-- **Zweiter Punkt:** Bis zum Sonntag den 10.12.2023 sollte der erste Prototyp funktionieren. Hierbei sollte der Roboter in einem leeren Raum es schaffen einer Person u folgen. 
+- **Zweiter Punkt:** Bis zum Sonntag den 10.12.2023 sollte der erste Prototyp funktionieren. Hierbei sollte der Roboter in einem leeren Raum es schaffen einer Person zu folgen. 
 
 - **Dritter Punkt:** Wir berieten uns im allgemeinen darüber, ob wir Herr Zirkelbach zeitnah über unsere Ordnerstruktur ansprechen sollten, zwecks der Einführung einer ReadMe-Datei und eines Installation-Guides (Deutsch/Englisch).
 
 - **Vierter Punkt:** Ein Prototyp ist noch nicht vollständig vorhanden -> Software-Komponente fehlt (Herr Marthaus)
 
-- **Fünfter Punkt:** Der Alphabot II lässt sich über seine Kamera und einzelnen Glieder ansprechen
+- **Fünfter Punkt:** Der Alphabot II lässt sich über seine Kamera und einzelnen Glieder ansprechen.
+
 
 === Gruppenmeeting 12.12.2023
 ==== Anlass
@@ -134,6 +135,17 @@ Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen f
 
 - Einarbeitung von Notizen durch Herr Miersch und Herr Özer in das Architecture Notebook
 
+=== Gruppenmeeting 15.12.2023
+==== Anlass
+Am 15.12.2023 kam es zu einem Meeting mit Herr Neugebauer. Das Treffen diente dazu Herr Neugebauer den Stand unseres Projektes mitzuteilen und eventuelle Verbesserungen zu besprechen. 
+
+==== Probleme und weitere Belange
+- **Erster Punkt:** Als erstes sprachen wir mit Herr Neugebauer darüber, eine bessere Kamera zu verwenden. 
+Da unsere bisherige Kamera einen zu kleinen Winkel verwendet, kann es zu Problemen bei der Erkennung von Personen kommen. Es wurden mehrere Lösungen diskutiert, beispielsweise eine 3D Kamera die mit Punktwolkenverarbeitung arbeitet. Mit dieser, von Herr Neugebauer präsentierter 3D Kamera, ist das Arbeiten jedoch aufwendig. Ebenfalls wurde ein Leader in betracht gezogen. Dieser kann Konturen in 360° erkennen. Allerdings ist der Raspberry Pi dafür nicht ausgelegt. Bei einer Entscheidung für eine Kamera mit 3D Verarbeitung wäre ein Leader nicht mehr von Nöten. Hierbei müsste jedoch noch einmal geklärt werden ob die Arbeitsgeschwindigkeit des Raspberry Pi ausreichend ist. Herr Neugebauer sorgt dafür, dass wir eine neue Kamera erhalten. Dies ist vorwiegend für das zweite Semester von Bedeutung. Für die bessere Haltung der Kamera wird eine robuste Kamerhalterung benötigt. Hierbei wird in Betracht gezogen den 3D Drucker der Hochschule zu verwenden. Auch dieses Thema ist ahuptsächlich für das zweite Semester geplant. 
+Bei dem aufkommenden Problem mit der Kamera wurde das Thema Yolo (You only look once) in Betracht gezogen. Yolo könnteeine gute Möglichkeit zur verbesserten Objekterkennung darstellen. Aber auch hier muss überprüft werden ob der Raspberry Pi genug Leistung besitzt. Herr Neugebauer sendet uns per Email eine Masterarbeit, die Informationen über Yolo enthält und uns somit unterstützt. 
+
+- **Zweiter Punkt:**
+Da immer wieder die Kompatibilität des Raspberry Pi mit Kameras oder Systemen ein eventuelles Problem darstellte, wurde die Idee einer neuen Platform eingebracht. Hierbei wurde der Arduino in betracht gezogen. Bei alldem müssen wir uns über die Schnittstelle zwischen Ros und Arduino informieren. Die Idee eines Platform Wechsels sollte nocheinmal genau überdacht werden. 
 
 ==== Zielstellung zur 3. Iteration
 Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
