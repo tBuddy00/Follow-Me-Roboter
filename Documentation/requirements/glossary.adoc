@@ -74,7 +74,9 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 | Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
 
-|||
+|Arduino|Arduino ist eine Plattform für Elektronik- und Mikrocontroller-Projekte. Diese Plattform umfasst zum einen die Arduino Elektronik-Hardware-Boards und zum anderen die Arduino Software mit deren Hilfe die Boards programmiert werden können.|-
+
+|YOLO(You only look once)|YOLO (You Only Look Once) ist eine Methode/Weg zur Objekterkennung . Es ist der Algorithmus/die Strategie, die dahinter steckt, wie der Code Objekte im Bild erkennt.|-
 
 |===
 
