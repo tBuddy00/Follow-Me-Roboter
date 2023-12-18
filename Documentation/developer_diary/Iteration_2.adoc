@@ -13,7 +13,7 @@ Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von ac
 Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
 
 === Rollenverteilung
-Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. [WIRD NOCH ERGÄNZT]
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. 
 
 === Ablauf der Kommunikation unter Verwendung von Tools
 Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
@@ -25,9 +25,9 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
+|**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.
 
-|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
+|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
@@ -128,4 +128,3 @@ Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 03.12.20
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 2. Iteration und mit Beginn der 3. Iteration als Team ist die Zusammenführung der Bilderkennungssoftware und die Garantie der Funktionalität des Fahrroboters ins seiner Gesamtheit. 
-[WEITERS FOLGT !!!] 

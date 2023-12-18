@@ -13,7 +13,7 @@ Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von ac
 Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
 
 === Rollenverteilung
-Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. [WIRD NOCH ERGÄNZT]
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. 
 
 === Ablauf der Kommunikation unter Verwendung von Tools
 Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
@@ -25,9 +25,9 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch, Wirtschaftsingenieurwesen, s82413**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.[NOCH UNVOLLSTÄNDIG] 
+|**Theresa Stasch, Wirtschaftsingenieurwesen, s82413**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.
 
-|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und [NAMEN ERGÄNZEN] zum Aufbau der Bilderkennung für den Fahrroboter.
+|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
@@ -95,7 +95,7 @@ Der Anlass für dieses Gruppenmeeting bestand darin, einen allgemeinen Überblic
 - Herr Özer (Projektleiter),
 - Herr Miersch (Entwickler),
 - Herr Ziegert (Dokum. Bilderkennung/Entwicklung),
-- Frau Stasch (Entwicklerin)
+- Frau Stasch (u. a. Entwicklerin)
 
 **Verlauf:**
 
@@ -120,6 +120,7 @@ Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen f
 - Herr Marthaus (Entwickler)
 
 **Verlauf:**
+
  - Herr Özer wird mit Herr Miersch das Design.adoc Dokument mit Informationen befüllen, welche Frau Schubert ihm vorher schon zugesendet hat
 
  - Analog gilt dies auch für das Architecture Notebook mit Herr Miersch und Herr Özer 
@@ -137,15 +138,13 @@ Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen f
 
 === Gruppenmeeting 15.12.2023
 ==== Anlass
-Am 15.12.2023 kam es zu einem Meeting mit Herr Neugebauer. Das Treffen diente dazu Herr Neugebauer den Stand unseres Projektes mitzuteilen und eventuelle Verbesserungen zu besprechen. 
+Am Freitag (15.12.2023) hielten wir ein Gruppenmeeting mit Herr Prof. Neugebauer ab und im allgemeinen diente das treffen dazu. Herr Prof. Neugebauer unseren Projektstand mitzuteilen und ggf. eventuelle Verbesserungen seinerseits zu besprechen. 
 
-==== Probleme und weitere Belange
-- **Erster Punkt:** Als erstes sprachen wir mit Herr Neugebauer darüber, eine bessere Kamera zu verwenden. 
-Da unsere bisherige Kamera einen zu kleinen Winkel verwendet, kann es zu Problemen bei der Erkennung von Personen kommen. Es wurden mehrere Lösungen diskutiert, beispielsweise eine 3D Kamera die mit Punktwolkenverarbeitung arbeitet. Mit dieser, von Herr Neugebauer präsentierter 3D Kamera, ist das Arbeiten jedoch aufwendig. Ebenfalls wurde ein Leader in betracht gezogen. Dieser kann Konturen in 360° erkennen. Allerdings ist der Raspberry Pi dafür nicht ausgelegt. Bei einer Entscheidung für eine Kamera mit 3D Verarbeitung wäre ein Leader nicht mehr von Nöten. Hierbei müsste jedoch noch einmal geklärt werden ob die Arbeitsgeschwindigkeit des Raspberry Pi ausreichend ist. Herr Neugebauer sorgt dafür, dass wir eine neue Kamera erhalten. Dies ist vorwiegend für das zweite Semester von Bedeutung. Für die bessere Haltung der Kamera wird eine robuste Kamerhalterung benötigt. Hierbei wird in Betracht gezogen den 3D Drucker der Hochschule zu verwenden. Auch dieses Thema ist ahuptsächlich für das zweite Semester geplant. 
-Bei dem aufkommenden Problem mit der Kamera wurde das Thema Yolo (You only look once) in Betracht gezogen. Yolo könnteeine gute Möglichkeit zur verbesserten Objekterkennung darstellen. Aber auch hier muss überprüft werden ob der Raspberry Pi genug Leistung besitzt. Herr Neugebauer sendet uns per Email eine Masterarbeit, die Informationen über Yolo enthält und uns somit unterstützt. 
+- **Erster Punkt:** Als erstes sprachen wir mit Herr Neugebauer darüber, eine bessere Kamera zu verwenden und der Grund hierfür war, das unsere jetzige Kamera einen zu kleinen Bildwinkel verwendet und so ein Problem zur Personenerkennung bereiten kann. Es wurden mehrere Lösungen diskutiert, beispielsweise das wir eine 3D-Kamera mit "Punktwolkenverarbeitung" nutzen. Mit dieser, von Herr Prof. Neugebauer präsentierter 3D-Kamera, ist so das arbeiten jedoch aufwendiger. Ebenfalls wurde ein "LIDER" in betracht gezogen, dieser kann Konturen in 360° erkennen. Allerdings ist der Raspberry Pi womöglich hierfür nicht ausgelegt. Bei einer alternativen Entscheidung für eine 3D-Kamera mit einer bereits eingebauten ähnlichen Funktion, wäre ein "LIDER" so nicht mehr von Nöten - hierbei müsste jedoch erneut eklärt werden, ob die Kapazitäten des Raspberry Pi ausreichend hierfür sind. Herr Prof. Neugebauer teilte uns nun mit, dass wir aufjedenfall eine neue Kamera erhalten werden mit eingebautem "LIDER" - der Kameraumbau ist jedoch erst für die Weiterführung in Software Engineering II vorgesehen. Des Weiteren ist für eine bessere Kamerahaltung der eine robustere Alternative vonnöten - aktuell ist dies eher zu "einfach" beim Raspberry Pi im Aufbau selbst umgesetzt. Hierbei ziehen wir den 3D-Drucker der HTW in betracht - dieses Thema fällt hiermit ebenfalls in die Weiterführung in Software Engineering II. Bei dem aufkommenden Kameraproblem wurde das Thema "YOLO" (You only look once) durch Herr Prof. Neugebauer in betracht gezogen - YOLO könnte eine gute Möglichkeit zur verbesserten Objekterkennung darstellen und auch hier muss erneut geprüft werden, ob der Raspberry Pi genug Leistung besitzt. Herr Prof. Neugebauer sendet uns per E-Mail eine Masterarbeit, die Informationen über "YOLO" enthält und uns somit hier eine Hilfestellung anbietet. 
 
-- **Zweiter Punkt:**
-Da immer wieder die Kompatibilität des Raspberry Pi mit Kameras oder Systemen ein eventuelles Problem darstellte, wurde die Idee einer neuen Platform eingebracht. Hierbei wurde der Arduino in betracht gezogen. Bei alldem müssen wir uns über die Schnittstelle zwischen Ros und Arduino informieren. Die Idee eines Platform Wechsels sollte nocheinmal genau überdacht werden. 
+- **Zweiter Punkt:** Die Kompatibilität des Raspberry Pi mit einer neuen Kamera könnte durchaus Probleme bereiten - aufgrund von Gewicht etc. und so wurde die Idee einer neuen Plattform eingebracht und hierbei wurde eine Plattform mit Arduino-Schnittstelle in betracht gezogen. Ebenfalls müssen wir uns über die Schnittstelle zwischen Ros und Arduino informieren. 
+
+- **Dritter Punkt:** Herr Prof. Neugebauer hat eine Kamera bestellt und so haben wir diese heute am 18.12.2023 (Montag) auch entgegengenommen -> Frau Schubert
 
 ==== Zielstellung zur 3. Iteration
 Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
@@ -154,12 +153,8 @@ Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.20
 
 - 2. Vollständigkeit des 1. Prototypen
 
-- 3. Einarbeitung von Mitschriften in das Architecture Notebook
-
-- 4. 
+- 3. Einarbeitung von Mitschriften in das Architecture Notebook 
 
 
 ==== Ausblick
-Unser Ausblick bis zum Ende der 3. Iteration und mit Beginn der 4. Iteration als Team ist die Konstruktion eines 1. vollständigen Prototypen. 
-
-[WEITERS FOLGT !!!] 
+Unser Ausblick bis zum Ende der 3. Iteration und mit Beginn der 4. Iteration als Team ist die Konstruktion eines 1. vollständigen Prototypen. Des Weiteren streben wir ebenfalls eine Vervollständigung der Unterlagen für unseren Beleg an.

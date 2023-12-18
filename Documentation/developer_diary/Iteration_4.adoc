@@ -25,7 +25,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch, Wirtschaftsingenieurwesen**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation. 
+|**Theresa Stasch, Wirtschaftsingenieurwesen, s82413**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.
 
 |**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
@@ -35,14 +35,14 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Jeremy Ziegert, Wirtschaftsinformatik, s85299** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 
-| **Luca Kurth, Verwaltungsinformatik, s85459** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.
+| **Luca Kurth, Verwaltungsinformatik, s85459** | Herr Kurth trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 |===
 
 
 **ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
 
 
-=== Teamstruktur zur 1. Iteration (06.11.2023 - 19.11.2023)
+=== Teamstruktur zur 4. Iteration (20.12.2023 - 03.01.2024)
 
 |===
 |Team |Teambeschreibung |Teammitglieder
@@ -57,40 +57,45 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
 
-**ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
+ - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 1. Iteration 06.11.2023 - 19.11.2023 
+=== 4. Iteration 20.12.2023 - 03.01.2024 
 === Allgemein
-Die Hürde mit Herausgabe aller Projekte und Ihrer Projektleiter am 30.10.2023 bestand darin, zunächst das Team in seiner Gesamtheit erst einmal zusammenzutragen.
+==== Standerfassung aus 3. Iteration
 
-**Projektleiter (Taylan Özer):**
-So schrieb ich zunächst erst einmal jene Beteiligten für unser Projekt an und wartete circa eine Woche auf eine Rückmeldung aller aus unserem Team - jeder hat sich bei mir zurückgemeldet. Im Anschluss entstand eine WhatsApp-Gruppe, ein GitHub-Repository (geforked von Herr Prof. Anke und Herr Zirkelbach) und ein Discord-Server - unsere interne Kommunikation stand. Ich kümmerte mich demnach auch um unser erstes Auftraggeber-Gespräch mit Herr Prof. Neugebauer und etwa zwei Tage später um ein Projekt-Coach Gespräch.
+Mit Beginn unserer 4. Iteration (20.12.2023 - 03.01.2024) erreichten wir einen Meilenstein: Unser erster vollfunktionsfähiger Prototyp ist in Betrieb genommen und durch unseren Auftraggeber Herr Prof. Neugebauer abgesegnet worden. Wir führen demnach einen Punkt insbesondere fort: Vervollständigung unserer Belegabeit und die darin enthaltenen Dokumente. 
 
-**Schwierigkeiten Projektleiter**
-Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kamen wir auch zeitnah nach. Herr Zirkelbach erklärte uns als Team, dass es zunächst wichtig ist Rollen festzulegen und nicht all zu steif auf ein Konzept zu beharren, nicht bevor wir das erste Auftraggebergespräch geführt hätten. Wir gingen Herr Zirkelbachs Tipps nach und warteten auf das sehnlichst herbeigesehnte erste Gespräch mit Herr Prof. Neugebauer als unser Auftraggeber. 
+ - **Erster Punkt:**  
 
-- Zu diesem Zeitpunkt stand für uns als Team erst einmal die Rollenverteilung und die allgemeine Arbeitsstruktur klar und danach orientierten wir uns zunächst.
+ - **Zweiter Punkt:** 
 
-- Erwähntes Auftraggebergespräch fand zunächst erst einmal an zwei der geplanten Zieltage nicht statt, aufgrund dessen das Herr Neugebauer diese aus persönlichen Gründen hat verschieben      müssen. 
+ - **Dritter Punkt:** 
 
-=== Zielstellung mit dem Ende der 1. Iteration (06.11.2023 - 19.11.2023) in Übergang zur 2. Iteration (20.11.2023 - 04.12.2023) 
-- Am 17.11.2023 konnten wir unser geplantes Treffen mit Herr Prof. Neugebauer nachgehen und dieses ergab dann auch folgende Punkte für uns:
+ - **Vierter Punkt:** 
 
-- Klärung Aufbau des Alphabot 2 (Fahrroboter),
-- Klärung Betriebssystem -> Raspi OS oder ROS 2?,
-- Klärung OpenCV -> zwecks Bilderkennung,
-- Klärung unseres Bilderkennungskonzepts (angehängt in der Dokumentation)
+==== Probleme und weitere Belange
 
-=== Einbindung Bilderkennungskonzept
-.Bemerkung: Dieses Konzept diente dem allgemeinen Verständnis für Auftraggeber und Entwickler
-image::Bilderkennung_Konzept.drawio.png[]
+- **Erster Punkt:** 
 
-*Hinweis:*
- Das Bilderkennungskonzept wurde durch Frau Schubert entwickelt und durch unseren Auftraggeber in unserem ersten Auftraggebergespräch am 17.11.2023 bestätigt.
+- **Zweiter Punkt:**  
 
-In Zustimmung mit unserem Auftraggeber sind für unser 3. Semester die Zielstellung wie folgt:
+- **Dritter Punkt:** 
 
-Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters kümmern. 
+- **Vierter Punkt:** 
 
-- Ein zweites Auftraggebergespräch ist zum 15.12.2023 (Freitag) um 10:30 Uhr anberaumt.
+- **Fünfter Punkt:** 
+
+
+==== Zielstellung zur 4. Iteration
+Unsere **Zielstellung für die 4. Iteration** vom Zeitraum 20.12.2023 - 03.01.2024 haben wir folgende Punkte in unser Augenmerk genommen:
+
+- 1. Vervollständigung unserer Belegarbeit: Risk-List, Architecture Notebook etc.
+
+- 2. 
+
+- 3.  
+
+
+==== Ausblick
+Unser Ausblick bis zum Ende der 4. Iteration und mit Beginn der 5. Iteration als Team ist die Vervollständigung unserer Belegarbeit mit den dafür vorgesehenen Dokumenten.
