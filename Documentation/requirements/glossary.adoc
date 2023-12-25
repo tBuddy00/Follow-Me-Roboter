@@ -12,7 +12,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-|ROS 2|_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
+|ROS II |_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
 
 | Open CV  | _Open Source Computer Vision_ - eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung. |-
 
@@ -68,7 +68,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |Kernel | Der Kernel ist ein elementares, zentrales Modul eines Betriebssystems, mit anderen Worten: der Betriebssystemkern. | - 
 
-|Linux | Linux ist ein kostenloses Betriebssystem, das unter der GNU General Public License (GPL) veröffentlicht wird.| 
+|Linux | Linux ist ein kostenloses Betriebssystem, das unter der GNU General Public License (GPL) veröffentlicht wird.| -
 
 | Wireframe[s] | Wireframes repräsentieren Teile der Informationsarchitektur, der Benutzerführung und der Navigation in einem Softwareprojekt.| Drahtgittermodell
 
@@ -76,7 +76,11 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |Arduino|Arduino ist eine Plattform für Elektronik- und Mikrocontroller-Projekte. Diese Plattform umfasst zum einen die Arduino Elektronik-Hardware-Boards und zum anderen die Arduino Software mit deren Hilfe die Boards programmiert werden können.|-
 
-|YOLO(You only look once)|YOLO (You Only Look Once) ist eine Methode/Weg zur Objekterkennung . Es ist der Algorithmus/die Strategie, die dahinter steckt, wie der Code Objekte im Bild erkennt.|-
+|YOLO (You Only Look Once)|YOLO ist eine Methode/Weg zur Objekterkennung. Es ist der Algorithmus bzw. eine Strategie zur Bilderkennung von Objekten.|-
+
+|LiDAR |LiDAR ist eine Lasertechnologie, die die Oberflächen eines Objekts oder eines Raums dreidimensional erfasst. Das Wort "LiDAR" ist eine Abkürzung für Light Detection And Ranging. | - 
+
+| Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
 
 |===
 
@@ -85,8 +89,12 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 |===
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
-| ROS II | Roboter Operating System 2 | xx
-| IDE| Integrated Development Enviroment | xx
+
+| ROS II | Roboter Operating System 2 | _Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.
+
+| IDE | Integrated Development Enviroment | Ist eine integrierte Entwicklungsumgebung für Software und für die Anwendungsentwicklung, die gängige Entwicklertools in einer zentralen grafischen Oberfläche vereint.
+
+| YOLO | You Only Look Once | YOLO ist eine Methode/Weg zur Objekterkennung. Es ist der Algorithmus bzw. eine Strategie zur Bilderkennung von Objekten.
 
 |===
 
