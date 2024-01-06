@@ -27,6 +27,7 @@ Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das 
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 Wir trafen grundsätzlich die Annahme das unser Fahrroboter auf einem OS wie ROS II laufen muss, da dies bereits vorhandene Funktionen mit sich bringt und wir demnach weniger operativen Aufwand als Gruppe hätten.  
 
+Abhängigkeiten in unserem Projekt waren grundlegend bei den alten Schnittstellen des Raspberry Pi und der Kameraschnittstelle.
 
 
 
