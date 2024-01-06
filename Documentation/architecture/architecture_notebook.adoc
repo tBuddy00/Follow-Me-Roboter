@@ -13,9 +13,9 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 
 == Architekturziele und Philosophie
-Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das bestmögliche Ergebnis in gegebener Zeit herausholen und das Projekt so modular wie nur möglich gestalten wollten. Übersichtlichkeit und Erweiterbarkeit war unser großes Ziel Des Weiteren entsprach unsere Teamphilosophie dem Ansatz aufkommende Aufgaben so schnellst und bestmöglich für die jeweilige Iteration zu erledigen und demnach einen ersten Prototypen vollfunktionsfähig zu produzieren bzw. zu entwickeln.
+Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das bestmögliche Ergebnis in gegebener Zeit herausholen und das Projekt so modular wie nur möglich gestalten wollten. Übersichtlichkeit und Erweiterbarkeit war unser großes Ziel Des Weiteren entsprach unsere Teamphilosophie dem Ansatz, aufkommende Aufgaben so schnellst und bestmöglich für die jeweilige Iterationen zu erledigen und demnach einen ersten Prototypen vollfunktionsfähig zu produzieren bzw. zu entwickeln.
 
-**NOCH NACHTRAGEN**
+**NOCH NACHTRAGEN, WENN NÖTIG**
 
 
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
@@ -27,18 +27,23 @@ Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das 
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 Wir trafen grundsätzlich die Annahme das unser Fahrroboter auf einem OS wie ROS II laufen muss, da dies bereits vorhandene Funktionen mit sich bringt und wir demnach weniger operativen Aufwand als Gruppe hätten.  
 
-Abhängigkeiten in unserem Projekt waren grundlegend bei den alten Schnittstellen des Raspberry Pi und der Kameraschnittstelle.
+Abhängigkeiten in unserem Projekt waren grundlegend bei den alten Schnittstellen des Raspberry Pi und der Kameraschnittstelle. So auch erhielten wir das benötigte Batteriepakt zur Inbetriebnahme des Fahrroboters erst zu einem späteren Zeitpunkt und so zögerte sich die Testung allgemein hinaus.
 
 
+**NOCH NACHTRAGEN, WENN NÖTIG**
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
+Aufgrunddessen das unser Auftraggeber einen großen Freiraum in der Gestaltung unserer Architektur gelassen hat, finden sich hier nun keine weiteren Informationen wieder.
 
+**WOHER NEHMEN?**
 
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
 . Entscheidung oder Einschränkung oder Begründung 1
+
+
 . Entscheidung oder Einschränkung oder Begründung 2
 
 
