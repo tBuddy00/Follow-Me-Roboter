@@ -13,9 +13,9 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 
 == Architekturziele und Philosophie
-Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das bestmögliche Ergebnis in gegebener Zeit herausholen und das Projekt so modular wie nur möglich zu gestalten. Übersichtlichkeit und Erweiterbarkeit war unser großes Ziel.
+Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das bestmögliche Ergebnis in gegebener Zeit herausholen und das Projekt so modular wie nur möglich gestalten wollten. Übersichtlichkeit und Erweiterbarkeit war unser großes Ziel Des Weiteren entsprach unsere Teamphilosophie dem Ansatz aufkommende Aufgaben so schnellst und bestmöglich für die jeweilige Iteration zu erledigen und demnach einen ersten Prototypen vollfunktionsfähig zu produzieren bzw. zu entwickeln.
 
-Des Weiteren entsprach unsere Teamphilosophie dem Ansatz aufkommende Aufgaben so schnellst und bestmöglich für die jeweilige Iteration zu erledigen und demnach einen ersten Prototypen vollfunktionsfähig zu produzieren bzw. zu entwickeln.
+**NOCH NACHTRAGEN**
 
 
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
@@ -25,6 +25,7 @@ Des Weiteren entsprach unsere Teamphilosophie dem Ansatz aufkommende Aufgaben so
 
 == Annahmen und Abhängigkeiten
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
+Wir trafen grundsätzlich die Annahme das unser Fahrroboter auf einem OS wie ROS II laufen muss, da dies bereits vorhandene Funktionen mit sich bringt und wir demnach weniger operativen Aufwand als Gruppe hätten.  
 
 
 
@@ -52,7 +53,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 Nach aktuellen Gesichtspunkten nutzen wir ROS II Humble und dies wird zur allgemeinen Ansteuerung der Glieder vom Alphabot 2 verwendet und so sind die Hauptmerkmale die Fähigkeit die einzelnen Roboterglieder ansteuern zu können und so stellt dies sogar ein OS dar.
 
 **Architekturmechanismus 2** 
-Nach aktuellen Gesichtspunkten nutzen wir Ubuntu 22.04, welches das von ROS II Humble Dokumentation verlangte Betriebssystem darstellt.
+Nach aktuellen Gesichtspunkten nutzen wir den Ubuntuserver 22.04, welches das von ROS II Humble Dokumentation verlangte Betriebssystem darstellt.
 
 
 **Architekturmechanismus 3** 
