@@ -33,7 +33,7 @@ Aufgrund der Plattformlimitierung vom Alphabot 2 und der Komplexität der Bilder
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
-Aufgrunddessen das unser Auftraggeber einen großen Freiraum in der Gestaltung unserer Architektur gelassen hat, finden sich hier nun keine weiteren Informationen wieder.
+Aufgrunddessen das unser Auftraggeber unserem Team einen großen Freiraum in der Gestaltung unserer Architektur gelassen hat, finden sich hier nun keine weiteren Informationen wieder.
 
 
 **WOHER NEHMEN?**
@@ -42,7 +42,7 @@ Aufgrunddessen das unser Auftraggeber einen großen Freiraum in der Gestaltung u
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
 . Entscheidung oder Einschränkung oder Begründung 1
-Wir entschieden uns für das OS ROS II aufgunddessen das dies vom Auftraggeber Herr Prof. Neugebauer empfohlen wurde und dies Komponenten mit sich bringt, die durchaus essenziell für das Projekt bzw. den Alphabot 2 sind.
+Wir entschieden uns für das OS ROS II aufgunddessen, dass dies vom Auftraggeber Herr Prof. Neugebauer empfohlen wurde und dies Komponenten mit sich brachte, die durchaus essenziell für das Projekt bzw. den Alphabot 2 sind.
 
 . Entscheidung oder Einschränkung oder Begründung 2
 
@@ -69,6 +69,11 @@ Nach aktuellen Gesichtspunkten verwenden wir OpenCV als eine freie Plattform zur
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
 
+ - Hardwareebene: Raspberry Pi, Alphabot 2
+ - Betriebssysteme: ROS II Humble, Ubuntuserver 22.04,
+ - Softwareebene: eigens entwickelte Software, Opensource-Software
+ 
+
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
@@ -87,3 +92,5 @@ Folgende Sichten werden empfohlen:
 
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+image::use-case_v01.jpeg[]
+.
