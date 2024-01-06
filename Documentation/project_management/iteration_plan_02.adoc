@@ -23,7 +23,7 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
  * ROS II wird als OS für unseren Rasberry Pi festgelegt und implementiert + 
  * Dokumentation zur Implementierung führen +
- * Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung genutzt +
+ * Open CV wird als Hauptaugenmerk zum Zwecke der Bilderkennung eingesetzt +
 
 
 == Aufgabenzuordnung
@@ -39,13 +39,13 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Einrichten des Lokalen Git`s| Hoch | 1 | Erledigt | ? | 1|Jedes Teammitglied | 0,5| 0
 |Programmierumgebung einrichten| Mittel |1 |Erledigt|? |1| Jedes Teammitglied| 0.5 |0
 |Kamera node erstellen | Hoch |2 |Erledigt|2 |1 |Claire Schubert, Johnathan Palermo | 4 |0
-|Betriebssystem auf dem alphabot erstellen| Hoch |3 |Erledigt|? |1|Claire Schubert |15| 0 
+|Betriebssystem auf dem Alphabot 2 erstellen| Hoch |3 |Erledigt|? |1|Claire Schubert |15| 0 
 |Alphabot 2 Zusammenbauen| Hoch |2 |Erledigt|? |1| 
 Claire Schubert| 2 |0
-|Instalation guide anlegen| Mittel |1 |Erledigt|? |1| 
+|Installation guide anlegen| Mittel |1 |Erledigt|? |1| 
 Claire Schubert,
 Danny Miersch | 3 |0
-|Codeformatierungs Guildlines| Mittel |1 |Erledigt|? |1| 
+|Guidelines für Codeformatierung| Mittel |1 |Erledigt|? |1| 
 Claire Schubert,
 Taylan Özer,
 Johann Marthaus| 1 |0
@@ -64,9 +64,9 @@ Theresa Stasch| 2 |0
 |===
 | Problem | Status | Notizen
 
-|Bei dem Zusammenbau des Alpbot 2 viel auf das keine Batterien im Kit enthalten sind welche für die Inbetriebnahme benötigt werden.
- | behoben | Die Batterien wurden Von Herrn Prof Neugebauer nachträglich bereitgestellt. 
-|Wir führten eine teaminterne Umfrage darüber, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. | Behoben| Ergebnis: Englisch
+|Bei dem Zusammenbau des Alphabot 2 fiel auf, dass keine Batterien im Bausatz mit enthalten waren, jedoch sind gerade diese essenziell für die Innbetriebnahme.
+ | behoben | Die Batterien wurden vom Auftraggeber Herr Prof. Neugebauer nachträglich bereitgestellt. 
+|Wir führten eine interne Teamumfrage darüber durch, ob wir unsere Code-Kommentare auf Englisch oder Deutsch führen wollen. | behoben| Ergebnis der Umfrage: Englisch
 
 
 |===
@@ -74,8 +74,8 @@ Theresa Stasch| 2 |0
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Alphabot 2 ist fertig zusammgebaut und das Betriebssytem wurde erfolgreich instaliert.
-* Es gibt eine gute Koordination zwischen den Teams.
+* Der Alphabot 2 ist fertig zusammgebaut und das Betriebssytem wurde erfolgreich installiert.
+* Es herrscht eine gute Teamkoordination.
 * Es gab keine großen Schwierigkeiten oder Probleme mit der Bearbeitung der Aufgaben.
 
 
@@ -94,22 +94,25 @@ Theresa Stasch| 2 |0
 
 **Beurteilung im Vergleich zu den Zielen** +
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-Innnerhalb der zweiten Iteration (20.11.2023-03.12.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
+Innnerhalb der 2. Iteration (20.11.2023-03.12.2023) wurden alle Ziel, welche sich vorgenommen wurden erreicht.
 
 **Geplante vs. erledigte Aufgaben** +
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-Wärend der zweiten Iteration wurden alle Aufagben welche sich vorgenommen wurden erledigt, ebenso wurde keine Aufgabe verschoben.
+Während der 2. Iteration wurden alle Aufgaben welche sich vorgenommen wurden, erledigt und so wurde erneut keine Tätigkeit zeitlich nach hinten gestellt.
 
 **Beurteilung im Vergleich zu den Bewertungskriterien** +
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-Der Alphabot2 wurde erfolgreich zusammengebaut und das betriebsystem ist funktionstätig. +
-Bilderkennungsdemo mittels Open CV kreieren. + 
-Anwesenheitspflicht zur Beginn einer Iteration. +
+
+- Der Alphabot 2 wurde erfolgreich zusammengebaut und das Betriebsystem ist funktionstüchtig. +
+
+- Es herrscht weiterhin eine gute Teamkoordination und unsere Teamstruktur wurde wie in der 1. Iteration auch, so beibehalten. +
+
+- Alle gesteckten Aufgaben bzw. Ziele konnten und wurden auch erreicht. +
 
 
 **Andere Belange und Abweichungen** +
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
-
+Keine Bekannt.
 
 
