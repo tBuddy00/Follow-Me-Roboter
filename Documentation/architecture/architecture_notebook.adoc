@@ -15,6 +15,8 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 == Architekturziele und Philosophie
 Unsere Philosophie besteht in diesem Projekt im allgemeinen darin, dass wir das bestmögliche Ergebnis in gegebener Zeit herausholen und das Projekt so modular wie nur möglich gestalten wollten. Übersichtlichkeit und Erweiterbarkeit war unser großes Ziel Des Weiteren entsprach unsere Teamphilosophie dem Ansatz, aufkommende Aufgaben so schnellst und bestmöglich für die jeweilige Iterationen zu erledigen und demnach einen ersten Prototypen vollfunktionsfähig zu produzieren bzw. zu entwickeln.
 
+- 
+
 **NOCH NACHTRAGEN, WENN NÖTIG**
 
 
@@ -29,12 +31,16 @@ Wir trafen grundsätzlich die Annahme das unser Fahrroboter auf einem OS wie ROS
 
 Abhängigkeiten in unserem Projekt waren grundlegend bei den alten Schnittstellen des Raspberry Pi und der Kameraschnittstelle. So auch erhielten wir das benötigte Batteriepakt zur Inbetriebnahme des Fahrroboters erst zu einem späteren Zeitpunkt und so zögerte sich die Testung allgemein hinaus.
 
+Aufgrunddessen das wir einen Alphabot 2 und der Komplexität der Bilderkennungsprozessen, müssen wir die Leistungsfähigkeit des Raspberry Pi im Blick behalten und dahingehend sind wir eingeschränkt auf diese Plattform.
+
+
 
 **NOCH NACHTRAGEN, WENN NÖTIG**
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 Aufgrunddessen das unser Auftraggeber einen großen Freiraum in der Gestaltung unserer Architektur gelassen hat, finden sich hier nun keine weiteren Informationen wieder.
+
 
 **WOHER NEHMEN?**
 
