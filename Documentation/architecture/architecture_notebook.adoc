@@ -92,5 +92,4 @@ Folgende Sichten werden empfohlen:
 
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
-image::use-case_v01.jpeg[]
-.
+link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/Documentation/requirements/use-case_model.adoc[Hier klicken: Use Cases]
