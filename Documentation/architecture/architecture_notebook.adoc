@@ -41,10 +41,13 @@ Aufgrunddessen das unser Auftraggeber unserem Team einen großen Freiraum in der
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Entscheidung oder Einschränkung oder Begründung 1
-Wir entschieden uns für das OS ROS II aufgunddessen, dass dies vom Auftraggeber Herr Prof. Neugebauer empfohlen wurde und dies Komponenten mit sich brachte, die durchaus essenziell für das Projekt bzw. den Alphabot 2 sind.
+. Wir entscheiden uns auf Wunsch des Auftraggebers für ROS II als unser Software-Framework, da es eine solide Grundlage für den Aufbau komplexer Robotic-Systeme bietet. Dank seines modularen Aufbaus können wir unseren Programmcodes flexibel und variabel einsetzen.
 
-. Entscheidung oder Einschränkung oder Begründung 2
+. Bei der Versionsauswahl fiel unsere Entscheidung auf ROS II Humble aufgrund seiner aktuellen Implementierung, der detaillierten Dokumentation und seinen vielfältigen Erweiterungsmöglichkeiten. Die neuste Version wird ausgeschlossen, da sie aufgrund mangelnder Paketverfügbarkeit nicht förderlich wäre.
+
+. Bei der Betriebssystemwahl setzen wir auf Ubuntu 22.04 Server. Dies erfolgt gemäß den Anforderungen der ROS 2 Humble Dokumentation, den Hardwarebeschränkungen des Raspberry Pi und der umfassend vorhanden Dokumentation dieser Version.  
+
+. Das Ubiquity Robotics Raspberry Pi Image ist für unser Projekt nicht geeignet. Dies resultiert aus Problemen mit der Kamera-Implementierung sowie der festgestellten Inkompatibilität vieler Packages, die aufgrund ihrer Abhängigkeit von Python 2.7 nicht genutzt werden können.
 
 
 == Architekturmechanismen
