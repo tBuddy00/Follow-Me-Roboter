@@ -98,6 +98,7 @@ Während der Dauer der 1. Iteration (06.11.2023-19.11.2023) wurden alle Aufgaben
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 Keine bekannt
 
+image::iteration_plan_01_diagramm.png[]
 
 
 
