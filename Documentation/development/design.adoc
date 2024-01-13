@@ -1,5 +1,4 @@
-= Design: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Design: Follow-Me Fahrroboter
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -14,15 +13,15 @@ Ubuntu Server ist eine Variante des Ubuntu-Betriebssystems, die speziell für de
 Ubuntu Server basiert auf dem Linux-Kernel, einem Open-Source-Betriebssystemkern. Dazu bietet es Stabilität, Sicherheit und Skalierbarkeit. +
 
 
-== Ros2 humble 
+== ROS II Humble 
 
-ROS2 humble ist eine Weiterentwicklung des ursprünglichen ROS und wurde entwickelt, um die Anforderungen moderner Roboteranwendungen besser zu erfüllen. 
+ROS II Humble ist eine Weiterentwicklung des ursprünglichen ROS und wurde entwickelt, um die Anforderungen moderner Roboteranwendungen besser zu erfüllen. 
 
 Es ist ein Open-Source-Framework, das Werkzeuge und Bibliotheken für die Entwicklung von Roboteranwendungen bereitstellt. 
 
-ROS2 unterstützt verschiedene Programmiersprachen, ermöglicht die Kommunikation zwischen verschiedenen Teilen eines Robotersystems und bietet Funktionen für die Sensordatenverarbeitung, Steuerung und Aktorsteuerung.
+ROS II unterstützt verschiedene Programmiersprachen, ermöglicht die Kommunikation zwischen verschiedenen Teilen eines Robotersystems und bietet Funktionen für die Sensordatenverarbeitung, Steuerung und Aktorsteuerung.
 
-== Raspberry pi 4 8gb
+== Raspberry Pi 4 8GB
 
 Der Raspberry Pi ist ein kostengünstiger, kleinen Computer, der vielseitig einsetzbar ist und gleichzeitig einfach zu bedienen ist.
 

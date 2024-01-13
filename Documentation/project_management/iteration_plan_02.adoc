@@ -115,4 +115,7 @@ Während der 2. Iteration wurden alle Aufgaben welche sich vorgenommen wurden, e
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 Keine Bekannt.
 
+**Essence Navigator Diagramm**
+
+.Essence Navigator Diagramm aus 1. Iteration
 image::iteration_plan_02_diagramm.png[]
