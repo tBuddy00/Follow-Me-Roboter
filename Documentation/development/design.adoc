@@ -6,6 +6,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 
+.Das Diagramm beschreibt konkret den Aufbau vom Alphabot 2
+image::Design_v3.png[]
 
 == Ubuntu Server 22.04.03 LTS (64 bit)
 

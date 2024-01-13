@@ -4,6 +4,9 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 == Use-Case: UC01 <Alphabot 2 einschalten>
 
+.USE-Case zum einschalten des Alphabot 2
+image::use-case_v01.jpeg[]
+
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Bei dem Use Case 1 handelt es sich darum das der Alphabot 2 vom Akteur gestartet wird.
