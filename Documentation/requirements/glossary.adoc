@@ -1,4 +1,4 @@
-= Glossar: {project-name}
+= Glossar: Follow-Me Fahrroboter
 Luca Kurth <s85459@htw-dresden.de>; Jonathan Palermo <s85287@htw-dresden.de>; Jeremy Ziegert <s85299@htw-dresden.de>; Taylan Özer <s85500@htw-dresden.de>; Danny Miersch <s85567@htw-dresden.de>; Johann Marthaus <s85892@htw-dresden.de>; Theresa Stasch <s82413@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
