@@ -76,8 +76,6 @@ Nach aktuellen Gesichtspunkten verwenden wir OpenCV als eine freie Plattform zur
  - Betriebssysteme: ROS II Humble, Ubuntuserver 22.04,
  - Softwareebene: eigens entwickelte Software, Opensource-Software
  
-
-
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
 
