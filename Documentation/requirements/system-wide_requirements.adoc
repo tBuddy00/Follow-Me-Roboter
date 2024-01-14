@@ -1,12 +1,11 @@
-= System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= System-Wide Requirements: Follow-Me Fahrroboter
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema> spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt Follow-Me Fahrroboter spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
@@ -25,9 +24,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-Die Bedienung des Alphbots wird so leicht wie möglich gestaltet so das keine großen Vorkenntnisse benötigt werden. 
-Ebenso gibt es eine klare und gut strukturierte Dokumentation welche das Erlernen der Software erleichtert.
-Die Dokumentation wird in Deutscher Sprache durchgeführt, jedoch werden die Kommentare im Prokrammcode auf englisch sein.
+Die Bedienung des Alphbots wird so leicht wie möglich gestaltet so das keine großen Vorkenntnisse benötigt werden. Ebenso gibt es eine klare und gut strukturierte Dokumentation welche das erlernen der Software erleichtert. Die Dokumentation wird in deutscher Sprache durchgeführt, jedoch werden die Kommentare im Programmcode auf englisch sein.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
@@ -103,10 +100,10 @@ Bewertung der Zufriedenheit der Benutzer mit dem bereitgestellten Support und de
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 //* Ressourcenbegrenzungen
-* zu nutzende Komponenten (Alphabot 2 pi)
+* zu nutzende Komponenten (Alphabot 2 PI)
 * Vorgaben für die Programmiersprache (Python)
-* zu unterstützende Plattformen / Betriebssysteme (ROS 2)
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll ( Raspberry pi 4 8gb) 
+* zu unterstützende Plattformen / Betriebssysteme (ROS II)
+* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll ( Raspberry Pi 4 8GB) 
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
