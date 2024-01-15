@@ -153,6 +153,8 @@ sudo pip install smbus
 == Installing Packages
 === Installing the ros2_for_waveshare_alphabot2 Package 
 
+This repository is a ROS II version based upon the link:https://github.com/ShaunPrice/ROS_for_Waveshare_Alphabot2[ROS for Waveshare Alphabot2 Repository] by Shaun Price.
+
 Download and build the Repository:
 
 [source,shell]
