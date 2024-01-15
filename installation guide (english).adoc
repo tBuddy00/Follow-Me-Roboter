@@ -43,7 +43,7 @@ Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/m
 === Creating the Workspace
 
 If you encounter issues, follow link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial]. +
-Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[isntallation script]. +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[installation script]. +
 To manually create the workspace, execute the following commands:
 [source,shell]
 ----
@@ -135,4 +135,34 @@ ros2 run camera_package camera_test
 This saves an image in the previously created `image` directory. +
 If you see the image, the camera is working.
 
+== Installing Dependencies 
+=== Install Rpi.GPIO
+Install the Python GPIO Library (allows acces to the GPIO Pins of the Raspberry Pi):
+[source,shell]
+----
+pip3 install RPi.GPIO
+----
+
+=== Installing the Servo Library 
+Install the python libraries to enable communication with the PCA9685 servo:
+[source,shell]
+----
+sudo pip install smbus
+----
+
+== Installing Packages
+=== Installing the ros2_for_waveshare_alphabot2 Package 
+
+Download and build the Repository:
+
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
+cd ~/ros2_ws
+colcon build --symlink-install
+source install/setup.bash
+----
+
+  
 // Line 132 might change in the future
