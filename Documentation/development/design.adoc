@@ -36,5 +36,42 @@ Anwendungsbereiche des Raspberry Pi`s sind Desktop-Computing, Heimautomatisierun
 
 == Alphabot 2 
 
-Der Alphabot 2 ist für die Verwendung mit Raspberry Pikonzipiert.
+Der Alphabot 2 ist für die Verwendung mit Raspberry Pi konzipiert.
 Der Alphbapt 2 beinhaltet bereits sehr umfangreiche Funktionen bzw. Fähigkeiten, wie z.B. die Linienverfolgung, Hindernisvermeidung, Bluetooth/Infrarot/WiFi-Fernbedienung, Videoüberwachung etc.
+
+
+== camera_opencv_node
+
+Die camera_opencv_node empfängt Bilder von der /image_raw-Topic, konvertiert sie mithilfe von cv_bridge in OpenCV-Bilder und leitet sie zur Bilderkennung weiter. Die resultierenden Positionsdaten, im Format [x-Koordinate, y-Koordinate, Höhe der Person, Breite der Person, Gesamthöhe des Bildes, Gesamtbreite des Bildes], werden als /position_data-Topic veröffentlicht.
+
+== Bilderkennungsalgorithmus
+
+Details bei Johan
+
+== movement_control_node
+
+Die movement_control_node empfängt Daten von der /position_data-Topic, verarbeitet sie mittels der Calculate-Funktion, berechnet den Mittelpunkt der Person und einen proportionalen Wert zur Gesamtgröße des Bildes. Das resultierende genormte Koordinatensystem wird als pan_tilt-Topic veröffentlicht.
+
+== pan_tilt
+
+Die pan_tilt-Node empfängt Signale von der pan_tilt-Topic, verarbeitet sie in ein servo-kompatibles Format und sendet das Signal mithilfe der smbus-Bibliothek an die Servos.
+
+== motion
+
+Die motion-Node empfängt Signale von der cmd_vel-Topic und wandelt sie in für GPIO verständliche Signale um.
+
+== ros2_v4ls_camera
+
+Das ros2_v4ls_camera-Package wird aufgrund seiner Simplizität und Einfachheit verwendet. Es hat sich als erste funktionierende Lösung herausgestellt, nachdem Probleme mit link:https://www.raspberrypi.com/documentation/computers/camera_software.html[Libcamera, Raspicam] und link:https://github.com/UbiquityRobotics/raspicam_node[raspicam_node] auftraten. Die direkte Erzeugung der Topic /image_raw und die einfache Installation machen es zu einer optimalen Wahl.
+
+== Cv_bridge
+
+link:https://github.com/ros-perception/vision_opencv/tree/rolling/cv_bridge[Cv_bridge] wird aufgrund seiner Schlichtheit als eine der besten Möglichkeiten verwendet, ROS2-Bilder in OpenCV-Bilder umzuwandeln.
+
+== RPI.GPIO Bibliothek
+
+RPI.GPIO wird aufgrund seiner Kompatibilität mit Ubuntu 22.04 als GPIO-Bibliothek verwendet.
+
+== Smbus Bibliothek
+
+Smbus wird als Standard-Servo-Bibliothek verwendet und ist kompatibel mit dem Alphabot.
