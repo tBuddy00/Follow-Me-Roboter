@@ -109,9 +109,76 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| xx
-| xx
-| xx
-| xx
-| xx
+| topic
+| Eine Topic ist ein Kommunkationskanal für ROS II, der es ermöglicht, Daten zwischen verschiedenen Knoten (Nodes) in einem ROS II Netzwerk auszutauschen.
+| Format: nicht festgelegt
+Syntax: beginnen immer mit / +
+| Müssen dem Ros II Message-Format Format entsprechen
+| -
+
+|topic: +
+/image_raw 
+|topic, welche unverarbeitete Rohbilddaten der Kamera überträgt 
+|sensor_msgs.msg +
+Image Formate
+| unverbeitetes Bild der Kamera
+| -
+
+|topic: +
+/opencv_image
+|Überträgt bearbeitete Bilder von der camera_opencv-Node. Diese Bilder sind das Ergebnis der Human Detection Funktion und werden anschließend von der camera_streamer-Node empfangen.
+|sensor_msgs.msg +
+Image Formate
+|Bild mit Koordinatensystem sowie einer Visualisierung des Trackings der Person
+|-
+
+|topic: +
+/position_data
+|
+|
+|
+|
+
+|topic: +
+/joystick
+|
+|
+|
+|
+
+|topic: +
+/servo
+|
+|
+|
+|
+
+|Data Stream
+|
+|
+|
+|
+|Ros II Image
+|
+|
+|
+|
+
+|opencv Image
+|
+|
+|
+|
+
+|Processed Image
+|
+|
+|
+|
+
+|coordinates
+|
+|
+|
+|
 |===
