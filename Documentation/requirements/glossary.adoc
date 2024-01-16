@@ -121,64 +121,82 @@ Syntax: beginnen immer mit / +
 |topic, welche unverarbeitete Rohbilddaten der Kamera überträgt 
 |sensor_msgs.msg +
 Image Formate
-| unverbeitetes Bild der Kamera
+| ''
 | -
 
 |topic: +
 /opencv_image
-|Überträgt bearbeitete Bilder von der camera_opencv-Node. Diese Bilder sind das Ergebnis der Human Detection Funktion und werden anschließend von der camera_streamer-Node empfangen.
+|Überträgt bearbeitete Bilder von der camera_opencv-Node. Diese Bilder sind das Ergebnis der Human-detection-function und werden anschließend von der camera_streamer-Node empfangen.
 |sensor_msgs.msg +
 Image Formate
-|Bild mit Koordinatensystem sowie einer Visualisierung des Trackings der Person
+|'' +
+Bild mit Koordinatensystem sowie einer Visualisierung des Trackings der Person
 |-
 
 |topic: +
 /position_data
-|
-|
-|
-|
+|Liefert Information über die Position der Person im Bild, welche von der Human-detection-function erzeugt werden.
+|std_msgs.msg +
+Int32MultiArray Formate +
+Array mit 7 int Werten
+|'' +
+Die werte für custom_x center of person, custom_y center of person, width of person, height of person müssen im Bild liegen, also kleiner als width of image / height of image sein.
+|-
 
 |topic: +
 /joystick
-|
-|
-|
-|
+|Überträgt die von der Joystick-node empfangenen Joystick Signale an die Movement_controle-node.
+|std_msgs.msg 
+String
+|'' +
+Muss eines von 5 Steuersignalen sein:
+Center, Up, Right, Left, Down
+|-
 
 |topic: +
 /servo
-|
-|
-|
-|
+|Übergibt die von der Movement_control-node erzeugten Steuer Daten an die Pan_tilt-node.
+|std_msgs.msg +
+Int32MultiArray Format +
+Array mit 2 int werten +
+[0] - servo winkel x +
+[1] - servo winkel y
+| '' +
+Der Wert für Winkel x mus zwischen -90 und 90 liegen +
+Der Wert für Winkel y mus zwischen -80 und 30 liegen
+|-
 
 |Data Stream
-|
-|
-|
-|
+|Übertragung von Daten innerhalb einer node. 
+|-
+|-
+|-
+
 |Ros II Image
-|
-|
-|
-|
+|Identisch mit dem von /image_raw übertragenen Bild.
+|sensor_msgs.msg Image Formate
+|siehe /image_raw
+|-
 
 |opencv Image
-|
-|
-|
-|
+|Ros2 Image welches von der cv_bridge-fuction in ein OpenCV Image Format umgewandelt wurde.
+|bgr8
+|siehe /image_raw
+|-
 
 |Processed Image
-|
-|
-|
+|Das von der human_detection function bearbeitete Bild. Anfags Identisch mit dem von /opencv_image übertragenen Bild, wird dann in der Camera_streamer-node mit Hilfe von cv_bridge in das OpenCV Image Format umgewandelt.
+|Beginn: +
+sensor_msgs.msg +
+Image Formate
+Später: bgr8
+|siehe /opencv_image
 |
 
 |coordinates
-|
-|
-|
-|
+|Sind die von der Human_detection-function erzeugten Daten welche dan als /position_data weitergegeben werden. 
+|Array mit 7 int werten 
+(siehe /position_data)
+|siehe /position_data
+|-
 |===
