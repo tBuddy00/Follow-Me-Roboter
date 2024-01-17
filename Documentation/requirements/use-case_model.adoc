@@ -10,9 +10,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Alphabot 2 Starten 
-* *UC02*: ...
-* *UC03*: Alphabot 2 Beenden
+* *UC01*: Alphabot 2 
+//* *UC02*: ...
+//* *UC03*: Alphabot 2 Beenden
 
 == Use Case Diagramm
 // ...
