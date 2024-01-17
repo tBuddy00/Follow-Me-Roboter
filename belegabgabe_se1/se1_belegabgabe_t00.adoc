@@ -1,7 +1,7 @@
 // --- 1. Projektthema -------------------------
-= SE I - Belegabgabe: {project-name}
+= SE I - Belegabgabe: Follow-Me Fahrroboter
 // --- 2. Teammitglieder -----------------------
-Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>
+Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Theresa Stasch s82413@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
 // --- 3. Abgabedatum --------------------------
 01. Januar 2020
 // ---------------------------------------------

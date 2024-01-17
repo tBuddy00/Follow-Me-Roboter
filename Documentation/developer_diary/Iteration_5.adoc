@@ -66,25 +66,9 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 Mit Beginn unserer 5. Iteration (04.01.2024 - 18.01.2024) hatten wir aufgrund der Weihnachtstage und den Neujahrstagen nichts weiter zunächst an Aufgaben erledigen können, dennoch ist die Zielstellung weiterhin die Vervollständigung unserer Belegarbeit. Weiterhin fehlen folgende Dokumente: Risk List, NFAs (Systemwide Requirements), Funktionale Anforderungen, Architecture Notebook und der Iteration Plan mt zwei eingebundenen Diagrammen aus dem Essence Navigator - die Issues werden hierzu noch auf GitHub formuliert.
 
- - **Erster Punkt:**  
-
- - **Zweiter Punkt:** 
-
- - **Dritter Punkt:** 
-
- - **Vierter Punkt:** 
-
 ==== Probleme und weitere Belange
 
 - **Erster Punkt:** Zur finalen Vervollständigung der Belegarbeit sind wie o. g. noch Unterlagen einzureichen bzw. in das Repository auf GitHub zu pushen. 
-
-- **Zweiter Punkt:**  
-
-- **Dritter Punkt:** 
-
-- **Vierter Punkt:** 
-
-- **Fünfter Punkt:** 
 
 === Konsultation 05.01.2024
 ==== Anlass
