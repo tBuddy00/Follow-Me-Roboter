@@ -13,9 +13,9 @@ Bei dem Use Case 1 handelt es sich darum das der Alphabot 2 vom Akteur gestartet
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur>
+==== Akteur ist eine Person
 
-Der Akteur ist ein 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
+Der Akteur ist eine 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
 
 
 === Vorbedingungen
@@ -26,18 +26,17 @@ Bevor der Use Case beginnen kann muss sichergestellt sein das der Alphabot 2 ein
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Akteur denn Alphabot 2 einen Startbefehl via Konsole gibt 
-. Das System des Alphabots fährt hoch 
-. Es werden alle Sensoren des Roborters aktiviert
-. Die Programme des Roboters werden gestartet
-. Durch eine LED wird angezeigt wie der Status ist
-. Die Kamera des Alphabots 2 ritet sich nach vorn aus   
-. Der Use Case ist abgeschlossen wenn der Alphabot 2 vollkommen hochgefahren ist.
+. Alphabot 2 startet
+. Alphabot 2 wartet auf Input von Person -> Input erhalten: Person finden wird gestartet -> wartet auf Input von Person -> Input erhalten: Personen Verfolgung gestartet und Person wird gefolgt
+
+. Input von Person erhalten: Person folgen stoppen
+. Input von Person erhalten: Person finden stoppen
+. Input von Person erhalten: System stoppen 
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
+==== Alternativer Ablauf 1
 Wenn beim Start des Alphabots 2 ein Fehler auftritt dann, 
 
 . Gibt die LED des Roboters ein Signal aus das ein Fehler aufgetreten ist 
@@ -48,25 +47,26 @@ Wenn beim Start des Alphabots 2 ein Fehler auftritt dann,
 //. bleibt der Alphabot 2 stehen und wartet bis Akteur alleine im Sichtfeld ist 
 //. Der Use Case wird im Schritt 7 fortgesetzt.
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
 ==== <Szenario 1>
 . <Szenario 1, Schritt 1>
-. …
+. … **IST NOCH AUSZUFÜLLEN!**
 . <Szenario 1, Schritt n>
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
+**IST NOCH AUSZUFÜLLEN!**
 ==== <Nachbedingung 1>
 
 === Besondere Anforderungen
