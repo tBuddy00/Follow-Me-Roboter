@@ -94,7 +94,9 @@ include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,level
 = Developer diary
 * 1.Iteration
 * 2.Iteration
-//* 3.Iteration
+* 3.Iteration
+* 4.Iteration
+* 5.Iteration
 
 :imagesdir: {developer-diary}/images
 
@@ -104,15 +106,21 @@ include::{docs-developer-diary}/Iteration_1.adoc[lines=1..1;4..-1,leveloffset=+1
 //2. Iteration
 include::{docs-developer-diary}/Iteration_2.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
-//3. Iteration
-//include::{docs-developer-diary}/1._Iteration.adoc[lines=1..1;4..-1,leveloffset=+1]
+3. Iteration
+include::{docs-developer-diary}/Iteration_3.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+4. Iteration
+include::{docs-developer-diary}/Iteration_4.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+5. Iteration
+include::{docs-developer-diary}/Iteration_5.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 
 
 // --- Entwurfsdokumentation ---
 = Entwurfsdokumentation
 * Architektur-Notizbuch
-* Test Cases
+* Test Cases (noch nicht formuliert)
 * Design
 
 // Architektur-Notizbuch
@@ -120,9 +128,9 @@ include::{docs-developer-diary}/Iteration_2.adoc[lines=1..1;4..-1,leveloffset=+1
 include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Test Cases
-:imagesdir: {docs-test}/images
-include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+//:imagesdir: {docs-test}/images
+//include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
+//<<<
 // Design
 :imagesdir: {docs-development}/images
 include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
