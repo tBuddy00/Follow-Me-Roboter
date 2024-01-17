@@ -29,8 +29,8 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 <<<
 include::use_case_01.inc.adoc[]
 
-<<<
-include::use_case_02.inc.adoc[]
+//<<<
+//include::use_case_02.inc.adoc[]
 
 //<<<
 //include::use_case_03.inc.adoc[]
