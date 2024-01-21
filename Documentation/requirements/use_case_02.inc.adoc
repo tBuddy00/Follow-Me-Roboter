@@ -6,32 +6,41 @@ ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
+Bei dem Use Case 2 hadelt es sich darum das der Akteur vom Alphabot 2 verfolgt wird. 
 
 === Kurzbeschreibung der Akteure
 
 ==== <Akteur 1 Name>
 
+Der Akteur ist eine 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+Bevor der Use Case beginnen kann muss sichergestellt sein das der Alphabot 2 und die Personenerkennung gestartet wurde.
+Ebenso muss es ein Lehrer gut beleuchteten Raum
+sein.
 
 <Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+. Akteur muss sich vor dem Alphabot 2 platzieren
+. Alphabot 2 scannt nach einer Person im Sichtfeld
+. Wenn Alphabot 2 eine Person entdeckt hat, zeigt 
+es diese an
+. Erfassung der Zeit bis zum erkennen der Person
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+Wenn beim erkennen der Person ein Fehler auftritt 
+dann, 
+
+. Muss sichergestellt sein das die Softwear einsatzbereit ist
+. Der Akteur muss erneut in das Sichtfeld vom Alphabot 2 gehen 
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -51,6 +60,8 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+. Der Alphabot 2 hat denn Akteur erkannt und ist bereit im zu folgen 
 
 ==== <Nachbedingung 1>
 
