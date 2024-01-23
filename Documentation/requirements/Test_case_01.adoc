@@ -1,0 +1,42 @@
+== Test-Case: TC01 
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Bei dem Test Case 1 hadelt es sich darum das der Akteur vom Alphabot 2 erkannt wird. 
+
+=== Kurzbeschreibung der Akteure
+
+Der Akteur ist eine 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+Bevor der Test Case beginnen kann muss sichergestellt sein das der Alphabot 2 und die Personenerkennung gestartet wurde.
+Ebenso muss es ein Lehrer gut beleuchteten Raum
+sein.
+
+
+
+=== Standardablauf 
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+. Akteur muss sich vor dem Alphabot 2 platzieren
+. Alphabot 2 scannt nach einer Person im Sichtfeld
+. Wenn Alphabot 2 eine Person entdeckt hat, zeigt 
+es diese an
+. Erfassung der Zeit bis zum erkennen der Person
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Alternativer Ablauf 
+Wenn beim erkennen der Person ein Fehler auftritt 
+dann, 
+
+. Muss sichergestellt sein das die Softwear einsatzbereit ist
+. Der Akteur muss erneut in das Sichtfeld vom Alphabot 2 gehen 
+
+
+=== Erwiterungen des Test cases 
+
+Der test case kann erweitert werden indem man die Bedingungen für die Erkennung verschlechter oder wenn mehrere Personen sich im Sichtfeld des Alphabots 2 befinden.
