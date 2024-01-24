@@ -3,7 +3,7 @@
 // --- 2. Teammitglieder -----------------------
 Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Theresa Stasch s82413@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
 // --- 3. Abgabedatum --------------------------
-01. Januar 2020
+26. Januar 2024
 // ---------------------------------------------
 :docs: ../Documentation
 include::{docs}/_includes/default-attributes.inc.adoc[]
@@ -91,7 +91,7 @@ include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,level
 <<<
 
 // --- Developer diary
-= Developer diary
+= Developer Diary
 * 1.Iteration
 * 2.Iteration
 * 3.Iteration
@@ -120,7 +120,7 @@ include::{docs-developer-diary}/Iteration_5.adoc[lines=1..1;4..-1,leveloffset=+1
 // --- Entwurfsdokumentation ---
 = Entwurfsdokumentation
 * Architektur-Notizbuch
-* Test Cases (noch nicht formuliert)
+* Test Cases (noch nicht formuliert -> in SE II)
 * Design
 
 // Architektur-Notizbuch

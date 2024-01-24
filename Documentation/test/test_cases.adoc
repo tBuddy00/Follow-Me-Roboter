@@ -1,4 +1,4 @@
-= Test Cases: {project-name}
+= Test Cases: Follow-Me Fahrroboter
 //Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -10,36 +10,34 @@ include::../_includes/default-attributes.inc.adoc[]
 == Test Cases
 
 === Test Case 01
-Der erste Test ist das Tracking Einer Person in einem Lehren gut beleuchteten Raum  
+Der erste Test ist das tracking einer Person in einem leeren gut beleuchteten Raum.  
 
 ==== Durchführung
-Der Roboter und die Person befinden sich in einem Lehren Raum und die Person bewegt sich vor dem Roboter hin und her 
-Zur erfassung der benötigten Daten wird der Bild stream des Roboters aufgenommen.
+Der Roboter und die Person befinden sich in einem leeren Raum und die Person bewegt sich vor dem Roboter hin und her zur Erfassung der benötigten Daten wird der Bildstream des Roboters aufgenommen.
 
 ==== Ziel des Tests
-Das Ziel des Tests ist es dabei die Genauigkeit und Geschwindigkeit des Trackings zu Testen 
+Das Ziel des Tests ist es dabei die Genauigkeit und Geschwindigkeit des Trackings zu testen. 
 
 ==== Bewertungskriterien 
 Das Programm wird dabei daran bemessen wie schnell und wie zuverlässig die Person erkannt wird.
 
 ==== Erwiterungen des Tests
-. Verschlechterung der Aufnahmebedingugen (z.B. durch Schlechtere Lichtverhältnisse)
+. Verschlechterung der Aufnahmebedingugen (z.B. durch schlechtere Lichtverhältnisse)
 . Hinzufügen von Hindernissen 
 . Hinzufügen von weiteren Personen
-. erhöhung der Bewegungsgeschwindigkeit der Person
+. Erhöhung der Bewegungsgeschwindigkeit der Person
 
 
 === Test Case 02
-Der zweite Test is die messung der Genauigkeit der Entfernungs Aproximation
+Der zweite Test is die Messung der Genauigkeit der Entfernungs-Approximation.
 
 ==== Durchführung
-Der Roboter und die Person stehen in einem bestimmten Abstand zueinnander. Dabei wird der Abstand zwischen Roboter und Person gemessen und mit dem von der Entfernungs Aproximation Bestimmten abstand verglichen.
-Zudem wird die Geschwindigkeit der Funktion gemmessen.
+Der Roboter und die Person stehen in einem bestimmten Abstand zueinander. Dabei wird der Abstand zwischen Roboter und Person gemessen und mit dem von der Entfernungs-Aproximation bestimmten Abstand verglichen. Zudem wird die Geschwindigkeit der Funktion gemessen.
 
 ==== Ziel des Tests
-Ziel ist es dabei eine möglichst Performate Funktion zu erstellen welche ausreichend gennau für den anwendungsfall ist. 
+Ziel ist es dabei eine möglichst performante Funktion zu erstellen welche ausreichend genau für den Anwendungsfall ist. 
 
-Die angestrebte Genauigkeit beträgt dabei 80% 
+-> die angestrebte Genauigkeit beträgt dabei 80%. 
 
 ==== Bewertungskriterien
-Bewerted wird die Geschwindigkeit des Programs und die Genauigkeit der Aproximation.
+Bewertet wird die Geschwindigkeit des Programms und die Genauigkeit der Approximation.
