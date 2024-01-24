@@ -4,7 +4,7 @@ include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
-== Allgemeine Informationen
+//== Allgemeine Informationen
 // ...
 
 
@@ -14,7 +14,7 @@ include::../_includes/default-attributes.inc.adoc[]
 //* *UC02*: ...
 //* *UC03*: Alphabot 2 Beenden
 
-== Use Case Diagramm
+//== Use Case Diagramm
 // ...
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.

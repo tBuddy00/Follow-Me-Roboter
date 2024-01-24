@@ -46,7 +46,7 @@ Die camera_opencv_node empfängt Bilder von der /image_raw-Topic, konvertiert si
 
 == Bilderkennungsalgorithmus
 
-Details bei Johan
+Wertet die empfangenen Bilder, mit hilfe von opencv, aus und gibt die berechneten Positionsdaten Zurück.
 
 == movement_control_node
 

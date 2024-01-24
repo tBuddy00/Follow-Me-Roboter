@@ -10,5 +10,36 @@ include::../_includes/default-attributes.inc.adoc[]
 == Test Cases
 
 === Test Case 01
+Der erste Test ist das Tracking Einer Person in einem Lehren gut beleuchteten Raum  
+
+==== Durchführung
+Der Roboter und die Person befinden sich in einem Lehren Raum und die Person bewegt sich vor dem Roboter hin und her 
+Zur erfassung der benötigten Daten wird der Bild stream des Roboters aufgenommen.
+
+==== Ziel des Tests
+Das Ziel des Tests ist es dabei die Genauigkeit und Geschwindigkeit des Trackings zu Testen 
+
+==== Bewertungskriterien 
+Das Programm wird dabei daran bemessen wie schnell und wie zuverlässig die Person erkannt wird.
+
+==== Erwiterungen des Tests
+. Verschlechterung der Aufnahmebedingugen (z.B. durch Schlechtere Lichtverhältnisse)
+. Hinzufügen von Hindernissen 
+. Hinzufügen von weiteren Personen
+. erhöhung der Bewegungsgeschwindigkeit der Person
+
 
 === Test Case 02
+Der zweite Test is die messung der Genauigkeit der Entfernungs Aproximation
+
+==== Durchführung
+Der Roboter und die Person stehen in einem bestimmten Abstand zueinnander. Dabei wird der Abstand zwischen Roboter und Person gemessen und mit dem von der Entfernungs Aproximation Bestimmten abstand verglichen.
+Zudem wird die Geschwindigkeit der Funktion gemmessen.
+
+==== Ziel des Tests
+Ziel ist es dabei eine möglichst Performate Funktion zu erstellen welche ausreichend gennau für den anwendungsfall ist. 
+
+Die angestrebte Genauigkeit beträgt dabei 80% 
+
+==== Bewertungskriterien
+Bewerted wird die Geschwindigkeit des Programs und die Genauigkeit der Aproximation.

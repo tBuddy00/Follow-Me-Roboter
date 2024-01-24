@@ -43,13 +43,11 @@ Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. D
 
 * Verfeinere das Modell im Laufe der Zeit durch Feedback und Erfahrungen. Das Domänenmodell ist nicht in Stein gemeißelt und kann sich entwickeln, wenn ein tieferes Verständnis der Domäne gewonnen wird.
 
--
 
 === Abstraktionsebenen:
 
 * Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
 
-- 
 
 === Visualisierung:
 
