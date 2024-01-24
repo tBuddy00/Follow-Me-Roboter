@@ -21,7 +21,7 @@ Das Ziel des Tests ist es dabei die Genauigkeit und Geschwindigkeit des Tracking
 ==== Bewertungskriterien 
 Das Programm wird dabei daran bemessen wie schnell und wie zuverlässig die Person erkannt wird.
 
-==== Erwiterungen des Tests
+==== Erweiterungen des Tests
 . Verschlechterung der Aufnahmebedingugen (z.B. durch schlechtere Lichtverhältnisse)
 . Hinzufügen von Hindernissen 
 . Hinzufügen von weiteren Personen
@@ -29,7 +29,7 @@ Das Programm wird dabei daran bemessen wie schnell und wie zuverlässig die Pers
 
 
 === Test Case 02
-Der zweite Test is die Messung der Genauigkeit der Entfernungs-Approximation.
+Der zweite Test ist die Messung der Genauigkeit der Entfernungs-Approximation.
 
 ==== Durchführung
 Der Roboter und die Person stehen in einem bestimmten Abstand zueinander. Dabei wird der Abstand zwischen Roboter und Person gemessen und mit dem von der Entfernungs-Aproximation bestimmten Abstand verglichen. Zudem wird die Geschwindigkeit der Funktion gemessen.
