@@ -116,5 +116,5 @@ Keine Bekannt.
 
 **Essence Navigator Diagramm**
 
-.Essence Navigator Diagramm aus 1. Iteration
+.Essence Navigator Diagramm aus 2. Iteration
 image::iteration_plan_02_diagramm.png[]

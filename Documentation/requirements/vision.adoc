@@ -66,8 +66,6 @@ Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrrob
 |Entwicklungsteam I/II | Streben die Entwicklung der | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
 Bilderkennungssoftware für den Fahrroboter an
 
-|**BITTE ERGÄNZEN!** | |
-
 |===
 
 === Benutzerumgebung
@@ -103,7 +101,6 @@ Bilderkennungssoftware für den Fahrroboter an
 
 |Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| -
 
-|**BITTE ERGÄNZEN** | |
 
 |===
 
@@ -124,6 +121,5 @@ Bilderkennungssoftware für den Fahrroboter an
 | Anforderung | Priorität | Geplantes Release
 | Erkennung des Abstandes zu einer Person im Bild und folgen | hoch | -
 |einwandfreie bzw. einfache Nutzung | hoch | -
-|**BITTE ERGÄNZEN** | |
 
 |===

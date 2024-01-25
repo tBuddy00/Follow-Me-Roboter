@@ -31,7 +31,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
-|**Danny Miersch, Wirtschaftsinformatik*, s85567* | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
+|**Danny Miersch, Wirtschaftsinformatik, s85567** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
 
 |**Jeremy Ziegert, Wirtschaftsinformatik, s85299** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
 

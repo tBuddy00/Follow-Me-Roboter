@@ -39,9 +39,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 |===
 
 
-
-
-
 === Teamstruktur zur 4. Iteration (20.12.2023 - 03.01.2024)
 
 |===
@@ -101,8 +98,6 @@ Unsere **Zielstellung für die 5. Iteration** vom Zeitraum 04.01.2024 - 18.01.20
 - 1. Vervollständigung unserer Belegarbeit: Risk List, NFAs (Systemwide Requirements), Funktionale Anforderungen, Architecture Notebook und der Iteration Plan mt zwei eingebundenen Diagrammen aus dem Essence Navigator
 
 - 2. Präsentation unseres Projektes in den üblichen Vorlesungs - bzw. Praktikumszeiten 
-
-- 3.  
 
 
 ==== Ausblick

@@ -40,8 +40,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 
 
-
-
 === Teamstruktur zur 4. Iteration (20.12.2023 - 03.01.2024)
 
 |===
@@ -66,25 +64,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 Mit Beginn unserer 4. Iteration (20.12.2023 - 03.01.2024) erreichten wir einen Meilenstein: Unser erster vollfunktionsfähiger Prototyp ist in Betrieb genommen und durch unseren Auftraggeber Herr Prof. Neugebauer abgesegnet worden. Wir führen demnach einen Punkt insbesondere fort: Vervollständigung unserer Belegabeit und die darin enthaltenen Dokumente. 
 
- - **Erster Punkt:**  
-
- - **Zweiter Punkt:** 
-
- - **Dritter Punkt:** 
-
- - **Vierter Punkt:** 
 
 ==== Probleme und weitere Belange
-
-- **Erster Punkt:** 
-
-- **Zweiter Punkt:**  
-
-- **Dritter Punkt:** 
-
-- **Vierter Punkt:** 
-
-- **Fünfter Punkt:** 
 
 
 ==== Zielstellung zur 4. Iteration
@@ -92,9 +73,6 @@ Unsere **Zielstellung für die 4. Iteration** vom Zeitraum 20.12.2023 - 03.01.20
 
 - 1. Vervollständigung unserer Belegarbeit: Risk-List, Architecture Notebook etc.
 
-- 2. 
-
-- 3.  
 
 
 ==== Ausblick
