@@ -22,8 +22,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch, Wirtschaftsingenieurwesen, s82413**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.
-
 |**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
@@ -99,10 +97,10 @@ Im Weiteren Verlauf des Gruppenmeetings ergaben sich folgende TO DOs:
 - Bessere Debug Tools (Claire bei Fragen),
 - Bilderkennung verbessern,
 - Package aufteilen [...] (GitHub Project Task),
-- Neue Kamera installieren,
+- neue Kamera installieren,
 - konkrete und akkurate Dokumentierung,
-- Regelmäßige Meetings und mehr Austausch,
-- Nächstes Meeting klären
+- regelmäßige Meetings und mehr Austausch,
+- nächstes Meeting klären
 
 Sämtliche Tasks sind auch im GitHub-Repository zu finden.
 
@@ -136,7 +134,7 @@ Herr Ziegert übernimmt die Erstellung der Simulationsumgebung (URL-Links hat Fr
 
 Herr Özer übernimmt die Qualitätskontrolle für das Projekt und nimmt sämtliche Arbeiten im Team auch ab.
 
-(Sofern hier nicht aufgeführt, dann bereits o. g.)
+(Sofern hier nicht namentlich aufgeführt, dann bereits o. g.)
 
 *Weiteres:*
 
@@ -147,6 +145,21 @@ Unsere **Zielstellung für die 6. Iteration** vom Zeitraum 11.03.2024 - 25.03.20
 
 -> Erst nach weiterer Absprache.
 
+*Teamentschluss zu o. g. Aufgaben:*
+
+- Herr Kurth wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Miersch wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Palermo wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 08.04.2024 (Montag) benötigen (nach extra Onlineeinweisung).
+
+- Herr Marthau wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. Er wird in der ersten Woche bereits mit der YOLO-Bilderkennung beginnen wollen.
+
+- Frau Schubert wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen.
+
+- Herr Özer wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Ziegert wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
 
 ==== Ausblick
 
