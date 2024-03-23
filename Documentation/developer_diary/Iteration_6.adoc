@@ -40,11 +40,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 |Team |Teambeschreibung |Teammitglieder
 |**Entwicklungs Team I**
 |Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
-|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
-
-|**Entwicklungs Team II**
-|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
-|Claire Schubert, Danny Miersch
+|Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
 |===
 
 Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
@@ -91,10 +87,10 @@ Abwesenheit (begründet):
 
 Im Weiteren Verlauf des Gruppenmeetings ergaben sich folgende TO DOs:
 
-- Programmteile von ROS I in ROS II übersetzen -> Wer? (Claire steht für Fragen offen),
+- Programmteile von ROS I in ROS II übersetzen -> Wer? (Frau Schubert steht für Fragen offen),
 - Test Cases erstellen -> (Guidelines nötig) - Wer?,
 - Simulationsumgebung erstellen (Ist es die Zeitwert bzw. lohnt sich hier der Aufwand oder nicht) - Wer?,  
-- Bessere Debug Tools (Claire bei Fragen),
+- Bessere Debug Tools (Frau Schubert fragen bei Fragen),
 - Bilderkennung verbessern,
 - Package aufteilen [...] (GitHub Project Task),
 - neue Kamera installieren,
