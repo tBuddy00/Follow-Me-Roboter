@@ -66,7 +66,7 @@ Der Anlass für dieses Gruppenmeeting vom 14.03.2024 (Donnerstag) bestand darin,
 
  - Taylan Özer (Projektleiter),
  - Claire Schubert (Entwicklerin),
- - Johann Marthau (Entwickler),
+ - Johann Marthaus (Entwickler),
  - Jeremy Ziegert (Entwickler),
  - Luca Kurth (Entwickler),
  - Danny Miersch (Entwickler)
@@ -157,6 +157,27 @@ Unsere **Zielstellung für die 6. Iteration** vom Zeitraum 11.03.2024 - 25.03.20
 
 - Herr Ziegert wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
 
+
+=== Projekt-Coach-Meeting
+==== Anlass
+Der Anlass für dieses Meeting vom 28.03.2024 (Donnerstag) bestand darin, die allgemeine Bewertung unseres Beleges durch Herr Zirkelbach als Projektcoach entgegenzunehmen. Und so auch für uns die daraus resultierenden Verbesserungen auch umzusetzen.
+
+**Anwesenheitsliste:**
+
+ - Herr Zirkelbach (Projekt-Coach),
+ - Taylan Özer (Projektleiter),
+ - Claire Schubert (Entwicklerin),
+ - Johann Marthaus (Entwickler),
+ - Jeremy Ziegert (Entwickler),
+ 
+**Verlauf:**
+
+*Die Aufgabenstellungen für die jeweils u. g. Teammitglieder haben sich nun wie folgt geändert:*
+
+ JEREMY BITTE HIER ALLES EINTRAGEN. WIE BESPROCHEN :D
+
 ==== Ausblick
 
-Folgt.
+Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten QUalitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. 
+
+Mehr folgt.
