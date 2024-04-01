@@ -188,7 +188,8 @@ Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg
 4. 
 „Beleg pflege“ herausnehmen, eher intern als relevant für das Modul
 
-5. Test verantwortlicher geklärt
+5. 
+Test verantwortlicher geklärt
 
 6.  
 Risiken erfassen: 
@@ -197,7 +198,8 @@ Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentl
 7. 
 Iterationspläne fehlerhaft formatiert nach PDF übertrag -> Kontrollieren
 
-8. Developer Diary -> kontrollieren, Fehlerhafte Generierung, Nochmal erneuern und klarer gliedern je nach Iterationsplan
+8. 
+Developer Diary -> kontrollieren, Fehlerhafte Generierung, Nochmal erneuern und klarer gliedern je nach Iterationsplan
 
 9. 
 Vision, Glossar, Systemwide Requierements:
