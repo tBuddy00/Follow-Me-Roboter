@@ -190,11 +190,13 @@ Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg
 
 5. Test verantwortlicher geklärt
 
- 6.  
-Risiken erfassen: Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
+6.  
+Risiken erfassen: 
+Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
 
 7. 
 Iterationspläne fehlerhaft formatiert nach PDF übertrag -> Kontrollieren
+
 8. Developer Diary -> kontrollieren, Fehlerhafte Generierung, Nochmal erneuern und klarer gliedern je nach Iterationsplan
 
 9. 
