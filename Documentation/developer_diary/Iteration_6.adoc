@@ -176,76 +176,93 @@ Der Anlass für dieses Meeting vom 28.03.2024 (Donnerstag) bestand darin, die al
 
 1. 
 Projektmanagement 
-Tätigkeitsfelder nicht ganz klar 
+
+- Tätigkeitsfelder sind nicht ganz klar. 
 
 2. 
-Lessons learned
-Zu knapp
+"Lessons learned"
+ist zu knapp.
 
 3. 
-Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg 
+Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg. 
 
 4. 
-„Beleg pflege“ herausnehmen, eher intern als relevant für das Modul
+„Beleg pflege“ herausnehmen, eher als interne Information gedacht, als wirkliche relevanz für das Modul.
 
 5. 
-Test verantwortlicher geklärt
+Test verantwortlicher wurde geklärt.
 
 6.  
 Risiken erfassen: 
 Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
 
 7. 
-Iterationspläne fehlerhaft formatiert nach PDF übertrag -> Kontrollieren
+Iterationspläne fehlerhaft formatiert nach PDF übertrag -> kontrollieren und verbessern
 
 8. 
-Developer Diary -> kontrollieren, Fehlerhafte Generierung, Nochmal erneuern und klarer gliedern je nach Iterationsplan
+Developer Diary -> kontrollieren; fehlerhafte Generierung und nochmal erneuern und klarer gliedern je nach Iterationsplan.
 
 9. 
 Vision, Glossar, Systemwide Requierements:
-Vision: Problemstatement: erneuern und klarstellen, allgemeiner formulieren -> Eher Machbarkeitsstudie als ernstahftes wirtschaftliches Problem
+Vision: Problemstatement erneuern und klarstellen, allgemeiner formulieren -> Eher Machbarkeitsstudie als ernsthaftes wirtschaftliches Problem.
 
 10.
-Stakeholder:  Stakeholder Beschreibung fehlerhaft erneuern bzw. Vervollständigen und Stakeholder DSGVO hinzufügen
+Stakeholder:  
+
+- Stakeholder Beschreibung fehlerhaft -> erneuern bzw. vervollständigen und Stakeholder DSGVO hinzufügen
 
 11.
-Benutzerumgebung überarbeiten 
-(Aktuell noch Informationen enthalten die Teamintern sind und nicht in das Verzeichnis gehören) 
+Benutzerumgebung überarbeiten: 
+- Aktuell noch Informationen enthalten die Teamintern sind und nicht in das Verzeichnis gehören 
 
 12.
 Use Cases: Entscheidung treffen ob ein oder mehrere Use Cases 
--Person als Stakeholder erfassen 
--Herr Neugebauer kann auch als Stakeholder gesetzt werden 
 
+- Person als Stakeholder erfassen
 
-13.
-Nichtfunktionale Anforderungen: -Keine ID‘s
--Testbarkeit zu ungenau 
--Angabe für Zeiteinheiten 
--Wenn noch keine Genauen Angaben „Wird erst während Machbarkeitsstudie definiert“
--Allgemein zu ungenau 
--Auftraggeber als Stakeholder 
+- Herr Neugebauer kann auch als Stakeholder gesetzt werden 
 
-14.
-Glossar Domain Modell ok, Abb.2 (Name ändern zu Domain Modell) wirklich alle Datenstrukturen ?
-Tabellenbezeichnung fehlt 
-Abb. 3 ausführlicher 
+13. 
+Nichtfunktionale Anforderungen: 
+
+- keine IDs,
+
+- Testbarkeit zu ungenau, 
+
+- Angabe für Zeiteinheiten, 
+
+- wenn noch keine genauen Angaben: „Wird erst während Machbarkeitsstudie definiert“,
+
+- allgemein zu ungenau, 
+
+- Auftraggeber als Stakeholder 
+
+14. 
+Glossar, Domainmodell: 
+
+- Abb.2 (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
+
+- Tabellenbezeichnung fehlt 
+
+- Abb. 3 ausführlicher 
 
 15.
 Architecture Notebook:
--wie wirken sich Funktionelle und nichtfunktionale Anforderungen auf die Struktur aus ?
--Wenn etwas eingesetzt wird -> begründen 
--Architekturmechanismen zum Teil falsch verstanden (nicht was genutzt wird) dazu Folie zu Architekturmechanismen von Prof. Anke 
+- wie wirken sich funktionelle und nichtfunktionale Anforderungen auf die Struktur aus ?
+- wenn etwas eingesetzt wird -> begründen, 
+- Architekturmechanismen zum Teil falsch verstanden (nicht was genutzt wird) dazu Folie zu Architekturmechanismen von Herr Prof. Anke 
 
 16.
 Dokumention der Architektur in verschiedenen Schichten (Beschreiben)
-Z.B Ros -> Packages ->Eigenentwicklung/Import 
+
+- z.B. ROS -> Packages -> Eigenentwicklung/Import 
 
 17.
--Tests weiter bearbeiten
+
+- Tests weiter bearbeiten
 
 ==== Ausblick
 
-Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten QUalitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. 
+Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. 
 
-Mehr folgt.
+Des Weiteren ist die zielgerichtete Optimierung des Beleges auch von großer Bedeutung und so werden die o. g. Punkte aus dem Coach-Meeting mit Herr Zirkelbach auch umgesetzt werden. 
