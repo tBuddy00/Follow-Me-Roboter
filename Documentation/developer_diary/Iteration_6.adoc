@@ -240,11 +240,11 @@ Nichtfunktionale Anforderungen:
 14. 
 Glossar, Domainmodell: 
 
-- Abb.2 (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
+- Abb. 2: (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
 
 - Tabellenbezeichnung fehlt 
 
-- Abb. 3 ausführlicher 
+- Abb. 3: ausführlicher 
 
 15.
 Architecture Notebook:
