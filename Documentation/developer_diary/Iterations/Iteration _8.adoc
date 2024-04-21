@@ -15,6 +15,7 @@ Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verte
 === Ablauf der Kommunikation unter Verwendung von Tools
 Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
 
+
 === Teammitglieder
 |===
 | Teammitglied | Tätigkeitsbeschreibung 
