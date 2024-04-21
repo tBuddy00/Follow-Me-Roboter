@@ -1,0 +1,256 @@
+= Dokumentation: Follow-Me-Fahrroboter
+ Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Allgemein
+Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
+
+=== Auftraggeber
+Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
+
+=== Rollenverteilung
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. 
+
+=== Ablauf der Kommunikation unter Verwendung von Tools
+Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
+
+=== Teammitglieder
+|===
+| Teammitglied | Tätigkeitsbeschreibung 
+|**Taylan Özer, Wirtschaftsinformatik, s85500**| Herr Özer übernimmt die **Projektleitung** und demnach auch administrative Aufgaben. Aufgabenfeld und Tätigkeit sind dynamisch und mit den anderen Projektrollen fließend.
+
+|**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
+
+|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
+
+|**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
+
+|**Danny Miersch, Wirtschaftsinformatik, s85567** | Herr Miersch trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei. Herr Miersch übernimmt so auch, weitere Nebentätigkeiten, wie mit unter die Kontrolle des Glossars.
+
+|**Jeremy Ziegert, Wirtschaftsinformatik, s85299** | Herr Ziegert trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+
+| **Luca Kurth, Verwaltungsinformatik, s85459** | Herr Kurth trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei.
+|===
+
+
+=== Teamstruktur zur 7. Iteration (26.03.2024 - 09.04.2024)
+
+|===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
+|===
+
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
+
+ - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
+
+== Iterationen
+=== 7. Iteration 26.03.2024 - 09.04.2024
+=== Allgemein
+==== Standerfassung aus 6. Iteration
+
+*FÜR MICH: TEXT NOCH ANPASSEN!*
+
+Weiter noch werden die Verbesserungsvorschläge von Herr Zirkelbach berücksichtigt und übernommen werden. So werden auch neue Aufgaben für die Teammitglieder aus Herr Marthaus Gruppe neu definiert. Alle anderen, aus der 6. Iteration, bestehenden Aufgaben (s. u.) bleiben weiterhin unverändert und so werden diese weitergeführt bis zu ihrem Abschluss.
+
+*WEITERES FOLGT.*
+
+==== Probleme und weitere Belange
+
+- **Erster Punkt:**  
+
+=== Gruppenmeeting 21.03.2024
+==== Anlass
+
+
+**Anwesenheitsliste:**
+
+**Verlauf:**
+
+*Die Aufgabenstellungen für die jeweils u. g. Teammitglieder haben sich nun wie folgt geändert:*
+
+        - Bilderkennung: Frau Schubert, Herr Palermo, Herr Marthaus,
+        - Alphabot II: Frau Schubert,
+        - Qualitätskontrolle über Code: Frau Schubert, Herr Marthaus 
+
+
+Im Weiteren Verlauf des Gruppenmeetings ergaben sich folgende TO DOs:
+
+- Programmteile von ROS I in ROS II übersetzen -> Wer? (Frau Schubert steht für Fragen offen),
+- Test Cases erstellen -> (Guidelines nötig) - Wer?,
+- Simulationsumgebung erstellen (Ist es die Zeitwert bzw. lohnt sich hier der Aufwand oder nicht) - Wer?,  
+- Bessere Debug Tools (Frau Schubert fragen bei Fragen),
+- Bilderkennung verbessern,
+- Package aufteilen [...] (GitHub Project Task),
+- neue Kamera installieren,
+- konkrete und akkurate Dokumentierung,
+- regelmäßige Meetings und mehr Austausch,
+- nächstes Meeting klären
+
+Sämtliche Tasks sind auch im GitHub-Repository zu finden.
+
+-> Wichtigsten Tasks: Update von ROS I zu ROS II und die Bilderkennung verbessern - Wer?
+
+Identifizierte Probleme:
+
+ - Bilderkennung zuverlässig? Auswertung? Qualität?,
+ - Batterielaufzeit (Läuft 30 Min und lädt 1h)
+
+
+*Lösung:*
+
+ - Herr Miersch:
+
+Herr Miersch will die Dokumentation übernehmen, einen Teil der Codearbeit von Herr Marthaus abnehmen, zusätzlich will er Rücksprache mit den anderen auch u. a. dem Projekt-Coach halten, Test-Cases schreiben und sich genauer einlesen in die Anforderungen für das Modul SE II.
+
+- Herr Kurth:
+
+Herr Kurth übernimmt die Übersetzung von ROS I zu ROS II F(Frau Schubert steht bei Fragen zur Seite) und dokumentiert seine Arbeitsschritte ausführlich.
+
+- Frau Schubert:
+
+Frau Schubert übernimmt die Kamerastream Überarbeitung.
+
+- Herr Ziegert:
+
+Herr Ziegert übernimmt die Erstellung der Simulationsumgebung (URL-Links hat Frau Schubert zur Unterstützung schon bereits auf GitHub im Repository bereitgestellt). Hinzukommt das er diese Ergebnisse der Gruppe auch noch erklären bzw. einmal präsentieren soll und so gleich auf die Machbarkeit für uns hinrecherchiert.
+
+- Herr Özer:
+
+Herr Özer übernimmt die Qualitätskontrolle für das Projekt und nimmt sämtliche Arbeiten im Team auch ab.
+
+(Sofern hier nicht namentlich aufgeführt, dann bereits o. g.)
+
+*Weiteres:*
+
+Frau Schubert gab den Hinweis, dass jeder sich in seine gestellten Aufgaben einmal hineinliest und diese demnach für sich am Wochenende (15.03. - 17.03.) persönlich einmal evaluiert und Zeit und Aufwand abwägt und bis zum Montag (18.03.) ein Feedback darüber abgibt, wie lange er bzw. sie für diese Aufgabe voraussichtlich benötigen wird.
+
+==== Zielstellung zur 6. Iteration
+Unsere **Zielstellung für die 6. Iteration** vom Zeitraum 11.03.2024 - 25.03.2024 haben wir folgende Punkte in unser Augenmerk genommen:
+
+-> Erst nach weiterer Absprache.
+
+*Teamentschluss zu o. g. Aufgaben:*
+
+- Herr Kurth wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Miersch wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Palermo wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 08.04.2024 (Montag) benötigen (nach extra Onlineeinweisung).
+
+- Herr Marthau wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. Er wird in der ersten Woche bereits mit der YOLO-Bilderkennung beginnen wollen.
+
+- Frau Schubert wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen.
+
+- Herr Özer wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Ziegert wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+
+=== Projekt-Coach-Meeting
+==== Anlass
+Der Anlass für dieses Meeting vom 28.03.2024 (Donnerstag) bestand darin, die allgemeine Bewertung unseres Beleges durch Herr Zirkelbach als Projektcoach entgegenzunehmen. Und so auch für uns die daraus resultierenden Verbesserungen auch umzusetzen.
+
+**Anwesenheitsliste:**
+
+ - Herr Zirkelbach (Projekt-Coach),
+ - Taylan Özer (Projektleiter),
+ - Claire Schubert (Entwicklerin),
+ - Johann Marthaus (Entwickler),
+ - Jeremy Ziegert (Entwickler),
+ 
+**Verlauf:**
+
+1. 
+Projektmanagement 
+
+- Tätigkeitsfelder sind nicht ganz klar. 
+
+2. 
+"Lessons learned"
+ist zu knapp.
+
+3. 
+Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg. 
+
+4. 
+„Beleg pflege“ herausnehmen, eher als interne Information gedacht, als wirkliche relevanz für das Modul.
+
+5. 
+Test verantwortlicher wurde geklärt.
+
+6.  
+Risiken erfassen: 
+Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
+
+7. 
+Iterationspläne fehlerhaft formatiert nach PDF übertrag -> kontrollieren und verbessern
+
+8. 
+Developer Diary -> kontrollieren; fehlerhafte Generierung und nochmal erneuern und klarer gliedern je nach Iterationsplan.
+
+9. 
+Vision, Glossar, Systemwide Requierements:
+Vision: Problemstatement erneuern und klarstellen, allgemeiner formulieren -> Eher Machbarkeitsstudie als ernsthaftes wirtschaftliches Problem.
+
+10.
+Stakeholder:  
+
+- Stakeholder Beschreibung fehlerhaft -> erneuern bzw. vervollständigen und Stakeholder DSGVO hinzufügen
+
+11.
+Benutzerumgebung überarbeiten: 
+- Aktuell noch Informationen enthalten die Teamintern sind und nicht in das Verzeichnis gehören 
+
+12.
+Use Cases: Entscheidung treffen ob ein oder mehrere Use Cases 
+
+- Person als Stakeholder erfassen
+
+- Herr Neugebauer kann auch als Stakeholder gesetzt werden 
+
+13. 
+Nichtfunktionale Anforderungen: 
+
+- keine IDs,
+
+- Testbarkeit zu ungenau, 
+
+- Angabe für Zeiteinheiten, 
+
+- wenn noch keine genauen Angaben: „Wird erst während Machbarkeitsstudie definiert“,
+
+- allgemein zu ungenau, 
+
+- Auftraggeber als Stakeholder 
+
+14. 
+Glossar, Domainmodell: 
+
+- Abb. 2: (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
+
+- Tabellenbezeichnung fehlt 
+
+- Abb. 3: ausführlicher 
+
+15.
+Architecture Notebook:
+- wie wirken sich funktionelle und nichtfunktionale Anforderungen auf die Struktur aus ?
+- wenn etwas eingesetzt wird -> begründen, 
+- Architekturmechanismen zum Teil falsch verstanden (nicht was genutzt wird) dazu Folie zu Architekturmechanismen von Herr Prof. Anke 
+
+16.
+Dokumention der Architektur in verschiedenen Schichten (Beschreiben)
+
+- z.B. ROS -> Packages -> Eigenentwicklung/Import 
+
+17.
+
+- Tests weiter bearbeiten
+
+==== Ausblick
+
+Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. Des Weiteren stehen weiterhin die Abarbeitung der genannten Punkte von Herr Zirkelbach im Mittelpunkt.
