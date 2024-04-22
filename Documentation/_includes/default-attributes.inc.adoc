@@ -16,6 +16,7 @@
 :!example-caption:
 :experimental:
 // folders
+:includesdir: ../../_includes
 ifndef::imagesdir[:imagesdir: images]
 ifndef::diagramsdir[:diagramsdir: diagrams]
 ifndef::plantumlsdir[:plantumlsdir: plantuml]
