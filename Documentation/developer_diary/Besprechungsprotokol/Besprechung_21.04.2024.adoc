@@ -1,0 +1,13 @@
+
+=== Gruppenmeeting 21.04.2024 (8. Iteration)
+==== Anlass
+Der Anlass für dieses Gruppenmeeting war im allgemeinen, dass wir die bestehenden Arbeitspunkte aus der 6. und 7. Iteration besprechen wollten und hier die herangehensweise zur Lösung der Punkte finden wollten.
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleitung),
+- Herr Miersch (Entwicklung)
+
+**Verlauf:**
+Herr Miersch und Ich trugen im allgemeinen die nötige Vorgehensweise zusammen, um u. a. das Projektmanagement und die Lessons Learned auszubessern. Des Weiteren stellten wir fest, dass wir die Zuarbeit von Herr Marthaus benötigen.
+

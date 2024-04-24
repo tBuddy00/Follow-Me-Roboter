@@ -6,9 +6,6 @@ include::../_includes/default-attributes.inc.adoc[]
 == Allgemein
 Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
 
-=== Fristen
-**Abgabe Belegarbeit: 26.01.2024**
-
 === Auftraggeber
 Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
 
@@ -25,8 +22,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 |**Claire Schubert, Wirtschaftsinformatik, s85609** | Frau Schubert übernimmt zu Ihrer Tätigkeit als **stellvertretende Projektleitung** ebenfalls die Rolle als **Creative Lead** und **Architect**. Sie teilt des Weiteren Aufgaben den anderen Teammitgliedern zu und dient als Ansprechperson im technischen Zusammenhang mit dem Fahrroboter. 
 
-|**Theresa Stasch, Wirtschaftsingenieurwesen, s82413**| Frau Stasch übernimmt zunächst die Aufgabe zur Pflegung des Beleges und im allgemeinen zur Weiterführung der Dokumentation.
-
 |**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
@@ -39,17 +34,13 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 |===
 
 
-=== Teamstruktur zur 4. Iteration (20.12.2023 - 03.01.2024)
+=== Teamstruktur zur 7. Iteration (26.03.2024 - 09.04.2024)
 
 |===
 |Team |Teambeschreibung |Teammitglieder
 |**Entwicklungs Team I**
 |Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
-|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
-
-|**Entwicklungs Team II**
-|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
-|Claire Schubert, Danny Miersch
+|Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
 |===
 
 Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
@@ -57,24 +48,21 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 5. Iteration 04.01.2024 - 18.01.2024 
+=== 7. Iteration 26.03.2024 - 09.04.2024
 === Allgemein
-==== Standerfassung aus 4. Iteration
+==== Standerfassung aus 6. Iteration
 
-Mit Beginn unserer 5. Iteration (04.01.2024 - 18.01.2024) hatten wir aufgrund der Weihnachtstage und den Neujahrstagen nichts weiter zunächst an Aufgaben erledigen können, dennoch ist die Zielstellung weiterhin die Vervollständigung unserer Belegarbeit. Weiterhin fehlen folgende Dokumente: Risk List, NFAs (Systemwide Requirements), Funktionale Anforderungen, Architecture Notebook und der Iteration Plan mt zwei eingebundenen Diagrammen aus dem Essence Navigator - die Issues werden hierzu noch auf GitHub formuliert.
+*FÜR MICH: TEXT NOCH ANPASSEN!*
+
+Weiter noch werden die Verbesserungsvorschläge von Herr Zirkelbach berücksichtigt und übernommen werden. So werden auch neue Aufgaben für die Teammitglieder aus Herr Marthaus Gruppe neu definiert. Alle anderen, aus der 6. Iteration, bestehenden Aufgaben (s. u.) bleiben weiterhin unverändert und so werden diese weitergeführt bis zu ihrem Abschluss.
+
+*WEITERES FOLGT.*
 
 ==== Probleme und weitere Belange
 
-- **Erster Punkt:** Zur finalen Vervollständigung der Belegarbeit sind wie o. g. noch Unterlagen einzureichen bzw. in das Repository auf GitHub zu pushen. 
-
-
-==== Zielstellung zur 5. Iteration
-Unsere **Zielstellung für die 5. Iteration** vom Zeitraum 04.01.2024 - 18.01.2024 haben wir folgende Punkte in unser Augenmerk genommen:
-
-- 1. Vervollständigung unserer Belegarbeit: Risk List, NFAs (Systemwide Requirements), Funktionale Anforderungen, Architecture Notebook und der Iteration Plan mt zwei eingebundenen Diagrammen aus dem Essence Navigator
-
-- 2. Präsentation unseres Projektes in den üblichen Vorlesungs - bzw. Praktikumszeiten 
+- **Erster Punkt:**  
 
 
 ==== Ausblick
-Unser Ausblick bis zum Ende der 4. Iteration und mit Beginn der 5. Iteration als Team ist die Vervollständigung unserer Belegarbeit mit den dafür vorgesehenen Dokumenten.
+
+Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. Des Weiteren stehen weiterhin die Abarbeitung der genannten Punkte von Herr Zirkelbach im Mittelpunkt.

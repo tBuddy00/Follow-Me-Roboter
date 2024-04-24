@@ -1,0 +1,26 @@
+=== Gruppenmeeting 14.12.2023 (3. Iteration)
+==== Anlass 
+Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen für unser kommendes Auftraggebergespräch am 15.12.2023 zu besprechen und unser weiteres Vorgehen zu planen. 
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleiter)
+- Frau Schubert (Entwicklerin)
+- Herr Marthaus (Entwickler)
+
+**Verlauf:**
+
+ - Herr Özer wird mit Herr Miersch das Design.adoc Dokument mit Informationen befüllen, welche Frau Schubert ihm vorher schon zugesendet hat
+
+ - Analog gilt dies auch für das Architecture Notebook mit Herr Miersch und Herr Özer 
+
+ - Es wurde erkannt, das die Kamera ungeeignet ist für unser laufendes Projekt und so sollte diese im Weiteren Verlauf ausgetauscht werden, jedoch muss erst dies in Absprache mit dem Auftraggeber erfolgen
+
+
+**Es wurde festgelegt*
+
+- Zum 15.12. wird die Thematik einer neuen Kamera angesprochen
+
+- Unser bisheriger Projektstand ergibt sogar schon einen funktionalen und ansprechbaren Prototypen 
+
+- Einarbeitung von Notizen durch Herr Miersch und Herr Özer in das Architecture Notebook

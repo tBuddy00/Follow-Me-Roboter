@@ -1,0 +1,22 @@
+=== Gruppenmeeting 12.12.2023 (3. Iteration)
+==== Anlass
+Der Anlass für dieses Gruppenmeeting bestand darin, einen allgemeinen Überblick über unsere Belegstruktur zu erhalten und notwendige Dokumentationen.  
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleiter),
+- Herr Miersch (Entwickler),
+- Herr Ziegert (Dokum. Bilderkennung/Entwicklung),
+- Frau Stasch (u. a. Entwicklerin)
+
+**Verlauf:**
+
+ - In Klärung mit den anwesenden Teammitgliedern wurde erfragt, ob Frau Schubert ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten darlegen kann, um diesen später als Guide niederschreiben zu können. 
+
+ - Wir diskutierten über das OpenUP und die Relevanz für uns, zwecks Developer Diary
+
+**Es wurde festgelegt* das Frau Schubert, wie o. g. ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten niederschreibt zur späteren Weiterbearbeitung
+
+- Wir beschlossen, dass wir zwecks Belegstruktur uns mehr in das OpenUP reinzulesen
+
+- Herr Özer wird Frau Schubert mitteilen das erst genanntes umgesetzt werden soll

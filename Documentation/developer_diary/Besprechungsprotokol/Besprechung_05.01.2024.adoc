@@ -1,0 +1,24 @@
+=== Konsultation 05.01.2024 (5. Iteration)
+==== Anlass
+Der Anlass für eine Konsultation mit Herr Prof. Anke und Herr Zirkelbach (Projekt-Coach) war jene, dass wir uns als Gruppe gerne im klaren sein wollten, welche besonderen Merkmale wir noch zu erfassen haben und welchen Fokus wir auf den Beleg und die anstehende Belegabgabe am 26.01.2024 legen sollten. 
+
+**Anwesenheitsliste:**
+
+- Herr Prof. Anke (Modulverantwortung),
+- Herr Zirkelbach (Projekt-Coach),
+- Herr Özer (Projektleiter),
+- Frau Schubert (Entwicklerin)
+
+**Verlauf:**
+
+Wir haben Herr Prof. Anke und Herr Zirkelbach unseren aktuellen Arbeitsstand im Projekt näher gebracht und weiter noch haben wir um die Vollständigkeit unseres ersten Prototypen informiert und ebenfalls mitgeteilt, das Herr Prof. Neugebauer als unser Auftraggeber mit unserer Arbeit zufriede war.
+
+Des Weiteren haben wir um die Zielstellung für die finalen Schritte im Projekt für dieses Semester besprochen und hier teilte uns Herr Prof. Anke mit, dass es wichtig sei - in Bezug auf den Fahrroboter - ein Qualitätskriterium festzulegen, um so schlussendlich dann auch sagen zu können, das Projekt ist erfolgreich gewesen oder ggf. das Ziel wurde verfehlt. 
+
+Abschließend wurde auch klarer, welche Unterlagen des Weiteren im Beleg fehlen und das diese sofort eingearbeitet werden dürfen und das diese Einarbeitung von den Gruppenmitgliedern erfolgen wird, die Herr Özer auf GitHub in Form von Issues festlegt.
+
+
+
+**Es wurde festgelegt* Frau Schubert und Ich entschieden uns, das USE-CASE-Diagramm noch einmal zu überarbeiten und die Cases genauer zu formulieren.
+
+- Neue GitHub Issues formulieren zur Vervollständigung der Unterlagen im Beleg.

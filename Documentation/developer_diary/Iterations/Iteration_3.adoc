@@ -39,9 +39,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 |===
 
 
-
-
-
 === Teamstruktur zur 3. Iteration (05.12.2023 - 19.12.2023)
 
 |===
@@ -84,76 +81,6 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 - **Vierter Punkt:** Ein Prototyp ist noch nicht vollständig vorhanden -> Software-Komponente fehlt (Herr Marthaus)
 
 - **Fünfter Punkt:** Der Alphabot II lässt sich über seine Kamera und einzelnen Glieder ansprechen.
-
-
-=== Gruppenmeeting 12.12.2023
-==== Anlass
-Der Anlass für dieses Gruppenmeeting bestand darin, einen allgemeinen Überblick über unsere Belegstruktur zu erhalten und notwendige Dokumentationen.  
-
-**Anwesenheitsliste:**
-
-- Herr Özer (Projektleiter),
-- Herr Miersch (Entwickler),
-- Herr Ziegert (Dokum. Bilderkennung/Entwicklung),
-- Frau Stasch (u. a. Entwicklerin)
-
-**Verlauf:**
-
- - In Klärung mit den anwesenden Teammitgliedern wurde erfragt, ob Frau Schubert ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten darlegen kann, um diesen später als Guide niederschreiben zu können. 
-
- - Wir diskutierten über das OpenUP und die Relevanz für uns, zwecks Developer Diary
-
-**Es wurde festgelegt* das Frau Schubert, wie o. g. ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten niederschreibt zur späteren Weiterbearbeitung
-
-- Wir beschlossen, dass wir zwecks Belegstruktur uns mehr in das OpenUP reinzulesen
-
-- Herr Özer wird Frau Schubert mitteilen das erst genanntes umgesetzt werden soll
-
-=== Gruppenmeeting 14.12.2023
-==== Anlass 
-Der Anlass für dieses Gruppenmeeting bestand darin unser allgemeines Vorgehen für unser kommendes Auftraggebergespräch am 15.12.2023 zu besprechen und unser weiteres Vorgehen zu planen. 
-
-**Anwesenheitsliste:**
-
-- Herr Özer (Projektleiter)
-- Frau Schubert (Entwicklerin)
-- Herr Marthaus (Entwickler)
-
-**Verlauf:**
-
- - Herr Özer wird mit Herr Miersch das Design.adoc Dokument mit Informationen befüllen, welche Frau Schubert ihm vorher schon zugesendet hat
-
- - Analog gilt dies auch für das Architecture Notebook mit Herr Miersch und Herr Özer 
-
- - Es wurde erkannt, das die Kamera ungeeignet ist für unser laufendes Projekt und so sollte diese im Weiteren Verlauf ausgetauscht werden, jedoch muss erst dies in Absprache mit dem Auftraggeber erfolgen
-
-
-**Es wurde festgelegt*
-
-- Zum 15.12. wird die Thematik einer neuen Kamera angesprochen
-
-- Unser bisheriger Projektstand ergibt sogar schon einen funktionalen und ansprechbaren Prototypen 
-
-- Einarbeitung von Notizen durch Herr Miersch und Herr Özer in das Architecture Notebook
-
-=== Gruppenmeeting 15.12.2023
-==== Anlass
-Am Freitag (15.12.2023) hielten wir ein Gruppenmeeting mit Herr Prof. Neugebauer ab und im allgemeinen diente das treffen dazu. Herr Prof. Neugebauer unseren Projektstand mitzuteilen und ggf. eventuelle Verbesserungen seinerseits zu besprechen. 
-
-- **Erster Punkt:** Als erstes sprachen wir mit Herr Neugebauer darüber, eine bessere Kamera zu verwenden und der Grund hierfür war, das unsere jetzige Kamera einen zu kleinen Bildwinkel verwendet und so ein Problem zur Personenerkennung bereiten kann. Es wurden mehrere Lösungen diskutiert, beispielsweise das wir eine 3D-Kamera mit "Punktwolkenverarbeitung" nutzen. Mit dieser, von Herr Prof. Neugebauer präsentierter 3D-Kamera, ist so das arbeiten jedoch aufwendiger. Ebenfalls wurde ein "LiDAR" in betracht gezogen, dieser kann Konturen in 360° erkennen. Allerdings ist der Raspberry Pi womöglich hierfür nicht ausgelegt. Bei einer alternativen Entscheidung für eine 3D-Kamera mit einer bereits eingebauten ähnlichen Funktion, wäre ein "LiDAR" so nicht mehr von Nöten - hierbei müsste jedoch erneut eklärt werden, ob die Kapazitäten des Raspberry Pi ausreichend hierfür sind. Herr Prof. Neugebauer teilte uns nun mit, dass wir aufjedenfall eine neue Kamera erhalten werden mit eingebautem "LiDAR" - der Kameraumbau ist jedoch erst für die Weiterführung in Software Engineering II vorgesehen. Des Weiteren ist für eine bessere Kamerahaltung der eine robustere Alternative vonnöten - aktuell ist dies eher zu "einfach" beim Raspberry Pi im Aufbau selbst umgesetzt. Hierbei ziehen wir den 3D-Drucker der HTW in betracht - dieses Thema fällt hiermit ebenfalls in die Weiterführung in Software Engineering II. Bei dem aufkommenden Kameraproblem wurde das Thema "YOLO" (You only look once) durch Herr Prof. Neugebauer in betracht gezogen - YOLO könnte eine gute Möglichkeit zur verbesserten Objekterkennung darstellen und auch hier muss erneut geprüft werden, ob der Raspberry Pi genug Leistung besitzt. Herr Prof. Neugebauer sendet uns per E-Mail eine Masterarbeit, die Informationen über "YOLO" enthält und uns somit hier eine Hilfestellung anbietet. 
-
-- **Zweiter Punkt:** Die Kompatibilität des Raspberry Pi mit einer neuen Kamera könnte durchaus Probleme bereiten - aufgrund von Gewicht etc. und so wurde die Idee einer neuen Plattform eingebracht und hierbei wurde eine Plattform mit Arduino-Schnittstelle in betracht gezogen. Ebenfalls müssen wir uns über die Schnittstelle zwischen Ros und Arduino informieren. 
-
-- **Dritter Punkt:** Herr Prof. Neugebauer hat eine Kamera bestellt und so haben wir diese heute am 18.12.2023 (Montag) auch entgegengenommen -> Frau Schubert
-
-==== Zielstellung zur 3. Iteration
-Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
-
-- 1. Auftraggebergespräch zum 15.12.2023 (Freitag) um 10:30 Uhr -> Mitteilung des Projektstandes
-
-- 2. Vollständigkeit des 1. Prototypen
-
-- 3. Einarbeitung von Mitschriften in das Architecture Notebook 
 
 
 ==== Ausblick

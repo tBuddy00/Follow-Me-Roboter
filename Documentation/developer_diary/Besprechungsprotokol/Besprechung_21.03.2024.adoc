@@ -1,0 +1,88 @@
+=== Gruppenmeeting 21.03.2024 (7. Iteration)
+==== Anlass
+Gilt Weiterhin nach der Beschreibung aus vorangegangener Iteration.
+
+**Anwesenheitsliste:**
+
+ - - // -
+
+**Verlauf:**
+
+*Die Aufgabenstellungen für die jeweils u. g. Teammitglieder haben sich nun wie folgt geändert:*
+
+        - Bilderkennung: Frau Schubert, Herr Palermo, Herr Marthaus,
+        - Alphabot II: Frau Schubert,
+        - Qualitätskontrolle über Code: Frau Schubert, Herr Marthaus 
+
+
+Im Weiteren Verlauf des Gruppenmeetings ergaben sich folgende TO DOs:
+
+- Programmteile von ROS I in ROS II übersetzen -> Wer? (Frau Schubert steht für Fragen offen),
+- Test Cases erstellen -> (Guidelines nötig) - Wer?,
+- Simulationsumgebung erstellen (Ist es die Zeitwert bzw. lohnt sich hier der Aufwand oder nicht) - Wer?,  
+- Bessere Debug Tools (Frau Schubert fragen bei Fragen),
+- Bilderkennung verbessern,
+- Package aufteilen [...] (GitHub Project Task),
+- neue Kamera installieren,
+- konkrete und akkurate Dokumentierung,
+- regelmäßige Meetings und mehr Austausch,
+- nächstes Meeting klären
+
+Sämtliche Tasks sind auch im GitHub-Repository zu finden.
+
+-> Wichtigsten Tasks: Update von ROS I zu ROS II und die Bilderkennung verbessern - Wer?
+
+Identifizierte Probleme:
+
+ - Bilderkennung zuverlässig? Auswertung? Qualität?,
+ - Batterielaufzeit (Läuft 30 Min und lädt 1h)
+
+
+*Lösung:*
+
+ - Herr Miersch:
+
+Herr Miersch will die Dokumentation übernehmen, einen Teil der Codearbeit von Herr Marthaus abnehmen, zusätzlich will er Rücksprache mit den anderen auch u. a. dem Projekt-Coach halten, Test-Cases schreiben und sich genauer einlesen in die Anforderungen für das Modul SE II.
+
+- Herr Kurth:
+
+Herr Kurth übernimmt die Übersetzung von ROS I zu ROS II F(Frau Schubert steht bei Fragen zur Seite) und dokumentiert seine Arbeitsschritte ausführlich.
+
+- Frau Schubert:
+
+Frau Schubert übernimmt die Kamerastream Überarbeitung.
+
+- Herr Ziegert:
+
+Herr Ziegert übernimmt die Erstellung der Simulationsumgebung (URL-Links hat Frau Schubert zur Unterstützung schon bereits auf GitHub im Repository bereitgestellt). Hinzukommt das er diese Ergebnisse der Gruppe auch noch erklären bzw. einmal präsentieren soll und so gleich auf die Machbarkeit für uns hinrecherchiert.
+
+- Herr Özer:
+
+Herr Özer übernimmt die Qualitätskontrolle für das Projekt und nimmt sämtliche Arbeiten im Team auch ab.
+
+(Sofern hier nicht namentlich aufgeführt, dann bereits o. g.)
+
+*Weiteres:*
+
+Frau Schubert gab den Hinweis, dass jeder sich in seine gestellten Aufgaben einmal hineinliest und diese demnach für sich am Wochenende (15.03. - 17.03.) persönlich einmal evaluiert und Zeit und Aufwand abwägt und bis zum Montag (18.03.) ein Feedback darüber abgibt, wie lange er bzw. sie für diese Aufgabe voraussichtlich benötigen wird.
+
+==== Zielstellung zur 6. Iteration
+Unsere **Zielstellung für die 6. Iteration** vom Zeitraum 11.03.2024 - 25.03.2024 haben wir folgende Punkte in unser Augenmerk genommen:
+
+-> Erst nach weiterer Absprache.
+
+*Teamentschluss zu o. g. Aufgaben:*
+
+- Herr Kurth wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Miersch wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Palermo wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 08.04.2024 (Montag) benötigen (nach extra Onlineeinweisung).
+
+- Herr Marthau wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. Er wird in der ersten Woche bereits mit der YOLO-Bilderkennung beginnen wollen.
+
+- Frau Schubert wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen.
+
+- Herr Özer wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
+
+- Herr Ziegert wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 

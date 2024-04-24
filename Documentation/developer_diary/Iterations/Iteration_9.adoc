@@ -35,7 +35,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 |===
 
 
-=== Teamstruktur zur 8. Iteration (10.04.2024 - 24.04.2024)
+=== Teamstruktur zur 9. Iteration (25.04.2024 - 09.04.2024)
 
 |===
 |Team |Teambeschreibung |Teammitglieder
@@ -51,24 +51,13 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 == Iterationen
 === 7. Iteration 10.04.2024 - 24.04.2024
 === Allgemein
-==== Standerfassung aus 7. Iteration
+==== Standerfassung aus 8. Iteration
 
 Mit der 8. Iteration begann weiterhin die Weiterführung der Arbeit aus der 6. und 7. Iteration und so gilt weiterhin u. a. die Verbesserung der Bilderkennung und die Vervollständigung des Belegs.
 
 ==== Probleme und weitere Belange
 
 - **Erster Punkt:**  
-
-=== Gruppenmeeting 21.04.2024
-==== Anlass
-Der Anlass für dieses Gruppenmeeting war im allgemeinen, dass wir die bestehenden Arbeitspunkte aus der 6. und 7. Iteration besprechen wollten und hier die herangehensweise zur Lösung der Punkte finden wollten.
-
-**Anwesenheitsliste:**
-- Herr Özer (Projektleiter),
-- Herr Miersch (Entwicklung)
-
-**Verlauf:**
-Herr Miersch und Ich trugen im allgemeinen die nötige Vorgehensweise zusammen, um u. a. das Projektmanagement und die Lessons Learned auszubessern. Des Weiteren stellten wir fest, dass wir die Zuarbeit von Herr Marthaus benötigen.
 
 
 **Ausblick**
