@@ -1,4 +1,56 @@
+<<<<<<<< HEAD:Documentation/developer_diary/Besprechungsprotokol/Besprechung_14.03.2024.adoc
 === Gruppenmeeting 14.03.2024 (6. Iteration)
+========
+= Dokumentation: Follow-Me-Fahrroboter
+ Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
+{localdatetime}
+include::../../_includes/default-attributes.inc.adoc[]
+
+== Allgemein
+Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
+
+=== Auftraggeber
+Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
+
+=== Rollenverteilung
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. 
+
+=== Ablauf der Kommunikation unter Verwendung von Tools
+Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
+
+=== Teammitglieder
+include::{includesdir}/teammitglieder.adoc[]
+
+=== Teamstruktur zur 7. Iteration (26.03.2024 - 09.04.2024)
+
+|===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
+|===
+
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
+
+ - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
+
+== Iterationen
+=== 7. Iteration 26.03.2024 - 09.04.2024
+=== Allgemein
+==== Standerfassung aus 6. Iteration
+
+*FÜR MICH: TEXT NOCH ANPASSEN!*
+
+Weiter noch werden die Verbesserungsvorschläge von Herr Zirkelbach berücksichtigt und übernommen werden. So werden auch neue Aufgaben für die Teammitglieder aus Herr Marthaus Gruppe neu definiert. Alle anderen, aus der 6. Iteration, bestehenden Aufgaben (s. u.) bleiben weiterhin unverändert und so werden diese weitergeführt bis zu ihrem Abschluss.
+
+*WEITERES FOLGT.*
+
+==== Probleme und weitere Belange
+
+- **Erster Punkt:**  
+
+=== Gruppenmeeting 21.03.2024
+>>>>>>>> 5ee0542b2da42e133236337033f4638995915fa3:Documentation/developer_diary/Iterations/Iteration_7.adoc
 ==== Anlass
 Der Anlass für dieses Gruppenmeeting vom 14.03.2024 (Donnerstag) bestand darin, die allgemeine Teamkonstellation, die Gruppen - und Arbeitsaufteilung und die Herangehensweise an unsere noch bestehenden Aufgaben (s. u.) zu besprechen.
 
