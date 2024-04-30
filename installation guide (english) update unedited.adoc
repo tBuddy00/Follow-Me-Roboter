@@ -267,7 +267,8 @@ Clone the camera_package repository:
 cd ~/ros2_ws/src
 git clone https://github.com/cl-ire/camera_package.git NOTE: Placeholder, update the path later
 cd ~/ros2_ws
-colcon build --symlink-install
+colcon build
+source install/setup.bash
 ----
 
 === Uploading yolo config files
@@ -298,7 +299,7 @@ Download and build the Repository:
 cd ~/ros2_ws/src
 git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
 cd ~/ros2_ws
-colcon build --symlink-install
+colcon build
 source install/setup.bash
 ----
 

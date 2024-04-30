@@ -1,0 +1,54 @@
+
+
+== Conect to WiFi
+
+[source,bash]
+----
+ssid: Alphabot2
+
+Pw: ubuntu1234
+----
+
+== Conect with SSH
+
+[source,bash]
+----
+ssh ubuntu@192.168.4.1
+
+Pw: ubuntu1234
+----
+
+
+== Run Project from console
+
+[source,bash]
+----
+cd ~/ros2_ws/ && source install/setup.bash
+cd ~/ros2_ws/src/camera_package/launch
+
+ros2 launch follow_me_launch.py
+----
+
+there are difrent launch files 
+
+* Launch for the Arduino version `follow_me_arduino_launch.py`
+* Launch for the Alphabot2 version `follow_me_launch.py`
+* test the Arduino version `arduino_test_launch.py`
+
+
+== debuging comands
+reinstal the cammera_package
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f camera_package && git clone  https://github.com/cl-ire/camera_package.git
+cd ~/ros2_ws && colcon build --packages-select camera_package
+----
+
+reinstall the ros2_for_waveshare_alphabot2 package
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f ros2_for_waveshare_alphabot2 && git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
+cd ~/ros2_ws && colcon build --packages-select ros2_for_waveshare_alphabot2
+----
