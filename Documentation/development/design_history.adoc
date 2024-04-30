@@ -120,7 +120,7 @@ Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem
 Durch die implementation des camera_streamers war es deutliche einfacher zu vertehen wie gut die erkennung funktioniert somit ist uns auch ein großes Problem aufgefallen die bis jetzt Verwednete Kammera hat einen viel zu geringen winkel für unseren anwendungsfall da person ungefär 3m vom Robotter entfernt stehen müssen um Überhaupt volständig im bild erkant zu werden
 Zudem ist der Bilderkeenungs algorythmus den wir verwenden recht ungenau und erkennt personen entweder nicht oder erkent personen in gegenständen
 
-= Entwurf 5 =
+= Entwurf 6 =
 
 == Bild: ==
 == Änderung zum letzten Entwurf ==
@@ -151,3 +151,34 @@ Zudem ist der Bilderkeenungs algorythmus den wir verwenden recht ungenau und erk
 		*** Ziemlich langsam
 
 Zum aktuellen Zeitraum ist noch nicht klar ob wir YOLO einsetzen können da es aktuell viel zu langsam ist die aktuelle tendenz liegt bei nein
+
+
+= Entwurf 7 Prototyp 2=
+
+== Bild: ==
+== Änderung zum letzten Entwurf ==
+* Wechsel von Raspberry Pi 4 auf Nvidia Jetson Nano
+	** Da der Raspberry Pi 4 nicht genug Leistung für YOLO hat
+* Wechsel von Alphabot2 auf Arduino Uno und Adafruit Motor Shield v2.3
+	** Der Alphabot 2 ist zu kelien um den Jetson Nano zu tragen
+	** Der Alphabot 2 ist schlecht erweiterbar
+* Wegfall des ros2_for_waveshare_alphabot2 packages
+	** Da es nicht mehr benötigt wird
+
+== Technische Entscheidung ==
+* Wechsel auf Nvidia Jetson Nano
+	** Pro:
+		*** Deutlich mehr Leistung als der Raspberry Pi 4
+		*** Bessere Unterstützung für YOLO
+	** Contra:
+		*** Höherer Stromverbrauch
+		*** Höheres Gewicht
+* Wechsel auf Arduino Uno und Adafruit Motor Shield v2.3
+	** Pro:
+		*** Bessere Erweiterbarkeit
+		*** Es ist deutlich einfacher Motoren zu steuern
+		*** testung ohne den Jetson Nano möglich, über serielle Schnittstelle
+	** Contra:
+		*** komunikation muss über Serielle Schnittstelle stattfinden
+		*** koplexere Systemstruktur
+

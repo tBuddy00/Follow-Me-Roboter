@@ -1,0 +1,357 @@
+= ROS 2 Installation Guide
+:toc:
+:toc-title: Contents
+:source-highlighter: highlight.js
+:xrefstyle: basic
+
+== Introduction
+
+This guide provides instructions on how to set up a ROS 2 environment on a Raspberry Pi or Jetson Nano. It also includes instructions on how to install the necessary packages for the Follow-Me Robot project.
+
+The Project Provides 2 difrent Platforms to run the Follow-Me Robot wich can be partialy combined.
+
+Chose the main proccesing computer 
+* Raspberry Pi 4
+* Jetson Nano
+
+Chose the the Roboter Platform
+* Waveshare Alphabot2
+* Arduino Uno and Adafruit Motor Shield v2.3
+
+the most recomendet setup is the Jetson Nano with the Arduino Uno and Adafruit Motor Shield v2.3.
+or the Raspberry Pi 4 with the Waveshare Alphabot2.
+the Raspberry Pi 4 with the Arduino Uno and Adafruit Motor Shield v2.3 is also posible without any problems.
+but the Jetson Nano with the Waveshare Alphabot2 is not recomendet because Waveshare Alphabot2 isnt build for the Jetson Nano.
+
+Depending on the chosen platform, follow the corresponding instructions in the guide.
+
+
+== Setting up Raspberry Pi (skip if using Jetson Nano)
+
+=== Installing Ubuntu Server 22.04.3 LTS (64-bit) on Raspberry Pi
+
+Download and install the official Raspberry Pi Imager from link:https://www.raspberrypi.com/software/[Raspberry Pi Software]. +
+Choose the following parameters:
+
+* Operating System: `Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit).`
+
+
+== Setting up Jetson Nano (skip if using Raspberry Pi)
+
+=== Installing Ubuntu Server 22.04.3 LTS (64-bit) on Jetson Nano
+
+add later
+
+
+== Connecting to Your Raspberry Pi or Jetson Nano Using SSH
+
+Connect the Raspberry Pi or Jetson Nano to Ethernet either directly to your PC or to your local network. +
+
+Find out the IP address of your Pi or Jetson Nano by using one of the following methods:
+
+- Using the Router Interface:
+  1. Log in to your router's web interface. This typically involves entering the router's IP address into a web browser.
+  2. Look for a section named "Connected Devices," "DHCP Clients," or similar. This section should list all devices connected to the network along with their assigned IP addresses.
+  3. Find the entry corresponding to your Raspberry Pi.
+- Using a Network Scanner App (if connected to the same network):
+  1. Use a network scanner app on your smartphone, tablet, or PC.
+  2. Scan the local network for connected devices, and look for the Raspberry Pi.
+
+Open the command prompt or terminal and type the following command:
+[source,shell]
+----
+ssh ubuntu@<ip address of the device>
+----
+
+Enter the password when prompted (default password: ubuntu).
+
+
+== Setting up Wi-Fi
+
+the instructions are based on the link:https://gist.github.com/ExtremeGTX/ea1d1c12dde8261b263ab2fead983dc8[following guide] and modefied for our use case.
+
+=== Install required packages
+
+[source,shell]
+----
+sudo apt-get install hostapd dnsmasq
+----
+
+=== Hostapd
+
+The purpose of Hostapd is to set WiFi as an access point
+
+we need to write a new config file for hostapd sudo vi /etc/hostapd/hostapd.conf
+[source,shell]
+----
+interface=wlan0
+driver=nl80211
+ssid=FollowMeRobot
+hw_mode=g
+channel=7
+wmm_enabled=0
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_passphrase=ubuntu1234
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+----
+
+Then we need to tell hostapd to use our config file, edit `/etc/default/hostapd` and change the line starts with `#DAEMON_CONF`, remember to remove `#`
+
+[source,shell]
+----
+DAEMON_CONF="/etc/hostapd/hostapd.conf"
+----
+
+Then Let's start hostapd
+
+[source,shell]
+----
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
+----
+
+=== dnsmasq
+
+The purpose of dnsmasq is to act as DHCP Server, so when a devies connects to Raspberry Pi or Jetson Nano it can get an IP assigned to it.
+
+make a backup of default config by: `sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.org`
+
+Create a new config file by: `sudo vi /etc/dnsmasq.conf`
+
+This config file will automatically assign addresses between `192.168.4.2` and `192.168.4.20` with lease time 24 hours.
+
+[source,shell]
+----
+interface=wlan0
+dhcp-range=192.168.4.2,192.168.4.20,255.255.255.0,24h
+----
+
+Then Let's reload dnsmasq config
+
+[source,shell]
+----
+sudo systemctl reload dnsmasq
+----
+
+=== Solving startup Error:
+On System startup, dnsmasq will not wait for wlan0 interface to initialize and will fail with error `wlan0 not found`.
+
+We need to tell systemd to launch it after network get ready, so we will modify dnsmasq service file by adding `After=` and `Wants=` under `[Unit]` section.
+
+`sudo vi /lib/systemd/system/dnsmasq.service`
+
+[source,shell]
+----
+[Unit]
+...
+After=network-online.target
+Wants=network-online.target
+----
+
+=== Config static IP
+Ubuntu uses cloud-init for initial setup, so will modify the following file to set wlan0 IP.
+
+DON'T USE TABS IN THIS FILE, IT WILL NOT WORK, EVER!!
+
+Modify the cloud-init file by `sudo vi /etc/netplan/50-cloud-init.yaml`
+
+Add the following content to the file:
+
+[source,shell]
+----
+        wlan0:
+            dhcp4: false
+            addresses:
+            - 192.168.4.1/24
+----
+
+The file will finally looks like this:
+
+[source,shell]
+----
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    version: 2
+    ethernets:
+        eth0:
+            dhcp4: true
+            match:
+                macaddress: 12:34:56:78:ab:cd
+            set-name: eth0
+        wlan0:
+            dhcp4: false
+            addresses:
+            - 192.168.4.1/24
+----
+
+=== Finally:
+Reboot your Raspberry Pi or Jetson Nano and check if you can connect to it over WiFi and can SSH.
+
+
+== Setting up ROS 2
+
+=== Installing ROS 2 Humble
+
+Follow the installation guide at link:https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html[ROS 2 Humble Installation Guide]. +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[ installation script].
+
+=== Creating the Workspace
+
+If you encounter issues, follow link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial]. +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[installation script]. +
+To manually create the workspace, execute the following commands:
+[source,shell]
+----
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+----
+
+== Install Dependencies
+
+=== Installing OpenCV and cv_bridge
+
+Use the _vision_opencv_ repository from link:https://github.com/ros-perception/vision_opencv[this GitHub repository]. +
+Install the dependencies:
+[source,shell]
+----
+sudo apt install python3-numpy
+sudo apt install libboost-python-dev
+----
+
+Clone the repository:
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/ros-perception/vision_opencv.git -b humble
+cd ~/ros2_ws
+colcon build --symlink-install
+----
+
+Install _Python3-opencv_:
+[source,shell]
+----
+sudo apt install python3-opencv
+----
+
+=== Install Rpi.GPIO
+Install the Python GPIO Library (allows acces to the GPIO Pins of the Raspberry Pi):
+[source,shell]
+----
+pip3 install RPi.GPIO
+----
+
+=== Installing the Servo Library 
+Install the python libraries to enable communication with the PCA9685 servo:
+[source,shell]
+----
+sudo pip install smbus
+----
+
+== Installing Packages
+
+=== Installing the Camera Package
+
+Clone the camera_package repository:
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/cl-ire/camera_package.git NOTE: Placeholder, update the path later
+cd ~/ros2_ws
+colcon build --symlink-install
+----
+
+=== Uploading yolo config files
+
+create the yolo_config folder in the src folder:
+
+[source,shell]
+----
+cd ~/ros2_ws/src
+mldir yolo_config
+----
+
+download the yolo config files from (add link)
+
+Upload the files to the yolo_config folder using WinSCP or similar tools.
+
+if you use `ls` you should see the files `yolov3.cfg` and `yolov3.weights` in the yolo_config folder.
+
+
+=== Installing the ros2_for_waveshare_alphabot2 Package (skip if using Arduino)
+
+This repository is a ROS II version based upon the link:https://github.com/ShaunPrice/ROS_for_Waveshare_Alphabot2[ROS for Waveshare Alphabot2 Repository] by Shaun Price.
+
+Download and build the Repository:
+
+[source,shell]
+----
+cd ~/ros2_ws/src
+git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
+cd ~/ros2_ws
+colcon build --symlink-install
+source install/setup.bash
+----
+
+== Building the Waveshare Alphabot2 (skip if using Arduino)
+
+follow the tutorial link:https://www.waveshare.com/wiki/AlphaBot2[AlphaBot2 Tutorial] to build the Waveshare Alphabot2.
+ 
+
+== Setting up Arduino Uno and Adafruit Motor Shield v2.3 (skip if using Alphabot2)
+
+=== Setting up the Arduino IDE
+
+follow the tutorial link:https://funduino.de/hardware-software[Funduino Tutorial] to install the Arduino IDE.
+
+=== Build the Robot
+
+follow the tutorial link:https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-headers[Installing Standard Headers] to build the Adafruit Motor Shield.
+
+conect the Dc moters to Port M3 and M4 of the Adafruit Motor Shield.
+Conect a 6V power source (as example 4 AA batteries) to the power input of the Adafruit Motor Shield.
+Connect the Adafruit Motor Shield power input to the Arduino Uno via a cable with a barrel jack and open contacts.
+
+if you wanne use the arduino indipendently from the Jetson Nano follow the link:https://funduino.de/tutorial-hc-05-und-hc-06-bluetooth[following guide] to install the bloutooth module HC-05. this is nessesary to run certain tests wirelessly.
+
+=== Installing the Adafruit Motor Shield Library
+
+follow the tutorial link:https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software[Adafruit Tutorial] to install the Motor Shield V2 library.
+
+=== Upload the Skript to the Arduino
+
+Conect the Arduino Uno to the PC via USB cable.
+Open the Arduino Skript in the (add link to skript) Arduino IDE and chose the com port the Arduino is connected to (Tools -> Port -> COMX).
+Upload the Skript to the Arduino (Upload).
+
+to test the skript open the serial monitor (Tools -> Serial Monitor) and send the following commands:
+
+[source,shell]
+----
+100,100,1000
+----
+
+this should move the robot forward for 1 second.
+
+if you wanne test it more extensively you can use the python skript (link to folder src/Arduino/Test/arduino.py)
+
+== Build the Arduino Setup (skip if using Alphabot2)
+
+=== Conecting the Jetson Nano or Raspberry Pi and Arduino
+
+Connect the Jetson Nano or Raspberry Pi to the Arduino Uno via USB cable.
+
+Conect the Jetson Nano (5v 4A) or Raspberry Pi (5V 2A) to a power source.
+
+
+
+
