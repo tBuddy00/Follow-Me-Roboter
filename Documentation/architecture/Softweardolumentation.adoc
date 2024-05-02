@@ -1,0 +1,126 @@
+
+= camera_opencv =
+
+== Klasse: CameraOpencv ==
+
+Die Klasse CameraOpencv repräsentiert einen ROS-Node, der Bilddaten von einer Kamera abonniert, diese verarbeitet und dann Positionsdaten veröffentlicht.
+
+=== Methoden: ===
+
+1. __init__(self):
+   Der Konstruktor der Klasse, initialisiert die ROS-Node mit dem Namen 'camera_subscriber', erstellt Publisher für Positionsdaten (/position_data) und Bilder (/opencv_image). Außerdem initialisiert er die OpenCV Videoaufnahme (vid0) und den Detektor für die Personenerkennung (detector). Ein Timer wird erstellt, der alle 0,5 Sekunden die Methode loop() aufruft.
+
+2. loop(self):
+   Diese Methode wird jedes Mal aufgerufen, wenn der Timer abläuft. Sie liest ein Bild von der Kamera, führt eine Personenerkennung durch und veröffentlicht die Positionsdaten sowie das verarbeitete Bild.
+
+3. publish_data(self, Position, time1, return_image):
+   Diese Methode veröffentlicht die Positionsdaten und das verarbeitete Bild. Sie konvertiert das Bild in ein ROS-Image-Format und fügt den Positionsdaten Zeitstempel hinzu, bevor sie diese veröffentlicht.
+
+= movement_control =
+
+== Klasse: MovementControl ==
+
+Die Klasse MovementControl repräsentiert einen ROS-Node, die Positionsdaten empfängt, diese verarbeitet und entsprechende Steuersignale an Servos und Motoren sendet.
+
+=== Methoden: ===
+
+1. __init__(self):
+   Der Konstruktor der Klasse, initialisiert die ROS-Node mit dem Namen 'movement_control'. Verschiedene Parameter wie maximale Winkel, Distanz zur Person und Bewegungseinstellungen werden gesetzt. Publisher für Servo- und Motorsteuerbefehle werden erstellt. Abonnements für Positionsinformationen von der Kamera ('/position_data'), Joystick-Eingaben ('/joystick') und Steuerbefehle ('/control') werden eingerichtet.
+
+2. position_callback(self, Position):
+   Diese Methode wird aufgerufen, wenn Positionsinformationen von der Kamera empfangen werden. Sie verarbeitet die erhaltenen Daten, berechnet Bewegungsparameter und sendet Steuerbefehle an Servos und Motoren.
+
+3. control_joystick(self, msg):
+   Diese Methode wird aufgerufen, wenn Joystick-Eingaben empfangen werden. Sie verarbeitet die erhaltenen Eingaben und steuert die Bewegung entsprechend.
+
+4. control(self, msg):
+   Diese Methode wird aufgerufen, wenn allgemeine Steuerbefehle empfangen werden. Sie verarbeitet die erhaltenen Befehle und steuert die Bewegung entsprechend.
+
+= Utility Funktionen =
+
+1. calculate_speed_variable_time(base_rpm, radius, angle,  wheel_distance, wheel_radius, correction_factor):
+   Berechnet die Geschwindigkeiten der Räder basierend auf einer variablen Zeit, abhängig von der Basis-Drehzahl, dem Radius, dem Winkel, dem Radabstand, dem Radradius und einem Korrekturfaktor.
+
+2. calculate_movement_variable_time(self, base_rpm, angle, move):
+   Verarbeitet die von der calculate_speed_variable_time Funktion Berechneten Bewegungsparameter und gibt die gewünschten drezahlen sowie die bewegungsdauer für die Motoren zurück.
+
+3. calculate_angle(self, servo_pan):
+   Berechnet die Winkel für die Servos basierend auf den aktuellen Koordinaten. Es kann zwischen horizontaler (Servo-Pan) und vertikaler (Servo-Tilt) Bewegung gewählt werden.
+
+4. determine_percentage_of_height(self):
+   Bestimmt den prozentualen Anteil der Höhe der Person im Bild im Vergleich zur maximalen Höhe, die vom Winkel erfasst wird.
+
+5. aproximate_distance(self, lenght_y):
+   Näherungsberechnung der Entfernung zur Person basierend auf der erkannten Größe im Bild.
+
+6. set_timestamp(list, set_first_time=True):
+   Setzt den Zeitstempel in einer Liste auf die aktuelle Zeit.
+
+7. get_current_time():
+   Gibt die aktuelle Zeit zurück.
+
+8. compare_times(time1, time_old, old_time):
+   Vergleicht zwei Zeitstempel und bestimmt, ob die neueren Daten verwendet werden sollen.
+
+9. add_seconds_to_time(time1, milliseconds):
+   Addiert Millisekunden zu einem Zeitstempel.
+
+10. datetime_to_combined_int(dt):
+    Konvertiert einen Zeitstempel in ein kombiniertes Integer-Format.
+
+11. combined_int_to_datetime(hours_minutes_combined, seconds_milliseconds_combined):
+    Konvertiert ein kombiniertes Integer-Format in einen Zeitstempel.
+
+= arduino_interface =
+
+== Klasse: Serial_Arduino ==
+
+Diese Klasse ist für die Kommunikation mit einem Arduino über die serielle Schnittstelle zuständig.
+
+1. __init__(self):
+   Der Konstruktor initialisiert die serielle Verbindung mit dem Arduino und wartet, bis die Verbindung hergestellt ist.
+
+2. find_arduino_port(self):
+   Diese Methode sucht automatisch nach einem angeschlossenen Arduino und gibt den entsprechenden Port zurück.
+
+3. write(self, data):
+   Diese Methode sendet Daten an das Arduino über die serielle Verbindung.
+
+4. read(self):
+   Diese Methode liest eine Zeile von Daten vom Arduino.
+
+== Klasse: ArduinoInterface ==
+
+Diese Klasse repräsentiert einen ROS-Node, die Motorbefehle empfängt und an ein Arduino sendet.
+
+1. __init__(self):
+   Der Konstruktor initialisiert den ROS-Node und das Serial_Arduino-Objekt.
+
+2. listener_callback(self, msg):
+   Diese Methode wird aufgerufen, wenn Motorbefehle empfangen werden. Sie sendet die empfangenen Befehle an das Arduino und erwartet eine Antwort.
+
+= web_control_center =
+
+== Klasse: WebControlCenter ==
+
+Diese Klasse ist ein ROS-Node, die Bilder von einem ROS-Topic empfängt und über eine Flask-App streamt.
+
+1. __init__(self):
+   Der Konstruktor initialisiert die ROS-Node und abonniert das Bildtopic. Sie erstellt auch einen Publisher für Steuerbefehle.
+
+2. image_callback(self, msg):
+   Diese Methode wird aufgerufen, wenn ein Bild empfangen wird. Sie konvertiert das Bild in das JPEG-Format und speichert es im Flask-App-Objekt.
+
+=== Flask-App: =
+
+Die Flask-App wird verwendet, um ein Video-Stream und eine Benutzeroberfläche für die Steuerung anzuzeigen.
+
+- /: Die Index route rendert die index.html-Seite.
+- /video_feed: Diese Route sendet den Video-Stream.
+- /button_click/<button_name>: Diese Route wird aufgerufen, wenn ein Steuerungsknopf gedrückt wird. Sie veröffentlicht den entsprechenden Steuerbefehl.
+- /print_message/<message>: Diese Route sendet eine Nachricht über SocketIO.
+
+=== Weitere Funktionen: =
+
+- generate(): Diese Funktion generiert den Video-Stream.
+- launch_follow_me(): Diese Funktion startet ein ROS2-Launch-File für die Funktion "Follow Me".
