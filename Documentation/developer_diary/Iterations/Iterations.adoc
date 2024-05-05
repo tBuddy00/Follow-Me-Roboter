@@ -1,0 +1,44 @@
+= Dokumentation: Follow-Me-Fahrroboter
+Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
+{localdatetime}
+include::../../_includes/default-attributes.inc.adoc[]
+:sectnums!:
+
+== Allgemein
+Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
+
+=== Auftraggeber
+Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. -Ing. Mario Neugebauer als Auftraggeber bzw. als Product Owner und dient demnach als Hauptansprechpartner.
+
+=== Rollenverteilung
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt und sollen im allgemeinen zum Anreiz dienen gestellte bzw. übernommene Aufgaben auch vollständig und nach bestem Wissen und Gewissen abzuschließen. 
+
+=== Ablauf der Kommunikation unter Verwendung von Tools
+Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
+
+=== Teammitglieder
+include::{includesdir}/teammitglieder.adoc[]
+
+=== Teamstruktur der 1. bis 5. Iteration (06.11.2023 - 03.01.2024)
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
+
+|===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
+
+|**Entwicklungs Team II**
+|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
+|Claire Schubert, Danny Miersch
+|===
+
+=== Teamstruktur der 6. bis 9. Iteration (11.03.2024 - 09.04.2024)
+|===
+|Team |Teambeschreibung |Teammitglieder
+|**Entwicklungs Team I**
+|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
+|Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
+|===
+
+== Interationen
