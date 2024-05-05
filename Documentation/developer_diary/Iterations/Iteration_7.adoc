@@ -1,7 +1,7 @@
 = Dokumentation: Follow-Me-Fahrroboter
  Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
 {localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
+include::../../_includes/default-attributes.inc.adoc[]
 
 == Allgemein
 Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
@@ -38,7 +38,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 7. Iteration 26.03.2024 - 09.04.2024
+//tag::Iter7[]
+=== *7. Iteration 26.03.2024 - 09.04.2024*
 === Allgemein
 ==== Standerfassung aus 6. Iteration
 
@@ -53,3 +54,107 @@ Weiter noch werden die Verbesserungsvorschläge von Herr Zirkelbach berücksicht
  - /
 
 
+<<<<<<< HEAD
+=======
+=== Projekt-Coach-Meeting
+==== Anlass
+Der Anlass für dieses Meeting vom 28.03.2024 (Donnerstag) bestand darin, die allgemeine Bewertung unseres Beleges durch Herr Zirkelbach als Projektcoach entgegenzunehmen. Und so auch für uns die daraus resultierenden Verbesserungen auch umzusetzen.
+
+**Anwesenheitsliste:**
+
+ - Herr Zirkelbach (Projekt-Coach),
+ - Taylan Özer (Projektleiter),
+ - Claire Schubert (Entwicklerin),
+ - Johann Marthaus (Entwickler),
+ - Jeremy Ziegert (Entwickler),
+ 
+**Verlauf:**
+
+1. 
+Projektmanagement 
+
+- Tätigkeitsfelder sind nicht ganz klar. 
+
+2. 
+"Lessons learned"
+ist zu knapp.
+
+3. 
+Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg. 
+
+4. 
+„Beleg pflege“ herausnehmen, eher als interne Information gedacht, als wirkliche relevanz für das Modul.
+
+5. 
+Test verantwortlicher wurde geklärt.
+
+6.  
+Risiken erfassen: 
+Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
+
+7. 
+Iterationspläne fehlerhaft formatiert nach PDF übertrag -> kontrollieren und verbessern
+
+8. 
+Developer Diary -> kontrollieren; fehlerhafte Generierung und nochmal erneuern und klarer gliedern je nach Iterationsplan.
+
+9. 
+Vision, Glossar, Systemwide Requierements:
+Vision: Problemstatement erneuern und klarstellen, allgemeiner formulieren -> Eher Machbarkeitsstudie als ernsthaftes wirtschaftliches Problem.
+
+10.
+Stakeholder:  
+
+- Stakeholder Beschreibung fehlerhaft -> erneuern bzw. vervollständigen und Stakeholder DSGVO hinzufügen
+
+11.
+Benutzerumgebung überarbeiten: 
+- Aktuell noch Informationen enthalten die Teamintern sind und nicht in das Verzeichnis gehören 
+
+12.
+Use Cases: Entscheidung treffen ob ein oder mehrere Use Cases 
+
+- Person als Stakeholder erfassen
+
+- Herr Neugebauer kann auch als Stakeholder gesetzt werden 
+
+13. 
+Nichtfunktionale Anforderungen: 
+
+- keine IDs,
+
+- Testbarkeit zu ungenau, 
+
+- Angabe für Zeiteinheiten, 
+
+- wenn noch keine genauen Angaben: „Wird erst während Machbarkeitsstudie definiert“,
+
+- allgemein zu ungenau, 
+
+- Auftraggeber als Stakeholder 
+
+14. 
+Glossar, Domainmodell: 
+
+- Abb. 2: (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
+
+- Tabellenbezeichnung fehlt 
+
+- Abb. 3: ausführlicher 
+
+15.
+Architecture Notebook:
+- wie wirken sich funktionelle und nichtfunktionale Anforderungen auf die Struktur aus ?
+- wenn etwas eingesetzt wird -> begründen, 
+- Architekturmechanismen zum Teil falsch verstanden (nicht was genutzt wird) dazu Folie zu Architekturmechanismen von Herr Prof. Anke 
+
+16.
+Dokumention der Architektur in verschiedenen Schichten (Beschreiben)
+
+- z.B. ROS -> Packages -> Eigenentwicklung/Import 
+
+17.
+
+- Tests weiter bearbeiten
+//end::Iter7[]
+>>>>>>> acc41ad5e114c258a68221a4e680cb6be9c75170
