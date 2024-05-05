@@ -1,7 +1,4 @@
-<<<<<<<< HEAD:Documentation/developer_diary/Besprechungsprotokol/Besprechung_14.03.2024.adoc
-
 == Gruppenmeeting 14.03.2024 (6. Iteration)
->>>>>>>> 5ee0542b2da42e133236337033f4638995915fa3:Documentation/developer_diary/Iterations/Iteration_7.adoc
 
 === Anlass
 Der Anlass für dieses Gruppenmeeting vom 14.03.2024 (Donnerstag) bestand darin, die allgemeine Teamkonstellation, die Gruppen - und Arbeitsaufteilung und die Herangehensweise an unsere noch bestehenden Aufgaben (s. u.) zu besprechen.

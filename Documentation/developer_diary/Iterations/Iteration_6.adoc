@@ -18,6 +18,10 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
+== Gruppenmeeting 14.03.2024 (6. Iteration)
+BITTE HIER INCLUDE
+
+
 === Teamstruktur zur 6. Iteration (11.03.2024 - 25.03.2024)
 
 |===

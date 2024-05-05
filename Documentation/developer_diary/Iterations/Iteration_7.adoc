@@ -18,6 +18,12 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
+=== Gruppenmeeting 21.03.2024
+include::../Besprechungsprotokoll/Besprechung_21.03.2024.adoc[]
+
+=== Projekt-Coach-Meeting 28.03.2024
+include::../Besprechungsprotokoll/Besprechung_28.03.2024.adoc[]
+
 === Teamstruktur zur 7. Iteration (26.03.2024 - 09.04.2024)
 
 |===
@@ -44,109 +50,6 @@ Weiter noch werden die Verbesserungsvorschläge von Herr Zirkelbach berücksicht
 
 ==== Probleme und weitere Belange
 
-- **Erster Punkt:**  
+ - /
 
-=== Gruppenmeeting 21.03.2024
-include::
 
-=== Projekt-Coach-Meeting
-==== Anlass
-Der Anlass für dieses Meeting vom 28.03.2024 (Donnerstag) bestand darin, die allgemeine Bewertung unseres Beleges durch Herr Zirkelbach als Projektcoach entgegenzunehmen. Und so auch für uns die daraus resultierenden Verbesserungen auch umzusetzen.
-
-**Anwesenheitsliste:**
-
- - Herr Zirkelbach (Projekt-Coach),
- - Taylan Özer (Projektleiter),
- - Claire Schubert (Entwicklerin),
- - Johann Marthaus (Entwickler),
- - Jeremy Ziegert (Entwickler),
- 
-**Verlauf:**
-
-1. 
-Projektmanagement 
-
-- Tätigkeitsfelder sind nicht ganz klar. 
-
-2. 
-"Lessons learned"
-ist zu knapp.
-
-3. 
-Aufgabenbereich nur „Dokumentation“ entfernen aus dem Beleg. 
-
-4. 
-„Beleg pflege“ herausnehmen, eher als interne Information gedacht, als wirkliche relevanz für das Modul.
-
-5. 
-Test verantwortlicher wurde geklärt.
-
-6.  
-Risiken erfassen: 
-Risiko 2: „GitHub-Push“ ?, allgemeiner beschreiben, 3:, 5 -> Risiken ordentlich benennen
-
-7. 
-Iterationspläne fehlerhaft formatiert nach PDF übertrag -> kontrollieren und verbessern
-
-8. 
-Developer Diary -> kontrollieren; fehlerhafte Generierung und nochmal erneuern und klarer gliedern je nach Iterationsplan.
-
-9. 
-Vision, Glossar, Systemwide Requierements:
-Vision: Problemstatement erneuern und klarstellen, allgemeiner formulieren -> Eher Machbarkeitsstudie als ernsthaftes wirtschaftliches Problem.
-
-10.
-Stakeholder:  
-
-- Stakeholder Beschreibung fehlerhaft -> erneuern bzw. vervollständigen und Stakeholder DSGVO hinzufügen
-
-11.
-Benutzerumgebung überarbeiten: 
-- Aktuell noch Informationen enthalten die Teamintern sind und nicht in das Verzeichnis gehören 
-
-12.
-Use Cases: Entscheidung treffen ob ein oder mehrere Use Cases 
-
-- Person als Stakeholder erfassen
-
-- Herr Neugebauer kann auch als Stakeholder gesetzt werden 
-
-13. 
-Nichtfunktionale Anforderungen: 
-
-- keine IDs,
-
-- Testbarkeit zu ungenau, 
-
-- Angabe für Zeiteinheiten, 
-
-- wenn noch keine genauen Angaben: „Wird erst während Machbarkeitsstudie definiert“,
-
-- allgemein zu ungenau, 
-
-- Auftraggeber als Stakeholder 
-
-14. 
-Glossar, Domainmodell: 
-
-- Abb. 2: (Name ändern zu: Domainmodell) wirklich alle Datenstrukturen ?
-
-- Tabellenbezeichnung fehlt 
-
-- Abb. 3: ausführlicher 
-
-15.
-Architecture Notebook:
-- wie wirken sich funktionelle und nichtfunktionale Anforderungen auf die Struktur aus ?
-- wenn etwas eingesetzt wird -> begründen, 
-- Architekturmechanismen zum Teil falsch verstanden (nicht was genutzt wird) dazu Folie zu Architekturmechanismen von Herr Prof. Anke 
-
-16.
-Dokumention der Architektur in verschiedenen Schichten (Beschreiben)
-
-- z.B. ROS -> Packages -> Eigenentwicklung/Import 
-
-17.
-
-- Tests weiter bearbeiten
->>>>>>> 5ee0542b2da42e133236337033f4638995915fa3
