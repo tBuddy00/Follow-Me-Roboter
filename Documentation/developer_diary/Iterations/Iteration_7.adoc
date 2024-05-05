@@ -1,7 +1,7 @@
 = Dokumentation: Follow-Me-Fahrroboter
  Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
 {localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
+include::../../_includes/default-attributes.inc.adoc[]
 
 == Allgemein
 Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
@@ -32,7 +32,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 7. Iteration 26.03.2024 - 09.04.2024
+//tag::Iter7[]
+=== *7. Iteration 26.03.2024 - 09.04.2024*
 === Allgemein
 ==== Standerfassung aus 6. Iteration
 
@@ -149,4 +150,4 @@ Dokumention der Architektur in verschiedenen Schichten (Beschreiben)
 17.
 
 - Tests weiter bearbeiten
->>>>>>> 5ee0542b2da42e133236337033f4638995915fa3
+//end::Iter7[]

@@ -41,4 +41,21 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 |Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
 |===
 
-== Interationen
+== Iterationen
+include::Iteration_1.adoc[tags=Iter1]
+
+include::Iteration_2.adoc[tags=Iter2]
+
+include::Iteration_3.adoc[tags=Iter3]
+
+include::Iteration_4.adoc[tags=Iter4]
+
+include::Iteration_5.adoc[tags=Iter5]
+
+include::Iteration_6.adoc[tags=Iter6]
+
+include::Iteration_7.adoc[tags=Iter7]
+
+include::Iteration_8.adoc[tags=Iter8]
+
+include::Iteration_9.adoc[tags=Iter9]

@@ -38,7 +38,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 
 == Iterationen
-=== 1. Iteration 06.11.2023 - 19.11.2023 
+// tag::Iter1[]
+=== *1. Iteration 06.11.2023 - 19.11.2023* 
 === Allgemein
 Die Hürde mit Herausgabe aller Projekte und Ihrer Projektleiter am 30.10.2023 bestand darin, zunächst das Team in seiner Gesamtheit erst einmal zusammenzutragen.
 
@@ -62,7 +63,7 @@ Bestandteil dieser Iteration war auch ein Projekt-Coach Gespräch und diesem kam
 
 === Einbindung Bilderkennungskonzept
 .Bemerkung: Dieses Konzept diente dem allgemeinen Verständnis für Auftraggeber und Entwickler
-image::Bilderkennung_Konzept.drawio.png[]
+image::../../Bilderkennung_Konzept.drawio.png[]
 
 *Hinweis:*
  Das Bilderkennungskonzept wurde durch Frau Schubert entwickelt und durch unseren Auftraggeber in unserem ersten Auftraggebergespräch am 17.11.2023 bestätigt.
@@ -72,3 +73,4 @@ In Zustimmung mit unserem Auftraggeber sind für unser 3. Semester die Zielstell
 Die Allgemeine Zielstellung für dieses Semester in Absprache mit Herr Prof. Neugebauer für Software Engineering I: Der Fahrroboter soll in seiner Gesamtheit mit einem beliebigen OS (Raspi OS oder ROS 2) stehen und wir sollen uns zunächst auch bereits fortführend um die Bilderkennung des Fahrroboters kümmern. 
 
 - Ein zweites Auftraggebergespräch ist zum 15.12.2023 (Freitag) um 10:30 Uhr anberaumt.
+//end::Iter1[]

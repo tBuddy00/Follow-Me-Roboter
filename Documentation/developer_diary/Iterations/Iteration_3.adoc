@@ -39,7 +39,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 3. Iteration 05.12.2023 - 19.12.2023 
+//tag::Iter3[]
+=== *3. Iteration 05.12.2023 - 19.12.2023* 
 === Allgemein
 ==== Standerfassung aus 2. Iteration
 
@@ -67,3 +68,4 @@ Mit Beginn unserer 3. Iteration mit dem Zeitraum vom 04.12.2023 - 19.12.2023 hie
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 3. Iteration und mit Beginn der 4. Iteration als Team ist die Konstruktion eines 1. vollständigen Prototypen. Des Weiteren streben wir ebenfalls eine Vervollständigung der Unterlagen für unseren Beleg an.
+//end::Iter3[]

@@ -39,7 +39,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-=== 4. Iteration 20.12.2023 - 03.01.2024 
+//tag::Iter4[]
+=== *4. Iteration 20.12.2023 - 03.01.2024* 
 === Allgemein
 ==== Standerfassung aus 3. Iteration
 
@@ -56,3 +57,4 @@ Unsere **Zielstellung für die 4. Iteration** vom Zeitraum 20.12.2023 - 03.01.20
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 4. Iteration und mit Beginn der 5. Iteration als Team ist die Vervollständigung unserer Belegarbeit mit den dafür vorgesehenen Dokumenten.
+//end::Iter4[]
