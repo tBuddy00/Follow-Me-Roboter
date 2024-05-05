@@ -21,10 +21,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
-=== Konsultation 05.01.2024 (5. Iteration)
-BITTE HIER INCLUDE
-
-
 === Teamstruktur zur 4. Iteration (20.12.2023 - 03.01.2024)
 
 |===
@@ -65,9 +61,7 @@ Unsere **Zielstellung für die 5. Iteration** vom Zeitraum 04.01.2024 - 18.01.20
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 4. Iteration und mit Beginn der 5. Iteration als Team ist die Vervollständigung unserer Belegarbeit mit den dafür vorgesehenen Dokumenten.
-<<<<<<< HEAD
 
-
-=======
+=== Konsultation 05.01.2024 (5. Iteration)
+include::../Besprechungsprotokoll/Besprechung_05.01.2024.adoc[]
 //end::Iter5[]
->>>>>>> acc41ad5e114c258a68221a4e680cb6be9c75170

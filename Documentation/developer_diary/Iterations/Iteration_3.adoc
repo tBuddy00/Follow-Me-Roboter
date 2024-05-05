@@ -49,6 +49,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 == Iterationen
 //tag::Iter3[]
+
 === *3. Iteration 05.12.2023 - 19.12.2023* 
 === Allgemein
 ==== Standerfassung aus 2. Iteration

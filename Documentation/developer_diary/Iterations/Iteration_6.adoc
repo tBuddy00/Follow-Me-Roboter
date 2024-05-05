@@ -18,10 +18,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
-== Gruppenmeeting 14.03.2024 (6. Iteration)
-BITTE HIER INCLUDE
-
-
 === Teamstruktur zur 6. Iteration (11.03.2024 - 25.03.2024)
 
 |===
@@ -37,6 +33,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 == Iterationen
 //tag::Iter6[]
+
 === *6. Iteration 11.03.2024 - 25.03.2024* 
 === Allgemein
 ==== Standerfassung aus 5. Iteration
@@ -45,10 +42,12 @@ Mit Beginn unserer 5. Iteration (04.01.2024 - 18.01.2024) hatten wir aufgrund de
 
 ==== Probleme und weitere Belange
 
-- **Erster Punkt:**  
-
+- /
 
 ==== Ausblick
 
 Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. Des Weiteren ist die zielgerichtete Optimierung des Beleges auch von großer Bedeutung und so werden die o. g. Punkte aus dem Coach-Meeting mit Herr Zirkelbach auch umgesetzt werden. 
+
+== Gruppenmeeting 14.03.2024 (6. Iteration)
+include::../Besprechungsprotokoll/Besprechung_14.03.2024.adoc[]
 //end::Iter6[]

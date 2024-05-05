@@ -19,9 +19,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
-=== Gruppenmeeting 21.04.2024 (8. Iteration)
-BITTE HIER INCLUDE
-
 === Teamstruktur zur 8. Iteration (10.04.2024 - 24.04.2024)
 
 |===
@@ -37,6 +34,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 == Iterationen
 //tag::Iter8[]
+
 === *8. Iteration 10.04.2024 - 24.04.2024*
 === Allgemein
 ==== Standerfassung aus 7. Iteration
@@ -50,4 +48,7 @@ Mit der 8. Iteration begann weiterhin die Weiterführung der Arbeit aus der 6. u
 **Ausblick**
 
 WIRD ERGÄNZT!
+
+=== Gruppenmeeting 21.04.2024 (8. Iteration)
+include::../Besprechungsprotokoll/Besprechung_21.04.2024.adoc[]
 //end::Iter8[]

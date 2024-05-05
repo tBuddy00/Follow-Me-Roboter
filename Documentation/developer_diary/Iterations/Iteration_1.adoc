@@ -39,6 +39,7 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
 == Iterationen
 // tag::Iter1[]
+
 === *1. Iteration 06.11.2023 - 19.11.2023* 
 === Allgemein
 Die Hürde mit Herausgabe aller Projekte und Ihrer Projektleiter am 30.10.2023 bestand darin, zunächst das Team in seiner Gesamtheit erst einmal zusammenzutragen.

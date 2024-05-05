@@ -21,9 +21,6 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 === Teammitglieder
 include::{includesdir}/teammitglieder.adoc[]
 
-=== Gruppenmeeting am 28.11.2023 (2. Iteration)
-BITTE HIER INCLUDE
-
 === Teamstruktur zur 2. Iteration (20.11.2023 - 03.12.2023)
 
 |===
@@ -42,8 +39,8 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
 == Iterationen
-
 //tag::Iter2[]
+
 === *2. Iteration 20.11.2023 - 03.12.2023* 
 === Allgemein
 ==== Standerfassung aus 1. Iteration
@@ -87,4 +84,7 @@ Unsere **Zielstellung für die 2. Iteration** vom Zeitraum 20.11.2023 - 03.12.20
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 2. Iteration und mit Beginn der 3. Iteration als Team ist die Zusammenführung der Bilderkennungssoftware und die Garantie der Funktionalität des Fahrroboters ins seiner Gesamtheit. 
+
+=== Gruppenmeeting am 28.11.2023 (2. Iteration)
+include::../Besprechungsprotokoll/Besprechung_28.11.2023.adoc[]
 //end::Iter2[]
