@@ -1,11 +1,9 @@
 
 = Entwurfsdokumentation
-
 include für Architecture Notebook + Design Document + Sequenzdiagramm
 
 
 = Softwaredokumentation
-
 include Softwaredokumentation
 
 

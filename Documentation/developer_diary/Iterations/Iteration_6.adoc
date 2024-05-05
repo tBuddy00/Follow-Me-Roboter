@@ -45,6 +45,4 @@ Mit Beginn unserer 5. Iteration (04.01.2024 - 18.01.2024) hatten wir aufgrund de
 
 ==== Ausblick
 
-Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. 
-
-Des Weiteren ist die zielgerichtete Optimierung des Beleges auch von großer Bedeutung und so werden die o. g. Punkte aus dem Coach-Meeting mit Herr Zirkelbach auch umgesetzt werden. 
+Der Ausblick für unser Projekt richtet sich überwiegend an die von uns definierten Qualitätskriterien für den Fahrroboter und die Überarbeitung der Bildkerkennung. Des Weiteren ist die zielgerichtete Optimierung des Beleges auch von großer Bedeutung und so werden die o. g. Punkte aus dem Coach-Meeting mit Herr Zirkelbach auch umgesetzt werden. 

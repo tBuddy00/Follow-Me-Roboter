@@ -1,10 +1,15 @@
 === Gruppenmeeting 21.03.2024 (7. Iteration)
 ==== Anlass
-Gilt Weiterhin nach der Beschreibung aus vorangegangener Iteration.
+Der Anlass für dieses Gruppenmeeting vom 14.03.2024 (Donnerstag) bestand darin, die allgemeine Teamkonstellation, die Gruppen - und Arbeitsaufteilung und die Herangehensweise an unsere noch bestehenden Aufgaben (s. u.) zu besprechen.
 
 **Anwesenheitsliste:**
 
- - - // -
+ - Taylan Özer (Projektleiter),
+ - Claire Schubert (Entwicklerin),
+ - Johann Marthaus (Entwickler),
+ - Jeremy Ziegert (Entwickler),
+ - Luca Kurth (Entwickler),
+ - Danny Miersch (Entwickler)
 
 **Verlauf:**
 
@@ -66,23 +71,4 @@ Herr Özer übernimmt die Qualitätskontrolle für das Projekt und nimmt sämtli
 
 Frau Schubert gab den Hinweis, dass jeder sich in seine gestellten Aufgaben einmal hineinliest und diese demnach für sich am Wochenende (15.03. - 17.03.) persönlich einmal evaluiert und Zeit und Aufwand abwägt und bis zum Montag (18.03.) ein Feedback darüber abgibt, wie lange er bzw. sie für diese Aufgabe voraussichtlich benötigen wird.
 
-==== Zielstellung zur 6. Iteration
-Unsere **Zielstellung für die 6. Iteration** vom Zeitraum 11.03.2024 - 25.03.2024 haben wir folgende Punkte in unser Augenmerk genommen:
 
--> Erst nach weiterer Absprache.
-
-*Teamentschluss zu o. g. Aufgaben:*
-
-- Herr Kurth wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
-
-- Herr Miersch wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
-
-- Herr Palermo wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 08.04.2024 (Montag) benötigen (nach extra Onlineeinweisung).
-
-- Herr Marthau wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. Er wird in der ersten Woche bereits mit der YOLO-Bilderkennung beginnen wollen.
-
-- Frau Schubert wird für die o. g. Aufgaben drei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen.
-
-- Herr Özer wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
-
-- Herr Ziegert wird für die o. g. Aufgaben zwei Wochen, mit Stand vom 18.03.2024 (Montag) - 01.04.2024 (Montag) benötigen. 
