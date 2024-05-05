@@ -8,11 +8,4 @@ Am Freitag (15.12.2023) hielten wir ein Gruppenmeeting mit Herr Prof. Neugebauer
 
 - **Dritter Punkt:** Herr Prof. Neugebauer hat eine Kamera bestellt und so haben wir diese heute am 18.12.2023 (Montag) auch entgegengenommen -> Frau Schubert
 
-==== Zielstellung zur 3. Iteration
-Unsere **Zielstellung für die 3. Iteration** vom Zeitraum 04.12.2023 - 19.12.2023 haben wir folgende Punkte in unser Augenmerk genommen:
 
-- 1. Auftraggebergespräch zum 15.12.2023 (Freitag) um 10:30 Uhr -> Mitteilung des Projektstandes
-
-- 2. Vollständigkeit des 1. Prototypen
-
-- 3. Einarbeitung von Mitschriften in das Architecture Notebook 

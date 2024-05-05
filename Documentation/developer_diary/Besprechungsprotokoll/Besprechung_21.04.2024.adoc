@@ -1,7 +1,7 @@
 
 === Gruppenmeeting 21.04.2024 (8. Iteration)
 ==== Anlass
-Der Anlass für dieses Gruppenmeeting war im allgemeinen, dass wir die bestehenden Arbeitspunkte aus der 6. und 7. Iteration besprechen wollten und hier die herangehensweise zur Lösung der Punkte finden wollten.
+Der Anlass für dieses Gruppenmeeting war im allgemeinen, dass wir die bestehenden Arbeitspunkte aus der 6. und 7. Iteration besprechen und hier die herangehensweise zur Lösung der Punkte finden wollten.
 
 **Anwesenheitsliste:**
 
@@ -11,3 +11,6 @@ Der Anlass für dieses Gruppenmeeting war im allgemeinen, dass wir die bestehend
 **Verlauf:**
 Herr Miersch und Ich trugen im allgemeinen die nötige Vorgehensweise zusammen, um u. a. das Projektmanagement und die Lessons Learned auszubessern. Des Weiteren stellten wir fest, dass wir die Zuarbeit von Herr Marthaus benötigen.
 
+*Lösung:*
+
+- Herr Özer und Herr Miersch haben festgestellt, dass ebenfalls ein Austausch mit Frau Schubert nötig sind um hier weiterverfahren zu können.

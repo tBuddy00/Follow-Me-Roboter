@@ -47,14 +47,12 @@ Mit Beginn unserer 4. Iteration (20.12.2023 - 03.01.2024) erreichten wir einen M
 
 
 ==== Probleme und weitere Belange
-
+- /
 
 ==== Zielstellung zur 4. Iteration
 Unsere **Zielstellung für die 4. Iteration** vom Zeitraum 20.12.2023 - 03.01.2024 haben wir folgende Punkte in unser Augenmerk genommen:
 
 - 1. Vervollständigung unserer Belegarbeit: Risk-List, Architecture Notebook etc.
-
-
 
 ==== Ausblick
 Unser Ausblick bis zum Ende der 4. Iteration und mit Beginn der 5. Iteration als Team ist die Vervollständigung unserer Belegarbeit mit den dafür vorgesehenen Dokumenten.

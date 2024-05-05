@@ -17,8 +17,6 @@ Des Weiteren haben wir um die Zielstellung für die finalen Schritte im Projekt 
 
 Abschließend wurde auch klarer, welche Unterlagen des Weiteren im Beleg fehlen und das diese sofort eingearbeitet werden dürfen und das diese Einarbeitung von den Gruppenmitgliedern erfolgen wird, die Herr Özer auf GitHub in Form von Issues festlegt.
 
-
-
 **Es wurde festgelegt* Frau Schubert und Ich entschieden uns, das USE-CASE-Diagramm noch einmal zu überarbeiten und die Cases genauer zu formulieren.
 
 - Neue GitHub Issues formulieren zur Vervollständigung der Unterlagen im Beleg.
