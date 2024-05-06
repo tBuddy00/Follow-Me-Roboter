@@ -1,0 +1,34 @@
+=== Gruppenmeeting am 06.05.2024 (9. Iteration)
+==== Anlass 
+Der Anlass für dieses Gruppenmeeting bestand darin, alle Teammitglieder über den jetzigen Projektstand zu unterrichten und alle anwesenden (s. u.) über ihren derzeitigen Aufgabenfortschritt zu befragen und daraus Rückschlüsse für unser weiteres Vorgehen ziehen zu können.
+
+**Anwesenheitsliste:**
+
+- Herr Özer (Projektleiter),
+- Herr Marthaus (Leiter Entwicklungsteam II),
+- Frau Schubert (Entwicklerin, Analyst),
+- Herr Ziegert (Entwickler),
+- Herr Kurth (Entwickler),
+- Herr Miersch (Entwickler)
+
+**Verlauf & Klärung:**
+
+- Dokumente, welche zur direkten Abgabe in den Beleg hineingehören, müssen bis Ende des Monats Mai vollständig fertig sein
+
+- Testaufgaben sind ebenfalls bis Ende Mai vollständig zu erledigen
+
+- Alle Teammitglieder dürfen mit ihren Einzelleistungen beginnen
+
+- Der individuelle Gruppenbeitrag, jedes einzelnen Teammitglieds wurde erfragt und geklärt
+
+- Die Präsentation bzw. Vorstellung des Projekts ist ab der letzten Woche diesen Monats, demnach der 27.05.2024 (Montag), vorzubereiten
+
+- Gruppenleistung in Schriftform soll ebenfalls bis 27.05.2024 (Montag) fertig sein
+
+- Datenstrukturen sollen aktualisiert werden, sobald der letzte Prototyp fertig ist -> Betraut: Herr Miersch und Herr Özer
+
+- GitHub-Issues übersichtlichkeitshalber schließen, sofern erledigt
+
+- Zweiter Prototyp funktioniert und folgt einer Person
+
+- Nächstes Gruppen - bzw. Coachmeeting: 15.05. (Mittwoch) oder 16.05. (Donnerstag)
