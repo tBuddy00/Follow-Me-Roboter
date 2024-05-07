@@ -115,7 +115,7 @@ Tell Hostapd to use our config file by editing `/etc/default/hostapd` and changi
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ----
 
-Start Heostapd:
+Start Hostapd:
 
 [source,shell]
 ----
