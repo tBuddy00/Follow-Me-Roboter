@@ -1,4 +1,4 @@
-
+:source-highlighter: highlight.js
 
 = Systemvoraussetzungen
 
@@ -25,12 +25,14 @@
 * Ros2 humble
 
 
-= Systemeinrichtung
-include::../installation guide (english).adoc[]
+== Systemeinrichtung
+
+include::../installation guide (english).adoc[leveloffset=+1]
 
 
-= Nutzung über SSH
-include::../user guide (english).adoc[]
+== Nutzung über SSH
+
+include::../user guide (english).adoc[leveloffset=+1]
 
 
 

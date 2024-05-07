@@ -198,11 +198,6 @@ The final file should look like this:
 
 [source,shell]
 ----
-# This file is generated from information provided by
-# the datasource.  Changes to it will not persist across an instance.
-# To disable cloud-init's network configuration capabilities, write a file
-# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
-# network: {config: disabled}
 network:
     version: 2
     ethernets:
@@ -216,6 +211,7 @@ network:
             addresses:
             - 192.168.4.1/24
 ----
+_This file is generated from information provided by the datasource. Changes to it will not persist across an instance to disable cloud-init's network configuration capabilities, write a file /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following: ``network: {config: disabled}``_
 
 Finally, reboot your Raspberry Pi or Jetson Nano and check if you can connect to it via WiFi and SSH.
 
