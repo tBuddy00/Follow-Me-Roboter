@@ -17,7 +17,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 
 
 === Teammitglieder
-include::{includesdir}/teammitglieder.adoc[]
+include::{includesdir}/teammitglieder.adoc[lines=1..6;9..18]
 
 
 === Teamstruktur zur 9. Iteration (25.04.2024 - 09.05.2024)
