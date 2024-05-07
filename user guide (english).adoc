@@ -1,6 +1,8 @@
 
 
-== Conect to WiFi
+
+== Raspberry Pi 4B
+=== Conect to WiFi
 
 [source,bash]
 ----
@@ -9,13 +11,32 @@ ssid: Alphabot2
 Pw: ubuntu1234
 ----
 
-== Conect with SSH
+=== Conect with SSH
 
 [source,bash]
 ----
 ssh ubuntu@192.168.4.1
 
 Pw: ubuntu1234
+----
+
+== Jetson Nano
+=== Conect to WiFi
+
+[source,bash]
+----
+ssid: JetsonNano
+
+Pw: jetson1234
+----
+
+=== Conect with SSH
+
+[source,bash]
+----
+ssh jetson@192.168.5.1
+
+Pw: jetson
 ----
 
 

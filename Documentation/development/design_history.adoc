@@ -1,19 +1,19 @@
 
-= Entwurf 1 =
+= Entwurf 1 
 
 https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/Documentation/architecture/konzept%20v2.pdf
 
 Der erste Entwurf Endstand noch bevor dem ersten Kunden Meeting und diente dabei als Vorbereitung für dieses es geht dabei um ein Basis Konzept.
 
-= Entwurf 2 =
+= Entwurf 2 
 
-== Vorgaben ==
+== Vorgaben 
 * Verwendung von Ros
 	** Mit Ros ist die grundlegende Struktur unserer Software fest fortgegeben. Ros2 ist in einem Paket System Strukturiert in welches aus mehreren Nodes besteht (den eigentlichen Software Komponenten)
 * Verwendung des Alphabots 2
 	** Die Verwendung des Alphabots bringt vor allem Hardware
 
-== Technische Entscheidung ==
+== Technische Entscheidung 
 * Verwendung eines Vorgefertigtem Linux images mit Ros vorinstaliert
 	** Image: Ubiquity Robotics raspberry pi image https://learn.ubiquityrobotics.com/noetic_pi_image_downloads
 	** Pro:
@@ -31,15 +31,15 @@ Der erste Entwurf Endstand noch bevor dem ersten Kunden Meeting und diente dabei
 
 Da dieser Entwurf im Ramen der Testphase entstand sind noch keine konkreteren Strukturen entstanden
 
-= Entwurf 3 =
+= Entwurf 3 
 
-== Bild: Program Desing ==
-== Änderung zum letzten Entwurf ==
+== Bild: Program Desing 
+== Änderung zum letzten Entwurf 
 * Das ROS for Waveshare Alphabot2 Repository kann in der aktuellen form nicht verwendet werden da es für Ros 1 geschrieben ist was auf Python 2. das Problem mit Python 2 ist das es kurz davor steht nicht mehr unterstützt zu werden somit sind viele modernere Features nicht verfügbar.
 Somit umstieg auf Ros2
 * Das Linux Image wird nicht mehr verwendet da es auf einer veralteten Linux Version basiert welche nicht mit Ros2 kompatiebel ist
 
-== Technische Entscheidung ==
+== Technische Entscheidung 
 * Verwendung von Ros2 Humble
 	** Pro:
 		*** Ros2 humble ist eine der neusten Ros2 Versionen
@@ -77,19 +77,19 @@ Somit umstieg auf Ros2
 	** Pro:
 		*** Ermöglicht die einfache umwandlung vom Ros2 image format in das open cv Image format
 
-== Strukturelle Entscheidungen ==
+== Strukturelle Entscheidungen 
 * Das Modell Zeigt den allgemeinen Aufbau des Systems
 * Dabei gibt es eine Node für jede hardware componente des Alphabot2 welche mittels messages angesteuert werden kann
 * Weiter gibt es die cammera_subscriber node welche das empfangen und auswerten der bilder übernimt
 * Und die movement_control Node welche die ausgewerteten daten empfängt und in signale für die Nodes umwandelt welche die Hardware Komponenten Steuern
 
-= Entwurf 4 =
+= Entwurf 4 
 
-== Bild: Desing_v2 ==
-== Änderung zum letzten Entwurf ==
+== Bild: Desing_v2 
+== Änderung zum letzten Entwurf 
 * Leichte Änderung des Strukturellen Aufbaus
 
-== Strukturelle Entscheidungen ==
+== Strukturelle Entscheidungen 
 * Aufteilung des Sytems in 2 Packages
 	** Diese Entscheidung wurde getroffen Um das system möglichst modular zu gestalten
 	** Das ros2_for_waveshare Package ist dabei speziel für den Alphabot2 geschrieben und somit eine art update des ROS for Waveshare Alphabot2 Repository. Die idee ist dabei das das Package unabhängig von unserem System mit dem Alphabot2 verwendet werden kann
@@ -98,10 +98,10 @@ Somit umstieg auf Ros2
 
 Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem Prototypen
 
-= Entwurf 5 =
+= Entwurf 5 
 
-== Bild: Desing_v4-Software overview ==
-== Technische Entscheidung ==
+== Bild: Desing_v4-Software overview 
+== Technische Entscheidung 
 * Hinzufügen einer web Oberfläche welche die vom human_detector bearbeiteten Bilder anzeigt
 	** Pro:
 		*** Das Tool ermöglicht es zu sehen Wie gut das Tracking funktioniert und ist somit unbedingt notwending für debuging
@@ -118,17 +118,17 @@ Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem
 Durch die implementation des camera_streamers war es deutliche einfacher zu vertehen wie gut die erkennung funktioniert somit ist uns auch ein großes Problem aufgefallen die bis jetzt Verwednete Kammera hat einen viel zu geringen winkel für unseren anwendungsfall da person ungefär 3m vom Robotter entfernt stehen müssen um Überhaupt volständig im bild erkant zu werden
 Zudem ist der Bilderkeenungs algorythmus den wir verwenden recht ungenau und erkennt personen entweder nicht oder erkent personen in gegenständen
 
-= Entwurf 6 =
+= Entwurf 6 
 
-== Bild: ==
-== Änderung zum letzten Entwurf ==
+== Bild: 
+== Änderung zum letzten Entwurf 
 * Wegfall der ros2_v4ls_camera Node
 * Austauch der auf dem Alphabot2 vorinstallierten Kammera durch eine USB Kammera
 	** Da die Vorinstalierte Kammera nicht für unsere Zwecke ausreicht
 * Wegfall der Servos
 	** Die neue Kammera ist zu schwer für die Servos die dafür gebaute Softwear bleibt trotzdem im projekt für eventuelle spätere benutzung
 
-== Technische Entscheidung ==
+== Technische Entscheidung 
 * Wechsel auf eine USB Kammera
 	** Pro:
 		*** Bessere Qualität und ein deutlich größerer winkel
@@ -151,10 +151,10 @@ Zudem ist der Bilderkeenungs algorythmus den wir verwenden recht ungenau und erk
 Zum aktuellen Zeitraum ist noch nicht klar ob wir YOLO einsetzen können da es aktuell viel zu langsam ist die aktuelle tendenz liegt bei nein
 
 
-= Entwurf 7 Prototyp 2=
+= Entwurf 7 Prototyp 2
 
-== Bild: ==
-== Änderung zum letzten Entwurf ==
+== Bild: 
+== Änderung zum letzten Entwurf 
 * Wechsel von Raspberry Pi 4 auf Nvidia Jetson Nano
 	** Da der Raspberry Pi 4 nicht genug Leistung für YOLO hat
 * Wechsel von Alphabot2 auf Arduino Uno und Adafruit Motor Shield v2.3
@@ -162,8 +162,10 @@ Zum aktuellen Zeitraum ist noch nicht klar ob wir YOLO einsetzen können da es a
 	** Der Alphabot 2 ist schlecht erweiterbar
 * Wegfall des ros2_for_waveshare_alphabot2 packages
 	** Da es nicht mehr benötigt wird
+* Wechsel auf Jetson Nano - Ubuntu 20.04 image
+	** Der Jetson Nano hat aktuell keine offizielle Unterstützung für Ubuntu 22.04
 
-== Technische Entscheidung ==
+== Technische Entscheidung 
 * Wechsel auf Nvidia Jetson Nano
 	** Pro:
 		*** Deutlich mehr Leistung als der Raspberry Pi 4
@@ -179,4 +181,11 @@ Zum aktuellen Zeitraum ist noch nicht klar ob wir YOLO einsetzen können da es a
 	** Contra:
 		*** komunikation muss über Serielle Schnittstelle stattfinden
 		*** koplexere Systemstruktur
+* Wechsel auf Jetson Nano - Ubuntu 20.04 image
+	** Pro:
+		*** Offizielle Unterstützung
+		*** Bessere Kompatibilität
+	** Contra:
+		*** Ältere Ubuntu Version
+		*** Weniger Software verfügbar
 
