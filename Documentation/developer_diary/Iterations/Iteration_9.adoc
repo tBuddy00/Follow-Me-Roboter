@@ -20,7 +20,7 @@ Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem v
 include::{includesdir}/teammitglieder.adoc[]
 
 
-=== Teamstruktur zur 9. Iteration (25.04.2024 - 09.04.2024)
+=== Teamstruktur zur 9. Iteration (25.04.2024 - 09.05.2024)
 
 |===
 |Team |Teambeschreibung |Teammitglieder
@@ -33,10 +33,10 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 
  - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
 
-== Iterationen#
+== Iterationen
 //tag::Iter9[]
 
-=== *9. Iteration 10.04.2024 - 24.04.2024*
+=== *9. Iteration 25.04.2024 - 09.05.2024*
 === Allgemein
 ==== Standerfassung aus 8. Iteration
 
@@ -50,4 +50,7 @@ Mit der 8. Iteration begann weiterhin die Weiterführung der Arbeit aus der 6. u
 **Ausblick**
 
 WIRD ERGÄNZT!
+
+=== Gruppenmeeting 06.05.2024 
+include::../Besprechungsprotokoll/Besprechung_06.05.2024.adoc[]
 //end::Iter9[]

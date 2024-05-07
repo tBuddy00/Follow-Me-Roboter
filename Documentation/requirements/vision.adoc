@@ -13,7 +13,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das von I01_Follow-Me-Team entwickelt wird. Das System wird es Herr Prof. Dr.-Ing. Neugebauer erlauben, den Fahrroboter ihn folgen zu lassen mittels der eigens entwickelten Bilderkennungssoftware durch das o. g. Team, um damit die Hürden des Alltags zu meistern. Die Hauptaufgabe besteht darin, demjenigen zu folgen der den Ton angibt. Dementsprechend ist so das Problem, eines untreuen Gefährten gelöst.
+Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das von I01_Follow-Me-Team entwickelt wird. Das System wird es Herr Prof. Dr.-Ing. Neugebauer erlauben, den Fahrroboter ihn folgen zu lassen mittels der eigens entwickelten Bilderkennungssoftware durch das o. g. Team. Die Hauptaufgabe besteht darin, demjenigen zu folgen, welcher visuell die Führung angibt. 
 
 === Definitionen, Akronyme und Abkürzungen
 Siehe <<#glossary, Glossar>>.
@@ -25,7 +25,11 @@ Siehe <<#glossary, Glossar>>.
 == Positionierung
 
 === Fachliche Motivation
-Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrroboterprojekt die ineffizienten Aspekte innerhalb des Campus-Transportsystems. Die zunehmende Komplexität von Lehr- und Forschungseinrichtungen hat ineffiziente Transportabläufe hervorgebracht. Das angestrebte Ziel ist die Integration modernster Technologie zur Steigerung der betriebswirtschaftlichen Effizienz im hochschulischen Umfeld. Durch die Automatisierung von Transportaufgaben sollen nicht nur physische Belastungen gemildert, sondern auch zeitliche Engpässe überwunden werden. Die Implementierung des Fahrroboters wird als entscheidender Schritt betrachtet, um eine nachhaltige Optimierung von Campus-Arbeitsabläufen und eine Reduzierung der operativen Kosten zu erreichen.
+Die fachliche Motivation für das Projekt "Follow-Me Fahrroboter" liegt in der Synthese von zwei essenziellen Technologiebereichen: Robotik und Bilderkennung bzw. der nötigen Bilderkennungssoftware. Durch die Konstruktion eines Alphabot 2 auf Basis eines Raspberry Pi und der Integration einer von uns als Studiengruppe eigens entwickelten Bilderkennungssoftware streben wir an, ein effizientes und präzises System zu schaffen, das in der Lage ist, einer Person in einem Raum mit mehreren Personen oder sogar in komplexen Umgebungen im Innen- und Außenbereich zu verfolgen.
+
+Die Herausforderung besteht für uns im allgemeinen noch darin, ein robustes und zuverlässiges System zu entwickeln, das in der Lage ist, Personen zuverlässig zu identifizieren  und zu verfolgen, unabhängig von äußeren Einflüssen wie der unterschiedlichen Anzahl an Personen in einem Raum. Dies erfordert eine präzise Abstimmung zwischen der Hardware des Fahrroboters und der Software für die Bilderkennung sowie die Implementierung eigens entwickelter Algorithmen zur Personenerkennung.
+
+Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für unseren Auftraggeber Herr Prof. Neugebauer dar und bietet uns als Gruppe von sieben studierenden eine spannende Möglichkeit, uns auf dem Gebiet der Robotik und der Bilderkennung heranzutasten.
 
 
 
@@ -34,9 +38,9 @@ Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrrob
 [cols="1,3"]
 
 |===
-| Das Problem | Herr Prof. Dr.-Ing. Neugebauer besitzt aktuell noch keinen ähnlichen Roboter.
+| Das Problem | Als Machbarkeitsstudie soll gezeigt werden, dass der Fahrroboter - basierend auf einem Raspberry Pi mit eigens entwickelter Bilderkennungssoftware - selbstständg in der Lage ist einer Person in einem Raum zu folgen. Als Erweiterung stellt dann weiterhin die Verfolgung exakt einer Person dar, jedoch unter dem Gesichtspunkt, dass sich nun mehrere Personen in einem Raum befinden und der Alphabot 2, weiterhin exakt der für sie fokussierten Person folgen muss.
 | betrifft | Prof. Dr.-Ing. Neugebauer HTW Dresden
-| die Auswirkung davon ist | kein Weggfährte, niemanden der einen begleitet.
+| die Auswirkung davon ist | Es wurde gezeigt, dass der Alphabot 2 in der Lage ist einer Person in einem Raum zu folgen.
 | eine erfolgreiche Lösung wäre | die Realisierung des Fahrroboters mittels einer Bilderkennungssoftware auf einem Raspberry-Pi und einem Alphabot 2.
 |===
 
@@ -45,11 +49,11 @@ Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrrob
 [cols="1,3"]
 |===
 | Für | Prof. Dr.-Ing. Neugebauer
-| die | einen Fahrroboter benötigt, um einen Begleiter zu haben
+| die | als Machbarkeitsstudie einen Fahrroboter benötigen, welcher in der Lage ist einer Person in einem Raum zu folgen.
 | die Lösung ist ein | Fahrroboter, basierend auf einem Alphabot 2 und dem OS ROS II
-| Das | Herr Prof. Dr.-Ing. Neugebauer im Leben unterstützt
+| Das | Herr Prof. Dr.-Ing. Neugebauer zeigt, dass mittels Bilderkennungssoftware der Alphabot 2 der Person folgt.
 | Im Gegensatz zu | bisherigen Lösungen haben wir einen Follow-Me-Ansatz gewählt
-| Unser Produkt | Fahrroboter begleitet mittels Bilderkennungssoftware sein Ziel an jeden Ort
+| Unser Produkt | Fahrroboter begleitet mittels Bilderkennungssoftware sein Ziel an ggf. jeden Ort.
 |===
 
 == Stakeholder Beschreibungen
@@ -60,31 +64,35 @@ Inmitten der Herausforderungen moderner Hochschullogistik adressiert das Fahrrob
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| Prof. Dr.-Ing. Neugebauer | Vergab den Auftrag des Follow-Me Fahrroboters und will diesen gerne als Begleiter nutzen
-| Legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht dies auch. Stellte den Fahrroboter Alphabot 2 und den Raspberry-Pi zur Verfügung
+| Prof. Dr.-Ing. Neugebauer | Vergab als Machbarkeitsstudie den Auftrag des Follow-Me-Fahrroboter-Projekts und so will er gerne zeigen, dass der Alphabot 2 in der Lage ist, mittels Bilderkennung und geeigneter Hardware, einer Person zu folgen.
+| Herr Prof. Neugebauer legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht demanach dieses auch. Herr Prof. Neugebauer stellte auch den Fahrroboter Alphabot 2 und den Raspberry-Pi plus die hierfür benötigte Kamera zur Verfügung.
 
-|Entwicklungsteam I/II | Streben die Entwicklung der | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
-Bilderkennungssoftware für den Fahrroboter an
+|DSGVO
+|Im allgemeinen ist hier ebenfalls der Schutz der personenbezogenen Daten zu betrachten. Der Alphabot 2 nimmt kontinuierlich Personen mit der hierfür geeigneten Kamera auf. Jene Personen sind sich vielleicht auch der Tatsache nicht bewusst, dass sie aktuell aufgenommen werden und so ist dies mit zu berücksichtigen. Demnach ist dies behutsam zu handhaben, sofern sich Personen im Blickfeld der Kamera befinden oder in Aufnahmen die getätigt worden sind, ohne das Einverständnis der jeweiligen Personen.
+|Schutz der personenbezogenen Daten.
+
+|Entwicklungsteam I/II | Streben die Entwicklung der eigenen Bilderkennungssoftware an| Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
+
 
 |===
 
 === Benutzerumgebung
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
- - 8 Personen; Mit Abschluss 3. Semester - 7 Personen
+ - 8 Personen; Mit Abschluss des 3. Semesters noch 7 Personen
 
 . Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
- - Jede Iteration ist auf 2 Wochen ausgelegt; Arbeitsschritte sind i. d. R. innerhalb einer jeden Woche zu erledigen; Anpassungen können folgen
+ - Jede Iteration bzw. jeder Sprint ist auf 2 Wochen ausgelegt; Jeder Arbeitsschritt ist i. d. R. innerhalb von maximal zwei Tagen zu erledigen;
 
 . Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
  - Es gibt keine besonderen Umgebungsbedingungen
 
 . Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
-    - Es wird Microsoft VS-Code zur allgemeinen Struktur genutzt, GitHub als Versionsverwaltungssoftware und Py-Charm und wie schon genannt Microsoft VS-Code zur Entwicklung.
+    - Es wird Microsofts Visual Studio Code und Jet Brains PyCharm als allgemeine Entwicklungsumgebung genutzt und GitHub als Versionsverwaltungssoftware.
 
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
-    - Das OS ROS II ist im Einsatz und muss mit dem Alphabot 2 kombiniert werden.
+    - Das OS ROS II ist im Einsatz und muss mit dem Alphabot 2 integriert werden.
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -97,11 +105,15 @@ Bilderkennungssoftware für den Fahrroboter an
 |===
 | Bedarf | Priorität | Features | Geplantes Release
 
-| Bilderkennungssoftware | hoch | Erkennung einer Person | -
+| Optimierung Bilderkennungssoftware | hoch | Erkennung einer Person mittels YOLO Face Detection| 9 Iteration
 
-|Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| -
+| Übersetzung des OS ROS I in ROS II | hoch | überholte Features in aktuelle übernehmen | 7 Iteration
 
+| Bilderkennungssoftware | hoch | Erkennung einer Person | 5 Iteration
 
+|Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| 2 Iteration
+
+| Konstruktion des Alphabot 2 | hoch | Plattform ist der Raspberry Pi mit einem Alphabot 2 | 1 Iteration
 |===
 
 
@@ -119,7 +131,6 @@ Bilderkennungssoftware für den Fahrroboter an
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| Erkennung des Abstandes zu einer Person im Bild und folgen | hoch | -
+| Erkennung des Abstandes zu einer Person im Bild und Verfolgung dieser Person | hoch | -
 |einwandfreie bzw. einfache Nutzung | hoch | -
-
 |===

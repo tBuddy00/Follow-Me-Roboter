@@ -25,9 +25,10 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-Die Bedienung des Alphbots wird so leicht wie möglich gestaltet so das keine großen Vorkenntnisse benötigt werden. Ebenso gibt es eine klare und gut strukturierte Dokumentation welche das erlernen der Software erleichtert. Die Dokumentation wird in deutscher Sprache durchgeführt, jedoch werden die Kommentare im Programmcode auf englisch sein.
+Die Bedienung des Alphbots wird so leicht wie möglich und auf Grundlage unseres Guides gestaltet, so das keine großen Vorkenntnisse benötigt werden. Ebenso gibt es eine klare und gut strukturierte Dokumentation welche das erlernen der Software erleichtert. Die Dokumentation wird in deutscher Sprache durchgeführt, jedoch werden die Kommentare im Programmcode auf englisch sein.
 
 === Zuverlässigkeit (Reliability)
+NOCH AUSFÜLLEN
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 **Verfügbarkeit ** +
