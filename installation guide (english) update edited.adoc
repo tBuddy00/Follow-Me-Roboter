@@ -371,4 +371,4 @@ If you want to test it more extensively, you can use the Python script (https://
 
 Connect the Jetson Nano or Raspberry Pi to the Arduino Uno via USB cable.
 
-Connect the Jetson Nano (5v 4A) or Raspberry Pi (5V 2A) to a power source.
+Connect the Jetson Nano (5v 4A) or Raspberry Pi (5V 2A) to a power source. 
