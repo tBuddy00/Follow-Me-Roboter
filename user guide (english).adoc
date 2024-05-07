@@ -1,25 +1,25 @@
+:source-highlighter: highlight.js
 
-
-== Conect to WiFi
+== Connect to WiFi
 
 [source,bash]
 ----
 ssid: Alphabot2
 
-Pw: ubuntu1234
+Password: ubuntu1234
 ----
 
-== Conect with SSH
+== Connect with SSH
 
 [source,bash]
 ----
 ssh ubuntu@192.168.4.1
 
-Pw: ubuntu1234
+Password: ubuntu1234
 ----
 
 
-== Run Project from console
+== Run Project from Console
 
 [source,bash]
 ----
@@ -29,15 +29,15 @@ cd ~/ros2_ws/src/camera_package/launch
 ros2 launch follow_me_launch.py
 ----
 
-there are difrent launch files 
+there are different launch files 
 
 * Launch for the Arduino version `follow_me_arduino_launch.py`
 * Launch for the Alphabot2 version `follow_me_launch.py`
 * test the Arduino version `arduino_test_launch.py`
 
 
-== debuging comands
-reinstal the cammera_package
+== Debuging Comands
+reinstall the camera_package
 
 [source,bash]
 ----
