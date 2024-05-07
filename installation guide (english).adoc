@@ -108,7 +108,7 @@ wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 ----
 
-Tell Hostapd to use our config file by editing `/etc/default/hostapd` and changing the line that starts with `#DAEMON_CONF` (remove `#`\).
+Tell Hostapd to use our config file by editing `/etc/default/hostapd` and changing the line that starts with `#DAEMON_CONF` (remove `##`).
 
 [source,shell]
 ----

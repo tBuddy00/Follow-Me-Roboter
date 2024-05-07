@@ -16,7 +16,7 @@ Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verte
 Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
 
 === Teammitglieder
-include::{includesdir}/teammitglieder.adoc[]
+include::{includesdir}/teammitglieder.adoc[lines=1..6;9..18]
 
 === Teamstruktur zur 6. Iteration (11.03.2024 - 25.03.2024)
 
