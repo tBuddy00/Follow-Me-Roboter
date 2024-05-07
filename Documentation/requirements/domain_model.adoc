@@ -53,5 +53,5 @@ Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. D
 
 * Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
 
-.Domänenmodell vom Alphabot 2
+.Domänenmodell
 image::domain_model_v1.png[]
