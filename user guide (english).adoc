@@ -48,7 +48,7 @@ Pw: jetson
 cd ~/ros2_ws/ && source install/setup.bash
 cd ~/ros2_ws/src/camera_package/launch
 
-ros2 launch follow_me_launch.py
+ros2 launch follow_me_arduino_launch.py
 ----
 
 there are different launch files 
