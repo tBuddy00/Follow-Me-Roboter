@@ -1,0 +1,201 @@
+
+== Problems with the WiFi
+
+first check what isnt working by running the following command
+
+[source,shell]
+----
+# Check the status of the dnsmasq service
+sudo systemctl status dnsmasq
+
+# Check for the softblock issue
+sudo rfkill list
+
+# other useful commands
+sudo systemctl status check-dnsmasq.service
+sudo systemctl status unblock-wifi.service
+----
+
+
+=== fix softblock issue 
+if your wifi network doesnt boot properly check the following command
+
+[source,shell]
+----
+sudo rfkill list
+sudo systemctl status dnsmasq
+----
+if it looks like this 
+
+[source,shell]
+----
+0: phy0: Wireless LAN
+        Soft blocked: yes
+        Hard blocked: no
+----
+
+then you have the softblock issue to fix it we have to create a script to unblock wlan0 on boot
+
+run the following command to create the script
+
+[source,shell]
+----
+sudo vi /etc/systemd/unblock-wifi.sh
+----
+
+and add the following content
+
+[source,shell]
+----
+#!/bin/bash
+
+# Ensure that wlan0 is unblocked
+sudo rfkill unblock wlan
+----
+
+then run the following command to make the script executable
+
+[source,shell]
+----
+sudo chmod +x /etc/systemd/unblock-wifi.sh
+----
+
+then run the following command to create a service that runs the script on boot
+
+[source,shell]
+----
+sudo vi /etc/systemd/system/unblock-wifi.service
+----
+
+and add the following content
+
+[source,shell]
+----
+[Unit]
+Description=Unblock wifi on boot
+After=network-online.target
+Before=dnsmasq.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/unblock-wifi.sh
+
+[Install]
+WantedBy=multi-user.target
+----
+
+then run the following command to enable the service
+
+[source,shell]
+----
+sudo systemctl enable unblock-wifi.service
+sudo systemctl start unblock-wifi
+----
+
+eddit the dnsmasq service file to make sure that the unblock-wifi service runs before the dnsmasq service
+
+[source,shell]
+----
+sudo vi /lib/systemd/system/dnsmasq.service
+----
+
+Add the following lines under `[Unit]`:
+[source,shell]
+----
+[Unit]
+...
+After=wlan0.service
+After=unblock-wifi.service
+----
+
+then reboot the device
+
+[source,shell]
+----
+sudo reboot
+----
+
+=== if softblock issue still persists
+
+if the softblock issue still persists we can try implementing a service that restarts dnsmasq service after boot 
+
+
+1. Create a script to check dnsmasq status and restart if necessary:
+
+[source,bash]
+----
+sudo vi /usr/local/bin/check_dnsmasq.sh
+----
+
+Add the following content to the file:
+
+[source,bash]
+----
+#!/bin/bash
+
+# Check if dnsmasq is active
+if systemctl is-active --quiet dnsmasq; then
+    echo "dnsmasq is already running"
+else
+    echo "dnsmasq is not running, attempting to restart services"
+    systemctl restart unblock-wifi.service
+    if systemctl restart dnsmasq; then
+        echo "Successfully restarted dnsmasq"
+    else
+        echo "Failed to restart dnsmasq"
+    fi
+fi
+----
+
+Save and exit the editor (`Esc`, then `:wq`).
+
+2. Make the script executable:
+
+[source,bash]
+----
+sudo chmod +x /usr/local/bin/check_dnsmasq.sh
+----
+
+3. Create a systemd service unit file:
+
+[source,bash]
+----
+sudo vi /etc/systemd/system/check-dnsmasq.service
+----
+
+Add the following content:
+
+[source,bash]
+----
+[Unit]
+Description=Check if dnsmasq is running and restart services if necessary
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/check_dnsmasq.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+----
+
+Save and exit the editor (`Esc`, then `:wq`).
+
+4. Enable the service to run at boot:
+
+[source,bash]
+----
+sudo systemctl enable check-dnsmasq.service
+----
+
+5. Test the service:
+
+[source,bash]
+----
+sudo systemctl start check-dnsmasq.service
+sudo systemctl status check-dnsmasq.service
+----
+
+You should see the status of the service, including the echo statements from the script.

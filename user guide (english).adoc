@@ -45,6 +45,7 @@ Pw: jetson
 
 [source,bash]
 ----
+cd ~/ros2_humble/ && source install/setup.bash
 cd ~/ros2_ws/ && source install/setup.bash
 cd ~/ros2_ws/src/camera_package/launch
 

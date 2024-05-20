@@ -12,9 +12,10 @@ char inputBuffer[bufferSize]; // Array to store received characters
 int numbersArray[bufferSize]; // Array to store parsed numbers
 int index = 0; // Index to keep track of the current position in the arrays
 
-unsigned long previousTime = 0;
-int delayDuration = 1000;
-bool delay_set = false;
+int desired_speed_right = 0;
+int desired_speed_left = 0;
+
+int time0 = 0;
 
 void setup() {
   Serial.begin(9600); // Set the baud rate to 9600
@@ -51,14 +52,6 @@ void loop() {
       }
     }
   }
-  else if (delay_set) {
-    unsigned long currentTime = millis();
-    if (currentTime - previousTime >= delayDuration) {
-      set_speed_0 ();
-      previousTime = currentTime;
-      delay_set = false;
-    }
-  }  
 }
 
 void processString() {
@@ -102,12 +95,13 @@ void set_speed () {
   // set right motor
   if (speed_right > 0) { 
     Serial.println("Right FORWARD");
-    Motorr->setSpeed(speed_right);
+    desired_speed_right = speed_right;
     Motorr->run(FORWARD); 
   }
   else if (speed_right < 0){
     Serial.println("Right BACKWARD");
-    Motorr->setSpeed(speed_right * -1);
+    Serial.println(speed_right * -1);
+    desired_speed_right = speed_right * -1;
     Motorr->run(BACKWARD);
   }
   else {
@@ -118,12 +112,13 @@ void set_speed () {
   // set left motor
   if (speed_left > 0) {
     Serial.println("Left FORWARD");
-    Motorl->setSpeed(speed_left);
+    desired_speed_left = speed_left;
     Motorl->run(FORWARD);    
   }
   else if (speed_left < 0){
-    Serial.println("Left BACKWARD");
-    Motorl->setSpeed(speed_left * -1);
+    Serial.println("Left BACKWARD");    
+    Serial.println(speed_left * -1);
+    desired_speed_left = speed_left * -1;
     Motorl->run(BACKWARD); 
   }
   else {
@@ -131,17 +126,45 @@ void set_speed () {
     Motorl->run(RELEASE);
   }
 
-  if (speed_time != 0){
-    delayDuration = speed_time;
-    previousTime = millis();
-    delay_set = true;
+  time0 = millis();
+  gradual_speed_increase();
+
+  delay(speed_time);
+  set_speed_0();
+  
+}
+
+void gradual_speed_increase() {
+  int num_steps = 5; // Number of steps for gradual increase
+  int time_duration = 500; // in ms
+  int step_duration = time_duration / num_steps;
+  int speed_increment_right = desired_speed_right / num_steps;
+  int speed_increment_left = desired_speed_left / num_steps;
+
+  int current_speed_right = 0;
+  int current_speed_left = 0;
+
+  for (int i = 0; i < num_steps; i++) {
+    current_speed_right += speed_increment_right;
+    current_speed_left += speed_increment_left;
+    Motorr->setSpeed(current_speed_right);
+    Motorl->setSpeed(current_speed_left);
+    delay(step_duration);
   }
-  
-  
+
+  // Ensure the final desired speed is set
+  Motorr->setSpeed(desired_speed_right);
+  Motorl->setSpeed(desired_speed_left);
 }
 
 void set_speed_0 () {
   Serial.println("All motors RELEASE");
+  int time1 = millis();
+  int time2 = time1 - time0;
+  Serial.println("Runtime: ");
+  Serial.println(time2);
   Motorr->run(RELEASE);
   Motorl->run(RELEASE);
+  Motorr->setSpeed(0);
+  Motorl->setSpeed(0);
 }
