@@ -1,10 +1,14 @@
 
-= Entwurfsdokumentation
+= Entwicklerdokumentation
+
+== Entwurfsdokumentation
+
+include::../Documentation/architecture/architecture_notebook.adoc[lines=4..,leveloffset=+1]
 include für Architecture Notebook + Design Document + Sequenzdiagramm
 
 
 = Softwaredokumentation
-include Softwaredokumentation
+include::../Documentation/architecture/Softweardokumentation.adoc[]
 
 
 
