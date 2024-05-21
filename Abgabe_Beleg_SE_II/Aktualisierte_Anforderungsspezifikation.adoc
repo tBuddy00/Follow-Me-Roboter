@@ -1,0 +1,62 @@
+// --- 1. Projektthema -------------------------
+= SE II - Belegabgabe: Follow-Me Fahrroboter
+// --- 2. Teammitglieder -----------------------
+Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
+// --- 3. Abgabedatum --------------------------
+28. Juni 2024
+// ---------------------------------------------
+:docs: ../Documentation
+// ---
+:doctype: book
+:toc:
+:toclevels: 2
+:toc-title: Inhaltsverzeichnis
+:sectnums:
+:icons: font
+//:source-highlighter: highlightjs
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-signifier:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
+:!example-caption:
+:experimental:
+// Folders
+:imagesdir-reset: {imagesdir}
+:docs-test2: {docs}/test
+:docs-requirements: {docs}/requirements
+:docs-project-management: {docs}/project_management
+:docs-architecture: {docs}/architecture
+:docs-developer-diary: {docs}/developer_diary
+:docs-test: {docs}/test
+:docs-development: {docs}/development
+
+// --- Technische Spezifikation ---
+= Technische Spezifikation
+* Vision
+* Use Case Modell
+* System-wide Requirements
+* Glossar
+* Domänenmodel
+
+:imagesdir: {docs-requirements}/images
+
+// Vision
+include::{docs-requirements}/vision.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Use Case Model
+include::{docs-requirements}/use-case_model.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// System-wide Requirements
+include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Glossar
+[#glossary]
+include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Domänenmodell
+include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
