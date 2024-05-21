@@ -10,7 +10,7 @@ Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johan
 :doctype: book
 :toc:
 :toclevels: 2
-:toc-title: Inhaltsverzeichnis
+:toc-title: Inhalt
 :sectnums:
 :icons: font
 //:source-highlighter: highlightjs
@@ -33,15 +33,6 @@ Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johan
 :docs-developer-diary: {docs}/developer_diary
 :docs-test: {docs}/test
 :docs-development: {docs}/development
-
-// --- Technische Spezifikation ---
-= Technische Spezifikation
-* Vision
-* Use Case Modell
-* System-wide Requirements
-* Glossar
-* Domänenmodel
-
 :imagesdir: {docs-requirements}/images
 
 // Vision
