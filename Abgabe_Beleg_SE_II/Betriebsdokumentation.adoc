@@ -1,0 +1,38 @@
+= Betriebsdokumentation
+:source-highlighter: highlight.js
+
+== Systemvoraussetzungen
+=== Hardware
+==== Prototype 1
+
+* Raspberry Pi 4 8GB
+* Alphabot II
+
+==== Prototype 2
+
+* NVIDIA Jetson Nano
+* Arduino Uno
+* Adafruit Motor Shield v2.3
+* 2 x DC Motoren
+* USB-Webcam
+* WLAN-Modul
+* Batteriepack 4 AA Baterien
+* Batteriepack 5V 4A
+* Bloutooth HC-05 Modul (nur für Tests benötigt)
+
+=== Software
+* Ubuntu Server 22.04.3 LTS (64-bit)
+* Ros2 humble
+
+
+== Systemeinrichtung
+
+include::../installation guide (english).adoc[lines=4..,leveloffset=+1]
+
+
+== Nutzung über SSH
+
+include::../user guide (english).adoc[leveloffset=+1]
+
+
+
