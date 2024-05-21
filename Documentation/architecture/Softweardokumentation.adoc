@@ -1,11 +1,11 @@
 
-= camera_opencv =
+== camera_opencv 
 
-== Klasse: CameraOpencv ==
+=== Klasse: CameraOpencv
 
 Die Klasse CameraOpencv repräsentiert einen ROS-Node, der Bilddaten von einer Kamera abonniert, diese verarbeitet und dann Positionsdaten veröffentlicht.
 
-=== Methoden: ===
+==== Methoden:
 
 1. __init__(self):
    Der Konstruktor der Klasse, initialisiert die ROS-Node mit dem Namen 'camera_subscriber', erstellt Publisher für Positionsdaten (/position_data) und Bilder (/opencv_image). Außerdem initialisiert er die OpenCV Videoaufnahme (vid0) und den Detektor für die Personenerkennung (detector). Ein Timer wird erstellt, der alle 0,5 Sekunden die Methode loop() aufruft.
@@ -16,13 +16,13 @@ Die Klasse CameraOpencv repräsentiert einen ROS-Node, der Bilddaten von einer K
 3. publish_data(self, Position, time1, return_image):
    Diese Methode veröffentlicht die Positionsdaten und das verarbeitete Bild. Sie konvertiert das Bild in ein ROS-Image-Format und fügt den Positionsdaten Zeitstempel hinzu, bevor sie diese veröffentlicht.
 
-= movement_control =
+== movement_control
 
-== Klasse: MovementControl ==
+=== Klasse: MovementControl 
 
 Die Klasse MovementControl repräsentiert einen ROS-Node, die Positionsdaten empfängt, diese verarbeitet und entsprechende Steuersignale an Servos und Motoren sendet.
 
-=== Methoden: ===
+==== Methoden:
 
 1. __init__(self):
    Der Konstruktor der Klasse, initialisiert die ROS-Node mit dem Namen 'movement_control'. Verschiedene Parameter wie maximale Winkel, Distanz zur Person und Bewegungseinstellungen werden gesetzt. Publisher für Servo- und Motorsteuerbefehle werden erstellt. Abonnements für Positionsinformationen von der Kamera ('/position_data'), Joystick-Eingaben ('/joystick') und Steuerbefehle ('/control') werden eingerichtet.
@@ -36,7 +36,7 @@ Die Klasse MovementControl repräsentiert einen ROS-Node, die Positionsdaten emp
 4. control(self, msg):
    Diese Methode wird aufgerufen, wenn allgemeine Steuerbefehle empfangen werden. Sie verarbeitet die erhaltenen Befehle und steuert die Bewegung entsprechend.
 
-= Utility Funktionen =
+== Utility Funktionen
 
 1. calculate_speed_variable_time(base_rpm, radius, angle,  wheel_distance, wheel_radius, correction_factor):
    Berechnet die Geschwindigkeiten der Räder basierend auf einer variablen Zeit, abhängig von der Basis-Drehzahl, dem Radius, dem Winkel, dem Radabstand, dem Radradius und einem Korrekturfaktor.
@@ -71,11 +71,13 @@ Die Klasse MovementControl repräsentiert einen ROS-Node, die Positionsdaten emp
 11. combined_int_to_datetime(hours_minutes_combined, seconds_milliseconds_combined):
     Konvertiert ein kombiniertes Integer-Format in einen Zeitstempel.
 
-= arduino_interface =
+== arduino_interface
 
-== Klasse: Serial_Arduino ==
+=== Klasse: Serial_Arduino
 
 Diese Klasse ist für die Kommunikation mit einem Arduino über die serielle Schnittstelle zuständig.
+
+==== Methoden:
 
 1. __init__(self):
    Der Konstruktor initialisiert die serielle Verbindung mit dem Arduino und wartet, bis die Verbindung hergestellt ist.
@@ -89,9 +91,11 @@ Diese Klasse ist für die Kommunikation mit einem Arduino über die serielle Sch
 4. read(self):
    Diese Methode liest eine Zeile von Daten vom Arduino.
 
-== Klasse: ArduinoInterface ==
+=== Klasse: ArduinoInterface
 
 Diese Klasse repräsentiert einen ROS-Node, die Motorbefehle empfängt und an ein Arduino sendet.
+
+==== Methoden:
 
 1. __init__(self):
    Der Konstruktor initialisiert den ROS-Node und das Serial_Arduino-Objekt.
@@ -99,11 +103,13 @@ Diese Klasse repräsentiert einen ROS-Node, die Motorbefehle empfängt und an ei
 2. listener_callback(self, msg):
    Diese Methode wird aufgerufen, wenn Motorbefehle empfangen werden. Sie sendet die empfangenen Befehle an das Arduino und erwartet eine Antwort.
 
-= web_control_center =
+== web_control_center
 
-== Klasse: WebControlCenter ==
+=== Klasse: WebControlCenter
 
 Diese Klasse ist ein ROS-Node, die Bilder von einem ROS-Topic empfängt und über eine Flask-App streamt.
+
+==== Methoden:
 
 1. __init__(self):
    Der Konstruktor initialisiert die ROS-Node und abonniert das Bildtopic. Sie erstellt auch einen Publisher für Steuerbefehle.
@@ -111,16 +117,18 @@ Diese Klasse ist ein ROS-Node, die Bilder von einem ROS-Topic empfängt und übe
 2. image_callback(self, msg):
    Diese Methode wird aufgerufen, wenn ein Bild empfangen wird. Sie konvertiert das Bild in das JPEG-Format und speichert es im Flask-App-Objekt.
 
-=== Flask-App: =
+=== Flask-App:
 
 Die Flask-App wird verwendet, um ein Video-Stream und eine Benutzeroberfläche für die Steuerung anzuzeigen.
+
+==== Methoden:
 
 - /: Die Index route rendert die index.html-Seite.
 - /video_feed: Diese Route sendet den Video-Stream.
 - /button_click/<button_name>: Diese Route wird aufgerufen, wenn ein Steuerungsknopf gedrückt wird. Sie veröffentlicht den entsprechenden Steuerbefehl.
 - /print_message/<message>: Diese Route sendet eine Nachricht über SocketIO.
 
-=== Weitere Funktionen: =
+=== Weitere Funktionen:
 
 - generate(): Diese Funktion generiert den Video-Stream.
 - launch_follow_me(): Diese Funktion startet ein ROS2-Launch-File für die Funktion "Follow Me".
