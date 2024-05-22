@@ -15,7 +15,7 @@ Der Anlass für dieses Gruppenmeeting bestand darin, einen allgemeinen Überblic
 
  - Wir diskutierten über das OpenUP und die Relevanz für uns, zwecks Developer Diary
 
-**Es wurde festgelegt* das Frau Schubert, wie o. g. ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten niederschreibt zur späteren Weiterbearbeitung
+**Es wurde festgelegt** das Frau Schubert, wie o. g. ihre Architektur-Konzeption der Bilderkennungssoftware in Stichpunkten niederschreibt zur späteren Weiterbearbeitung
 
 - Wir beschlossen, dass wir zwecks Belegstruktur uns mehr in das OpenUP reinzulesen
 

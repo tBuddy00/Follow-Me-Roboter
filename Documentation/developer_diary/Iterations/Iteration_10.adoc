@@ -1,8 +1,7 @@
 = Dokumentation: Follow-Me-Fahrroboter
-Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
+ Modulleiter: Herr Prof. Dr. -Ing. Habil. Jürgen Anke; Auftraggeber: Herr. Prof. Dr. -Ing. Mario Neugebauer; Projekt-Coach: Herr Christoph Zirkelbach;
 {localdatetime}
 include::../../_includes/default-attributes.inc.adoc[]
-:sectnums!:
 
 == Allgemein
 Dieses Projekt stellt eine Teamarbeit mit Beginn im 3. Semester im Umfang von acht Personen im Modul Software Engineering I und im weiterführenden Modul im 4. Semester Software Engineering II dar. Modulleitung übernimmt niemand geringeres als Herr Prof. Dr.-Ing. Habil. Jürgen Anke; Auftraggeber stellt Herr Prof. Dr.-Ing. Mario Neugebauer dar und unser Projekt-Coach ist Herr Christoph Zirkelbach. 
@@ -16,24 +15,13 @@ Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verte
 === Ablauf der Kommunikation unter Verwendung von Tools
 Wir haben uns als Team darauf verständigt unsere interne Kommunikation in dem von unserem Projektleiter Herr Özer erstellten WhatsApp-Gruppe abzuhalten und diesen auch zum allgemeinen Austausch bei Fragen, Problem und Lösungen zu nutzen. Discord dient hier im gleichen Rahmen. In GitHub überwachen wir unsere gegenseitig gestellten Aufgaben und kontrollieren Projektstruktur. 
 
+
 === Teammitglieder
-include::{includesdir}/teammitglieder.adoc[]
+include::{includesdir}/teammitglieder.adoc[lines=1..6;9..18]
 
-=== Teamstruktur der 1. bis 5. Iteration (06.11.2023 - 03.01.2024)
-Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
 
-|===
-|Team |Teambeschreibung |Teammitglieder
-|**Entwicklungs Team I**
-|Entwicklungsteam I unter Leitung von Herr Marthaus ist zu Beginn der 1. Iteration (06.11.2023 - 19.11.2023) für die Bilderkennung des Fahrroboters zuständig.
-|Johann Marthaus (Gruppenleitung), Luca Kurth, Jonathan Palermo, Jeremy Ziegert
+=== Teamstruktur zur 10. Iteration (10.05.2024 - 24.05.2024)
 
-|**Entwicklungs Team II**
-|Entwicklungsteam II stellt die Recherche und die Dokumentation zum Roboter Betriebssystem II (ROS II) sicher und überwacht demnach die Schritte zur Implementierung des Betriebssystems.
-|Claire Schubert, Danny Miersch
-|===
-
-=== Teamstruktur der 6. bis 9. Iteration (11.03.2024 - 09.04.2024)
 |===
 |Team |Teambeschreibung |Teammitglieder
 |**Entwicklungs Team I**
@@ -41,24 +29,30 @@ Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II si
 |Johann Marthaus (Gruppenleitung), Jonathan Palermo, Frau Schubert
 |===
 
+Die Teammitglieder, welche nicht Teil des genanten Entwicklungsteams I und II sind, führen Ihre oben beschriebenen Aufgaben autonom weiterhin fort.
+
+ - Unsere Teamstruktur blieb analog zur 1. Iteration unverändert und so führen wir diese Teamstruktur zunächst auch in der 2. Iteration fort.
+
 == Iterationen
-include::Iteration_1.adoc[tags=Iter1]
+//tag::Iter10[]
 
-include::Iteration_2.adoc[tags=Iter2]
+=== *10. Iteration 10.05.2024 - 24.05.2024*
+=== Allgemein
+==== Standerfassung aus 9. Iteration
 
-include::Iteration_3.adoc[tags=Iter3]
+Mit der 8. Iteration begann weiterhin die Weiterführung der Arbeit aus der 9 Iteration und so gilt weiterhin u. a. die Verbesserung der Bilderkennung und die Vervollständigung des Belegs.
 
-include::Iteration_4.adoc[tags=Iter4]
+ERGÄNZEN
 
-include::Iteration_5.adoc[tags=Iter5]
+==== Probleme und weitere Belange
 
-include::Iteration_6.adoc[tags=Iter6]
+- **Erster Punkt:**  
+ - - // .
 
-include::Iteration_7.adoc[tags=Iter7]
+**Ausblick**
 
-include::Iteration_8.adoc[tags=Iter8]
+WIRD ERGÄNZT!
 
-include::Iteration_9.adoc[tags=Iter9]
-
-include::Iteration_10.adoc[tags=Iter10]
-
+=== Coach-Meeting 22.05.2024 
+include::../Besprechungsprotokoll/Besprechung_22.05.2024.adoc[]
+//end::Iter10[]

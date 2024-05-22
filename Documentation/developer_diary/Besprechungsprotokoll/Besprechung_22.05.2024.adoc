@@ -1,0 +1,56 @@
+=== Coach-Meeting 22.05.2024 (10. Iteration)
+==== Anlass
+Der Anlass für dieses Coach-Meeting bestand im allgemeinen darin Herr Zirkelbach als Projektcoach, über unseren aktuellen Projektstand zu informieren. 
+
+**Anwesenheitsliste:**
+
+- Herr Zirkelbach (Projektcoach),
+- Herr Özer (Projektleiter),
+- Herr Miersch (Entwickler),
+- Herr Ziegert (Technical Writer Bilderkennung/Entwicklung),
+- Frau Schubert (u. a. Entwicklerin),
+- Herr Kurth (Entwickler)
+
+**Verlauf:**
+
+- Use-Case erneuern (siehe Herr Miersch Mitschriften), 
+
+- Domänenmodell erneuern: C4-Modell vereinfachen und einbetten (Frau Schubert),
+
+- Anwenderdokumentation + Betriebsdokumentation Unterschiede im allgemeinen: Was muss gemacht werden, dass der Roboter jemandem folgt und die Website aufruft?,
+
+- FAQ wird gerne gesehen, aber dann nur relevante Punkte abbilden bzw. diese beantworten: Start/Stopp, Website aufrufen
+
+- Qualitätssicherung: Funktioniert auch alles wie in den Guides?Ist ein Back-Up vorhanden, wenn die SD-Karte kaputt geht - Lösung?,
+
+- Risk-List: SD-Karte / Hardware-Defekt: ergänzen,
+
+- Testdokumentation fehlt, Tests fehlen (evtl. noch einen zusätzlichen Test: einen Posititvtest und einen Negativtest, 3. Test: Website aufrufen),
+
+- Abnahmetest vorbereiten für Abnahmegespräch mit Herr Neugebauer -> ebenfalls in das Abnahmeprotokoll aufnehmen - vor Abnahmetest, die eigentlichen vollen Funktionalitäten des Roboters testen und dann Herr Neugebauer präsentieren,
+
+- Zweiten Prototypen testen, da dieser unser Endprodukt ist,
+
+- Systemwide Requirements: Performance und evtl. Vorgaben von Herr Neugebauer mit einbinden,  ansonsten weniger Mitschriften in diesem Dokument -> „Person folgen; zur Geschwindigkeit und Entfernung wurden keine Annahmen bzw. Aussagen getroffen“ -> in das Dokument aufnehmen und Frau Schubert noch weitere Punkte ergänzen lassen, 
+
+- C4-Modell in das Architecture Notebook einbinden (Node-Diagramm),
+
+- Sequenzdiagramm: CV-Bridge Webcontrollcenter ergänzen,
+
+- Diagramme nur erstellen bzw. einbinden , wenn Unverständnis vorhanden ist,
+
+- Architecture Notebook zweiteilen, da verschiedene Softwareebene und da kleinere Unterschiede in der Software vorhanden sind -> Erklärung hierfür im Dokument nötig und warum zwei Prototypen existieren,
+
+- Use-Case: Berechnungen einbinden,
+
+- Mathedokumentation im Design nötig,
+
+- Ursprüngliches Design-Dokument in Architecture Notebook übernehmen
+
+**Es wurde festgelegt:**
+
+Herr Miersch und Herr Özer werden voraussichtlich alle o. g. Arbeitspunkte an den Wochenendtagen (24.05. - 26.05.) abschließen und diese dann noch einmal von Herr Zirkelbach begutachten lassen.
+
+
+
+
