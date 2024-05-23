@@ -1,32 +1,32 @@
 == Entwurf 1
 
-https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/Documentation/architecture/konzept%20v2.pdf
+image::../architecture/images/konzept v2.png[]
 
-Der erste Entwurf entstand noch bevor dem ersten Kundenmeeting und diente dabei als Vorbereitung. Es geht dabei um ein Basiskonzept.
+Der erste Entwurf entstand noch vor dem ersten Kundenmeeting und diente dabei als Vorbereitung. Es geht dabei um ein Basiskonzept.
 
 == Entwurf 2 
 
 === Vorgaben
 * Verwendung von ROS
-    ** Mit ROS ist die grundlegende Struktur unserer Software fest vorgegeben. ROS 2 ist in einem Paket-System strukturiert, welches aus mehreren Nodes besteht (den eigentlichen Softwarekomponenten).
+    ** Mit ROS ist die grundlegende Struktur unserer Software festgelegt. ROS 2 ist in einem Paket-System strukturiert, welches aus mehreren Nodes besteht (den eigentlichen Softwarekomponenten).
 * Verwendung des Alphabot 2
-    ** Die Verwendung des Alphabots bringt vor allem Hardware
+    ** Die Verwendung des Alphabots bringt vor allem Hardware-Anforderungen mit sich
 
 === Technische Entscheidung 
 * Verwendung eines vorgefertigten Linux-Images, mit ROS vorinstalliert
     ** Image: Ubiquity Robotics Raspberry Pi Image https://learn.ubiquityrobotics.com/noetic_pi_image_downloads
     ** Pro:
-        *** Die Verwendung eines Images erspart viel Zeit im initialen Setup des Systems
+        *** Die Verwendung eines Images spart viel Zeit beim initialen Setup des Systems
         *** ROS funktioniert out of the box
-        *** Es ist schneller möglich, Tests auszuführen
+        *** Tests können schneller durchgeführt werden
     ** Contra:
-        *** Weniger Customization
+        *** Weniger Anpassungsmöglichkeiten
 * Verwendung des ROS for Waveshare Alphabot2 Repository https://github.com/ShaunPrice/ROS_for_Waveshare_Alphabot2
     ** Pro:
         *** Das Repository ist voll entwickelt und kompatibel mit unserem Linux Image
-        *** Ist speziell für den Alphabot geschrieben 
+        *** Es ist speziell für den Alphabot geschrieben
     ** Contra:
-        *** Ist mittlerweile 5 Jahre alt
+        *** Es ist mittlerweile 5 Jahre alt
 
 Da dieser Entwurf im Rahmen der Testphase entstand, sind noch keine konkreteren Strukturen entstanden.
 
@@ -34,8 +34,8 @@ Da dieser Entwurf im Rahmen der Testphase entstand, sind noch keine konkreteren 
 
 === Bild: Program Design
 === Änderung zum letzten Entwurf
-* Das ROS for Waveshare Alphabot2 Repository kann in der aktuellen Form nicht verwendet werden, da es für ROS 1 geschrieben ist, welches auf Python 2 basiert. Das Problem mit Python 2 ist, dass es kurz davor steht, nicht mehr unterstützt zu werden. Somit sind viele modernere Features nicht verfügbar.
-Somit Umstieg auf ROS 2
+* Das ROS for Waveshare Alphabot2 Repository kann in der aktuellen Form nicht verwendet werden, da es für ROS 1 geschrieben ist, welches auf Python 2 basiert. Das Problem mit Python 2 ist, dass es bald nicht mehr unterstützt wird. Dadurch sind viele modernere Features nicht verfügbar.
+Somit Umstieg auf ROS 2.
 * Das Linux-Image wird nicht mehr verwendet, da es auf einer veralteten Linux-Version basiert, welche nicht mit ROS 2 kompatibel ist
 
 === Technische Entscheidung ==
@@ -46,7 +46,7 @@ Somit Umstieg auf ROS 2
         *** viele Systeme unterstützen ROS 2
         *** Umfangreiche Dokumentation
     ** Contra:
-        *** ROS 2 ist im Allgemeinen recht komplex und hat somit eine recht lange Einarbeitungszeit
+        *** ROS 2 ist im Allgemeinen recht komplex und hat daher eine lange Einarbeitungszeit
 * Verwendung von Ubuntu Server 22.04.03 LTS (64 Bit)
     ** Pro:
         *** das zu ROS 2 Humble empfohlene Operating-System
