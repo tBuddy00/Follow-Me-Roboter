@@ -1,5 +1,5 @@
 = Glossar: Follow-Me Fahrroboter
-Luca Kurth <s85459@htw-dresden.de>; Jonathan Palermo <s85287@htw-dresden.de>; Jeremy Ziegert <s85299@htw-dresden.de>; Taylan Özer <s85500@htw-dresden.de>; Danny Miersch <s85567@htw-dresden.de>; Johann Marthaus <s85892@htw-dresden.de>; Theresa Stasch <s82413@htw-dresden.de>
+Luca Kurth <s85459@htw-dresden.de>; Jonathan Palermo <s85287@htw-dresden.de>; Jeremy Ziegert <s85299@htw-dresden.de>; Taylan Özer <s85500@htw-dresden.de>; Danny Miersch <s85567@htw-dresden.de>; Johann Marthaus <s85892@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -112,14 +112,14 @@ image::DiagrammDatenstrukturen.jpg[]
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| topic
-| Eine Topic ist ein Kommunkationskanal für ROS II, der es ermöglicht, Daten zwischen verschiedenen Knoten (Nodes) in einem ROS II Netzwerk auszutauschen.
+| Topic
+| Eine Topic ist ein Kommunkationskanal für ROS II, der es ermöglicht Daten zwischen verschiedenen Knoten (Nodes) in einem ROS II Netzwerk auszutauschen.
 | Format: nicht festgelegt
-Syntax: beginnen immer mit / +
-| Müssen dem Ros II Message-Format Format entsprechen
+Syntax: beginnen immer mit "/ +""
+| Müssen dem Ros II Message-Format entsprechen
 | -
 
-|topic: +
+|Topic: +
 /image_raw 
 |topic, welche unverarbeitete Rohbilddaten der Kamera überträgt 
 |sensor_msgs.msg +
@@ -127,28 +127,28 @@ Image Formate
 | ''
 | -
 
-|topic: +
+|Topic: +
 /opencv_image
-|Überträgt bearbeitete Bilder von der camera_opencv-Node. Diese Bilder sind das Ergebnis der Human-detection-function und werden anschließend von der camera_streamer-Node empfangen.
+|Überträgt bearbeitete Bilder von der Camera_OpenCV-Node. Diese Bilder sind das Ergebnis der Human-Detection-Function und werden anschließend von der Camera_Streamer-Node empfangen.
 |sensor_msgs.msg +
 Image Formate
 |'' +
-Bild mit Koordinatensystem sowie einer Visualisierung des Trackings der Person
+Bild mit Koordinatensystem sowie einer Visualisierung des trackings einer Person
 |-
 
-|topic: +
+|Topic: +
 /position_data
-|Liefert Information über die Position der Person im Bild, welche von der Human-detection-function erzeugt werden.
+|Liefert Informationen über die Position der Person im Bild, welche von der Human-Detection-Function erzeugt werden.
 |std_msgs.msg +
 Int32MultiArray Formate +
 Array mit 7 int Werten
 |'' +
-Die werte für custom_x center of person, custom_y center of person, width of person, height of person müssen im Bild liegen, also kleiner als width of image / height of image sein.
+Die Werte für custom_x center of person, custom_y center of person, width of person, height of person müssen im Bild liegen, also kleiner als width of image / height of image sein.
 |-
 
-|topic: +
+|Topic: +
 /joystick
-|Überträgt die von der Joystick-node empfangenen Joystick Signale an die Movement_controle-node.
+|Überträgt die von der Joystick-Node empfangenen Joystick Signale an die Movement_Controle-Node.
 |std_msgs.msg 
 String
 |'' +
@@ -156,39 +156,39 @@ Muss eines von 5 Steuersignalen sein:
 Center, Up, Right, Left, Down
 |-
 
-|topic: +
+|Topic: +
 /servo
-|Übergibt die von der Movement_control-node erzeugten Steuer Daten an die Pan_tilt-node.
+|Übergibt die von der Movement_Control-Node erzeugten Steuerdaten an die Pan_Tilt-Node.
 |std_msgs.msg +
 Int32MultiArray Format +
 Array mit 2 int werten +
 [0] - servo winkel x +
 [1] - servo winkel y
 | '' +
-Der Wert für Winkel x mus zwischen -90 und 90 liegen +
-Der Wert für Winkel y mus zwischen -80 und 30 liegen
+Der Wert für Winkel-x muss zwischen -90 und 90 liegen +
+Der Wert für Winkel-y muss zwischen -80 und 30 liegen
 |-
 
-|Data Stream
+|Datastream
 |Übertragung von Daten innerhalb einer node. 
 |-
 |-
 |-
 
-|Ros II Image
+|ROS 2 Image
 |Identisch mit dem von /image_raw übertragenen Bild.
 |sensor_msgs.msg Image Formate
 |siehe /image_raw
 |-
 
-|opencv Image
-|Ros2 Image welches von der cv_bridge-fuction in ein OpenCV Image Format umgewandelt wurde.
+|OpenCV-Image
+|ROS 2 Image, welches von der CV_Bridge-Function in ein OpenCV-Image Format umgewandelt wurde.
 |bgr8
 |siehe /image_raw
 |-
 
 |Processed Image
-|Das von der human_detection function bearbeitete Bild. Anfags Identisch mit dem von /opencv_image übertragenen Bild, wird dann in der Camera_streamer-node mit Hilfe von cv_bridge in das OpenCV Image Format umgewandelt.
+|Das von der Human_Detection_Function bearbeitete Bild. Anfangs identisch mit dem von /opencv_image übertragenen Bild, wird dann in der Camera_Streamer-Node mit Hilfe von CV_Bridge in das OpenCV-Image Format umgewandelt.
 |Beginn: +
 sensor_msgs.msg +
 Image Formate
@@ -196,8 +196,8 @@ Später: bgr8
 |siehe /opencv_image
 |
 
-|coordinates
-|Sind die von der Human_detection-function erzeugten Daten welche dan als /position_data weitergegeben werden. 
+|Koordinaten/Coordinates
+|Sind die von der Human_Detection-Function erzeugten Daten welche dann als /Position_Data weitergegeben werden. 
 |Array mit 7 int werten 
 (siehe /position_data)
 |siehe /position_data

@@ -26,13 +26,12 @@ Für unser gegebenes Projekt "Follow-Me Fahrroboter" stellt sich Herr Prof. Dr. 
 | **Luca Kurth** | Herr Kurth trägt die Rolle des **Entwicklers** und trägt mit zur Entwicklung des Fahrroboters bei.|
 
 
-**ALLE TÄTIGKEITEN WERDE NOCH GENAUER UND BESSER BESCHRIEBEN ES KANN NICHT ALSO NOCH WANDLEN - Taylan**
 
 
-[inhaltserzeichnis der Documenation ]
+[Inhaltsverzeichnis der Dokumentation]
 
 
 
 ## Iterationen
 
-[link zu den Iterationen]
+[Link zu den Iterationen]

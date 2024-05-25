@@ -22,7 +22,7 @@
 
 === Software
 * Ubuntu Server 22.04.3 LTS (64-bit)
-* Ros2 humble
+* ROS 2 Humble
 
 
 == Systemeinrichtung
