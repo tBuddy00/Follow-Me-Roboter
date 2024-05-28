@@ -1,8 +1,17 @@
 
+= Abnahmeprotokoll
 
-includes für 
-Vision
-Use Case Modell
-Systemweite Anforderungen
-Glossar
-Domänenmodell
+//Vision
+include::../Documentation/requirements/vision.adoc[]
+
+//Use-Case-Model
+include::../Documentation/requirements/use-case_model.adoc[]
+
+//Systemweite Anforderungen
+include::../Documentation/requirements/system-wide_requirements.adoc[]
+
+//Glossary
+include::../Documentation/requirements/glossary.adoc[]
+
+//Domänenmodell
+include::../Documentation/requirements/domain_model.adoc[]

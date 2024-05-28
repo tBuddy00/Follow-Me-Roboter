@@ -1,0 +1,99 @@
+= Dokumentation der HumanDetector-Klasse
+
+== Einführung
+
+Die Klasse `HumanDetector` ist dafür konzipiert, Menschen in einem Videostream mithilfe von OpenCV und dem YOLOv3-Algorithmus zu erkennen und zu verfolgen. Diese Klasse nutzt ein neuronales Netzwerk, um Personen zu identifizieren, und implementiert Funktionen zur Verfolgung von erkannten Personen durch die Bildsequenzen. Außerdem bietet die Klasse Optionen zum Anzeigen und Anpassen der Darstellung der verarbeiteten Bilder.
+
+== Klassenattribute
+
+* `name`: Ein String, der den Namen der Klasse `HumanDetector` repräsentiert.
+* `net`: Das YOLO-Netzwerk, geladen mit Konfiguration und Gewichten.
+* `layer_names`: Eine Liste der Namen der Ausgabeschichten des YOLO-Netzwerks.
+* `selected_human`: Der aktuell ausgewählte Mensch zur Verfolgung.
+* `frame_counter`: Eine ganze Zahl, die die Anzahl der verarbeiteten Frames verfolgt.
+* `show_frame`: Ein boolescher Wert, der angibt, ob das verarbeitete Bild angezeigt werden soll.
+* `yolo_boxes`: Liste von Bounding Boxes für erkannte Personen.
+* `detected_humans`: Liste von detektierten Personen, die im Bild 'im ganzen' zu sehen sind.
+
+== Konstruktor
+
+* `__init__(self, show_frame=False)`: Initialisiert die Klasse `HumanDetector` mit den Standardattributen.
+  - `show_frame`: Optionaler Parameter, um zu bestimmen, ob das verarbeitete Bild angezeigt werden soll.
+
+== Methoden
+
+=== `locate_person(self, frame)`
+
+Lokalisiert Personen im bereitgestellten Bild und ruft relevante Informationen ab.
+
+Parameter:
+* `frame`: Das Eingangsbild für die Personenerkennung.
+
+Rückgabewert:
+* Eine Liste mit Koordinaten und weiteren Daten von erkannten Personen.
+
+=== `process_frame(self, frame)`
+
+Verarbeitet jedes Bild, um Menschen zu erkennen und zu verfolgen.
+
+Parameter:
+* `frame`: Das Eingangsbild für die Verarbeitung.
+
+=== `cv_to_custom_coordinates(self, x_cv, y_cv, frame_width, frame_height)`
+
+Konvertiert OpenCV-Koordinaten in benutzerdefinierte Koordinaten.
+
+Parameter:
+* `x_cv`: X-Koordinate in OpenCV.
+* `y_cv`: Y-Koordinate in OpenCV.
+* `frame_width`: Breite des Bildes.
+* `frame_height`: Höhe des Bildes.
+
+Rückgabewert:
+* Ein Tupel mit den konvertierten X- und Y-Koordinaten.
+
+=== `get_most_centered_person(self, frame_height, frame_width)`
+
+Ermittelt den zentralsten erkannten Menschen im Bild.
+
+Parameter:
+* `frame_height`: Die Höhe des Bildes.
+* `frame_width`: Die Breite des Bildes.
+
+Rückgabewert:
+* Koordinaten des am zentralsten positionierten Menschen.
+
+=== `draw_coordinate_system(self, frame)`
+
+Zeichnet ein Koordinatensystem auf das Bild als Referenz.
+
+Parameter:
+* `frame`: Das Eingangsbild.
+
+Rückgabewert:
+* Das Bild mit dem eingezeichneten Koordinatensystem.
+
+== Beispielverwendung
+
+[source,python]
+----
+# Beispielverwendung der HumanDetector-Klasse
+if __name__ == "__main__":
+    video_capture = cv2.VideoCapture(0)
+
+    detector = HumanDetector(show_frame=True)
+    while True:
+        ret, frame = video_capture.read()
+        if not ret:
+            break
+
+        values = detector.locate_person(frame)
+        print(values)
+        if detector.show_frame:
+            cv2.imshow('Frame', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    video_capture.release()
+    cv2.destroyAllWindows()
+----

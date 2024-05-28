@@ -6,6 +6,8 @@ yolo_net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
 yolo_layer_names = yolo_net.getUnconnectedOutLayersNames()
 
 # Funktion zum Erkennen und Zeichnen des Rahmens um Personen
+
+
 def detect_people(frame):
     height, width, _ = frame.shape
 
@@ -57,6 +59,7 @@ def detect_people(frame):
         else:
             print("Entfernung vergrößern")
 
+
 # Hauptprogramm
 cap = cv2.VideoCapture(0)
 
@@ -73,5 +76,5 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-cap.release()
 cv2.destroyAllWindows()
+cap.release()
