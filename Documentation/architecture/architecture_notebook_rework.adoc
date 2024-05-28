@@ -1,0 +1,75 @@
+= Architecture Notebook: Follow-Me Fahrroboter
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Zweck
+Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben.
+
+== Architekturziele und Philosophie
+Unsere Philosophie in diesem Projekt ist es, das bestmögliche Ergebnis in gegebener Zeit zu erzielen und das Projekt so modular wie möglich zu gestalten. Übersichtlichkeit und Erweiterbarkeit sind unsere großen Ziele. Unsere Teamphilosophie ist es, aufkommende Aufgaben so schnell und bestmöglich für die jeweilige Iteration zu erledigen und einen funktionsfähigen Prototypen zu entwickeln. 
+Besondere Herausforderungen sind: 
+
+* Die Integration mit bestehenden Systemen (z.B. ROS 2). 
+* Die Berücksichtigung von Hardware-Einschränkungen (z.B. Raspberry Pi und Alphabot 2).
+
+== Annahmen und Abhängigkeiten
+Es gibt zwei ausschlaggebende Punkte, die unsere Architektur stark beeinflussen:
+
+1. **ROS 2**: Wir haben die Vorgabe erhalten, ROS 2 zu verwenden. ROS 2 bringt einige Eigenheiten mit sich, da es als eine Art Betriebssystem funktioniert. ROS 2 kommt mit einer Paketstruktur, innerhalb derer sich Nodes befinden, die den Code enthalten. Diese Nodes können systemweit mithilfe von Messages interagieren. Wir sind somit an diese Strukturvorgaben gebunden.
+
+2. **Hardware-Limitierungen**:
+   - **Raspberry Pi 4 8GB**: Der Raspberry Pi ist ein kostengünstiger, kleiner Computer, der vielseitig einsetzbar ist und einfach zu bedienen ist. Er hat jedoch Leistungsgrenzen, die Entscheidungen unter Beachtung dieser Performance-Limitierungen erforderlich machen.
+   - **Alphabot 2**: Der Alphabot 2 ist für die Verwendung mit dem Raspberry Pi konzipiert und bringt Komponenten wie Servo- und DC-Motoren, PCA9685, LEDs, Joystick, IR-Fernbedienung, Line-Sensoren und eine Kamera mit. Einschränkungen bestehen aufgrund der begrenzten Batterielebensdauer, der engen Integration und der veralteten Software.
+
+== Architektur-relevante Anforderungen
+Das Ziel ist es, einen Roboter zu bauen, der einer Person mittels Bilderkennung folgen kann. Daraus leiten sich folgende Anforderungen ab: 
+
+* Die Software muss performant genug sein, um auf dem Raspberry Pi zu laufen. 
+* Die Bilderkennung muss schnell genug sein, damit der Roboter der Person folgen kann. Die Verarbeitungszeit für die Bilder muss unter 0,25 Sekunden liegen.
+
+== Entscheidungen, Nebenbedingungen und Begründungen
+1. **Verwendung von ROS 2 Humble**:
+  - **Pro**: ROS 2 Humble ist eine der neuesten ROS 2-Versionen und bietet eine Vielzahl an Software und umfassende Dokumentation.
+  - **Contra**: ROS 2 ist allgemein recht komplex und hat eine lange Einarbeitungszeit.
+2. **Verwendung von Ubuntu Server 22.04.03 LTS (64-bit)**:
+  - **Pro**: Ist das empfohlene Betriebssystem für ROS 2 Humble, kompatibel mit vieler Software und eine der aktuellsten Ubuntu-Versionen.
+  - **Contra**: Hat keine grafische Benutzeroberfläche.
+3. **Verwendung von Python als Programmiersprache**:
+  - **Pro**: Python ist eine von zwei Sprachen, die mit ROS 2 kompatibel sind und einfacher zu implementieren als C++.
+  - **Contra**: In ROS 2 kann man mit Python keine Message-Formate erstellen und ist somit an die Standardformate gebunden.
+4. **Verwendung von CV Bridge**:
+  - **Pro**: Ermöglicht die einfache Umwandlung vom ROS 2 Image-Format in das OpenCV Image-Format.
+5. **Hinzufügen einer Web-Oberfläche**:
+  - **Pro**: Zeigt die vom Human-Detector bearbeiteten Bilder an und ist notwendig für das Debugging.
+  - **Contra**: Verursacht Performance-Verlust.
+6. **Verwendung von Flask für das Web-Tool**:
+  - **Pro**: Relativ einfache Implementierung in Python.
+  - **Contra**: Teilweise Kompatibilitätsprobleme mit ROS 2 und erhöhter Performance-Bedarf durch Threading.
+7. **Wechsel auf eine USB-Kamera**:
+  - **Pro**: Bessere Qualität und größerer Winkel.
+  - **Contra**: Höherer Stromverbrauch und Wegfall der Servos.
+8. **Wechsel auf OpenCV Video Stream Capture**:
+  - **Pro**: Direktes Ansprechen der Kamera in Python möglich.
+  - **Contra**: Capturing läuft permanent und verbraucht Performance.
+9. **Wechsel auf YOLO (You Only Look Once)**:
+  - **Pro**: Bessere Erkennungsgenauigkeit.
+  - **Contra**: Hoher Performance-Verbrauch und relativ langsam.
+
+== Architekturmechanismen
+- **ROS 2 Humble**: Wird zur allgemeinen Ansteuerung der Glieder des Alphabot 2 verwendet und stellt die Hauptmerkmale zur Ansteuerung der einzelnen Roboterglieder dar.
+- **Ubuntu Server 22.04**: Erforderlich gemäß den Anforderungen der ROS 2 Humble Dokumentation.
+- **OpenCV**: Freie Plattform zur Echtzeitverarbeitung der Bildverarbeitung.
+
+== Wesentliche Abstraktionen
+- **Hardwareebene**: Raspberry Pi, Alphabot 2.
+- **Betriebssysteme**: ROS 2 Humble, Ubuntu Server 22.04.
+- **Softwareebene**: Eigene entwickelte Software, Open-Source-Software.
+
+== Schichten oder Architektur-Framework
+Wir verwenden ein C4-Modell, das die Architektur in kontext-, container-, komponenten- und Code-Ebenen unterteilt.
+
+== Architektursichten (Views)
+- **Logische Sicht**: Beschreibt die Struktur und das Verhalten von Systemteilen, die hohen Einfluss auf die Architektur haben. Enthält die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie deren Beziehungen.
+- **Physische Sicht (Betriebssicht)**: Beschreibt die physischen Knoten (Rechner) des Systems, die Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden.
+- **Use Cases**: Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten. link:(https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/Documentation/requirements/use-case_model.adoc)[Hier klicken: Use Cases]
