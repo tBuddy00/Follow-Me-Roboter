@@ -1,0 +1,40 @@
+== Use-Case: UC05 Roboter stoppen
+
+=== Kurzbeschreibung
+Der Benutzer stoppt den Roboter und beendet die Software zur Personenverfolgung.
+
+=== Kurzbeschreibung der Akteure
+* Benutzer
+
+=== Vorbedingungen
+* Der Roboter ist gestartet und die Software zur Personenverfolgung läuft.
+
+=== Standardablauf (Basic Flow)
+. Der Use Case beginnt, wenn der Benutzer den Prozess in der Kommandozeile mit STRG + C abbricht.
+. Der Benutzer trennt die Stromversorgung des Roboters.
+
+=== Alternative Abläufe
+==== Alternativer Ablauf 1: Prozess wird nicht beendet
+. Der Benutzer überprüft die Kommandozeileingabe.
+. Der Benutzer wiederholt den Befehl zum Abbrechen des Prozesses.
+
+=== Unterabläufe (subflows)
+==== Unterablauf 1: Beenden des Prozesses
+. Der Benutzer drückt STRG + C in der Kommandozeile.
+. Der Prozess wird abgebrochen.
+
+==== Unterablauf 2: Trennen der Stromversorgung
+. Der Benutzer trennt die Stromversorgung des Roboters.
+. Der Roboter wird ausgeschaltet.
+
+=== Wesentliche Szenarios
+==== Szenario 1: Erfolgreiches Stoppen des Roboters
+. Der Benutzer beendet den Prozess in der Kommandozeile.
+. Der Benutzer trennt die Stromversorgung des Roboters.
+
+=== Nachbedingungen
+* Minimal Guarantee: Der Roboter hat versucht, den Prozess zu beenden.
+* Success Guarantee: Die Software zur Personenverfolgung ist gestoppt und der Roboter ist ausgeschaltet.
+
+=== Besondere Anforderungen
+* Der Benutzer muss Zugang zur Kommandozeile haben.

@@ -1,0 +1,37 @@
+== Use-Case: UC03 Motoren anschalten
+
+=== Kurzbeschreibung
+Der Benutzer schaltet die Motoren des Roboters ein.
+
+=== Kurzbeschreibung der Akteure
+* Benutzer
+
+=== Vorbedingungen
+* Der Roboter ist gestartet.
+
+=== Standardablauf (Basic Flow)
+. Der Use Case beginnt, wenn der Benutzer die Hardwaretaste zum Einschalten der Motoren betätigt.
+. Das System aktiviert die Bewegung der Motoren.
+
+=== Alternative Abläufe
+==== Alternativer Ablauf 1: Motoren starten nicht
+. Der Benutzer überprüft die Stromversorgung des Roboters.
+. Der Benutzer überprüft die Hardwaretaste auf Funktionalität.
+. Der Benutzer versucht erneut, die Motoren einzuschalten.
+
+=== Unterabläufe (subflows)
+==== Unterablauf 1: Betätigung der Hardwaretaste
+. Der Benutzer drückt die Hardwaretaste.
+. Das System empfängt das Signal zum Einschalten der Motoren.
+
+=== Wesentliche Szenarios
+==== Szenario 1: Erfolgreiches Einschalten der Motoren
+. Der Benutzer betätigt die Hardwaretaste.
+. Die Motoren werden erfolgreich eingeschaltet und aktiviert.
+
+=== Nachbedingungen
+* Minimal Guarantee: Der Roboter hat versucht, die Motoren einzuschalten.
+* Success Guarantee: Die Motoren des Roboters sind eingeschaltet und betriebsbereit.
+
+=== Besondere Anforderungen
+* Die Hardwaretaste muss leicht zugänglich und funktionsfähig sein.

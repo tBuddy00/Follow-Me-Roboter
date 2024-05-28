@@ -1,80 +1,51 @@
-//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-ifndef::main-document[include::../_includes/default-attributes.inc.adoc[]]
-
-
-== Use-Case: UC01 Alphabot 2 einschalten
-
-.USE-Case zum einschalten des Alphabot 2
-image::use-case_v01.jpeg[]
+== Use-Case: UC01 Roboter starten
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
-Bei dem Use Case 1 handelt es sich darum das der Akteur den Alphabot 2 started und in die Verschiedenen Modie einstellt.
+Der Benutzer schaltet den Roboter ein und startet die Software zur Personenverfolgung.
 
 === Kurzbeschreibung der Akteure
-Der Akteur ist eine 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
-
+* Benutzer
 
 === Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-
-Bevor der Use Case beginnen kann muss sichergestellt sein das der Alphabot 2 einsatzbereit ist. 
+* Der Roboter ist ausgeschaltet und nicht mit dem WLAN verbunden.
 
 === Standardablauf (Basic Flow)
-//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-
-. Alphabot 2 startet
-. wartet auf Input von Person 
-. Input erhalten: Person finden wird gestartet 
-. wartet auf Input von Person 
-. Input erhalten: Personen Verfolgung gestartet und Person wird gefolgt
-. wartet auf Input von Person 
-. Input von Person erhalten: Person folgen stoppen
-. wartet auf Input von Person 
-. Input von Person erhalten: Person finden stoppen
-. Alphabot 2 wird ausgeschaltet: System stoppen 
+. Der Use Case beginnt, wenn der Benutzer den Roboter mit Strom versorgt.
+. Der Benutzer verbindet den Roboter mit dem WLAN.
+. Der Benutzer verbindet sich über SSH mit dem Roboter.
+. Der Benutzer führt die Startbefehle aus.
+. Die Software zur Personenverfolgung wird gestartet.
 
 === Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1: WLAN-Verbindung schlägt fehl
+. Der Benutzer überprüft die WLAN-Verbindung.
+. Der Benutzer stellt sicher, dass das WLAN-Netzwerk verfügbar ist.
+. Der Benutzer wiederholt den Verbindungsversuch.
 
-==== Alternativer Ablauf 1
-Wenn beim Start des Alphabots 2 ein Fehler auftritt dann, 
+==== Alternativer Ablauf 2: SSH-Verbindung schlägt fehl
+. Der Benutzer überprüft die Netzwerkverbindung.
+. Der Benutzer stellt sicher, dass die SSH-Konfiguration korrekt ist.
+. Der Benutzer wiederholt den Verbindungsversuch.
 
-. Gibt die LED des Roboters ein Signal aus das ein Fehler aufgetreten ist 
-. Der Use Case wird abgebrochen weil der Alphabot nicht einastatzbereit ist
+=== Unterabläufe (subflows)
+==== Unterablauf 1: Verbindung mit WLAN
+. Der Benutzer gibt die WLAN-Zugangsdaten ein.
+. Der Roboter verbindet sich mit dem WLAN-Netzwerk.
 
-//==== <Alternativer Ablauf 2>
-//Wenn Personen vor Akteur durch das Sichtfeld der Kamera laufen, dann
-//. bleibt der Alphabot 2 stehen und wartet bis Akteur alleine im Sichtfeld ist 
-//. Der Use Case wird im Schritt 7 fortgesetzt.
+==== Unterablauf 2: Verbindung über SSH
+. Der Benutzer gibt die SSH-Zugangsdaten ein.
+. Der Benutzer verbindet sich mit dem Roboter.
 
-//=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+=== Wesentliche Szenarios
+==== Szenario 1: Erfolgreiches Starten des Roboters
+. Der Benutzer startet den Roboter.
+. Der Roboter verbindet sich erfolgreich mit dem WLAN.
+. Der Benutzer verbindet sich erfolgreich über SSH.
+. Die Software zur Personenverfolgung wird gestartet.
 
-//==== <Unterablauf 1>
-//. <Unterablauf 1, Schritt 1>
-//. …
-//. <Unterablauf 1, Schritt n>
+=== Nachbedingungen
+* Minimal Guarantee: Der Roboter ist eingeschaltet.
+* Success Guarantee: Die Software zur Personenverfolgung ist aktiv und betriebsbereit.
 
-//=== Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-
-//==== <Szenario 1>
-//. <Szenario 1, Schritt 1>
-//. … **IST NOCH AUSZUFÜLLEN!**
-//. <Szenario 1, Schritt n>
-
-//=== Nachbedingungen
-//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-
-//**IST NOCH AUSZUFÜLLEN!**
-//==== <Nachbedingung 1>
-
-//=== Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-//Die Oberfläche auf der sich der Alphabot 2 befindet sollte möglicht eben sein damit die bestmöglichen ergebnisse erzielt werden können. 
-
-//==== <Besondere Anforderung 1>
-
-//Wärend des Use cases dürfen keine wieteren Personen durch das Sichtfeld der Kamera laufen.
+=== Besondere Anforderungen
+* Der Roboter muss sich in einem WLAN-Bereich mit ausreichendem Signal befinden.

@@ -1,0 +1,37 @@
+== Use-Case: UC04 Motoren ausschalten
+
+=== Kurzbeschreibung
+Der Benutzer schaltet die Motoren des Roboters aus.
+
+=== Kurzbeschreibung der Akteure
+* Benutzer
+
+=== Vorbedingungen
+* Die Motoren des Roboters sind eingeschaltet.
+
+=== Standardablauf (Basic Flow)
+. Der Use Case beginnt, wenn der Benutzer die Hardwaretaste zum Ausschalten der Motoren betätigt.
+. Das System deaktiviert die Bewegung der Motoren.
+
+=== Alternative Abläufe
+==== Alternativer Ablauf 1: Motoren schalten nicht aus
+. Der Benutzer überprüft die Hardwaretaste auf Funktionalität.
+. Der Benutzer versucht erneut, die Motoren auszuschalten.
+
+=== Unterabläufe (subflows)
+==== Unterablauf 1: Betätigung der Hardwaretaste
+. Der Benutzer drückt die Hardwaretaste.
+. Das System empfängt das Signal zum Ausschalten der Motoren.
+
+=== Wesentliche Szenarios
+==== Szenario 1: Erfolgreiches Ausschalten der Motoren
+. Der Benutzer betätigt die Hardwaretaste.
+. Die Motoren werden erfolgreich ausgeschaltet und deaktiviert.
+
+=== Nachbedingungen
+* Minimal Guarantee: Der Roboter hat versucht, die Motoren auszuschalten.
+* Success Guarantee: Die Motoren des Roboters sind ausgeschaltet.
+
+=== Besondere Anforderungen
+* Die Hardwaretaste muss leicht zugänglich und funktionsfähig sein.
+

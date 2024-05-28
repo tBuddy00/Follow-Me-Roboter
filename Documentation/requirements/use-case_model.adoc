@@ -14,7 +14,7 @@ include::../_includes/default-attributes.inc.adoc[]
 //* *UC02*: ...
 //* *UC03*: Alphabot 2 Beenden
 
-//== Use Case Diagramm
+== Use Case Diagramm
 // ...
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
@@ -27,19 +27,23 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 ////
 
 <<<
-include::use_case_01.inc.adoc[]
 
-//<<<
-//include::use_case_02.inc.adoc[]
+include::use_case_01.inc.adoc[leveloffset=+1]
 
-//<<<
-//include::use_case_03.inc.adoc[]
+<<<
 
-//<<<
-//include::use_case_04.inc.adoc[]
+include::use_case_02.inc.adoc[leveloffset=+1]
 
-//<<<
-//include::use_case_05.inc.adoc[]
+<<<
+
+include::use_case_03.inc.adoc[leveloffset=+1]
+
+<<<
+
+include::use_case_04.inc.adoc[leveloffset=+1]
+
+<<<
+include::use_case_05.inc.adoc[leveloffset=+1]
 
 //<<<
 //include::use_case_06.inc.adoc[]

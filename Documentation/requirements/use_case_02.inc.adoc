@@ -1,0 +1,38 @@
+== Use-Case: UC02 Auf Web-Control-Center zugreifen
+
+=== Kurzbeschreibung
+Der Benutzer greift über einen Webbrowser auf das Kontrollzentrum des Systems zu, um die Bilderkennung zu überwachen.
+
+=== Kurzbeschreibung der Akteure
+* Benutzer
+
+=== Vorbedingungen
+* Der Roboter ist gestartet und mit dem WLAN verbunden.
+
+=== Standardablauf (Basic Flow)
+. Der Use Case beginnt, wenn der Benutzer die Adresse des Web-Control-Centers im Browser eingibt.
+. Der Benutzer ruft die Website des Kontrollzentrums auf.
+. Der Benutzer überwacht die Bilderkennung über das Web-Control-Center.
+
+=== Alternative Abläufe
+==== Alternativer Ablauf 1: Website nicht erreichbar
+. Der Benutzer überprüft die Netzwerkverbindung.
+. Der Benutzer stellt sicher, dass die Web-Control-Center-Adresse korrekt ist.
+. Der Benutzer wiederholt den Zugriff auf die Website.
+
+=== Unterabläufe (subflows)
+==== Unterablauf 1: Zugriff auf Web-Control-Center
+. Der Benutzer gibt die Adresse des Web-Control-Centers im Browser ein.
+. Der Browser stellt eine Verbindung zum Web-Control-Center her.
+
+=== Wesentliche Szenarios
+==== Szenario 1: Erfolgreicher Zugriff auf das Web-Control-Center
+. Der Benutzer greift erfolgreich auf das Web-Control-Center zu.
+. Der Benutzer überwacht die Bilderkennung.
+
+=== Nachbedingungen
+* Minimal Guarantee: Der Benutzer hat versucht, auf das Web-Control-Center zuzugreifen.
+* Success Guarantee: Der Benutzer hat erfolgreich auf das Web-Control-Center zugegriffen und kann die Bilderkennung überwachen.
+
+=== Besondere Anforderungen
+* Der Webbrowser muss kompatibel mit dem Web-Control-Center sein.
