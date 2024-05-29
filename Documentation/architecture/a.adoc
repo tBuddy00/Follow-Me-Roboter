@@ -1,0 +1,92 @@
+**Analysemechanismen**
+
+1.1. Bilderfassung und -vorverarbeitung
+- Name: Bilderfassung und -vorverarbeitung
+- Beschreibung: Mechanismus zur Erfassung von Bildern mit einer Kamera und deren Vorverarbeitung für Bildverarbeitung.
+- Attribute:
+  - Quelle: Kameraeingang (z.B. USB, CSI)
+  - Auflösung: Konfigurierbare Bildauflösung (z.B. 640x480, 1280x720)
+  - Bildrate: Konfigurierbare Bildrate (z.B. 30 FPS)
+  - Vorverarbeitungsschritte: Bildskalierung, Normalisierung, Rauschreduzierung
+
+1.2. Personenerkennung
+- Name: Personenerkennung
+- Beschreibung: Mechanismus zur Erkennung und Identifizierung von Personen in erfassten Bildern.
+- Attribute:
+  - Algorithmus: Maschinelles Lernmodell (z.B. YOLO, SSD, Faster R-CNN)
+  - Erkennungsgenauigkeit: Konfigurierbarer Schwellenwert für Erkennungssicherheit
+  - Erkennungsgeschwindigkeit: Echtzeitverarbeitung
+
+1.3. Berechnung der Steuersignale
+- Name: Berechnung der Steuersignale
+- Beschreibung: Mechanismus zur Berechnung von Steuersignalen für die Navigation des Roboters.
+- Attribute:
+  - Winkelberechnung: Berechnung des Winkels zur Verfolgung der erkannten Person
+  - Geschwindigkeitsbereschnung: Berechnung der Geschwindigkeit zur Verfolgung der erkannten Person
+
+1.4. Verfolgung
+- Name: Verfolgung
+- Beschreibung: Mechanismus zur Verfolgung der erkannten Person.
+- Attribute:
+  - Schnitstelle zur hardware: Schnittstelle zur Steuerung der Roboterhardware
+
+
+**Entwurfsmechanismen**
+
+2.1. Bilderfassung und -vorverarbeitung
+- Name: Bilderfassung und -vorverarbeitung
+- Beschreibung: Mechanismus zur Erfassung und Vorverarbeitung von Bildern.
+- Entwurf:
+  - Kameraschnittstelle: Entwicklung einer benutzerdefinierten Kameraschnittstelle
+  - Bildformat: Definition eines Standardformats für Bilder (z.B. RGB)
+  - Vorverarbeitungsschritte: Implementierung von Funktionen zur Bildskalierung, Normalisierung und Rauschreduzierung
+
+2.2. Personenerkennung
+- Name: Personenerkennung
+- Beschreibung: Mechanismus zur Erkennung und Identifizierung von Personen.
+- Entwurf:
+  - Algorithmus: heraussuchen eines geeigneten ML-Modells
+  - Erkennungsgenauigkeit: Implementierung konfigurierbarer Schwellenwerte
+  - Erkennungsgeschwindigkeit: Echtzeitfähigkeit sicherstellen
+
+2.3. Berechnung der Steuersignale
+- Name: Berechnung der Steuersignale
+- Beschreibung: Mechanismus zur berechnung der Steuersignale zur Verfolgung der erkannten Person.
+- Entwurf:
+  - Verfolgungsalgorithmus: Entwicklung eines benutzerdefinierten Algorithmus
+  - Leistung: Effizient und zuverlässig mit niedriger Latenz
+
+2.4. Verfolgung
+- Name: Verfolgung
+- Beschreibung: Mechanismus zur Verfolgung der erkannten Person.
+- Entwurf:
+  - Steuerungsschnittstelle: Entwicklung einer Schnittstelle zur Steuerung der Roboterhardware
+
+
+**Implementierungsmechanismen**
+
+3.1. Bilderfassung und -vorverarbeitung
+- Struktur:
+  - ROS2-Paket: Erstellen eines ROS2-Pakets
+  - Knoten: Entwicklung eines ROS2-Knotens zur Bilderfassung
+
+
+3.2. Personenerkennung
+- Struktur:
+  - ROS2-Paket: Erstellen eines ROS2-Pakets
+  - Knoten: Entwicklung eines ROS2-Knotens zur Personenerkennung
+  - Topics: Nutzung eines Topics zur Veröffentlichung von Erkennungsergebnissen
+
+3.4 Berechnung der Steuersignale
+- Struktur:
+  - ROS2-Paket: Entwicklung eines ROS2-Pakets
+  - Knoten: Implementierung eines ROS2-Knotens zur Berechnung der Steuersignale
+  - Topics: Nutzung eines Topics zur Übermittlung von Verfolgungsinformationen
+  - Schnittstellen: Zugrif auf die Schnittstellen zur Steuerung der Roboterhardware
+
+3.3. Verfolgung
+- Struktur:
+  - Schnittstellen: Entwicklung einer Schnittstelle zur Steuerung der Roboterhardware
+  - Serirelle komunikation: Kommunikation mit der Roboterhardware über serielle Schnittstelle
+  - Netzwerkkommunikation: Kommunikation mit der Roboterhardware über Netzwerkverbindung
+
