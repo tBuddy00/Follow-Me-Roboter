@@ -1,0 +1,6 @@
+
+
+//Hier den include aller Tests vorbereiten
+-> im Test ordner
+
+//VORLAGE hierfür ist die test_cases.adoc

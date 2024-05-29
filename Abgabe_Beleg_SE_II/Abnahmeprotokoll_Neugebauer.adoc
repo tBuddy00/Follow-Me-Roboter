@@ -43,12 +43,27 @@ Abnahmeumgebung:
 |===
 |Use Case / Szenario | erfüllt | Anmerkung
 
-|UC1 / Sc1
+|UC01 
 | ja/nein
-|...
-|UC1 / Sc2
+|
+
+|UC02
 | ja/nein
-|...
+|
+
+|UC03
+| ja/nein
+|
+
+
+|UC04
+| ja/nein
+|
+
+|UC05
+| ja/nein
+|
+
 
 |===
 
@@ -57,12 +72,54 @@ Abnahmeumgebung:
 |===
 |Anforderung | erfüllt | Anmerkung
 
-|NFA1 ...
+|NFAU-1
 | ja/nein
-|...
-|NFA2 ...
+|
+
+|NFAU-2
 | ja/nein
-|...
+|
+
+|NFAU-3
+| ja/nein
+|
+
+|NFAR-1
+| ja/nein
+|
+
+|NFAR-2
+| ja/nein
+|
+
+|NFAR-3
+| ja/nein
+|
+
+|NFAP-1
+| ja/nein
+|
+
+|NFAP-2
+| ja/nein
+|
+
+|NFAR-3
+| ja/nein
+|
+
+|NFAR-4
+| ja/nein
+|
+
+|NFAS-1
+| ja/nein
+|
+
+|NFAS-2
+| ja/nein
+|
+
 
 |===
 
