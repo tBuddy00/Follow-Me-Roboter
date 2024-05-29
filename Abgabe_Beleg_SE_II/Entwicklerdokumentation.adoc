@@ -10,6 +10,9 @@ include für Architecture Notebook + Design Document + Sequenzdiagramm
 == Softwaredokumentation
 include::../Documentation/architecture/Softweardokumentation.adoc[lines=2..,leveloffset=+1]
 
+== Design
+include::../Documentation/development/design_history_update.adoc[leveloffset=+1]
 
+include::../Documentation/development/design_formula.adoc[leveloffset=+1]
 
 
