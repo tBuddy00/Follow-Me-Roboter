@@ -23,9 +23,9 @@ Die Entitäten stellen in unserem Projektfall eine Person und der Alphabot 2 dar
 
 Folgende Eigenschaften sind zu beachten:
  
- - Person: Größe
+ - Person: Größe als Attribut
  
- - Alphabot 2: Zustand, gewünschter Abstand
+ - Alphabot 2: Zustand, gewünschter Abstand 2 Meter
 
 === Festlegen von Beziehungen:
 
@@ -47,6 +47,12 @@ Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. D
 === Abstraktionsebenen:
 
 * Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
+
+
+//NOCH ANGEHEN
+ - Benutzerebene
+ - Betrieb...
+ - 
 
 
 === Visualisierung:

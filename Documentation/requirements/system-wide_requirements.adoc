@@ -55,17 +55,15 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 **Durschsatz** +
 
-- *NFAP-2:* Der Alphabot 2 muss in der Lage sein, sich mit einer physischen Geschwindigkeit von mindestens 0,03 Metern pro Sekunde über eine glatte Oberfläche zu bewegen.
-
-- *NFAP-3:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
+- *NFAP-2:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
 
 **Kapazität** +
 
-- *NFAP-4:* Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
+- *NFAP-3:* Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
 
 **Zeiten zum Starten oder Beenden** +
 
-- *NFAP-5:* Der Alphabot 2 samt Software muss in der Lage dazu sein innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig sich zu beenden.
+- *NFAP-4:* Der Alphabot 2 samt Software muss in der Lage dazu sein innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig sich zu beenden.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
