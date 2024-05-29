@@ -190,6 +190,8 @@ image::images/Desing_Entwurf_7_C4_Context.png[]
 image::images/Desing_Entwurf_7_C4_Container.png[]
 .C4-Component Entwurf 7
 image::images/Desing_Entwurf_7_C4_Component.png[]
+.Sequenzdiagramm Entwurf 7
+image::images/Desing_Entwurf_7_Sequenzdiagram.png[]
 
 
 === Änderung zum letzten Entwurf
