@@ -9,11 +9,10 @@ image::use-case_v01.jpeg[]
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Bei dem Use Case 1 handelt es sich darum das der Akteur den Alphabot 2 started und in die Verschiedenen Modie einstellt.
+Bei dem Use Case 1 handelt es sich darum, dass der Akteur den Alphabot 2 startet und in die verschiedenen Modifikationen einstellt.
 
 === Kurzbeschreibung der Akteure
-Der Akteur ist eine 1,80 Meter großer Mensch mit durchnittlichem Körperbau. 
-
+Der Akteur ist eine 1,80 Meter große Person mit einem durchnittlichem Körperbau. 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...

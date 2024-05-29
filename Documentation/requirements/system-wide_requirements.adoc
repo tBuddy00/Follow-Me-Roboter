@@ -25,11 +25,11 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-- *NFAU-1:* die Bedienung des Alphabots soll leicht und ohne Vorkenntnisse möglich sein
+- *NFAU-1:* Die Bedienung des Alphabots soll leicht und ohne Vorkenntnisse möglich sein.
 
-- *NFAU-2:* die genutzte Software soll leicht zu erlernen sein
+- *NFAU-2:* Die genutzte Software soll leicht zu erlernen sein.
 
-- *NFAU-3:* das System soll als portable Möglichkeit zur Mitführung gestaltet werden
+- *NFAU-3:* Das System soll als portable Möglichkeit zur Mitführung gestaltet werden.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
@@ -37,13 +37,13 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 **Verfügbarkeit** +
 // Das System muss eine hohe Verfügbarkeit aufweisen, um sicherzustellen, dass es für Benutzer zugänglich ist, wenn es benötigt wird.  Die Verfügbarkeit kann in Prozent gemessen werden (z.B. 99,9% Verfügbarkeit bedeutet, dass das System 99,9% der Zeit verfügbar ist). Überwachung der Systemverfügbarkeit über einen definierten Zeitraum und Identifizierung von Ausfallzeiten.
 
-- *NFAR-1:* das System sollte möglichst eine Stunde mit vollgeladenem Akku laufen
+- *NFAR-1:* Das System sollte möglichst eine Stunde mit vollgeladenem Akku laufen.
 
-- *NFAR-2:* der Roboter sollte in der Lage sein durch eine handelsübliche Powerbank, sobald dieser an den Zusatzakku angeschlossen wurde, in Betrieb genommen zu werden
+- *NFAR-2:* Der Roboter sollte in der Lage sein durch eine handelsübliche Powerbank, sobald dieser an den Zusatzakku angeschlossen wurde, in Betrieb genommen zu werden.
 
 **Wiederherstellbarkeit** +
 
-- *NFAR-3:* bei einem Fehler soll das System einfach durch error-handling in der Lage sein, sich nicht vollständig zu Beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen
+- *NFAR-3:* Bei einem Fehler soll das System einfach durch error-handling in der Lage sein, sich nicht vollständig zu Beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
 
 
 === Effizienz (Performance)
@@ -51,32 +51,32 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 **Antwortzeit** +  
 
-- *NFAP-1:* die Antwortzeit der Bilderkennung soll schnell genug sein um Personen folgen zu können. Eine Verarbeitungszeit muss hier bei < 1 Sekunde sein
+- *NFAP-1:* Die Antwortzeit der Bilderkennung soll schnell genug sein um Personen folgen zu können. Eine Verarbeitungszeit muss hier bei < 1 Sekunde sein.
 
 **Durschsatz** +
 
-- *NFAP-2:* der Alphabot 2 muss in der Lage sein, sich mit einer physischen Geschwindigkeit von mindestens 0,03 Metern pro Sekunde über eine glatte Oberfläche zu bewegen.
+- *NFAP-2:* Der Alphabot 2 muss in der Lage sein, sich mit einer physischen Geschwindigkeit von mindestens 0,03 Metern pro Sekunde über eine glatte Oberfläche zu bewegen.
 
-- *NFAP-3:* der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern
+- *NFAP-3:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
 
 **Kapazität** +
 
-- *NFAP-4:* der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
+- *NFAP-4:* Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
 
 **Zeiten zum Starten oder Beenden** +
 
-- *NFAP-5:* der Alphabot 2 samt Software muss in der Lage dazu sein innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig sich zu beenden
+- *NFAP-5:* Der Alphabot 2 samt Software muss in der Lage dazu sein innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig sich zu beenden.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 **Kompatibilität** +
 
-- *NFAS-1:* durch die Integration mit dem OS ROS II, muss das System in der Lage mit anderen Systemen kompatibel zu sein
+- *NFAS-1:* Durch die Integration mit dem OS ROS II, muss das System in der Lage mit anderen Systemen kompatibel zu sein.
 
 **Systeminstallation** +
 
-- *NFAS-2:* die Installation des Systems muss einfach und gut dokumentiert sein. 
+- *NFAS-2:* Die Installation des Systems muss einfach und gut dokumentiert sein. 
 
 
 == Zusätzliche Anforderungen
@@ -92,7 +92,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * fester Projektzeitraum - Abgabe 28.06.2024
-* Zwischenberichte und regelmäßige Meilensteine
+* Zwischenberichte und regelmäßige Iterations-Meilensteine
 * Ressourcenverfügbarkeit (Laborräume sofern nötig und digitale Infrastruktur)
 
 === Rechtliche Anforderungen
