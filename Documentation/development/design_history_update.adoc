@@ -39,7 +39,7 @@ Dieser Entwurf entstand im Rahmen der Testphase und so sind noch keine konkreter
 
 .Systemarchitekturdiagramm  für Entwurf 3
 image::images/Design_Entwurf_3.png[]
-_(Das gezeigte Modell entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten.)_
+_(Abbildung 2 entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten.)_
 
 === Änderung zum letzten Entwurf
 
@@ -96,7 +96,7 @@ _(Das gezeigte Modell entspricht keinen Modellierungsstandarts und ist eher als 
 
 .Systemarchitekturdiagramm  für Entwurf 4
 image::images/Design_Entwurf_4.png[]
-_Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem Prototyp. (Das gezeigte Modell entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten.)_
+_Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem Prototyp. (Abbildung 3 entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten.)_
 
 === Änderung zum letzten Entwurf
 
@@ -116,7 +116,7 @@ _Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit eine
 
 .Systemarchitekturdiagramm für Entwurf 5
 image::images/Design_Entwurf_5.png[]
-_Das gezeigte Modell entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten._
+_Abbildung 4 entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten._
 
 === Technische Entscheidung
 
@@ -138,7 +138,14 @@ Zudem ist der Bilderkennungsalgorithmus, den wir verwenden, recht ungenau und er
 
 == Entwurf 6
 
-=== Bild:
+.C4-Context Entwurf 6
+image::images/Desing_Entwurf_6_C4_Context.png[]
+.C4-Container Entwurf 6
+image::images/Desing_Entwurf_6_C4_Container.png[]
+.C4-Component Entwurf 6
+image::images/Desing_Entwurf_6_C4_Component.png[]
+
+
 === Änderung zum letzten Entwurf
 
 * Entfernung der ros2_v4ls_camera-Node
@@ -172,8 +179,18 @@ Zum aktuellen Zeitpunkt ist noch nicht klar, ob wir YOLO einsetzen können, da e
 
 == Entwurf 7 - Prototyp 2
 
+_Abbildung 8 entspricht keinen Modellierungsstandarts und ist eher als Vorentwurf zu betrachten._
+
 .Systemarchitekturdiagramm  für Entwurf 7
-image::images/design_v5.png[]
+image::images/design_Entwurf_7.png[]
+
+.C4-Context Entwurf 7
+image::images/Desing_Entwurf_7_C4_Context.png[]
+.C4-Container Entwurf 7
+image::images/Desing_Entwurf_7_C4_Container.png[]
+.C4-Component Entwurf 7
+image::images/Desing_Entwurf_7_C4_Component.png[]
+
 
 === Änderung zum letzten Entwurf
 
