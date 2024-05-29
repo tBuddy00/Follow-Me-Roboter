@@ -1,5 +1,5 @@
 = Test Cases: Follow-Me Fahrroboter
-//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+//Taylan Özer <85500@htw-dresden.de>; Claire Schubert <s85609@htw-dresden.de>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute

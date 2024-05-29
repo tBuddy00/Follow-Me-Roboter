@@ -4,7 +4,7 @@
 == Entwurfsdokumentation
 
 include::../Documentation/architecture/architecture_notebook.adoc[lines=4..,leveloffset=+1]
-include für Architecture Notebook + Design Document + Sequenzdiagramm
+Include für Architecture Notebook + Design Document + Sequenzdiagramm
 
 
 == Softwaredokumentation
