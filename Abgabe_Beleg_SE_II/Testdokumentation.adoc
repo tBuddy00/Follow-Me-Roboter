@@ -24,5 +24,12 @@ include::../Documentation/test/Test_Bilderkennungsdauer.adoc[]
 
 include::../Documentation/test/Verlaufsdokumentation_Bilderkennungsdauer.adoc[]
 
+*Test: Humandetection + Verlaufsdokumentation*
+
+include::../Documentation/test/Test_Humandetection.adoc[]
+
+include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
+
+
 
 
