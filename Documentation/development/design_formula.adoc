@@ -84,3 +84,13 @@
 === Winkel zur Person
 
 Der Winkel zur Person wird berechnet indem man den maximalwinkel der Kammera mit der dimension des Bildes gleichsetzt und dann mittels dreisatz den Winkel zur Person aus der Position im Bild berechnet.
+
+image::images/Mathe_Kamera_Berechnung_0.png[]
+image::images/Mathe_Kamera_Berechnung_1.png[]
+
+=== Geschwindigkeitsberechnung
+
+image::images/Mathe_Geschwindigkeitsberechnung_0.png[]
+image::images/Mathe_Geschwindigkeitsberechnung_1.png[]
+image::images/Mathe_Geschwindigkeitsberechnung_2.png[]
+image::images/Mathe_Geschwindigkeitsberechnung_3.png[]
