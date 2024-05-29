@@ -82,6 +82,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 | Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
 
+|Powerbank | Eine Powerbank ist ein externer Zusatzakku, mit dem man mobile Geräte wie Tablets, Notebooks oder Handys aufladen können, wenn keine Stromquelle verfügbar ist.| Zusatzakku, Akku
 |===
 
 == Abkürzungen und Akronyme
