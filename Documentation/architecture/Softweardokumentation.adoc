@@ -133,3 +133,42 @@ Die Flask-App wird verwendet, um ein Video-Stream und eine Benutzeroberfläche f
 
 - generate(): Diese Funktion generiert den Video-Stream.
 - launch_follow_me(): Diese Funktion startet ein ROS2-Launch-File für die Funktion "Follow Me".
+
+== Motion_Driver
+
+=== Klasse DCMotorController 
+
+Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die Motorgeschwindigkeiten des Alphabot2-Roboters entsprechend anzupassen.
+
+==== Methoden: 
+
+1. __init__(self):
+   Initialisiert den Node und erstellt eine Subscription für die Motorgeschwindigkeiten.
+
+2. _clip(value, minimum, maximum): 
+   Diese Funktion begrenzt einen Wert innerhalb eines angegebenen Bereichs
+   value: Der zu begrenzende Wert.
+   minimum: Der minimale erlaubte Wert.
+   maximum: Der maximale erlaubte Wert.
+
+3. set_motor_speeds(self, left_speed, right_speed, duration):
+   Setzt die Geschwindigkeiten der linken und rechten Motoren für eine bestimmte Dauer.
+
+4.  rpm_to_percent(self, rpm):
+   Konvertiert RPM in Prozent.
+ 
+5. __del__(self):
+   Räumt die GPIO-Pins auf. 
+
+6. motor_speeds_callback(self, msg):
+   Callback-Funktion, die aufgerufen wird, wenn eine Nachricht auf dem /motor-Topic empfangen wird. Setzt die Motorgeschwindigkeiten.
+
+=== Klasse Motor
+
+==== Methoden: 
+
+1. __init__(self, forward_pin, backward_pin):
+   Initialisiert die Motorpins und PWM-Objekte.
+
+2. move(self, speed_percent):
+   Steuert die Bewegung des Motors basierend auf der angegebenen Geschwindigkeitsprozent  
