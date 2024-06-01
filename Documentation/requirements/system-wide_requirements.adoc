@@ -43,7 +43,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 **Wiederherstellbarkeit** +
 
-- *NFAR-3:* Bei einem Fehler soll das System einfach durch error-handling in der Lage sein, sich nicht vollständig zu Beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
+- *NFAR-3:* Bei einem Fehler soll das System einfach durch Error-Handling in der Lage sein, sich nicht vollständig zu Beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
 
 
 === Effizienz (Performance)

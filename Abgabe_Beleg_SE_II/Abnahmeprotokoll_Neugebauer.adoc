@@ -72,51 +72,51 @@ Abnahmeumgebung:
 |===
 |Anforderung | erfüllt | Anmerkung
 
-|NFAU-1
+|NFAU-1 Bedienung
 | ja/nein
 |
 
-|NFAU-2
+|NFAU-2 Erlernbarkeit der Software
 | ja/nein
 |
 
-|NFAU-3
+|NFAU-3 Portabilität
 | ja/nein
 |
 
-|NFAR-1
+|NFAR-1 Betriebslaufzeit
 | ja/nein
 |
 
-|NFAR-2
+|NFAR-2 Zusatzakku
 | ja/nein
 |
 
-|NFAR-3
+|NFAR-3 Error-Handling
 | ja/nein
 |
 
-|NFAP-1
+|NFAP-1 Antwortzeit Bilderkennug
 | ja/nein
 |
 
-|NFAP-2
+|NFAP-2 Datendurchsatz
 | ja/nein
 |
 
-|NFAR-3
+|NFAR-3 Bewegungsdaten
 | ja/nein
 |
 
-|NFAR-4
+|NFAR-4 Startzeit
 | ja/nein
 |
 
-|NFAS-1
+|NFAS-1 Kompatibilität
 | ja/nein
 |
 
-|NFAS-2
+|NFAS-2 Dokumentation Systeminstallation
 | ja/nein
 |
 
