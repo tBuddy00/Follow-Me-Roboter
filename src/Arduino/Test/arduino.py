@@ -57,6 +57,7 @@ def run(ser, base_rpm, angle, move = False):
     time.sleep(0.5)
     response = ser.read()
     print(response)
+    return speed_right, speed_left, time_out
 
 
 def setup():
@@ -82,3 +83,5 @@ def setup():
 
 
 setup()
+
+
