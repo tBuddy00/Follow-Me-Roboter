@@ -171,4 +171,77 @@ Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die M
    Initialisiert die Motorpins und PWM-Objekte.
 
 2. move(self, speed_percent):
-   Steuert die Bewegung des Motors basierend auf der angegebenen Geschwindigkeitsprozent  
+   Steuert die Bewegung des Motors basierend auf der angegebenen Geschwindigkeitsprozent
+
+
+== Bilderkennung
+
+=== mit YOLOv3
+
+=== Klasse: HumanDetector
+
+Die Klasse `HumanDetector` ermöglicht die Erkennung und Verfolgung von Personen in Videoframes mithilfe von YOLOv3.
+
+==== Methoden:
+
+1. __init__(self, show_frame=False):
+   - Initialisiert die `HumanDetector`-Klasse mit notwendigen Attributen.
+   - Lädt das YOLOv3-Netzwerk mit den Konfigurations- und Gewichtsdateien.
+   - Initialisiert Layernamen, Boxen, und andere erforderliche Attribute.
+   - `show_frame` gibt an, ob das verarbeitete Frame angezeigt werden soll.
+
+2. locate_person(self, frame):
+   - Ermittelt Personen in einem gegebenen Frame.
+   - Führt die YOLO-Erkennung durch und zeichnet Boxen um erkannte Personen.
+   - Bestimmt die am besten zentrierte Person im Bild und gibt ihre Position und Größe zurück.
+   - Zeigt das verarbeitete Frame an, wenn `show_frame` True ist.
+
+3. get_percentage_of_height(self, location, frame_height):
+   - Berechnet den prozentualen Anteil der Höhe einer erkannten Person im Vergleich zur Frame-Höhe.
+
+4. draw_coordinate_system(self, frame):
+   - Zeichnet ein Koordinatensystem auf das Frame.
+
+5. cv_to_custom_coordinates(self, x_cv, y_cv, frame_width, frame_height):
+   - Konvertiert Koordinaten von OpenCV-Format in ein benutzerdefiniertes Format.
+
+6. get_most_centered_person(self, frame_height, frame_width):
+   - Bestimmt die am besten zentrierte Person im Frame basierend auf der Distanz zum Frame-Zentrum.
+
+
+=== mit Hog Detector und Haar Cascade
+
+=== Klasse: HumanDetector
+
+Die Klasse `HumanDetector` ermöglicht die Erkennung und Verfolgung von Personen in Videoframes mithilfe von Haar-Cascade und MIL-Tracker.
+
+==== Methoden:
+
+1. __init__(self, show_frame=False):
+   - Initialisiert die `HumanDetector`-Klasse mit notwendigen Attributen.
+   - Lädt den Haar-Cascade-Klassifikator für die Ganzkörpersuche.
+   - Initialisiert den MIL-Tracker und andere erforderliche Attribute.
+   - `show_frame` gibt an, ob das verarbeitete Frame angezeigt werden soll.
+
+2. locate_person(self, frame):
+   - Ermittelt Personen in einem gegebenen Frame.
+   - Verarbeitet das Frame, um Personen zu erkennen und zu verfolgen.
+   - Gibt Informationen über die erkannte Person zurück, wenn diese verfolgt wird.
+
+3. process_frame(self, frame):
+   - Verarbeitet jedes Frame, um Personen zu erkennen und zu verfolgen.
+   - Aktualisiert den Tracker und visualisiert die erkannte Person im Frame.
+
+4. select_human(self, frame, humans):
+   - Wählt die erste erkannte Person zur Verfolgung aus.
+   - Initialisiert den MIL-Tracker für die ausgewählte Person.
+
+5. get_percentage_of_height(self, location, frame_height):
+   - Berechnet den prozentualen Anteil der Höhe einer erkannten Person im Vergleich zur Frame-Höhe.
+
+6. draw_coordinate_system(self, frame):
+   - Zeichnet ein Koordinatensystem auf das Frame.
+
+7. cv_to_custom_coordinates(self, x_cv, y_cv, frame_width, frame_height):
+   - Konvertiert Koordinaten von OpenCV-Format in ein benutzerdefiniertes Format.
+
