@@ -27,15 +27,15 @@ https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Test
 
 - Vor dem Starten des Tests, muss der Pc mit dem Arduino verbunden werden über Bluetooth. (Passwort: 1234)
 
-image::Documentation/test/Movement_calculation_test/connect_bluetooth.png[]
+image::/Movement_calculation_test/connect_bluetooth.png[]
 
 - Dann muss der COM Port des Arduinos herausgefunden werden z.B. mitels der Arduino IDE.
 
-image::Documentation/test/Movement_calculation_test/arduino_ide_find_out_com_port_1.png[]
+image::/Movement_calculation_test/arduino_ide_find_out_com_port_1.png[]
 
 - Dann Testen der Connection mit dem Serial Monitor.
 
-image::Documentation/test/Movement_calculation_test/arduino_ide_find_out_com_port_2.png[]
+image::/Movement_calculation_test/arduino_ide_find_out_com_port_2.png[]
 
 - Dann muss der Port im Code am Pc angepasst werden.
 
@@ -48,7 +48,7 @@ image::Documentation/test/Movement_calculation_test/arduino_ide_find_out_com_por
 * Ob sich der Roboter von der Stelle bewegen soll oder nicht. (y/n)
 * Bei komplett gerader Bewegung, wie lange sich der Roboter vorwärts bewegen soll.
 
-image::Documentation/test/Movement_calculation_test/movement_calculation_test.png[]
+image::/Movement_calculation_test/movement_calculation_test.png[]
 
 ''''
 
