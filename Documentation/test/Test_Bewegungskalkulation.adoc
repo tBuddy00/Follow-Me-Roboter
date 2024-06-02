@@ -13,9 +13,9 @@ https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Skript
 
 - Der Code ist der standart Code der auch im Prototyp verwendet wird.
 
-- Ausstatung: Arduino Uno mit Adafruit Motor Shield v2.3. + Blueutooth Module HC-05; aber ohne das der Jetson Nano verbunden ist.
+- Ausstatung: Arduino Uno mit Adafruit Motor Shield v2.3. + Bluetooth Module HC-05; aber ohne das der Jetson Nano verbunden ist.
 
-- Das Bloutooth Module ist ein ergänzungs Modul das in der normalen Produktionsumgebung nicht verwendet wird.
+- Das Bluetooth Module ist ein ergänzungs Modul das in der normalen Produktionsumgebung nicht verwendet wird.
 
 ''''
 
@@ -27,15 +27,15 @@ https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Test
 
 - Vor dem Starten des Tests, muss der Pc mit dem Arduino verbunden werden über Bluetooth. (Passwort: 1234)
 
-image::../Documentation/test/Movement_calculation_test/connect_bluetooth.png[]
+image::Documentation/test/Movement_calculation_test/connect_bluetooth.png[]
 
 - Dann muss der COM Port des Arduinos herausgefunden werden z.B. mitels der Arduino IDE.
 
-image::arduino_ide_find_out_com_port_1.png[]
+image::Documentation/test/Movement_calculation_test/arduino_ide_find_out_com_port_1.png[]
 
-- Dann testen der Connection mit dem Serial Monitor.
+- Dann Testen der Connection mit dem Serial Monitor.
 
-image::arduino_ide_find_out_com_port_2.png[]
+image::Documentation/test/Movement_calculation_test/arduino_ide_find_out_com_port_2.png[]
 
 - Dann muss der Port im Code am Pc angepasst werden.
 
@@ -48,7 +48,7 @@ image::arduino_ide_find_out_com_port_2.png[]
 * Ob sich der Roboter von der Stelle bewegen soll oder nicht. (y/n)
 * Bei komplett gerader Bewegung, wie lange sich der Roboter vorwärts bewegen soll.
 
-image::../Documentation/test/Movement_calculation_test/movement_calculation_test.png[]
+image::Documentation/test/Movement_calculation_test/movement_calculation_test.png[]
 
 ''''
 
@@ -65,3 +65,8 @@ image::../Documentation/test/Movement_calculation_test/movement_calculation_test
 - Nachdem der Test durchgeführt wurde fordert das Programm den Nutzer auf den gemessenen Winkel einzugeben.
 
 - Dies wird dann für mehrere werte durchgeführt, es wird die prozentuale Abweichung zwischen gemessenen Wert und eigegeben Wert verglichen und der Durchschnitt gebildet.
+
+''''
+=== Auswertung
+
+- Um den Nutzer eine Auwswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
