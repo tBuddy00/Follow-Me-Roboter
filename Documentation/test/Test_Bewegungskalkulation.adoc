@@ -1,4 +1,4 @@
-:imagesdir: Documentation/test/Movement_calculation_test
+:imagesdir: Movement_calculation_test
 == Durchführung Test Bewegungskalkulation
 ''''
 === Vorgaben
