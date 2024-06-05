@@ -64,15 +64,18 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| Prof. Dr.-Ing. Neugebauer | Vergab als Machbarkeitsstudie den Auftrag des Follow-Me-Fahrroboter-Projekts und so will er gerne zeigen, dass der Alphabot 2 in der Lage ist, mittels Bilderkennung und geeigneter Hardware, einer Person zu folgen.
+| Prof. Dr.-Ing. Neugebauer | Als Auftraggeber möchte er eine Machbarkeitsstudie durchführen, dabei soll festgestelt werden in wie fern es möglich ist mit leistungsschacherer hardwear einer Person zu folgen mitels Bilderkenung.
 | Herr Prof. Neugebauer legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht demanach dieses auch. Herr Prof. Neugebauer stellte auch den Fahrroboter Alphabot 2 und den Raspberry-Pi plus die hierfür benötigte Kamera zur Verfügung.
+
+| Benutzer | Person welche das System Benutzt | keine
+
+| Administrator | Person welche das System einrichted und verwalted | keine
 
 |DSGVO
 |Im allgemeinen ist hier ebenfalls der Schutz der personenbezogenen Daten zu betrachten. Der Alphabot 2 nimmt kontinuierlich Personen mit der hierfür geeigneten Kamera auf. Jene Personen sind sich vielleicht auch der Tatsache nicht bewusst, dass sie aktuell aufgenommen werden und so ist dies mit zu berücksichtigen. Demnach ist dies behutsam zu handhaben, sofern sich Personen im Blickfeld der Kamera befinden oder in Aufnahmen die getätigt worden sind, ohne das Einverständnis der jeweiligen Personen.
 |Schutz der personenbezogenen Daten.
 
-|Entwicklungsteam I/II | Streben die Entwicklung der eigenen Bilderkennungssoftware an| Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
-
+|Entwickler | Streben die Entwicklung der eigenen Bilderkennungssoftware an | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrrobters zusammen.
 
 |===
 
