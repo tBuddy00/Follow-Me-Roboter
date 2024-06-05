@@ -16,50 +16,61 @@ Besondere Herausforderungen sind:
 == Annahmen und Abhängigkeiten
 Es gibt zwei ausschlaggebende Punkte, die unsere Architektur stark beeinflussen:
 
-1. **ROS 2**: Wir haben die Vorgabe erhalten, ROS 2 zu verwenden. ROS 2 bringt einige Eigenheiten mit sich, da es als eine Art Betriebssystem funktioniert. ROS 2 kommt mit einer Paketstruktur, innerhalb derer sich Nodes befinden, die den Code enthalten. Diese Nodes können systemweit mithilfe von Messages interagieren. Wir sind somit an diese Strukturvorgaben gebunden.
+1. *ROS 2*: Wir haben die Vorgabe erhalten, ROS 2 zu verwenden. ROS 2 bringt einige Eigenheiten mit sich, da es als eine Art Betriebssystem funktioniert. ROS 2 kommt mit einer Paketstruktur, innerhalb derer sich Nodes befinden, die den Code enthalten. Diese Nodes können systemweit mithilfe von Messages interagieren. Wir sind somit an diese Strukturvorgaben gebunden.
 
-2. **Hardware-Limitierungen Prototyp 1**: 
-    - **Raspberry Pi 4 8GB**: Der Raspberry Pi ist ein kostengünstiger, kleiner Computer, der vielseitig einsetzbar und einfach zu bedienen ist. Er weist jedoch Leistungsgrenzen auf, die Entscheidungen unter Berücksichtigung dieser Performance-Limitierungen erforderlich machen.
-    - **Alphabot 2**: Der Alphabot 2 ist für die Verwendung mit dem Raspberry Pi konzipiert und enthält Komponenten wie Servo- und DC-Motoren, PCA9685, LEDs, Joystick, IR-Fernbedienung, Line-Sensoren und eine Kamera. Einschränkungen bestehen aufgrund der begrenzten Batterielebensdauer, der engen Integration und der veralteten Software.
+2. *Hardware-Limitierungen Prototyp 1*: 
+    - *Raspberry Pi 4 8GB*: Der Raspberry Pi ist ein kostengünstiger, kleiner Computer, der vielseitig einsetzbar und einfach zu bedienen ist. Er weist jedoch Leistungsgrenzen auf, die Entscheidungen unter Berücksichtigung dieser Performance-Limitierungen erforderlich machen.
+    - *Alphabot 2*: Der Alphabot 2 ist für die Verwendung mit dem Raspberry Pi konzipiert und enthält Komponenten wie Servo- und DC-Motoren, PCA9685, LEDs, Joystick, IR-Fernbedienung, Line-Sensoren und eine Kamera. Einschränkungen bestehen aufgrund der begrenzten Batterielebensdauer, der engen Integration und der veralteten Software.
 
-3. **Hardware-Limitierungen Prototyp 2**: 
-    - **Jetson Nano**: Der Jetson Nano ist ein etwas teurerer, aber leistungsstärkerer kleiner Computer, der vielseitig einsetzbar und einfach zu bedienen ist. Auch er weist Leistungsgrenzen auf, die Entscheidungen unter Berücksichtigung dieser Performance-Limitierungen erforderlich machen.
-    - **Arduino**: Das Arduino bietet eine Vielzahl an Erweiterungs- und Einsatzmöglichkeiten, ist jedoch dadurch limitiert, dass es kein Threading unterstützt. Ressourcenmanagement ist daher bei der Verwendung besonders wichtig.
+3. *Hardware-Limitierungen Prototyp 2*: 
+    - *Jetson Nano*: Der Jetson Nano ist ein etwas teurerer, aber leistungsstärkerer kleiner Computer, der vielseitig einsetzbar und einfach zu bedienen ist. Auch er weist Leistungsgrenzen auf, die Entscheidungen unter Berücksichtigung dieser Performance-Limitierungen erforderlich machen.
+    - *Arduino*: Das Arduino bietet eine Vielzahl an Erweiterungs- und Einsatzmöglichkeiten, ist jedoch dadurch limitiert, dass es kein Threading unterstützt. Ressourcenmanagement ist daher bei der Verwendung besonders wichtig.
 
 
 == Architektur-relevante Anforderungen
-Das Ziel ist es, einen Roboter zu bauen, der einer Person mittels Bilderkennung folgen kann. Daraus leiten sich folgende Anforderungen ab: 
+=== Benutzbarkeit (Usability)
+    * NFAU-2: Das System soll als portable Möglichkeit zur Mitführung gestaltet werden
 
-* Die Software muss performant genug sein, um auf dem Raspberry Pi zu laufen. 
-* Die Bilderkennung muss schnell genug sein, damit der Roboter der Person folgen kann. Die Verarbeitungszeit für die Bilder muss unter 0,25 Sekunden liegen.
+=== Zuverlässigkeit (Reliability)
+    * NFAR-1: Das System sollte möglichst eine Stunde mit vollgeladenem Akku laufen
+    * NFAR-2: Der Roboter sollte in der Lage sein, durch eine handelsübliche Powerbank, sobald dieser an den Zusatzakku angeschlossen wurde, in Betrieb genommen zu werden.
+    * NFAR-3: Bei einem Fehler soll das System einfach durch Error-Handling in der Lage sein, sich nicht vollständig zu beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
+    
+=== Leistung (Performance)
+    * NFAP-1: Die Antwortzeit der Bilderkennung soll schnell genug sein, um Personen folgen zu können. Eine Verarbeitungszeit muss hier bei < 1 Sekunde sein.
+    * NFAP-3: Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
+    * NFAP-4: Der Alphabot 2 samt Software muss in der Lage sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
+    
+=== Wartbarkeit (Supportability)
+    * NFAS-1: Durch die Integration mit dem OS ROS II, muss das System in der Lage sein, mit anderen Systemen kompatibel zu sein.
 
 == Entscheidungen, Nebenbedingungen und Begründungen
 
-1. **Verwendung von ROS 2 Humble**:
+1. *Verwendung von ROS 2 Humble*:
 Wir haben uns für die Nutzung von ROS 2 Humble entschieden. Diese Version von ROS 2 bietet eine Vielzahl an Softwarelösungen sowie eine umfassende Dokumentation. Jedoch ist ROS 2 generell sehr komplex und erfordert eine lange Einarbeitungszeit.
 
-2. **Verwendung von Ubuntu Server 22.04.03 LTS (64-bit)**:
+2. *Verwendung von Ubuntu Server 22.04.03 LTS (64-bit)*:
 Als Betriebssystem haben wir Ubuntu Server 22.04.03 LTS (64-bit) ausgewählt, da es das empfohlene Betriebssystem für ROS 2 Humble ist. Es ist mit vielerlei Software kompatibel und gehört zu den aktuellsten Ubuntu-Versionen. Ein Nachteil besteht jedoch darin, dass es keine grafische Benutzeroberfläche bietet.
 
-3. **Verwendung von Python als Programmiersprache**:
+3. *Verwendung von Python als Programmiersprache*:
 Für die Programmierung verwenden wir Python. Python ist eine der beiden Sprachen, die mit ROS 2 kompatibel sind, und lässt sich einfacher implementieren als C++. Allerdings können in ROS 2 mit Python keine Message-Formate erstellt werden, sodass man auf die Standardformate angewiesen ist.
 
-4. **Verwendung von CV Bridge**:
+4. *Verwendung von CV Bridge*:
 Die CV Bridge wird genutzt, um eine einfache Umwandlung des ROS 2 Image-Formats in das OpenCV Image-Format zu ermöglichen.
 
-5. **Hinzufügen einer Web-Oberfläche**:
+5. *Hinzufügen einer Web-Oberfläche*:
 Zur Anzeige der vom Human-Detector bearbeiteten Bilder und für das notwendige Debugging haben wir eine Web-Oberfläche integriert. Dies führt jedoch zu einem Performance-Verlust.
 
-6. **Verwendung von Flask für das Web-Tool**:
+6. *Verwendung von Flask für das Web-Tool*:
 Für das Web-Tool haben wir uns für Flask entschieden. Die Implementierung in Python ist relativ einfach, jedoch treten teilweise Kompatibilitätsprobleme mit ROS 2 auf, und es entsteht ein erhöhter Performance-Bedarf durch das Threading.
 
-7. **Verwendung einer USB-Kamera**:
+7. *Verwendung einer USB-Kamera*:
 Wir verwenden eine USB-Kamera, da diese eine gute Qualität und einen großen Winkel bietet. Ein Nachteil ist jedoch der hohe Stromverbrauch und der Fakt, dass man sie schlecht mit Servos bewegen kann.
 
-8. **Wechsel auf OpenCV Video Stream Capture**:
+8. *Wechsel auf OpenCV Video Stream Capture*:
 Für das Videostream-Capturing nutzen wir OpenCV Video Stream Capture. Dadurch ist das direkte Ansprechen der Kamera in Python möglich. Allerdings läuft das Capturing permanent und verbraucht somit Performance.
 
-9. **Wechsel auf YOLO (You Only Look Once)**:
+9. *Wechsel auf YOLO (You Only Look Once)*:
 Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bessere Erkennungsgenauigkeit bietet. Der hohe Performance-Verbrauch und die relative geringe Verarbeitungsgeschwindigkeit sind jedoch Nachteile.
 
 == Architekturmechanismen
@@ -150,7 +161,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Knoten*: Entwicklung eines ROS2-Knotens zur Personenerkennung
         ** *Topics*: Nutzung eines Topics zur Veröffentlichung von Erkennungsergebnissen
 
- [discrete]       
+[discrete]       
 ==== *Berechnung der Steuersignale*
     * *Struktur*:
         ** *ROS2-Paket*: Entwicklung eines ROS2-Pakets
@@ -172,9 +183,9 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 - *Administrator* - Person, die das System konfiguriert und wartet
 
 === Roboter
-- **Hardwareebene**: Raspberry Pi, Alphabot 2, Arduino Uno, 
-- **Betriebssysteme**: ROS 2 Humble, Ubuntu Server 22.04.
-- **Softwareebene**: Eigene entwickelte Software, Open-Source-Software.
+- *Hardwareebene*: Raspberry Pi, Alphabot 2, Arduino Uno, Jetson Nano
+- *Betriebssysteme*: ROS 2 Humble, Ubuntu Server 22.04.
+- *Softwareebene*: Eigene entwickelte Software, Open-Source-Software.
 
 
 == Schichten oder Architektur-Framework
@@ -190,6 +201,36 @@ Darauf baut dann der ROSII Client-Layer auf, welcher die Bibliotheken für die V
 Zuletzt der Application-Layer, welcher die eigentliche Anwendung enthält.
 
 == Architektursichten (Views)
-- **Logische Sicht**: Beschreibt die Struktur und das Verhalten von Systemteilen, die hohen Einfluss auf die Architektur haben. Enthält die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie deren Beziehungen.
-- **Physische Sicht (Betriebssicht)**: Beschreibt die physischen Knoten (Rechner) des Systems, die Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden.
-- **Use Cases**: Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten. https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/Documentation/requirements/use-case_model.adoc[Hier klicken: Use Cases]
+=== Logische Sicht (C4-Modell): 
+
+.System Context Diagramm
+image::../../development/images/Design_Entwurf_7_C4_Context.drawio.png[]
+.System Container Diagramm
+image::../../development/images/Design_Entwurf_7_C4_Container.drawio.png[]
+.System Component Diagramm
+image::../../development/images/Design_Entwurf_7_C4_Component.drawio.png[]
+
+=== Physische Sicht (Betriebssicht): 
+
+Wir verwenden folgende Hardware zur Betreibung der Software:
+
+* Prototyp 1
+    ** Raspberry Pi 4 8GB
+    ** Alphabot II
+
+* Prototyp 2
+    ** NVIDIA Jetson Nano
+    ** Arduino Uno
+    ** Adafruit Motor Shield v2.3
+    ** 2 x DC Motoren
+    ** USB-Webcam
+    ** WLAN-Modul
+    ** Batteriepack 4 AA Baterien
+    ** Batteriepack 5V 4A
+    ** Bloutooth HC-05 Modul (nur für Tests benötigt)
+
+Des weiteren wird ein PC für das Ausführen der Software benötigt.
+
+=== Use Cases:
+
+image::../../requirements/images/use_case_model.drawio.png[]
