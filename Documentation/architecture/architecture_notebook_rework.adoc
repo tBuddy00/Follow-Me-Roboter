@@ -63,14 +63,119 @@ Für das Videostream-Capturing nutzen wir OpenCV Video Stream Capture. Dadurch i
 Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bessere Erkennungsgenauigkeit bietet. Der hohe Performance-Verbrauch und die relative geringe Verarbeitungsgeschwindigkeit sind jedoch Nachteile.
 
 == Architekturmechanismen
-- **ROS 2 Humble**: Wird zur allgemeinen Ansteuerung der Glieder des Alphabot 2 verwendet und stellt die Hauptmerkmale zur Ansteuerung der einzelnen Roboterglieder dar.
-- **Ubuntu Server 22.04**: Erforderlich gemäß den Anforderungen der ROS 2 Humble Dokumentation.
-- **OpenCV**: Freie Plattform zur Echtzeitverarbeitung der Bildverarbeitung.
+
+=== Analysemechanismen
+
+[discrete]
+==== *Bilderfassung und Bildvorverarbeitung*
+    * *Name*: Bilderfassung und -vorverarbeitung
+    * *Beschreibung*: Mechanismus zur Erfassung von Bildern mit einer Kamera und deren Vorverarbeitung für Bildverarbeitung.
+    * *Attribute*:
+        ** *Quelle*: Kameraeingang (z.B. USB, CSI)
+        ** *Auflösung*: Konfigurierbare Bildauflösung (z.B. 640x480, 1280x720)
+        ** *Bildrate*: Konfigurierbare Bildrate (z.B. 30 FPS)
+        ** *Vorverarbeitungsschritte*: Bildskalierung, Normalisierung, Rauschreduzierung
+
+[discrete]
+==== *Personenerkennung*
+    * *Name*: Personenerkennung
+    * *Beschreibung*: Mechanismus zur Erkennung und Identifizierung von Personen in erfassten Bildern.
+    * *Attribute*:
+        ** *Algorithmus*: Maschinelles Lernmodell (z.B. YOLO, SSD, Faster R-CNN)
+        ** *Erkennungsgenauigkeit*: Konfigurierbarer Schwellenwert für Erkennungssicherheit
+        ** *Erkennungsgeschwindigkeit*: Echtzeitverarbeitung
+
+[discrete]
+==== *Berechnung der Steuersignale*
+    * *Name*: Berechnung der Steuersignale
+    * *Beschreibung*: Mechanismus zur Berechnung von Steuersignalen für die Navigation des Roboters.
+    * *Attribute*:
+        ** *Winkelberechnung*: Berechnung des Winkels zur Verfolgung der erkannten Person
+        ** *Geschwindigkeitsberechnung*: Berechnung der Geschwindigkeit zur Verfolgung der erkannten Person
+
+[discrete]
+==== *Verfolgung*
+    * *Name*: Verfolgung
+    * *Beschreibung*: Mechanismus zur Verfolgung der erkannten Person.
+    * *Attribute*:
+        ** *Schnittstelle zur Hardware*: Schnittstelle zur Steuerung der Roboterhardware
+
+=== Entwurfsmechanismen
+
+[discrete]
+==== *Bilderfassung und -vorverarbeitung*
+    * *Name*: Bilderfassung und -vorverarbeitung
+    * *Beschreibung*: Mechanismus zur Erfassung und Vorverarbeitung von Bildern.
+    * *Entwurf*:
+        ** *Kameraschnittstelle*: Entwicklung einer benutzerdefinierten Kameraschnittstelle
+        ** *Bildformat*: Definition eines Standardformats für Bilder (z.B. RGB)
+        ** *Vorverarbeitungsschritte*: Implementierung von Funktionen zur Bildskalierung, Normalisierung und Rauschreduzierung
+
+[discrete]
+==== *Personenerkennung*
+    * *Name*: Personenerkennung
+    * *Beschreibung*: Mechanismus zur Erkennung und Identifizierung von Personen.
+    * *Entwurf*:
+        ** *Algorithmus*: Heraussuchen eines geeigneten ML-Modells
+        ** *Erkennungsgenauigkeit*: Implementierung konfigurierbarer Schwellenwerte
+        ** *Erkennungsgeschwindigkeit*: Echtzeitfähigkeit sicherstellen
+
+[discrete]
+==== *Berechnung der Steuersignale*
+    * *Name*: Berechnung der Steuersignale
+    * *Beschreibung*: Mechanismus zur Berechnung der Steuersignale zur Verfolgung der erkannten Person.
+    * *Entwurf*:
+        ** *Verfolgungsalgorithmus*: Entwicklung eines benutzerdefinierten Algorithmus
+        ** *Leistung*: Effizient und zuverlässig mit niedriger Latenz
+
+[discrete]
+==== *Verfolgung*
+    * *Name*: Verfolgung
+    * *Beschreibung*: Mechanismus zur Verfolgung der erkannten Person.
+    * *Entwurf*:
+        ** *Steuerungsschnittstelle*: Entwicklung einer Schnittstelle zur Steuerung der Roboterhardware
+
+=== Implementierungsmechanismen
+
+[discrete]
+==== *Bilderfassung und -vorverarbeitung*
+    * *Struktur*:
+        ** *ROS2-Paket*: Erstellen eines ROS2-Pakets
+        ** *Knoten*: Entwicklung eines ROS2-Knotens zur Bilderfassung
+
+[discrete]
+==== *Personenerkennung*
+    * *Struktur*:
+        ** *ROS2-Paket*: Erstellen eines ROS2-Pakets
+        ** *Knoten*: Entwicklung eines ROS2-Knotens zur Personenerkennung
+        ** *Topics*: Nutzung eines Topics zur Veröffentlichung von Erkennungsergebnissen
+
+ [discrete]       
+==== *Berechnung der Steuersignale*
+    * *Struktur*:
+        ** *ROS2-Paket*: Entwicklung eines ROS2-Pakets
+        ** *Knoten*: Implementierung eines ROS2-Knotens zur Berechnung der Steuersignale
+        ** *Topics*: Nutzung eines Topics zur Übermittlung von Verfolgungsinformationen
+        ** *Schnittstellen*: Zugriff auf die Schnittstellen zur Steuerung der Roboterhardware
+
+[discrete]
+==== *Verfolgung*
+    * *Struktur*:
+        ** *Schnittstellen*: Entwicklung einer Schnittstelle zur Steuerung der Roboterhardware
+        ** *Serielle Kommunikation*: Kommunikation mit der Roboterhardware über serielle Schnittstelle
+        ** *Netzwerkkommunikation*: Kommunikation mit der Roboterhardware über Netzwerkverbindung
+
 
 == Wesentliche Abstraktionen
-- **Hardwareebene**: Raspberry Pi, Alphabot 2.
+=== Personen
+- *Benutzer* - Person, die das System verwendet
+- *Administrator* - Person, die das System konfiguriert und wartet
+
+=== Roboter
+- **Hardwareebene**: Raspberry Pi, Alphabot 2, Arduino Uno, 
 - **Betriebssysteme**: ROS 2 Humble, Ubuntu Server 22.04.
 - **Softwareebene**: Eigene entwickelte Software, Open-Source-Software.
+
 
 == Schichten oder Architektur-Framework
 Wir verwenden ein C4-Modell, das die Architektur in kontext-, container-, komponenten- und Code-Ebenen unterteilt.
