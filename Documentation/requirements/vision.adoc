@@ -110,7 +110,7 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 
 | Optimierung Bilderkennungssoftware | hoch | Erkennung einer Person mittels YOLO Face Detection| 9 Iteration
 
-| Übersetzung des OS ROS I in ROS II | hoch | überholte Features in aktuelle übernehmen | 7 Iteration
+| Bau des 2. Prototyps | hoch | Bau und einrivhtung der neuen Platform mit Jetson Nano und arduino | 7 Iteration
 
 | Bilderkennungssoftware | hoch | Erkennung einer Person | 5 Iteration
 
