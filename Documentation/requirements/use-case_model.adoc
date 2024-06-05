@@ -22,6 +22,8 @@ Im nachfolgenden Abschnitt werden alle identifizierten Use Cases des Follow-Me F
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
 
+image::use_case_model.drawio.png[]
+
 <<<
 
 include::use_case_01.inc.adoc[leveloffset=+1]
