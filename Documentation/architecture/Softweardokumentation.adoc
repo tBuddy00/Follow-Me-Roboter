@@ -136,7 +136,7 @@ Die Flask-App wird verwendet, um ein Video-Stream und eine Benutzeroberfläche f
 
 == Motion_Driver
 
-=== Klasse DCMotorController 
+=== Klasse MotinDriver 
 
 Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die Motorgeschwindigkeiten des Alphabot2-Roboters entsprechend anzupassen.
 
@@ -151,28 +151,30 @@ Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die M
    minimum: Der minimale erlaubte Wert.
    maximum: Der maximale erlaubte Wert.
 
-3. set_motor_speeds(self, left_speed, right_speed, duration):
+3. move_PWMA(self, speed_percent):
+   Diese Funktion wird verwendet, um die Geschwindigkeit des linken Motors einzustellen.
+
+4. move_PWMB(self, speed_percent)
+   Diese Funktion ist ähnlich wie move_PWMA, wird jedoch verwendet, um die Geschwindigkeitdes rechten Motors einzustellen.
+
+5. set_motor_speeds(self, left_speed, right_speed, duration):
    Setzt die Geschwindigkeiten der linken und rechten Motoren für eine bestimmte Dauer.
 
-4.  rpm_to_percent(self, rpm):
+6. rpm_to_percent(self, rpm):
    Konvertiert RPM in Prozent.
  
-5. __del__(self):
+7. __del__(self):
    Räumt die GPIO-Pins auf. 
 
-6. motor_speeds_callback(self, msg):
-   Callback-Funktion, die aufgerufen wird, wenn eine Nachricht auf dem /motor-Topic empfangen wird. Setzt die Motorgeschwindigkeiten.
-
-=== Klasse Motor
+=== Klasse DCMotorController
 
 ==== Methoden: 
 
-1. __init__(self, forward_pin, backward_pin):
-   Initialisiert die Motorpins und PWM-Objekte.
-
-2. move(self, speed_percent):
-   Steuert die Bewegung des Motors basierend auf der angegebenen Geschwindigkeitsprozent
-
+1. __init__(self):
+   Dies ist der Konstruktor für die DCMotorController-Klasse. Er initialisiert den Knoten mit dem Namen 'dc_motor_controller' und richtet die Parameter für den Knoten ein
+   
+2. motor_speeds_callback(self, msg):
+   Callback-Funktion, die aufgerufen wird, wenn eine Nachricht auf dem /motor-Topic empfangen wird. Setzt die Motorgeschwindigkeiten.
 
 == Bilderkennung
 
