@@ -44,24 +44,24 @@ Abnahmeumgebung:
 |===
 |Use Case / Szenario | erfüllt | Anmerkung
 
-|UC01 
+|UC01 Roboter starten
 | ja/nein
 |
 
-|UC02
+|UC02 Auf Web-Control-Center zugreifen
 | ja/nein
 |
 
-|UC03
+|UC03 Motoren anschalten
 | ja/nein
 |
 
 
-|UC04
+|UC04 Motoren ausschalten
 | ja/nein
 |
 
-|UC05
+|UC05 Roboter stoppen
 | ja/nein
 |
 
@@ -77,11 +77,7 @@ Abnahmeumgebung:
 | ja/nein
 |
 
-|NFAU-2 Erlernbarkeit der Software
-| ja/nein
-|
-
-|NFAU-3 Portabilität
+|NFAU-2 Portabilität
 | ja/nein
 |
 

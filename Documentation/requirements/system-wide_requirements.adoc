@@ -27,9 +27,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 - *NFAU-1:* Die Bedienung des Alphabots soll leicht und ohne Vorkenntnisse möglich sein.
 
-- *NFAU-2:* Die genutzte Software soll leicht zu erlernen sein.
-
-- *NFAU-3:* Das System soll als portable Möglichkeit zur Mitführung gestaltet werden.
+- *NFAU-2:* Das System soll als portable Möglichkeit zur Mitführung gestaltet werden.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.

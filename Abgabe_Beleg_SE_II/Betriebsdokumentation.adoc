@@ -1,7 +1,7 @@
 = Betriebsdokumentation
 :source-highlighter: highlight.js
 
-== Systemvoraussetzungen
+== System Requirements
 === Hardware
 ==== Prototype 1
 
@@ -13,12 +13,12 @@
 * NVIDIA Jetson Nano
 * Arduino Uno
 * Adafruit Motor Shield v2.3
-* 2 x DC Motoren
+* 2 x DC Motors
 * USB-Webcam
-* WLAN-Modul
-* Batteriepack 4 AA Baterien
-* Batteriepack 5V 4A
-* Bloutooth HC-05 Modul (nur für Tests benötigt)
+* WLAN-Module
+* Battery Pack 4 AA Bateries
+* Battery Pack 5V 4A
+* Bloutooth HC-05 Module (only used for testing)
 
 === Software
 * Ubuntu Server 22.04.3 LTS (64-bit)
