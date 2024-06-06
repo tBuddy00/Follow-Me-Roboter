@@ -45,7 +45,7 @@ image::arduino_ide_find_out_com_port_2.png[]
 
 - Daraufhin wird die neue Position des Roboters mit Klebeband markiert, und der Winkel zur alten Position wird gemessen.
 
-=== Auf dem Pc
+=== Auf dem PC
 - Der Test wird gestartet
 
 - Das Programm fordert den Nutzer dann auf 3 bis 4 Werte einzugeben:
