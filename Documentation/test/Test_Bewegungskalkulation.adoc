@@ -1,73 +1,69 @@
 :imagesdir: Movement_calculation_test
+
 == Durchführung Test Bewegungskalkulation
+
 ''''
-=== Vorgaben
-
-- Für den Test wird nur das Arduino und ein Pc mit Bluethooth verwendet.
-
+=== Vorbereitung
 ''''
 ==== Auf dem Arduino
 
-Verwendeter Code:
+- Wir nutzen den standardisierten Code des Prototyps.
 
-https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Skript
+include::../src/Arduino/Skript/serial_read/serial_read.ino
 
-- Der Code ist der standart Code der auch im Prototyp verwendet wird.
+- "Es wird ein Arduino Uno mit einem Adafruit Motor Shield v2.3 und einem Bluetooth-Modul HC-05 verwendet, jedoch ohne eine Verbindung zum Jetson Nano. Das Bluetooth-Modul ist ein Ergänzungsmodul und muss separat installiert werden."
 
-- Ausstatung: Arduino Uno mit Adafruit Motor Shield v2.3. + Bluetooth Module HC-05; aber ohne das der Jetson Nano verbunden ist.
+==== Auf dem PC
 
-- Das Bluetooth Module ist ein ergänzungs Modul das in der normalen Produktionsumgebung nicht verwendet wird.
+- Für den Test wird folgender Code verwendet:
 
-''''
+include::../src/Arduino/Test/calculate_movement_test.py
 
-==== Auf dem Pc
-
-Verwendeter Code:
-
-https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Test
-
-- Vor dem Starten des Tests, muss der Pc mit dem Arduino verbunden werden über Bluetooth. (Passwort: 1234)
+- Vor dem Start des Tests muss der PC über Bluetooth mit dem Arduino verbunden werden. (Passwort: 1234)
 
 image::connect_bluetooth.png[]
 
-- Dann muss der COM Port des Arduinos herausgefunden werden z.B. mitels der Arduino IDE.
+- Dann muss der COM-Port des Arduinos ermittelt werden, beispielsweise mittels der Arduino IDE.
 
 image::arduino_ide_find_out_com_port_1.png[]
 
-- Dann Testen der Connection mit dem Serial Monitor.
+- Testen der Connection mit dem Serial Monitor.
 
 image::arduino_ide_find_out_com_port_2.png[]
 
-- Dann muss der Port im Code am Pc angepasst werden.
-
-- Dann kann der Test gestartet werden.
-
-- Das Programm fordert den Nutzer dann auf 3 bis 4 Werte einzugeben:
-
-* Die Base RPM (Basis Geschwindigkeit)
-* Den Winkel
-* Ob sich der Roboter von der Stelle bewegen soll oder nicht. (y/n)
-* Bei komplett gerader Bewegung, wie lange sich der Roboter vorwärts bewegen soll.
-
-image::movement_calculation_test.png[]
+- Anschließend muss der Port im Code auf dem PC angepasst werden.
 
 ''''
 
 === Durchführung
 
-- Das Arduino wird auf den Boden gestellt und mit Klebeband wird die Position der Räder dokumentiert.
+==== Auf dem Arduino
 
-- Der Nutzer gibt dann die oben genannten Parameter ein und misst die Zeit von Absendung des letzen Parameters, bis der Roboter stehen bleibt.
+- Der Arduino wird auf dem Boden platziert und die Position der Räder wird mit Klebeband markiert.
 
-- Diese wird dabei mit dem dritten Wert, der in der Konsole zurückkommt, verglichen (Beispiel Werte -100,100,500,0,0 (Die 500 ist die Zeit in Millisekunden)) 
+- Start Test auf PC
 
-- Dann wird die neue Position des Roboters mit Klebeband markiert und der Winkel zur alten Position gemessen.
+- Daraufhin wird die neue Position des Roboters mit Klebeband markiert, und der Winkel zur alten Position wird gemessen.
+
+=== Auf dem Pc
+- Der Test wird gestartet
+
+- Das Programm fordert den Nutzer dann auf 3 bis 4 Werte einzugeben:
+
+* Die Base RPM (Basis Geschwindigkeit)
+
+* Den Winkel
+
+* Ob sich der Roboter von der Stelle bewegen soll oder nicht. (y/n)
+
+* Bei komplett gerader Bewegung soll angegeben werden wie lange der Roboter fahren soll
 
 - Nachdem der Test durchgeführt wurde fordert das Programm den Nutzer auf den gemessenen Winkel einzugeben.
 
 - Dies wird dann für mehrere werte durchgeführt, es wird die prozentuale Abweichung zwischen gemessenen Wert und eigegeben Wert verglichen und der Durchschnitt gebildet.
 
 ''''
+
 === Auswertung
 
 - Um den Nutzer eine Auwswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
