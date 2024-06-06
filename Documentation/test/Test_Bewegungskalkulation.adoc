@@ -9,7 +9,7 @@
 
 - Wir nutzen den standardisierten Code des Prototyps.
 
-include::../src/Arduino/Skript/serial_read/serial_read.ino
+include:: ../src/Arduino/Skript/serial_read/serial_read.ino
 
 - "Es wird ein Arduino Uno mit einem Adafruit Motor Shield v2.3 und einem Bluetooth-Modul HC-05 verwendet, jedoch ohne eine Verbindung zum Jetson Nano. Das Bluetooth-Modul ist ein Ergänzungsmodul und muss separat installiert werden."
 
@@ -17,7 +17,7 @@ include::../src/Arduino/Skript/serial_read/serial_read.ino
 
 - Für den Test wird folgender Code verwendet:
 
-include::../src/Arduino/Test/calculate_movement_test.py
+include:: ../src/Arduino/Test/calculate_movement_test.py
 
 - Vor dem Start des Tests muss der PC über Bluetooth mit dem Arduino verbunden werden. (Passwort: 1234)
 
