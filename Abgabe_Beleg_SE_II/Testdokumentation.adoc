@@ -1,19 +1,5 @@
 = Test Cases: Follow-Me Fahrroboter
 
-*Test: Movement_calculation_test*
-
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::arduino_ide_find_out_com_port_1.png[]
-
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::arduino_ide_find_out_com_port_2.png[]
-
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::../Documentation/test/Movement_calculation_test/connect_bluetooth.png[]
-
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::../Documentation/test/Movement_calculation_test/movement_calculation_test.png[]
-
 *Test: Bewegungskalkulation + Verlaufsdokumentation*
 include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
 
