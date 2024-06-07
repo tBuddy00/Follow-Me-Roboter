@@ -114,8 +114,8 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 === Entwurfsmechanismen
 
 [discrete]
-==== *Bilderfassung und -vorverarbeitung*
-    * *Name*: Bilderfassung und -vorverarbeitung
+==== *Bilderfassung und -Vorverarbeitung*
+    * *Name*: Bilderfassung und -Vorverarbeitung
     * *Beschreibung*: Mechanismus zur Erfassung und Vorverarbeitung von Bildern.
     * *Entwurf*:
         ** *Kameraschnittstelle*: Entwicklung einer benutzerdefinierten Kameraschnittstelle
@@ -192,11 +192,11 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 
 image::ros-architecture.jpg[]
 
-Unser Architektur-Framework wird durch die Verwendung von ROSII vorgegeben.
+Unser Architektur-Framework wird durch die Verwendung von ROS II vorgegeben.
 
-Als Middleware verwendet ROSII dabei die Data Distribution Service (link:https://automaticaddison.com/ros-2-architecture-overview/[DDS) Architektur]. 
+Als Middleware verwendet ROS II dabei die Data Distribution Service (link:https://automaticaddison.com/ros-2-architecture-overview/[DDS) Architektur]. 
 
-Darauf baut dann der ROSII Client-Layer auf, welcher die Bibliotheken für die Verwendung von ROS zur Verfügung stelt. 
+Darauf baut dann der ROS II Client-Layer auf, welcher die Bibliotheken für die Verwendung von ROS zur Verfügung stelt. 
 
 Zuletzt der Application-Layer, welcher die eigentliche Anwendung enthält.
 
@@ -227,7 +227,7 @@ Wir verwenden folgende Hardware zur Betreibung der Software:
     ** WLAN-Modul
     ** Batteriepack 4 AA Baterien
     ** Batteriepack 5V 4A
-    ** Bloutooth HC-05 Modul (nur für Tests benötigt)
+    ** Bluetooth HC-05 Modul (nur für Tests benötigt)
 
 Des weiteren wird ein PC für das Ausführen der Software benötigt.
 
