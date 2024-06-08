@@ -73,4 +73,4 @@ image::Measure_angle.png[]
 
 - Um den Nutzer eine Auwswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
 
-image::Test_movement_Calculation.png[]
+image::Test_movement_Calculation.PNG[]
