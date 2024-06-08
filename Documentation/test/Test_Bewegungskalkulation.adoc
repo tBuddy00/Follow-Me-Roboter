@@ -4,7 +4,7 @@
 
 ''''
 === Vorbereitung
-''''
+
 ==== Auf dem Arduino
 
 - Wir nutzen den standardisierten Code des Prototyps.

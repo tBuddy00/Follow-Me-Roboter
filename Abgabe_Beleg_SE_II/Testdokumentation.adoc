@@ -1,17 +1,34 @@
 = Test Cases: Follow-Me Fahrroboter
 
-*Test: Movement_calculation_test*
+''''
 
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
+== Test: Bewegungskalkulation + Verlaufsdokumentation
 
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
+*Durchführung*
 
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
+include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
 
-.BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
+*Verlaufsdokumentation*
+
+include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.adoc[]
+
+''''
+
+== Test: Humandetection + Verlaufsdokumentation
+
+*Durchführung*
+
+include::../Documentation/test/humandetection_tests.adoc[]
+
+*Verlaufsdokumentation*
+
+include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
+
+''''
 
 *Test: Bewegungskalkulation + Verlaufsdokumentation*
 include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
+
 
 include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.adoc[]
 
