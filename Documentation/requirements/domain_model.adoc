@@ -43,7 +43,7 @@ Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. D
 
 * Verfeinere das Modell im Laufe der Zeit durch Feedback und Erfahrungen. Das Domänenmodell ist nicht in Stein gemeißelt und kann sich entwickeln, wenn ein tieferes Verständnis der Domäne gewonnen wird.
 
-Das Domänenmodell behielt aufgrund der Projektstruktur seine Form.
+Das Domänenmodell konnten wir weiterentwickeln und auf Grundlage unseres bisher bestehenden Systems anpassen.
 
 === Abstraktionsebenen:
 
@@ -55,5 +55,8 @@ image::ros-architecture.jpg[]
 
 * Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
 
-.Domänenmodell
-image::../images/Domänenmodell.pdf[]
+.Domänenmodell zu Projektbeginn
+image::../images/Domänenmodell.pdf[Domänenmodell]
+
+.Domänenmodell nach Projektentwicklung
+image::../images/Domänenmodell_2.pdf[Domänenmodell_2]
