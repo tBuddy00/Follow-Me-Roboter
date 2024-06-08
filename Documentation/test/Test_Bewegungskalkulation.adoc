@@ -45,6 +45,10 @@ image::arduino_ide_find_out_com_port_2.png[]
 
 - Daraufhin wird die neue Position des Roboters mit Klebeband markiert, und der Winkel zur alten Position wird gemessen.
 
+image:: test_stage_2.png[]
+
+image:: Measure_angle.png[]
+
 === Auf dem PC
 - Der Test wird gestartet
 
@@ -62,8 +66,11 @@ image::arduino_ide_find_out_com_port_2.png[]
 
 - Dies wird dann für mehrere werte durchgeführt, es wird die prozentuale Abweichung zwischen gemessenen Wert und eigegeben Wert verglichen und der Durchschnitt gebildet.
 
+
 ''''
 
 === Auswertung
 
 - Um den Nutzer eine Auwswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
+
+image:: Test_movement_Calculation.png[]
