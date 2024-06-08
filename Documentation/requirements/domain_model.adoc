@@ -49,14 +49,14 @@ Das Domänenmodell konnten wir weiterentwickeln und auf Grundlage unseres bisher
 
 * Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
 
-image::ros-architecture.jpg[]
+image::../images/ros-architecture.jpg[]
 
 === Visualisierung:
 
 * Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
 
 .Domänenmodell zu Projektbeginn
-image::../images/Domänenmodell.pdf[Domänenmodell]
+image::../images/Domänenmodell.png[Domänenmodell]
 
 .Domänenmodell nach Projektentwicklung
-image::../images/Domänenmodell_2.pdf[Domänenmodell_2]
+image::../images/Domänenmodell_2.png[Domänenmodell_2]

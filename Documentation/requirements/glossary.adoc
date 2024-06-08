@@ -103,7 +103,8 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 [%header]
 
 .Diagramm der Datenstrukturen
-image::DiagrammDatenstrukturen.jpg[]
+image::../images/Diagramm-Datenstrukturen.JPG[]
+
 |===
 | Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
 
