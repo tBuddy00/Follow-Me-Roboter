@@ -1,5 +1,5 @@
 = Domain Model: Follow-Me Fahrroboter
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -43,21 +43,17 @@ Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. D
 
 * Verfeinere das Modell im Laufe der Zeit durch Feedback und Erfahrungen. Das Domänenmodell ist nicht in Stein gemeißelt und kann sich entwickeln, wenn ein tieferes Verständnis der Domäne gewonnen wird.
 
+Das Domänenmodell behielt aufgrund der Projektstruktur seine Form.
 
 === Abstraktionsebenen:
 
 * Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
 
-
-//NOCH ANGEHEN
- - Benutzerebene
- - Betrieb...
- - 
-
+image::ros-architecture.jpg[]
 
 === Visualisierung:
 
 * Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
 
 .Domänenmodell
-image::domain_model_v1.png[]
+image::../images/Domänenmodell.pdf[]

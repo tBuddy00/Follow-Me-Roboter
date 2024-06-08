@@ -1,0 +1,69 @@
+= Human Detection Test Documentation Nr.1
+
+== Ziel des Tests
+Der Test soll die Effektivität des Human Detectors test und wie lange dieser tatsächlich im Durchschnitt braucht, um eine Person zu erkennen.
+
+== Vorbereitung
+
+=== Projektverzeichnis
+- **Verzeichnis:** `C:\Users\jonat\PycharmProjects\pythonProject`
+- **Videodatei:** `one-by-one-person-detection.mp4`
+
+=== Testskript
+- **Skript:** `test.py`
+- **Funktion:** Human Detection mittels YOLOv3 zur Erkennung und Protokollierung der Erkennungszeiten.
+
+== Durchführung des Tests für 50 Frames
+
+=== Startzeit
+- **Datum und Uhrzeit:** 2024-06-06 14:00:00 (wird während der Ausführung protokolliert)
+
+=== Ausführung des Skripts
+- **Befehl:** `python test.py`
+- **Beschreibung:** Das Skript wird ausgeführt und die Erkennungszeiten für 50 Frames werden gemessen und protokolliert.
+
+=== Ergebnisspeicherung
+- **Datei:** `erkennungszeiten.txt`
+- **Inhalt:**
+  
+  Startzeit: 2024-06-05 23:56:52
+
+  Erkennungszeit: 0.88 Sekunden
+  Erkennungszeit: 0.23 Sekunden
+  Erkennungszeit: 0.15 Sekunden
+  ...
+  Erkennungszeit: 1.09 Sekunden
+
+  Durchschnittliche Erkennungszeit: 0.24 Sekunden
+
+  Endzeit: 2024-06-05 23:57:04
+
+
+
+
+== Human Detection Testdokumentation Nr. 2
+
+== Ziel des Tests
+Es soll die Effektivität des Human Detectors getestet werden und wie lange er tatsächlich im Schnitt braucht, um eine Person zu erkennen.
+
+== Vorbereitung
+
+=== Projektverzeichnis
+- **Verzeichnis:** `C:\Users\jonat\PycharmProjects\pythonProject`
+- **Videodatei:** `one-by-one-person-detection.mp4`
+
+=== Testskript
+- **Skript:** `test.py`
+- **Funktion:** Human Detection mittels YOLOv3 zur Erkennung und Protokollierung der Erkennungszeiten.
+
+== Durchführung des Tests für 150 Frames
+
+=== Startzeit
+- **Datum und Uhrzeit:** 2024-06-06 14:05:00 (wird während der Ausführung protokolliert)
+
+=== Anpassung des Skripts
+- **Anzahl der Frames:** Von 50 auf 150 ändern.
+
+=== Ausführung des Skripts
+- **Befehl:** `python test.py`
+- **Beschreibung:** Das Skript wird erneut ausgegeben
