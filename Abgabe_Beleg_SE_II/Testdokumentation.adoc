@@ -25,28 +25,3 @@ include::../Documentation/test/humandetection_tests.adoc[]
 include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
 
 ''''
-
-*Test: Bewegungskalkulation + Verlaufsdokumentation*
-include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
-
-
-include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.adoc[]
-
-*Test: Bilderkennungsdauer + Verlaufsdokumentation*
-include::../Documentation/test/Test_Bilderkennungsdauer.adoc[]
-
-include::../Documentation/test/Verlaufsdokumentation_Bilderkennungsdauer.adoc[]
-
-*Test: Humandetection + Verlaufsdokumentation*
-
-include::../Documentation/test/Test_Humandetection.adoc[]
-
-include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
-
-#Bilder in Test_Bewegungskalkulation einfügen
-#Vorgaben zur Testdokumentation in PDF Whatsapp Gruppe
-
-
-
-
-
