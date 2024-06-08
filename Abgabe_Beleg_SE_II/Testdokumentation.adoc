@@ -3,16 +3,12 @@
 *Test: Movement_calculation_test*
 
 .BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::arduino_ide_find_out_com_port_1.png[]
 
 .BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::arduino_ide_find_out_com_port_2.png[]
 
 .BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::../Documentation/test/Movement_calculation_test/connect_bluetooth.png[]
 
 .BITTE HIER NOCH ERGÄNZEN CLAIRE (FALLS NOTWENDIG)
-image::../Documentation/test/Movement_calculation_test/movement_calculation_test.png[]
 
 *Test: Bewegungskalkulation + Verlaufsdokumentation*
 include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
@@ -29,6 +25,10 @@ include::../Documentation/test/Verlaufsdokumentation_Bilderkennungsdauer.adoc[]
 include::../Documentation/test/Test_Humandetection.adoc[]
 
 include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
+
+#Bilder in Test_Bewegungskalkulation einfügen
+#Vorgaben zur Testdokumentation in PDF Whatsapp Gruppe
+
 
 
 
