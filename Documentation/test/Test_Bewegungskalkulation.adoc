@@ -3,6 +3,13 @@
 == Durchführung Test Bewegungskalkulation
 
 ''''
+
+=== Ziel
+
+- Die prozentuale Abweichung zwischen dem gemessenen Wert und dem eingegebenen Wert wird ermittelt, miteinander verglichen und anschließend wird der Durchschnitt dieser Abweichungen berechnet.
+
+''''
+
 === Vorbereitung
 
 ==== Auf dem Arduino
@@ -63,9 +70,6 @@ image::Measure_angle.png[]
 * Bei komplett gerader Bewegung soll angegeben werden wie lange der Roboter fahren soll
 
 - Nachdem der Test durchgeführt wurde fordert das Programm den Nutzer auf den gemessenen Winkel einzugeben.
-
-- Dies wird dann für mehrere werte durchgeführt, es wird die prozentuale Abweichung zwischen gemessenen Wert und eigegeben Wert verglichen und der Durchschnitt gebildet.
-
 
 ''''
 
