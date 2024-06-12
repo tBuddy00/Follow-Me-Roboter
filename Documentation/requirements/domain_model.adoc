@@ -55,8 +55,5 @@ image::../images/ros-architecture.jpg[]
 
 * Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
 
-.Domänenmodell zu Projektbeginn
-image::../images/Domänenmodell.png[Domänenmodell]
-
 .Domänenmodell nach Projektentwicklung
-image::../images/Domänenmodell_2.png[Domänenmodell_2]
+image::../images/Domänenmodell.png[Domänenmodell_2]
