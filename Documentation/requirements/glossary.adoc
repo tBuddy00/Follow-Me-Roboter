@@ -83,6 +83,11 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 | Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
 
 |Powerbank | Eine Powerbank ist ein externer Zusatzakku, mit dem man mobile Geräte wie Tablets, Notebooks oder Handys aufladen können, wenn keine Stromquelle verfügbar ist.| Zusatzakku, Akku
+
+|NVIDIA Jetsen Nano | Nvidia Jetson ist eine Serie von Embedded-Computing-Boards von Nvidia. Die Modelle Jetson TK1, TX1 und TX2 sind alle mit einem Tegra-Prozessor (oder SoC) von Nvidia ausgestattet, der eine CPU mit ARM-Architektur integriert. Jetson ist ein energiesparendes System und wurde zur Beschleunigung von maschinellen Lernanwendungen entwickelt.| Kleinrechner, Entwicklungsboard, Edge-Computing-Gerät  
+
+
+
 |===
 
 == Abkürzungen und Akronyme
