@@ -1,38 +1,102 @@
 :source-highlighter: highlight.js
+:toc:
+:toc-title: Inhaltsverzeichnis
 
-= Systemvoraussetzungen
+= Follow-Me-Fahrroboter User Guide
 
-== Hardware
-=== Prototype 1
+== Ziel des Handbuchs
 
-* Raspberry Pi 4 8GB
-* Alphabot II
+Dieses Handbuch soll Nutzern helfen, die Software für den Follow-Me-Fahrroboter zu bedienen. Bitte beachten Sie, dass die Interaktionsmöglichkeiten mit dem Roboter begrenzt sind.
 
-=== Prototype 2
+== Einführung
 
-* NVIDIA Jetson Nano
-* Arduino Uno
-* Adafruit Motor Shield v2.3
-* 2 x DC Motoren
-* USB-Webcam
-* WLAN-Modul
-* Batteriepack 4 AA Baterien
-* Batteriepack 5V 4A
-* Bloutooth HC-05 Modul (nur für Tests benötigt)
+Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Hierbei handelt es sich um einen Protoypen einer Machbarkeitsstudie, die Interaktionsmöglichkeiten sind dementsprechend minimal. Diese Anleitung bietet eine kurze Übersicht über die Einrichtung und Nutzung der Software sowie einige Debugging-Kommandos.
 
-== Software
-* Ubuntu Server 22.04.3 LTS (64-bit)
-* ROS 2 Humble
+== Aufbau und Organisation der Benutzeroberfläche
 
+// Noch einfügen
 
-== Systemeinrichtung
+== Wichtige Aufgaben
 
-include::../installation guide (english).adoc[leveloffset=+1]
+=== Verbindung zum WiFi herstellen
 
+==== Raspberry Pi 4B
 
-== Nutzung über SSH
+[source,bash]
+----
+ssid: Alphabot2
 
-include::../user guide (english).adoc[leveloffset=+1]
+Password: ubuntu1234
+----
 
+==== Verbindung mit SSH herstellen
+
+[source,bash]
+----
+ssh ubuntu@192.168.4.1
+
+Pw: ubuntu1234
+----
+
+==== Jetson Nano
+
+[source,bash]
+----
+ssid: JetsonNano
+
+Pw: jetson1234
+----
+
+==== Verbindung mit SSH herstellen
+
+[source,bash]
+----
+ssh jetson@192.168.5.1
+
+Pw: jetson
+----
+
+=== Projekt von der Konsole ausführen
+
+[source,bash]
+----
+cd ~/ros2_humble/ && source install/setup.bash
+cd ~/ros2_ws/ && source install/setup.bash
+cd ~/ros2_ws/src/camera_package/launch
+
+ros2 launch follow_me_arduino_launch.py
+----
+
+Es gibt verschiedene Launch-Dateien:
+
+* Launch für die Arduino-Version: `follow_me_arduino_launch.py`
+* Launch für die Alphabot2-Version: `follow_me_launch.py`
+* Test der Arduino-Version: `arduino_test_launch.py`
+
+== Debugging-Kommandos
+
+=== Kamera-Paket neu installieren
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f camera_package && git clone https://github.com/cl-ire/camera_package.git
+cd ~/ros2_ws && colcon build --packages-select camera_package
+----
+
+=== ROS2-Paket für Waveshare Alphabot2 neu installieren
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f ros2_for_waveshare_alphabot2 && git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
+cd ~/ros2_ws && colcon build --packages-select ros2_for_waveshare_alphabot2
+----
+
+== Selten genutzte Funktionen und FAQ
+
+*Q:* Kann ich den Roboter mit einer anderen Software steuern?
+
+*A:* Derzeit ist der Follow-Me-Fahrroboter nur mit der bereitgestellten Software kompatibel. Anpassungen können jedoch vorgenommen werden, indem Sie die entsprechenden ROS2-Pakete modifizieren.
+
+Für weitere Fragen und Unterstützung, wenden Sie sich bitte an den Systemadministrator.
 
 
