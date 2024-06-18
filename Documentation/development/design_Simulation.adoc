@@ -1,0 +1,33 @@
+== Design: Simulationsumgebung
+
+''''
+=== Vorüberlegung
+
+- *Um Tests in einer physischen durchführen zu können wird aktuell der Prototyp benötigt. Um diesem Hindernis aus dem Weg zu gehen soll eine Simulationsumgebung für den Raspberry Pi aufgesetzt werden.*
+
+==== Pro
+
+- Raspberry Pi kann Standortunabhängig getestet werden
+- Entwickler können zeitgleich auf den Prototyp zugreifen
+
+==== Contra
+
+- Simulationsumgebung muss für jeden Benutzer einzeln eingerichtet werden -> Zeitaufwand durch Schulung
+- Download von extra Software -> Bei langsamer Downloadrate kann es zu verzögerungen kommen.
+- Da Ubuntu verwendet wird, braucht jedes andere Betriebssystem eine Virtual Machine um die Simulationsumgebung nutzen zu können.
+
+''''
+
+=== Benötigte Software
+
+- Ubuntu Server 22.04.3 LTS (64-bit) https://ubuntu.com/[Ubuntu]
+- VirtualBox 7.0.18 https://www.virtualbox.org/wiki/Downloads[VirtualBox]
+- GZ Fortress (LTS) https://gazebosim.org/home[Gazebo]
+
+''''
+
+=== Entscheidungen
+
+- Die Recherche und das und das einrichten der Simulationsumgebung ist sehr aufwendig sodass es den Rahmen dieses Projektes übertrifft.
+- Es gibt Performanceprobleme bei dem Prototypen für welchen die Simulationsumgebung gedacht war.
+- Frau Schubert und Herr Ziegert beschließen einstimmig die Arbeit an der Simulationsumgebung zu beenden, um den Fortschritt des Projektes zu gewährleisten.
