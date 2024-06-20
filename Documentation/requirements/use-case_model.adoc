@@ -5,7 +5,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Allgemeine Informationen
-Im nachfolgenden Abschnitt werden alle identifizierten Use Cases des Follow-Me Fahrroboters beschrieben.
+Im nachfolgenden Abschnitt werden alle identifizierten Use Cases des Follow-Me-Fahrroboters beschrieben. Entscheidungen für etwaige Use Cases wurden retrospektiv im Entwicklungsprozess aufgrund offen definierter Anforderungen getroffen.
 
 
 == Identifizierte Use Cases

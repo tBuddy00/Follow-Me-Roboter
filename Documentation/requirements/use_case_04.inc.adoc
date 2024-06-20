@@ -23,11 +23,6 @@ Der Benutzer schaltet die Motoren des Roboters aus.
 . Der Benutzer drückt die Hardwaretaste.
 . Das System empfängt das Signal zum Ausschalten der Motoren.
 
-=== Wesentliche Szenarios
-==== Szenario 1: Erfolgreiches Ausschalten der Motoren
-. Der Benutzer betätigt die Hardwaretaste.
-. Die Motoren werden erfolgreich ausgeschaltet und deaktiviert.
-
 === Nachbedingungen
 * Minimal Guarantee: Der Roboter hat versucht, die Motoren auszuschalten.
 * Success Guarantee: Die Motoren des Roboters sind ausgeschaltet.

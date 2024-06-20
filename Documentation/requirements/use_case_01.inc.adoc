@@ -36,13 +36,6 @@ Der Benutzer schaltet den Roboter ein und startet die Software zur Personenverfo
 . Der Benutzer gibt die SSH-Zugangsdaten ein.
 . Der Benutzer verbindet sich mit dem Roboter.
 
-=== Wesentliche Szenarios
-==== Szenario 1: Erfolgreiches Starten des Roboters
-. Der Benutzer startet den Roboter.
-. Der Roboter verbindet sich erfolgreich mit dem WLAN.
-. Der Benutzer verbindet sich erfolgreich über SSH.
-. Die Software zur Personenverfolgung wird gestartet.
-
 === Nachbedingungen
 * Minimal Guarantee: Der Roboter ist eingeschaltet.
 * Success Guarantee: Die Software zur Personenverfolgung ist aktiv und betriebsbereit.

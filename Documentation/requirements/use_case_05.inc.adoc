@@ -27,11 +27,6 @@ Der Benutzer stoppt den Roboter und beendet die Software zur Personenverfolgung.
 . Der Benutzer trennt die Stromversorgung des Roboters.
 . Der Roboter wird ausgeschaltet.
 
-=== Wesentliche Szenarios
-==== Szenario 1: Erfolgreiches Stoppen des Roboters
-. Der Benutzer beendet den Prozess in der Kommandozeile.
-. Der Benutzer trennt die Stromversorgung des Roboters.
-
 === Nachbedingungen
 * Minimal Guarantee: Der Roboter hat versucht, den Prozess zu beenden.
 * Success Guarantee: Die Software zur Personenverfolgung ist gestoppt und der Roboter ist ausgeschaltet.

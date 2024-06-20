@@ -24,11 +24,6 @@ Der Benutzer schaltet die Motoren des Roboters ein.
 . Der Benutzer drückt die Hardwaretaste.
 . Das System empfängt das Signal zum Einschalten der Motoren.
 
-=== Wesentliche Szenarios
-==== Szenario 1: Erfolgreiches Einschalten der Motoren
-. Der Benutzer betätigt die Hardwaretaste.
-. Die Motoren werden erfolgreich eingeschaltet und aktiviert.
-
 === Nachbedingungen
 * Minimal Guarantee: Der Roboter hat versucht, die Motoren einzuschalten.
 * Success Guarantee: Die Motoren des Roboters sind eingeschaltet und betriebsbereit.

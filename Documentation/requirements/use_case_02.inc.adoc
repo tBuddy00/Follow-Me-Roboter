@@ -25,11 +25,6 @@ Der Benutzer greift über einen Webbrowser auf das Kontrollzentrum des Systems z
 . Der Benutzer gibt die Adresse des Web-Control-Centers im Browser ein.
 . Der Browser stellt eine Verbindung zum Web-Control-Center her.
 
-=== Wesentliche Szenarios
-==== Szenario 1: Erfolgreicher Zugriff auf das Web-Control-Center
-. Der Benutzer greift erfolgreich auf das Web-Control-Center zu.
-. Der Benutzer überwacht die Bilderkennung.
-
 === Nachbedingungen
 * Minimal Guarantee: Der Benutzer hat versucht, auf das Web-Control-Center zuzugreifen.
 * Success Guarantee: Der Benutzer hat erfolgreich auf das Web-Control-Center zugegriffen und kann die Bilderkennung überwachen.
