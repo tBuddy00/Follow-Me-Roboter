@@ -11,7 +11,7 @@ Der Benutzer schaltet den Roboter ein und startet die Software zur Personenverfo
 
 === Standardablauf (Basic Flow)
 . Der Use Case beginnt, wenn der Benutzer den Roboter mit Strom versorgt.
-. Der Benutzer verbindet den Roboter mit dem WLAN.
+. Der Benutzer verbindet sich mit dem WLAN des Roboters.
 . Der Benutzer verbindet sich über SSH mit dem Roboter.
 . Der Benutzer führt die Startbefehle aus.
 . Die Software zur Personenverfolgung wird gestartet.
@@ -20,17 +20,19 @@ Der Benutzer schaltet den Roboter ein und startet die Software zur Personenverfo
 ==== Alternativer Ablauf 1: WLAN-Verbindung schlägt fehl
 . Der Benutzer überprüft die WLAN-Verbindung.
 . Der Benutzer stellt sicher, dass das WLAN-Netzwerk verfügbar ist.
-. Der Benutzer wiederholt den Verbindungsversuch.
+** Bei Scheitern des Verbindungsversuchs startet der Benutzer den Roboter erneut und folgt der Anwenderdokumentation.
+** Bei erneutem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
 ==== Alternativer Ablauf 2: SSH-Verbindung schlägt fehl
 . Der Benutzer überprüft die Netzwerkverbindung.
 . Der Benutzer stellt sicher, dass die SSH-Konfiguration korrekt ist.
-. Der Benutzer wiederholt den Verbindungsversuch.
+** Bei Scheitern des Verbindungsversuchs startet der Benutzer den Roboter erneut und folgt der Anwenderdokumentation.
+** Bei erneutem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
-=== Unterabläufe (subflows)
+=== Unterabläufe (Subflows)
 ==== Unterablauf 1: Verbindung mit WLAN
 . Der Benutzer gibt die WLAN-Zugangsdaten ein.
-. Der Roboter verbindet sich mit dem WLAN-Netzwerk.
+. Der Benutzer verbindet sich mit dem WLAN-Netzwerk des Roboters.
 
 ==== Unterablauf 2: Verbindung über SSH
 . Der Benutzer gibt die SSH-Zugangsdaten ein.
@@ -41,4 +43,4 @@ Der Benutzer schaltet den Roboter ein und startet die Software zur Personenverfo
 * Success Guarantee: Die Software zur Personenverfolgung ist aktiv und betriebsbereit.
 
 === Besondere Anforderungen
-* Der Roboter muss sich in einem WLAN-Bereich mit ausreichendem Signal befinden.
+* Der Benutzer muss sich in einem WLAN-Bereich mit ausreichendem Signal befinden.

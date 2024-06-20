@@ -7,7 +7,7 @@ Der Benutzer greift über einen Webbrowser auf das Kontrollzentrum des Systems z
 * Benutzer
 
 === Vorbedingungen
-* Der Roboter ist gestartet und mit dem WLAN verbunden.
+* Der Roboter ist gestartet und Benutzer mit dem WLAN des Roboters verbunden.
 
 === Standardablauf (Basic Flow)
 . Der Use Case beginnt, wenn der Benutzer die Adresse des Web-Control-Centers im Browser eingibt.
@@ -18,7 +18,8 @@ Der Benutzer greift über einen Webbrowser auf das Kontrollzentrum des Systems z
 ==== Alternativer Ablauf 1: Website nicht erreichbar
 . Der Benutzer überprüft die Netzwerkverbindung.
 . Der Benutzer stellt sicher, dass die Web-Control-Center-Adresse korrekt ist.
-. Der Benutzer wiederholt den Zugriff auf die Website.
+** Bei Scheitern des Verbindungsversuchs startet der Benutzer den Roboter erneut und folgt der Anwenderdokumentation.
+** Bei erneutem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
 === Unterabläufe (subflows)
 ==== Unterablauf 1: Zugriff auf Web-Control-Center

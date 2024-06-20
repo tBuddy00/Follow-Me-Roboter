@@ -17,6 +17,7 @@ Der Benutzer schaltet die Motoren des Roboters aus.
 ==== Alternativer Ablauf 1: Motoren schalten nicht aus
 . Der Benutzer überprüft die Hardwaretaste auf Funktionalität.
 . Der Benutzer versucht erneut, die Motoren auszuschalten.
+** Bei wiederholtem erneutem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
 === Unterabläufe (subflows)
 ==== Unterablauf 1: Betätigung der Hardwaretaste

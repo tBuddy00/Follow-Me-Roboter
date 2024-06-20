@@ -17,6 +17,7 @@ Der Benutzer stoppt den Roboter und beendet die Software zur Personenverfolgung.
 ==== Alternativer Ablauf 1: Prozess wird nicht beendet
 . Der Benutzer überprüft die Kommandozeileingabe.
 . Der Benutzer wiederholt den Befehl zum Abbrechen des Prozesses.
+** Bei wiederholtem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
 === Unterabläufe (subflows)
 ==== Unterablauf 1: Beenden des Prozesses

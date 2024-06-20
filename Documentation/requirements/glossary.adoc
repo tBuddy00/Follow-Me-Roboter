@@ -86,7 +86,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |NVIDIA Jetsen Nano | Nvidia Jetson ist eine Serie von Embedded-Computing-Boards von Nvidia. Die Modelle Jetson TK1, TX1 und TX2 sind alle mit einem Tegra-Prozessor (oder SoC) von Nvidia ausgestattet, der eine CPU mit ARM-Architektur integriert. Jetson ist ein energiesparendes System und wurde zur Beschleunigung von maschinellen Lernanwendungen entwickelt.| Kleinrechner, Entwicklungsboard, Edge-Computing-Gerät  
 
-|Personenerkennung | Personenerkennung funktioniert durch Bilderkennung. Es darf sich nur eine Person im Bild befinden, da der Roboter nur einer Person folgen kann und nicht zwischen Personen unterscheidet. | - 
+|Personenerkennung | Personenerkennung funktioniert durch Bilderkennung. Es darf sich nur eine Person im Bild befinden, da der Roboter nur einer Person folgen kann und nicht zwischen Personen unterscheidet. Zugehörige Software wird genauer in Entwicklerdokumentation beschrieben. | - 
 
 
 

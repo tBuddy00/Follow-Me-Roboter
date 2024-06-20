@@ -18,6 +18,7 @@ Der Benutzer schaltet die Motoren des Roboters ein.
 . Der Benutzer überprüft die Stromversorgung des Roboters.
 . Der Benutzer überprüft die Hardwaretaste auf Funktionalität.
 . Der Benutzer versucht erneut, die Motoren einzuschalten.
+** Bei wiederholtem Scheitern wendet sich der Benutzer an den Systemadministrator.
 
 === Unterabläufe (subflows)
 ==== Unterablauf 1: Betätigung der Hardwaretaste
