@@ -105,7 +105,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Geschwindigkeitsberechnung*: Berechnung der Geschwindigkeit zur Verfolgung der erkannten Person
 
 [discrete]
-==== *Verfolgung*
+==== *Verfolgung: UC1 - Roboter starten*
     * *Name*: Verfolgung
     * *Beschreibung*: Mechanismus zur Verfolgung der erkannten Person.
     * *Attribute*:
@@ -123,7 +123,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Vorverarbeitungsschritte*: Implementierung von Funktionen zur Bildskalierung, Normalisierung und Rauschreduzierung
 
 [discrete]
-==== *Personenerkennung: UC1 - Roboter starten**
+==== *Personenerkennung: UC1 - Roboter starten*
     * *Name*: Personenerkennung
     * *Beschreibung*: Mechanismus zur Erkennung und Identifizierung von Personen.
     * *Entwurf*:
@@ -132,7 +132,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Erkennungsgeschwindigkeit*: Echtzeitfähigkeit sicherstellen
 
 [discrete]
-==== *Berechnung der Steuersignale*
+==== *Berechnung der Steuersignale: UC1 - Roboter starten*
     * *Name*: Berechnung der Steuersignale
     * *Beschreibung*: Mechanismus zur Berechnung der Steuersignale zur Verfolgung der erkannten Person.
     * *Entwurf*:
@@ -140,7 +140,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Leistung*: Effizient und zuverlässig mit niedriger Latenz
 
 [discrete]
-==== *Verfolgung*
+==== *Verfolgung: UC1 - Roboter starten*
     * *Name*: Verfolgung
     * *Beschreibung*: Mechanismus zur Verfolgung der erkannten Person.
     * *Entwurf*:
@@ -149,20 +149,20 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 === Implementierungsmechanismen
 
 [discrete]
-==== *Bilderfassung und -vorverarbeitung*
+==== *Bilderfassung und -vorverarbeitung: UC1 - Roboter starten*
     * *Struktur*:
         ** *ROS2-Paket*: Erstellen eines ROS2-Pakets
         ** *Knoten*: Entwicklung eines ROS2-Knotens zur Bilderfassung
 
 [discrete]
-==== *Personenerkennung*
+==== *Personenerkennung: UC1 - Roboter starten*
     * *Struktur*:
         ** *ROS2-Paket*: Erstellen eines ROS2-Pakets
         ** *Knoten*: Entwicklung eines ROS2-Knotens zur Personenerkennung
         ** *Topics*: Nutzung eines Topics zur Veröffentlichung von Erkennungsergebnissen
 
 [discrete]       
-==== *Berechnung der Steuersignale*
+==== *Berechnung der Steuersignale: UC1 - Roboter starten*
     * *Struktur*:
         ** *ROS2-Paket*: Entwicklung eines ROS2-Pakets
         ** *Knoten*: Implementierung eines ROS2-Knotens zur Berechnung der Steuersignale
@@ -170,7 +170,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
         ** *Schnittstellen*: Zugriff auf die Schnittstellen zur Steuerung der Roboterhardware
 
 [discrete]
-==== *Verfolgung*
+==== *Verfolgung: UC1 - Roboter starten*
     * *Struktur*:
         ** *Schnittstellen*: Entwicklung einer Schnittstelle zur Steuerung der Roboterhardware
         ** *Serielle Kommunikation*: Kommunikation mit der Roboterhardware über serielle Schnittstelle
