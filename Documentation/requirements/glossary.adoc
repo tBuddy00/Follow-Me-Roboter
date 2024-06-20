@@ -111,6 +111,8 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 |SSH | Secure Shell|  SSH ist ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.
 
 |FAQ | Frequently Asked Questions| Ein FAQ ist eine Sammlung von häufig gestellten Fragen, die bei der Verwendung des Projektes aufkommen. Es dient als erste Anlaufstelle für Problembehandlung.
+
+| USB | Universal Serial Bus | _Universal Serial Bus (USB)_ - ein standardisiertes Anschlusssystem, das die Verbindung, Kommunikation und Stromversorgung zwischen Computern und elektronischen Geräten ermöglicht.
 |===
 
 == Verzeichnis der Datenstrukturen

@@ -2,6 +2,7 @@
 :toc:
 :toc-title: Inhaltsverzeichnis
 
+
 = Follow-Me-Fahrroboter User Guide
 
 == Ziel des Handbuchs
@@ -16,9 +17,18 @@ Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um ei
 
 === Roboter starten:
 
-Roboter mit Strom versorgen::
-Raspberry Pi 4B / Alphabot:::
-image::../Documentation/deployment/images/Raspberri Pi.jpg[]
+*Roboter mit Strom versorgen*
+
+* Raspberry Pi 4B / Alphabot
+** Als erstes müssen Sie den Roboter aktivieren, indem Sie auf den schwarzen Joystick, der mit A,B,C & D umrandet ist, drücken. 
+
+image::../Documentation/deployment/images/Arduino.png[]
+
+* Jetson Nano / Arduino
+** Als erstes müssen Sie den Roboter per USB mit einer Powerbank verbinden. Falls Ihnen keine Powerbank zur Verfügung gestellt wurde, wenden Sie sich an Ihrem Systemadministrator. 
+** Verbinden Sie die Powerbank mit dem orangenen Kabel des Jeston Nano.
+
+image::../Documentation/deployment/images/Raspberry_Pi.png[]
 
 Verbindung zum WiFi herstellen::
 Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und Verbinden Sie sich damit.
@@ -80,6 +90,65 @@ Optional: Test der Arduino-Version:::
 
  ros2 arduino_test_launch.py
 
+
+=== Auf Web-Control-Center zugreifen:
+
+Nachdem Sie den Roboter gestartet haben, können Sie auf das Web-Control-Center zugreifen, um die Personenerkennung des Roboters zu überwachen und den Kamera-Feed zu verfolgen. Öffnen Sie dazu einen Webbrowser der neusten Generation. Wir empfehlen Google Chrome oder Firefox. 
+
+Raspberry Pi 4B / Alphabot::
+
+* Geben Sie die folgende Adresse ein:
+
+ 192.168.4.1:5000
+
+Jetson Nano / Arduino::
+
+* Geben Sie die folgende Adresse ein:
+
+  192.168.5.1:5000
+
+=== Motoren anschalten:
+
+Aktuell haben Sie einen stationären Roboter mit aktiver Personenerkennung. Sie können dies im Web-Control-Center verfolgen. Jetzt werden Sie die Motoren aktivieren, damit der Roboter Ihnen folgen kann. Achten Sie darauf, dass keine Hindernisse zwischen Ihnen und dem Roboter sind und dass er auf ebenem Boden ist, wo er nirgends herunterfallen kann. 
+
+Raspberry Pi 4B / Alphabot::
+
+Suchen Sie den Joystick, mit dem Sie den Roboter aktiviert haben. 
+* Drücken Sie den Joystick zuerst in Richtung des Buchstaben A. Dies zentriert die Motoren. Warten Sie 5 Sekunden.
+* Danach drücken Sie den Joystick in Richtung B. Dies aktiviert die Motoren und der Roboter beginnt mit der Personenverfolgung, sobald Sie sich in seinem Sichtfeld befinden. 
+
+image::../Documentation/deployment/images/Arduino_2.png[]
+
+Jetson Nano / Arduino::
+
+* Betätigen Sie den kleinen silbernen Kippschalter an Ihrem Arduino. Der Roboter beginnt nun mit der Personenverfolgung, sobald Sie sich in seinem Sichtfeld befinden. 
+
+image::../Documentation/deployment/images/Raspberry_Pi_2.png[]
+
+
+=== Motoren ausschalten:
+
+Nachdem Sie die Personenverfolgung ausgetestet haben und den Roboter nun beenden wollen, müssen Sie zuerst die Motoren wieder ausschalten.
+
+Raspberry Pi 4B / Alphabot::
+
+* Drücken Sie den Joystick in Richtung B. Dies stoppt die Motoren.
+
+Jetson Nano / Arduino::
+
+* Bringen Sie den silbernen Kippschalter wieder auf seine Ausgangsposition. Dies stoppt die Motoren.
+
+=== Roboter ausschalten:
+
+Als letzten Schritt müssen Sie den Roboter wieder ausschalten. Sie können das Web-Control-Center jetzt schließen.
+
+Raspberry Pi 4B / Alphabot::
+
+* Drücken Sie den Joystick nach unten, wie Sie es zum Anschalten des Roboters getan haben . Dies schaltet den Roboter aus.
+
+Jetson Nano / Arduino::
+
+* Ziehen Sie das orangene Kabel aus dem Jetson Nano. Dies schaltet den Roboter aus.
 
 == FAQ
 
