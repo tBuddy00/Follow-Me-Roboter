@@ -18,10 +18,6 @@ Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das v
 === Definitionen, Akronyme und Abkürzungen
 Siehe <<#glossary, Glossar>>.
 
-=== Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
-
-
 == Positionierung
 
 === Fachliche Motivation

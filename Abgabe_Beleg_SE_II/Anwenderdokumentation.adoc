@@ -10,51 +10,37 @@ Dieses Handbuch soll Nutzern helfen, die Software für den Follow-Me-Fahrroboter
 
 == Einführung
 
-Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Hierbei handelt es sich um einen Protoypen einer Machbarkeitsstudie, die Interaktionsmöglichkeiten sind dementsprechend minimal. Diese Anleitung bietet eine kurze Übersicht über die Einrichtung und Nutzung der Software sowie einige Debugging-Kommandos.
-
-== Aufbau und Organisation der Benutzeroberfläche
-
-// Noch einfügen
+Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Hierbei handelt es sich um einen Protoypen einer Machbarkeitsstudie, die Interaktionsmöglichkeiten sind dementsprechend minimal. Diese Anleitung bietet eine kurze Übersicht über die Nutzung der Software sowie einige Debugging-Kommandos.
 
 == Wichtige Aufgaben
 
-=== Verbindung zum WiFi herstellen
+=== Roboter starten:
 
-==== Raspberry Pi 4B
+Verbindung zum WiFi herstellen::
+Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und Verbinden Sie sich damit.
 
-[source,bash]
-----
-ssid: Alphabot2
+Raspberry Pi 4B:::
 
-Password: ubuntu1234
-----
+* Name des Netzwerkes: Alphabot2
+* Passwort: ubuntu1234
 
-==== Verbindung mit SSH herstellen
+Jetson Nano:::
 
-[source,bash]
-----
-ssh ubuntu@192.168.4.1
+* Name des Netzwerkes: JetsonNano
+* Passwort: jetson1234
 
-Pw: ubuntu1234
-----
 
-==== Jetson Nano
+Verbindung mit SSH herstellen::
+// TODO
+Raspberry Pi 4B:::
 
-[source,bash]
-----
-ssid: JetsonNano
+* ssh ubuntu@192.168.4.1
+* Pw: ubuntu1234
 
-Pw: jetson1234
-----
+Jetson Nano:::
 
-==== Verbindung mit SSH herstellen
-
-[source,bash]
-----
-ssh jetson@192.168.5.1
-
-Pw: jetson
-----
+* ssh jetson@192.168.5.1
+* Pw: jetson
 
 === Projekt von der Konsole ausführen
 
