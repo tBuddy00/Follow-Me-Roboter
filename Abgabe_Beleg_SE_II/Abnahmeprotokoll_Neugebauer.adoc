@@ -19,11 +19,11 @@ https://github.com/tBuddy00/Follow-Me-Roboter
 == Abnahmedokumentation 
 === Abnahme
 
-Datum:
+Datum: 21.06.2024 (Freitag)
 
-Zeit:
+Zeit: 15:00 Uhr
 
-Abnahmeumgebung:
+Abnahmeumgebung: U438 (Büro von Herr Prof. Neugebauer)
 
 === Lieferumfang
 
