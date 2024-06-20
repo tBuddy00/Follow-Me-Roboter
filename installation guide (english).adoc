@@ -371,3 +371,22 @@ If you want to test it more extensively, you can use the link:https://github.com
 Connect the Jetson Nano or Raspberry Pi to the Arduino Uno via USB cable.
 
 Connect the Jetson Nano (5v 4A) or Raspberry Pi (5V 2A) to a power source. 
+
+
+== Debugging-Commands
+
+=== Reinstall Camera-Package
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f camera_package && git clone https://github.com/cl-ire/camera_package.git
+cd ~/ros2_ws && colcon build --packages-select camera_package
+----
+
+=== reinstall ROS2-Packet for Waveshare Alphabot2 
+
+[source,bash]
+----
+cd ~/ros2_ws/src/ && rm -r -f ros2_for_waveshare_alphabot2 && git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
+cd ~/ros2_ws && colcon build --packages-select ros2_for_waveshare_alphabot2
+----

@@ -107,6 +107,10 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 | LiDAR | Light Detection And Ranging | LiDAR ist eine Lasertechnologie, die die Oberflächen eines Objekts oder eines Raums dreidimensional erfasst.
 
 |UC| Use Case | Abkürzung für einen oder mehrere Use Cases.
+
+|SSH | Secure Shell|  SSH ist ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.
+
+|FAQ | Frequently Asked Questions| Ein FAQ ist eine Sammlung von häufig gestellten Fragen, die bei der Verwendung des Projektes aufkommen. Es dient als erste Anlaufstelle für Problembehandlung.
 |===
 
 == Verzeichnis der Datenstrukturen

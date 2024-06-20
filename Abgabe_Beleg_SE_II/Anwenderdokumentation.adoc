@@ -16,68 +16,72 @@ Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um ei
 
 === Roboter starten:
 
+Roboter mit Strom versorgen::
+Raspberry Pi 4B / Alphabot:::
+image::../Documentation/deployment/images/Raspberri Pi.jpg[]
+
 Verbindung zum WiFi herstellen::
 Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und Verbinden Sie sich damit.
 
-Raspberry Pi 4B:::
+Raspberry Pi 4B / Alphabot:::
 
 * Name des Netzwerkes: Alphabot2
 * Passwort: ubuntu1234
 
-Jetson Nano:::
+Jetson Nano / Arduino:::
 
 * Name des Netzwerkes: JetsonNano
 * Passwort: jetson1234
 
 
 Verbindung mit SSH herstellen::
-// TODO
-Raspberry Pi 4B:::
+Die Verbindung per SSH wird über die Konsole bzw. die Eingabeaufforderung hergestellt. Gehen Sie dafür in Ihren Speicherort des Projektes und geben Sie cmd in den Verzeichnispfad ein, danach öffnet sich die Konsole direkt im richtigen Verzeichnis. 
+Geben Sie zuerst den Befehl ein, danach werden Sie nach dem Passwort gefragt. Geben Sie darauf das Passwort ein.
+Raspberry Pi 4B / Alphabot:::
+ 
+* Geben Sie diesen Befehl ein:
 
-* ssh ubuntu@192.168.4.1
-* Pw: ubuntu1234
+ ssh ubuntu@192.168.4.1
 
-Jetson Nano:::
+* Passwort: ubuntu1234
 
-* ssh jetson@192.168.5.1
-* Pw: jetson
+Jetson Nano / Arduino:::
 
-=== Projekt von der Konsole ausführen
+* Geben Sie diesen Befehl ein:
 
-[source,bash]
-----
-cd ~/ros2_humble/ && source install/setup.bash
-cd ~/ros2_ws/ && source install/setup.bash
-cd ~/ros2_ws/src/camera_package/launch
+ ssh jetson@192.168.5.1
 
-ros2 launch follow_me_arduino_launch.py
-----
+* Passwort: jetson
 
-Es gibt verschiedene Launch-Dateien:
+Projekt von der Konsole ausführen::
+In der selben Konsole, in der Sie gerade die Befehle für die SSH Verbindung ausgeführt haben, führen Sie jetzt folgende Befehle nacheinander aus.
 
-* Launch für die Arduino-Version: `follow_me_arduino_launch.py`
-* Launch für die Alphabot2-Version: `follow_me_launch.py`
-* Test der Arduino-Version: `arduino_test_launch.py`
+ cd ~/ros2_humble/ && source install/setup.bash
 
-== Debugging-Kommandos
+ cd ~/ros2_ws/ && source install/setup.bash
 
-=== Kamera-Paket neu installieren
+ cd ~/ros2_ws/src/camera_package/launch
 
-[source,bash]
-----
-cd ~/ros2_ws/src/ && rm -r -f camera_package && git clone https://github.com/cl-ire/camera_package.git
-cd ~/ros2_ws && colcon build --packages-select camera_package
-----
+Raspberry Pi 4B / Alphabot:::
 
-=== ROS2-Paket für Waveshare Alphabot2 neu installieren
+* Geben Sie diesen Befehl ein:
 
-[source,bash]
-----
-cd ~/ros2_ws/src/ && rm -r -f ros2_for_waveshare_alphabot2 && git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
-cd ~/ros2_ws && colcon build --packages-select ros2_for_waveshare_alphabot2
-----
+ ros2 launch follow_me_launch.py
 
-== Selten genutzte Funktionen und FAQ
+Jetson Nano / Arduino:::
+
+* Geben Sie diesen Befehl ein:
+
+ ros2 follow_me_arduino_launch.py
+
+Optional: Test der Arduino-Version:::
+
+* Geben Sie diesen Befehl ein:
+
+ ros2 arduino_test_launch.py
+
+
+== FAQ
 
 *Q:* Kann ich den Roboter mit einer anderen Software steuern?
 
