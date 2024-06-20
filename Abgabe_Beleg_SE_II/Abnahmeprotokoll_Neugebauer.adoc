@@ -27,11 +27,11 @@ Abnahmeumgebung: U438 (Büro von Herr Prof. Neugebauer)
 
 === Lieferumfang
 
-* Software in folgender Form:
+* Softwarepaket zur Verfolgung einer Person auf einem Fahrroboter
 
-* Benutzeranleitung
+* Benutzerdokumentation
 
-* Betriebsanleitung
+* Betriebsdokumentation
 
 * Anforderungsspezifikation
 
