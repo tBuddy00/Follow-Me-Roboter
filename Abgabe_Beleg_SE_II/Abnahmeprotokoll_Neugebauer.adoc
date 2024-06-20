@@ -26,6 +26,7 @@ Zeit: 15:00 Uhr
 Abnahmeumgebung: U438 (Büro von Herr Prof. Neugebauer)
 
 === Lieferumfang
+Die Hardware ist kein erforderlicher Teil der Abgabe. Sie dient nur dazu, die Funktionalität der Software zu demonstrieren.
 
 * Softwarepaket zur Verfolgung einer Person auf einem Fahrroboter
 

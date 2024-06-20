@@ -32,25 +32,25 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 // | logische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
 // | physische Sicht | falls architecture_notebook 7-9 bearbeitet wird |-
 
-| Product Owner | _Produktbesitzer_ - Rolle im agilen Projektmanagement, die für die Definition und Priorisierung von Anforderungen verantwortlich ist. | Auftraggeber
+|Product Owner | _Produktbesitzer_ - Rolle im agilen Projektmanagement, die für die Definition und Priorisierung von Anforderungen verantwortlich ist. | Auftraggeber
 
-| Projekt-Coach | Person, die das Team bei der Umsetzung des Projekts unterstützt und berät. |Projektberater, Projektmentor, Projektbegleiter
+|Projekt-Coach | Person, die das Team bei der Umsetzung des Projekts unterstützt und berät. |Projektberater, Projektmentor, Projektbegleiter
 
-| Iteration | Zyklus wiederholter Prozesse, um schrittweise Fortschritte zu erzielen. | Zyklus, Durchgang, Durchlauf
+|Iteration | Zyklus wiederholter Prozesse, um schrittweise Fortschritte zu erzielen. | Zyklus, Durchgang, Durchlauf
 
-| Creative Lead | Person, die kreative Aspekte des Projekts leitet und innovative Ideen einbringt. | Kreativleiter, Kreativdirektor
+|Creative Lead | Person, die kreative Aspekte des Projekts leitet und innovative Ideen einbringt. | Kreativleiter, Kreativdirektor
 
-| Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen. | Architekt
+|Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen. | Architekt
 
-| Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich. | Hauptentwickler, Leitender Entwickler
+|Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich. | Hauptentwickler, Leitender Entwickler
 
-| Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind. | Programmierer, Developer
+|Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind. | Programmierer, Developer
 
-| Discord | Plattform für Chat, Sprach- und Videokommunikation, wird hier für den Austausch im Team verwendet. | -
+|Discord | Plattform für Chat, Sprach- und Videokommunikation, wird hier für den Austausch im Team verwendet. | -
 
-| GitHub | Plattform für Versionsverwaltung und Zusammenarbeit an Softwareprojekten. | -
+|GitHub | Plattform für Versionsverwaltung und Zusammenarbeit an Softwareprojekten. | -
 
-| Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert. | -
+|Glossar | Dokument, welches wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der Follow-Me-Fahrroboter definiert. | -
 
 |Raspberry Pi OS| Raspberry Pi OS (ehemals Raspbian) ist die offiziell empfohlene Linux-Distributionen für den Raspberry Pi. Raspberry Pi OS basiert auf der Linux-Distribution Debian und enthält jede Menge vorinstallierter Software. |-
 
@@ -70,9 +70,9 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |Linux | Linux ist ein kostenloses Betriebssystem, das unter der GNU General Public License (GPL) veröffentlicht wird.| -
 
-| Wireframe[s] | Wireframes repräsentieren Teile der Informationsarchitektur, der Benutzerführung und der Navigation in einem Softwareprojekt.| Drahtgittermodell
+|Wireframe[s] | Wireframes repräsentieren Teile der Informationsarchitektur, der Benutzerführung und der Navigation in einem Softwareprojekt.| Drahtgittermodell
 
-| Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
+|Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
 
 |Arduino|Arduino ist eine Plattform für Elektronik- und Mikrocontroller-Projekte. Diese Plattform umfasst zum einen die Arduino Elektronik-Hardware-Boards und zum anderen die Arduino Software mit deren Hilfe die Boards programmiert werden können.|-
 
@@ -80,11 +80,14 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |LiDAR |LiDAR ist eine Lasertechnologie, die die Oberflächen eines Objekts oder eines Raums dreidimensional erfasst. Das Wort "LiDAR" ist eine Abkürzung für Light Detection And Ranging. | - 
 
-| Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
+|Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
 
 |Powerbank | Eine Powerbank ist ein externer Zusatzakku, mit dem man mobile Geräte wie Tablets, Notebooks oder Handys aufladen können, wenn keine Stromquelle verfügbar ist.| Zusatzakku, Akku
 
 |NVIDIA Jetsen Nano | Nvidia Jetson ist eine Serie von Embedded-Computing-Boards von Nvidia. Die Modelle Jetson TK1, TX1 und TX2 sind alle mit einem Tegra-Prozessor (oder SoC) von Nvidia ausgestattet, der eine CPU mit ARM-Architektur integriert. Jetson ist ein energiesparendes System und wurde zur Beschleunigung von maschinellen Lernanwendungen entwickelt.| Kleinrechner, Entwicklungsboard, Edge-Computing-Gerät  
+
+|Personenerkennung | funktioniert durch Bilderkennung,  folgt nur einer Person - darf nur eine im Raum sein.| -
+
 
 
 
@@ -94,7 +97,6 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 [%header]
 |===
 | Abkürzung | Bedeutung | Erläuterung
-//| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 
 | ROS II | Roboter Operating System 2 | _Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.
 
@@ -102,6 +104,9 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 | YOLO | You Only Look Once | YOLO ist eine Methode/Weg zur Objekterkennung. Es ist der Algorithmus bzw. eine Strategie zur Bilderkennung von Objekten.
 
+| LiDAR | Light Detection And Ranging | LiDAR ist eine Lasertechnologie, die die Oberflächen eines Objekts oder eines Raums dreidimensional erfasst.
+
+|UC| Use Case | Abkürzung für einen oder mehrere Use Cases.
 |===
 
 == Verzeichnis der Datenstrukturen
