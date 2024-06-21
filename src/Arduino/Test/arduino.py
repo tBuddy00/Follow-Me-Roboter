@@ -4,7 +4,7 @@ import time
 from calculate_movement import calculate_movement_variable_time 
 
 class Serial_Arduino():
-    def __init__(self, serial_port= "COM3"):
+    def __init__(self, serial_port= "COM5"):
         # Define the serial port and baud rate
         # self.serial_port = self.find_arduino_port()  # Change this to the appropriate port on your system
         self.find_arduino_port()
@@ -55,15 +55,15 @@ def run(ser, base_rpm, angle, move = False):
     ser.write(serial_data)
 
     time.sleep(0.5)
-    response = ser.read()
-    print(response)
+    # response = ser.read()
+    # print(response)
     return speed_right, speed_left, time_out
 
 
 def setup():
 
     try:
-        ser = Serial_Arduino("COM4")
+        ser = Serial_Arduino("COM5")
 
         while True:
             base_rpm = int(input("Enter base RPM: "))

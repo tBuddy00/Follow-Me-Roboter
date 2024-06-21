@@ -32,7 +32,7 @@ Depending on the chosen platform, follow the corresponding instructions in the g
 
 === Installing Ubuntu Server 22.04.3 LTS (64-bit) on Raspberry Pi
 
-Download and install the official Raspberry Pi Imager from link:https://www.raspberrypi.com/software/[Raspberry Pi Software]. +
+Download and install the official Raspberry Pi Imager from (https://www.raspberrypi.com/software). +
 Choose the following parameters:
 
 * Operating System: `Other general-purpose OS/Ubuntu/Ubuntu Server 22.04.3 LTS (64-bit)`.
@@ -40,14 +40,14 @@ Choose the following parameters:
 
 == Setting up Jetson Nano (skip if using Raspberry Pi)
 
-=== Installing Ubuntu Server 22.04.3 LTS (64-bit) on Jetson Nano
+=== Installing Jetson Nano - Ubuntu 20.04 image
 
-(add later)
+follow the following guide to install the image link:https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#jetson-nano-with-ubuntu-2004-os-image[Jetson Nano with Ubuntu 20.04 OS image]
 
 
 == Connecting to Your Raspberry Pi or Jetson Nano Using SSH
 
-Connect the Raspberry Pi or Jetson Nano to Ethernet either directly to your PC or to your local network. +
+Connect the Raspberry Pi or Jetson Nano to Ethernet either directly to your PC or to your local network.
 
 Find out the IP address of your Pi or Jetson Nano by using one of the following methods:
 
@@ -60,12 +60,24 @@ Find out the IP address of your Pi or Jetson Nano by using one of the following 
   2. Scan the local network for connected devices, and look for the Raspberry Pi.
 
 Open the command prompt or terminal and type the following command:
+
+=== for Raspberry Pi:
+
 [source,shell]
 ----
 ssh ubuntu@<ip address of the device>
 ----
 
 Enter the password when prompted (default password: ubuntu).
+
+=== for Jetson Nano:
+
+[source,shell]
+----
+ssh jetson@<ip address of the device>
+----
+
+Enter the password when prompted (default password: jetson)
 
 
 == Setting up Wi-Fi
@@ -108,14 +120,20 @@ wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 ----
 
-Tell Hostapd to use our config file by editing `/etc/default/hostapd` and changing the line that starts with `#DAEMON_CONF` (remove `##`).
+Tell Hostapd to use our config file by editing `/etc/default/hostapd` and changing the line that starts with `#DAEMON_CONF` (remove `#`).
 
+[source,shell]
+----
+sudo vi /etc/default/hostapd
+----
+
+It should look like this:
 [source,shell]
 ----
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ----
 
-Start Hostapd:
+Start Heostapd:
 
 [source,shell]
 ----
@@ -137,9 +155,9 @@ sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.org
 Create a new config file:
 [source,shell]
 ----
-sudo vi /etc/dnsmasq.conf
+sudo vi /etc/dnsmasq.confi
 ----
-_This config file will automatically assign addresses between `192.168.4.2` and `192.168.4.20` with lease time 24 hours._
+
 Add the following content:
 [source,shell]
 ----
@@ -211,19 +229,53 @@ network:
             addresses:
             - 192.168.4.1/24
 ----
-_This file is generated from information provided by the datasource. Changes to it will not persist across an instance to disable cloud-init's network configuration capabilities, write a file /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following: ``network: {config: disabled}``_
+
+then run the following command to apply the changes:
+
+[source,shell]
+----
+sudo netplan apply
+----
 
 Finally, reboot your Raspberry Pi or Jetson Nano and check if you can connect to it via WiFi and SSH.
 
 
+for troubleshooting check the  link:installation_troubleshooting.adoc[documentation]
+
 == Setting up ROS 2
 
-=== Installing ROS 2 Humble
+=== Installing ROS 2 Humble on the Raspberry Pi
 
-Follow the installation guide at link:https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html[ROS 2 Humble Installation Guide]. +
-Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[ installation script].
+Follow the installation guide at (https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html.) +
+Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/install_ros2_humble.sh[installation script].
+
+=== Installing ROS 2 Humble on the Jetson Nano
+
+first we need to install the corect python version since Ros2 Humble is only compatible with python 3.8.
+
+[source,shell]
+----
+sudo apt install python3.8
+sudo apt install python3.8-dev
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+sudo update-alternatives --config python3
+----
+
+select the python3.8 version
+
+and the check the version with the following command
+
+[source,shell]
+----
+python3 --version
+----
+
+Because the Jetson Nano image we are using runs on Ubuntu 20.04, we can follow the same installation guide as for the Raspberry Pi and we have to instal from source 
+
+Follow the installation guide at (https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html) +
 
 === Creating the Workspace
+
 
 To manually create the workspace, execute the following commands:
 [source,shell]
@@ -232,11 +284,13 @@ mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 ----
 Alternatively, run the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/setup/create_workspace.sh[installation script]. +
-If you encounter issues, follow link:https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html[this tutorial]. +
+If you encounter issues, follow this tutorial (https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). 
+
+== Install Dependencies
 
 === Installing OpenCV and cv_bridge
 
-Use the _vision_opencv_ repository from link:https://github.com/ros-perception/vision_opencv[this GitHub repository]. +
+Use the _vision_opencv_ repository from this GitHub repository(https://github.com/ros-perception/vision_opencv).
 Install the dependencies:
 [source,shell]
 ----
@@ -261,19 +315,27 @@ sudo apt install python3-opencv
 
 === Install Rpi.GPIO
 
-Install the Python GPIO Library (allows access to the GPIO Pins of the Raspberry Pi:
-
+Install the Python GPIO Library (allows access to the GPIO Pins of the Raspberry Pi):
 [source,shell]
 ----
 pip3 install RPi.GPIO
 ----
 
-=== Installing the Servo Library 
+=== Installing the Servo Library
 
 Install the python libraries to enable communication with the PCA9685 servo:
 [source,shell]
 ----
 sudo pip install smbus
+----
+
+=== Installing falsk
+
+[source,shell]
+----
+sudo pip3 install flask
+sudo pip3 install flask-socketio
+sudo pip3 install flask-cors
 ----
 
 == Installing Packages
@@ -299,7 +361,7 @@ cd ~/ros2_ws/src
 mkdir yolo_config
 ----
 
-Download the yolo config files from (add link)
+Download the yolo config files from link:https://drive.google.com/drive/folders/1ytJ4Y_lNqkRaDgk9USgJK58EqizraWmm?usp=sharing[google drive].
 
 Upload the files to the yolo_config folder using WinSCP or similar tools.
 
@@ -323,28 +385,28 @@ source install/setup.bash
 
 == Building the Waveshare Alphabot2 (skip if using Arduino)
 
-Follow the tutorial link:https://www.waveshare.com/wiki/AlphaBot2[AlphaBot2 Tutorial] to build the Waveshare Alphabot2.
- 
+Follow this tutorial (https://www.waveshare.com/wiki/AlphaBot2) to build the Waveshare Alphabot2.
+
 
 == Setting up Arduino Uno and Adafruit Motor Shield v2.3 (skip if using Alphabot2)
 
 === Setting up the Arduino IDE
 
-Follow the tutorial link:https://funduino.de/hardware-software[Funduino Tutorial] to install the Arduino IDE.
+Follow this tutorial (https://funduino.de/hardware-software) to install the Arduino IDE.
 
 === Build the Robot
 
-Follow the tutorial link:https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-headers[Installing Standard Headers] to build the Adafruit Motor Shield.
+Follow this tutorial (https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-headers) to build the Adafruit Motor Shield.
 
 Connect the DC motors to Port M3 and M4 of the Adafruit Motor Shield.
 Connect a 6V power source (e.g., 4 AA batteries) to the power input of the Adafruit Motor Shield.
 Connect the Adafruit Motor Shield power input to the Arduino Uno via a cable with a barrel jack and open contacts.
 
-If you want to use the Arduino independently from the Jetson Nano, follow link:https://funduino.de/tutorial-hc-05-und-hc-06-bluetooth[this guide] to install the Bluetooth module HC-05. This is necessary to run certain tests wirelessly.
+If you want to use the Arduino independently from the Jetson Nano, follow this guide (https://funduino.de/tutorial-hc-05-und-hc-06-bluetooth) to install the Bluetooth module HC-05. This is necessary to run certain tests wirelessly.
 
 === Installing the Adafruit Motor Shield Library
 
-Follow the link:https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software[Adafruit Tutorial] to install the Motor Shield V2 library.
+Follow this tutorial (https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software) to install the Motor Shield V2 library.
 
 === Upload the Script to the Arduino
 
@@ -361,7 +423,7 @@ To test the script, open the serial monitor (Tools -> Serial Monitor) and send t
 
 This should move the robot forward for 1 second.
 
-If you want to test it more extensively, you can use the link:https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/Arduino/Test/arduino.py[Python script].
+If you want to test it more extensively, you can use the Python script (https://github.com/tBuddy00/Follow-Me-Roboter/blob/main/src/Arduino/Test/arduino.py)
 
 
 == Build the Arduino Setup (skip if using Alphabot2)
@@ -371,22 +433,3 @@ If you want to test it more extensively, you can use the link:https://github.com
 Connect the Jetson Nano or Raspberry Pi to the Arduino Uno via USB cable.
 
 Connect the Jetson Nano (5v 4A) or Raspberry Pi (5V 2A) to a power source. 
-
-
-== Debugging-Commands
-
-=== Reinstall Camera-Package
-
-[source,bash]
-----
-cd ~/ros2_ws/src/ && rm -r -f camera_package && git clone https://github.com/cl-ire/camera_package.git
-cd ~/ros2_ws && colcon build --packages-select camera_package
-----
-
-=== reinstall ROS2-Packet for Waveshare Alphabot2 
-
-[source,bash]
-----
-cd ~/ros2_ws/src/ && rm -r -f ros2_for_waveshare_alphabot2 && git clone https://github.com/cl-ire/ros2_for_waveshare_alphabot2.git
-cd ~/ros2_ws && colcon build --packages-select ros2_for_waveshare_alphabot2
-----

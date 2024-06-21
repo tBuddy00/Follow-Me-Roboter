@@ -6,7 +6,7 @@ from arduino import setup, run, Serial_Arduino
 
 def setup():
     try:
-        ser = Serial_Arduino("COM4")
+        ser = Serial_Arduino("COM5")
 
         while True:
             base_rpm = int(input("Enter base RPM: "))
@@ -33,12 +33,15 @@ def test_movement_calculation():
     angle_measured_outputs = []
     angle_outputs = []
     base_rpm_outputs = []
+    i = 0
     
     num_tests = int(input("Enter the number of test runs: "))
     print(f"\n== Einzeltests")
 
     try:
-        for i in range(num_tests):
+        ser = Serial_Arduino("COM5")
+        while i < num_tests:
+            i += 1
             base_rpm = int(input("\nEnter base RPM: "))
             angle = int(input("\nEnter angle: "))
             move = input("\nMove? (y/n): ")
@@ -47,7 +50,8 @@ def test_movement_calculation():
             else:
                 move = False
 
-            speed_right, speed_left, time_out = calculate_movement_variable_time(base_rpm, angle, move)
+            speed_right, speed_left, time_out = run(ser, base_rpm, angle, move)
+            # speed_right, speed_left, time_out = calculate_movement_variable_time(base_rpm, angle, move)
             angle_measured = int(input("\nEnter measured angle: "))
 
             accuracy = (angle_measured - angle) / angle * 100
@@ -90,5 +94,3 @@ def test_movement_calculation():
     print(f"\n=== Average Deviation: {average_accuracy_output:.2f}%")
 
 test_movement_calculation()
-
-

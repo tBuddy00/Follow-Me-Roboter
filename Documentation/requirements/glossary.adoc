@@ -118,8 +118,6 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 == Verzeichnis der Datenstrukturen
 [%header]
 
-.Diagramm der Datenstrukturen
-image::../images/Diagramm-Datenstrukturen.JPG[]
 
 |===
 | Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase

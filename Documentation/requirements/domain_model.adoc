@@ -49,8 +49,7 @@ Das Domänenmodell konnten wir weiterentwickeln und auf Grundlage unseres bisher
 
 * Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
 
-.ROS Architekturmodell
-image::../../architecture/images/ros-architecture.jpg[]
+
 
 === Visualisierung:
 
