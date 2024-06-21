@@ -81,13 +81,13 @@ Jetson Nano / Arduino:::
 
 * Führen Sie folgenden Befehl aus:
 
- ros2 follow_me_arduino_launch.py
+ ros2 launch follow_me_arduino_launch.py
 
 Optional: Test der Arduino-Version:::
 
 * Führen Sie folgenden Befehl aus:
 
- ros2 arduino_test_launch.py
+ ros2 launch arduino_test_launch.py
 
 
 === Auf Web-Control-Center zugreifen:
