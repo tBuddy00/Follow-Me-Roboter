@@ -11,7 +11,7 @@ Dieses Handbuch soll Nutzern helfen, die Software für den Follow-Me-Fahrroboter
 
 == Einführung
 
-Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Hierbei handelt es sich um einen Protoypen einer Machbarkeitsstudie, die Interaktionsmöglichkeiten sind dementsprechend minimal. Diese Anleitung bietet eine kurze Übersicht über die Nutzung der Software sowie einige Debugging-Kommandos.
+Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Es handelt sich um einen Prototypen einer Machbarkeitsstudie, daher sind die Interaktionsmöglichkeiten minimal.  Diese Anleitung bietet eine kurze Übersicht über die Nutzung der Software sowie einige Debugging-Kommandos.
 
 == Wichtige Aufgaben
 
@@ -20,18 +20,18 @@ Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um ei
 *Roboter mit Strom versorgen*
 
 * Raspberry Pi 4B / Alphabot
-** Als erstes müssen Sie den Roboter aktivieren, indem Sie auf den schwarzen Joystick, der mit A,B,C & D umrandet ist, drücken. 
+** Zuerst müssen Sie den Roboter aktivieren, indem Sie auf den schwarzen Joystick, der mit A,B,C & D umrandet ist, drücken. 
 
 image::../Documentation/deployment/images/Arduino.png[]
 
 * Jetson Nano / Arduino
-** Als erstes müssen Sie den Roboter per USB mit einer Powerbank verbinden. Falls Ihnen keine Powerbank zur Verfügung gestellt wurde, wenden Sie sich an Ihrem Systemadministrator. 
-** Verbinden Sie die Powerbank mit dem orangenen Kabel des Jeston Nano.
+** Als erstes müssen Sie den Roboter per USB mit einer Powerbank verbinden. Falls Ihnen keine Powerbank zur Verfügung gestellt wurde, wenden Sie sich an Ihren Systemadministrator. 
+** Verbinden Sie die Powerbank mit dem orangefarbenen Kabel des Jetson Nano.
 
 image::../Documentation/deployment/images/Raspberry_Pi.png[]
 
 Verbindung zum WiFi herstellen::
-Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und Verbinden Sie sich damit.
+Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und verbinden Sie sich damit.
 
 Raspberry Pi 4B / Alphabot:::
 
@@ -45,11 +45,11 @@ Jetson Nano / Arduino:::
 
 
 Verbindung mit SSH herstellen::
-Die Verbindung per SSH wird über die Konsole bzw. die Eingabeaufforderung hergestellt. Gehen Sie dafür in Ihren Speicherort des Projektes und geben Sie cmd in den Verzeichnispfad ein, danach öffnet sich die Konsole direkt im richtigen Verzeichnis. 
+Die Verbindung per SSH wird über die Konsole bzw. die Eingabeaufforderung hergestellt. Gehen Sie dafür in Ihren Speicherort des Projektes und geben Sie cmd in den Verzeichnispfad ein, danach öffnet sich die Konsole  im richtigen Verzeichnis. 
 Geben Sie zuerst den Befehl ein, danach werden Sie nach dem Passwort gefragt. Geben Sie darauf das Passwort ein.
 Raspberry Pi 4B / Alphabot:::
  
-* Geben Sie diesen Befehl ein:
+* Führen Sie folgenden Befehl aus:
 
  ssh ubuntu@192.168.4.1
 
@@ -57,14 +57,14 @@ Raspberry Pi 4B / Alphabot:::
 
 Jetson Nano / Arduino:::
 
-* Geben Sie diesen Befehl ein:
+* Führen Sie folgenden Befehl aus:
 
  ssh jetson@192.168.5.1
 
 * Passwort: jetson
 
 Projekt von der Konsole ausführen::
-In der selben Konsole, in der Sie gerade die Befehle für die SSH Verbindung ausgeführt haben, führen Sie jetzt folgende Befehle nacheinander aus.
+In derselben Konsole, in der Sie gerade die Befehle für die SSH Verbindung ausgeführt haben, führen Sie die folgenden Befehle nacheinander aus.
 
  cd ~/ros2_humble/ && source install/setup.bash
 
@@ -74,26 +74,26 @@ In der selben Konsole, in der Sie gerade die Befehle für die SSH Verbindung aus
 
 Raspberry Pi 4B / Alphabot:::
 
-* Geben Sie diesen Befehl ein:
+* Führen Sie folgenden Befehl aus:
 
  ros2 launch follow_me_launch.py
 
 Jetson Nano / Arduino:::
 
-* Geben Sie diesen Befehl ein:
+* Führen Sie folgenden Befehl aus:
 
  ros2 follow_me_arduino_launch.py
 
 Optional: Test der Arduino-Version:::
 
-* Geben Sie diesen Befehl ein:
+* Führen Sie folgenden Befehl aus:
 
  ros2 arduino_test_launch.py
 
 
 === Auf Web-Control-Center zugreifen:
 
-Nachdem Sie den Roboter gestartet haben, können Sie auf das Web-Control-Center zugreifen, um die Personenerkennung des Roboters zu überwachen und den Kamera-Feed zu verfolgen. Öffnen Sie dazu einen Webbrowser der neusten Generation. Wir empfehlen Google Chrome oder Firefox. 
+Nachdem Sie den Roboter gestartet haben, können Sie auf das Web-Control-Center zugreifen, um die Personenerkennung des Roboters zu überwachen und den Kamera-Feed zu verfolgen. Öffnen Sie dazu einen Webbrowser der neuesten Generation. Wir empfehlen Google Chrome oder Firefox. 
 
 Raspberry Pi 4B / Alphabot::
 
@@ -109,12 +109,12 @@ Jetson Nano / Arduino::
 
 === Motoren anschalten:
 
-Aktuell haben Sie einen stationären Roboter mit aktiver Personenerkennung. Sie können dies im Web-Control-Center verfolgen. Jetzt werden Sie die Motoren aktivieren, damit der Roboter Ihnen folgen kann. Achten Sie darauf, dass keine Hindernisse zwischen Ihnen und dem Roboter sind und dass er auf ebenem Boden ist, wo er nirgends herunterfallen kann. 
+Der Roboter ist aktuell stationär, die Personenerkennung ist jedoch aktiv. Sie können dies im Web-Control-Center verfolgen. Jetzt werden Sie die Motoren aktivieren, damit der Roboter Ihnen folgen kann. Achten Sie darauf, dass keine Hindernisse zwischen Ihnen und dem Roboter stehen und dass er sich auf ebenem Boden befindet, um ein Herunterfallen zu vermeiden.
 
 Raspberry Pi 4B / Alphabot::
 
 Suchen Sie den Joystick, mit dem Sie den Roboter aktiviert haben. 
-* Drücken Sie den Joystick zuerst in Richtung des Buchstaben A. Dies zentriert die Motoren. Warten Sie 5 Sekunden.
+* Drücken Sie den Joystick zuerst in Richtung des Buchstabens A. Dies zentriert die Motoren. Warten Sie 5 Sekunden.
 * Danach drücken Sie den Joystick in Richtung B. Dies aktiviert die Motoren und der Roboter beginnt mit der Personenverfolgung, sobald Sie sich in seinem Sichtfeld befinden. 
 
 image::../Documentation/deployment/images/Arduino_2.png[]
@@ -136,7 +136,7 @@ Raspberry Pi 4B / Alphabot::
 
 Jetson Nano / Arduino::
 
-* Bringen Sie den silbernen Kippschalter wieder auf seine Ausgangsposition. Dies stoppt die Motoren.
+* Setzen Sie den silbernen Kippschalter wieder in seine Ausgangsposition. Dies stoppt die Motoren.
 
 === Roboter ausschalten:
 
@@ -144,7 +144,7 @@ Als letzten Schritt müssen Sie den Roboter wieder ausschalten. Sie können das 
 
 Raspberry Pi 4B / Alphabot::
 
-* Drücken Sie den Joystick nach unten, wie Sie es zum Anschalten des Roboters getan haben . Dies schaltet den Roboter aus.
+* Drücken Sie den Joystick nach unten, wie beim Einschalten des Roboters. Dies schaltet den Roboter aus.
 
 Jetson Nano / Arduino::
 
