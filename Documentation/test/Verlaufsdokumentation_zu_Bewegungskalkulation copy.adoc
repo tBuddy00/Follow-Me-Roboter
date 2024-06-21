@@ -1,0 +1,147 @@
+
+== Einzeltests
+COM1 - Kommunikationsanschluss (COM1)
+COM4 - Standardmäßgige Seriell-über-Bluetooth-Verbindung (COM4)
+COM5 - Standardmäßgige Seriell-über-Bluetooth-Verbindung (COM5)
+Arduino not found
+
+Enter base RPM: 100
+
+Enter angle: 20
+
+Move? (y/n): y
+100,140,555,0,0
+
+
+Enter measured angle: 34
+
+=== Test 2
+
+==== Eingegebene Werte:
+  Base RPM: 100
+  Angle: 20
+
+==== Gemessene Werte:
+  Measured Angle: 34
+
+==== Berechnete Werte:
+  Time Out: 0.5555555555555556
+  Speed Right: 100
+  Speed Left: 140
+
+==== Deviation from entered to measured angle:
+  70.00%
+
+Enter base RPM: 100
+
+Enter angle: 15
+
+Move? (y/n): y
+100,140,416,0,0
+
+
+Enter measured angle: 26
+
+=== Test 3
+
+==== Eingegebene Werte:
+  Base RPM: 100
+  Angle: 15
+
+==== Gemessene Werte:
+  Measured Angle: 26
+
+==== Berechnete Werte:
+  Time Out: 0.41666666666666663
+  Speed Right: 100
+  Speed Left: 140
+
+==== Deviation from entered to measured angle:
+  73.33%
+
+Enter base RPM: 100
+
+Enter angle: 5
+
+Move? (y/n): y
+100,140,138,0,0
+
+
+Enter measured angle: 19
+
+=== Test 4
+
+==== Eingegebene Werte:
+  Base RPM: 100
+  Angle: 5
+
+==== Gemessene Werte:
+  Measured Angle: 19
+
+==== Berechnete Werte:
+  Time Out: 0.1388888888888889
+  Speed Right: 100
+  Speed Left: 140
+
+==== Deviation from entered to measured angle:
+  280.00%
+
+Enter base RPM: 100
+
+Enter angle: 7
+
+Move? (y/n): y
+100,140,194,0,0
+
+
+Enter measured angle: 15
+
+=== Test 5
+
+==== Eingegebene Werte:
+  Base RPM: 100
+  Angle: 7
+
+==== Gemessene Werte:
+  Measured Angle: 15
+
+==== Berechnete Werte:
+  Time Out: 0.19444444444444445
+  Speed Right: 100
+  Speed Left: 140
+
+==== Deviation from entered to measured angle:
+  114.29%
+
+Enter base RPM: 100
+
+Enter angle: 25
+
+Move? (y/n): y
+100,140,694,0,0
+
+
+Enter measured angle: 25
+
+=== Test 6
+
+==== Eingegebene Werte:
+  Base RPM: 100
+  Angle: 25
+
+==== Gemessene Werte:
+  Measured Angle: 25
+
+==== Berechnete Werte:
+  Time Out: 0.6944444444444444
+  Speed Right: 100
+  Speed Left: 140
+
+==== Deviation from entered to measured angle:
+  0.00%
+
+== Gesamtauswertung:
+
+=== Tests performed: 5
+
+=== Average Deviation: 107.52%

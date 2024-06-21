@@ -23,7 +23,7 @@ Datum: 21.06.2024 (Freitag)
 
 Zeit: 15:00 Uhr
 
-Abnahmeumgebung: U438 (Büro von Herr Prof. Neugebauer)
+Abnahmeumgebung: U438 (Büro von Herrn Prof. Neugebauer)
 
 === Lieferumfang
 Die Hardware ist kein erforderlicher Teil der Abgabe. Sie dient nur dazu, die Funktionalität der Software zu demonstrieren.
@@ -125,11 +125,23 @@ Die Hardware ist kein erforderlicher Teil der Abgabe. Sie dient nur dazu, die Fu
 
 Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt.
 
-Bemerkungen:
+Bemerkungen: 
+
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+
 
 [cols="1,1"]
 |===
-|> 
+|>
 |>
 |Unterschrift Themensteller*in
 |Unterschrift Projektleiter*in
