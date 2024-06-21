@@ -1,4 +1,4 @@
-
+:development-images: images
 
 = Formeln zur Berechnung von Steuersignalen aus Bilddaten
 
@@ -9,16 +9,16 @@
 Der Winkel zur Person wird berechnet indem man den Maximalwinkel der Kamera mit der Dimension des Bildes gleichsetzt und dann mittels Dreisatz den Winkel zur Person aus der Position im Bild berechnet.
 
 
-image::images/Mathe_Kamera_Berechnung_0.png[]
-image::images/Mathe_Kamera_Berechnung_1.png[]
+image::{development-images}/Mathe_Kamera_Berechnung_0.png[]
+image::{development-images}/Mathe_Kamera_Berechnung_1.png[]
 
 
 === Geschwindigkeitsberechnung
 
 Die Geschwindigkeit im Verhältnis zum ersten Rad wird berechnet, so dass der Roboter einen bestimmten Winkel fährt. Somit kann man den Roboter mit Hilfe von Winkeln steuern.
 
-image::images/Mathe_Geschwindigkeitsberechnung_0.png[]
-image::images/Mathe_Geschwindigkeitsberechnung_1.png[]
-image::images/Mathe_Geschwindigkeitsberechnung_2.png[]
-image::images/Mathe_Geschwindigkeitsberechnung_3.png[]
+image::{development-images}/Mathe_Geschwindigkeitsberechnung_0.png[]
+image::{development-images}/Mathe_Geschwindigkeitsberechnung_1.png[]
+image::{development-images}/Mathe_Geschwindigkeitsberechnung_2.png[]
+image::{development-images}/Mathe_Geschwindigkeitsberechnung_3.png[]
 

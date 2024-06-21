@@ -1,59 +1,6 @@
 = Domain Model: Follow-Me Fahrroboter
-Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
-{localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
-
-== Allgemeine Informationen
-
-Ein Domänenmodell ist ein Konzept aus der Softwareentwicklung, das dazu dient, die Struktur und das Verhalten eines bestimmten Anwendungsbereichs oder einer Domäne zu modellieren. Es bietet eine abstrakte Darstellung der relevanten Entitäten (Objekte oder Konzepte) und deren Beziehungen in einem bestimmten Problemfeld. Das Domänenmodell ist ein zentrales Instrument im Bereich der objektorientierten Analyse und Design, das dazu beiträgt, ein tiefes Verständnis für die Anforderungen und Strukturen einer Softwareanwendung zu entwickeln.
-
-== Grundlegende Schritte zum Aufbau eines Domainmodells
-
-=== Identifizierung der Entitäten:
-
-* Identifiziere die wesentlichen Objekte oder Konzepte, die in der Domäne existieren. Dies könnten reale oder abstrakte Dinge wie Personen, Produkte, Bestellungen, usw. sein.
-
-Die Entitäten stellen in unserem Projektfall eine Person und der Alphabot 2 dar. Das Bilderkennungssystem des Alphabot 2 soll eine Person erkennen und dieser folgen.
-
-=== Definieren der Eigenschaften:
-
-* Für jede identifizierte Entität werden die relevanten Eigenschaften definiert. Dies können Attribute oder Merkmale sein, die die Entität beschreiben.
-
-Folgende Eigenschaften sind zu beachten:
- 
- - Person: Größe als Attribut
- 
- - Alphabot 2: Zustand, gewünschter Abstand 2 Meter
-
-=== Festlegen von Beziehungen:
-
-* Bestimme, wie die identifizierten Entitäten miteinander in Beziehung stehen. Beziehungen können eins zu eins, eins zu viele oder viele zu viele sein und können gerichtet oder ungerichtet sein.
-
-Es existiert keine starke Beziehung zwischen den beiden Entitäten, da eine Person eher bedingt mit dem Alphabot 2 tatsächlich interagiert.
-
-=== Festlegen von Verhalten:
-
-* Bestimme, welche Aktionen oder Aktivitäten von den Entitäten ausgeführt werden können. Dies könnte beispielsweise durch Methoden oder Funktionen repräsentiert werden.
-
-Der Alphabot 2 folgt entweder einer Person, sucht sie, oder bewegt sich nicht. Demnach ist die Person in ihrem Zustand maßgebend für den Alphabot 2.
-
-=== Verfeinerung und Iteration:
-
-* Verfeinere das Modell im Laufe der Zeit durch Feedback und Erfahrungen. Das Domänenmodell ist nicht in Stein gemeißelt und kann sich entwickeln, wenn ein tieferes Verständnis der Domäne gewonnen wird.
-
-Das Domänenmodell konnten wir weiterentwickeln und auf Grundlage unseres bisher bestehenden Systems anpassen.
-
-=== Abstraktionsebenen:
-
-* Strukturiere das Modell in verschiedenen Abstraktionsebenen. Dies umfasst oft eine Gesamtsicht auf die Domäne sowie detailliertere Sichten auf spezifische Teile der Domäne.
-
-
-
-=== Visualisierung:
-
-* Verwende Diagramme, um das Domänenmodell zu visualisieren. UML-Diagramme wie Klassendiagramme sind häufig für die Darstellung von Domänenmodellen geeignet.
-
 .Domänenmodell nach Projektentwicklung
-image::../images/domain_model_v2.drawio.png[]
+image::domain_model_v2.drawio.png[]

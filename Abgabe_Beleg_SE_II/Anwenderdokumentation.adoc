@@ -45,8 +45,7 @@ Jetson Nano / Arduino:::
 
 
 Verbindung mit SSH herstellen::
-Die Verbindung per SSH wird über die Konsole bzw. die Eingabeaufforderung hergestellt. Gehen Sie dafür in Ihren Speicherort des Projektes und geben Sie cmd in den Verzeichnispfad ein, danach öffnet sich die Konsole  im richtigen Verzeichnis. 
-Geben Sie zuerst den Befehl ein, danach werden Sie nach dem Passwort gefragt. Geben Sie darauf das Passwort ein.
+Die Verbindung per SSH wird über die Konsole bzw. die Eingabeaufforderung hergestellt. Geben Sie zuerst den Befehl ein, danach werden Sie nach dem Passwort gefragt. Geben Sie darauf das Passwort ein.
 Raspberry Pi 4B / Alphabot:::
  
 * Führen Sie folgenden Befehl aus:

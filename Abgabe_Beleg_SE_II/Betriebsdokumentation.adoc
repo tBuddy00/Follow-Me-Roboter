@@ -34,5 +34,9 @@ include::../installation guide (english).adoc[lines=4..,leveloffset=+1]
 
 include::../user guide (english).adoc[leveloffset=+1]
 
+== Troubleshooting
+
+include::../installation_troubleshooting.adoc[lines=2..,leveloffset=+1]
+
 
 

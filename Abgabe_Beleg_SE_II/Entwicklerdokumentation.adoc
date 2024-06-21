@@ -1,21 +1,21 @@
-:toc:
-:toc-title: Inhaltsverzeichnis
-:toclevels: 2
-:sectnums:
+:development-images: ../Documentation/development/images
+:requirements-images: ../Documentation/requirements/images
+:architecture-images: ../Documentation/architecture/images
+
+
 
 = Entwicklerdokumentation
 
 == Entwurfsdokumentation
 
 include::../Documentation/architecture/architecture_notebook_rework.adoc[lines=4..,leveloffset=+1]
-Include für Architecture Notebook + Design Document + Sequenzdiagramm
 
 == Softwaredokumentation
 include::../Documentation/architecture/Softweardokumentation.adoc[lines=2..,leveloffset=+1]
 
 == Design
-include::../Documentation/development/design_history_update.adoc[leveloffset=+1]
+include::../Documentation/development/design_history_update.adoc[lines=5..,leveloffset=+1]
 
-include::../Documentation/development/design_formula.adoc[leveloffset=+1]
+include::../Documentation/development/design_formula.adoc[lines=2..,leveloffset=+1]
 
 

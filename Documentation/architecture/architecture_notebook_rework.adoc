@@ -1,3 +1,7 @@
+:development-images: ../../development/images
+:requirements-images: ../../requirements/images
+:architecture-images: ../images
+
 = Architecture Notebook: Follow-Me Fahrroboter
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -190,7 +194,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 
 == Schichten oder Architektur-Framework
 
-image::ros-architecture.jpg[]
+image::{architecture-images}/ros-architecture.jpg[]
 
 Unser Architektur-Framework wird durch die Verwendung von ROS II vorgegeben.
 
@@ -204,11 +208,11 @@ Zuletzt der Application-Layer, welcher die eigentliche Anwendung enthält.
 === Logische Sicht (C4-Modell): 
 
 .System Context Diagramm
-image::../../development/images/Design_Entwurf_7_C4_Context.drawio.png[]
+image::{development-images}/Design_Entwurf_7_C4_Context.drawio.png[]
 .System Container Diagramm
-image::../../development/images/Design_Entwurf_7_C4_Container.drawio.png[]
+image::{development-images}/Design_Entwurf_7_C4_Container.drawio.png[]
 .System Component Diagramm
-image::../../development/images/Design_Entwurf_7_C4_Component.drawio.png[]
+image::{development-images}/Design_Entwurf_7_C4_Component.drawio.png[]
 
 === Physische Sicht (Betriebssicht): 
 
@@ -233,4 +237,4 @@ Des weiteren wird ein PC für das Ausführen der Software benötigt.
 
 === Use Cases:
 
-image::../../requirements/images/use_case_model.drawio.png[]
+image::{requirements-images}/use_case_model.drawio.png[]
