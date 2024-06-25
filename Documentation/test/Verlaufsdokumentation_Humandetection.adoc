@@ -1,4 +1,3 @@
-= Testdokumentation zur Human Detection
 :author: Jonathan Carlo Palermo
 :revdate: 2024-06-06
 :revnumber: 1.0
@@ -6,45 +5,48 @@
 :toc: left
 :toclevels: 2
 
-== Vorbereitung
+== Verlaufsdokumentation Human Detection
 
-=== Projektverzeichnis
+
+=== Vorbereitung
+
+==== Projektverzeichnis
 
 * Verzeichnis: `C:\Users\jonat\PycharmProjects\pythonProject`
 * Videodatei: `one-by-one-person-detection.mp4`
 
-=== Testskript
+==== Testskript
 
 * Skript: `test.py`
 * Funktion: Human Detection mittels YOLOv3 zur Erkennung und Protokollierung der Erkennungszeiten.
 
-== Durchführung des Tests für 50 Frames
+=== Durchführung des Tests für 50 Frames
 
-=== Startzeit
+==== Startzeit
 
 * Datum und Uhrzeit: 2024-06-06 14:00:00 (wird während der Ausführung protokolliert)
 
-=== Ausführung des Skripts
+==== Ausführung des Skripts
 
 * Befehl: `python test.py`
 * Beschreibung: Das Skript wird ausgeführt und die Erkennungszeiten für 50 Frames werden gemessen und protokolliert.
 
-=== Ergebnisspeicherung
+==== Ergebnisspeicherung
 
 * Datei: `erkennungszeiten.txt`
 * Inhalt: Die Erkennungszeiten pro Frame und die durchschnittliche Erkennungszeit werden protokolliert.
 
-=== Endzeit
+==== Endzeit
 
 * Datum und Uhrzeit: 2024-06-06 14:01:00 (wird während der Ausführung protokolliert)
 
-== Durchführung des Tests für 150 Frames
+=== Durchführung des Tests für 150 Frames
 
-=== Startzeit
+==== Startzeit
 
 * Datum und Uhrzeit: 2024-06-06 14:05:00 (wird während der Ausführung protokolliert)
 
-=== Anpassung des Skripts
+==== Anpassung des Skripts
 
 * Öffne die Datei `test.py` und ändere die Anzahl der Frames von 50 auf 150:
   ```python

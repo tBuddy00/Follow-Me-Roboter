@@ -1,28 +1,28 @@
-= Human Detection Test Documentation Nr.1
+== Durchführung Human Detection Test
 
-== Ziel des Tests
+=== Ziel des Tests
 Der Test soll die Effektivität des Human-Detectors-Test und wie lange dieser tatsächlich im Durchschnitt braucht, um eine Person zu erkennen.
 
-== Vorbereitung
+=== Vorbereitung
 
-=== Projektverzeichnis
+==== Projektverzeichnis
 - **Verzeichnis:** `C:\Users\jonat\PycharmProjects\pythonProject`
 - **Videodatei:** `one-by-one-person-detection.mp4`
 
-=== Testskript
+==== Testskript
 - **Skript:** `test.py`
 - **Funktion:** Human Detection mittels YOLOv3 zur Erkennung und Protokollierung der Erkennungszeiten.
 
-== Durchführung des Tests für 50 Frames
+=== Durchführung des Tests für 50 Frames
 
-=== Startzeit
+==== Startzeit
 - **Datum und Uhrzeit:** 2024-06-06 14:00:00 (wird während der Ausführung protokolliert)
 
-=== Ausführung des Skripts
+==== Ausführung des Skripts
 - **Befehl:** `python test.py`
 - **Beschreibung:** Das Skript wird ausgeführt und die Erkennungszeiten für 50 Frames werden gemessen und protokolliert.
 
-=== Ergebnisspeicherung
+==== Ergebnisspeicherung
 - **Datei:** `erkennungszeiten.txt`
 - **Inhalt:**
   
@@ -41,29 +41,29 @@ Der Test soll die Effektivität des Human-Detectors-Test und wie lange dieser ta
 
 
 
-== Human Detection Testdokumentation Nr. 2
+=== Human Detection Testdokumentation Nr. 2
 
-== Ziel des Tests
+=== Ziel des Tests
 Es soll die Effektivität des Human-Detector getestet werden und wie lange er tatsächlich im Schnitt braucht, um eine Person zu erkennen.
 
-== Vorbereitung
+=== Vorbereitung
 
-=== Projektverzeichnis
+==== Projektverzeichnis
 - **Verzeichnis:** `C:\Users\jonat\PycharmProjects\pythonProject`
 - **Videodatei:** `one-by-one-person-detection.mp4`
 
-=== Testskript
+==== Testskript
 - **Skript:** `test.py`
 - **Funktion:** Human Detection mittels YOLOv3 zur Erkennung und Protokollierung der Erkennungszeiten.
 
-== Durchführung des Tests für 150 Frames
+=== Durchführung des Tests für 150 Frames
 
-=== Startzeit
+==== Startzeit
 - **Datum und Uhrzeit:** 2024-06-06 14:05:00 (wird während der Ausführung protokolliert)
 
-=== Anpassung des Skripts
+==== Anpassung des Skripts
 - **Anzahl der Frames:** Von 50 auf 150 ändern.
 
-=== Ausführung des Skripts
+==== Ausführung des Skripts
 - **Befehl:** `python test.py`
 - **Beschreibung:** Das Skript wird erneut ausgegeben

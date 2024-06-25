@@ -1,10 +1,8 @@
-////
-Beispielverlauf
-////
+== Verlaufsdokumentation Bewegungskalkulation
 
 Enter the number of test runs: 3     
 
-== Einzeltests  
+=== Einzeltests  
 
 Enter base RPM: 100
 
@@ -14,21 +12,21 @@ Move? (y/n): y
 
 Enter measured angle: 60
 
-=== Test 1
+==== Test 1
 
-==== Eingegebene Werte:
+===== Eingegebene Werte:
   Base RPM: 100
   Angle: 50
 
-==== Gemessene Werte:
+===== Gemessene Werte:
   Measured Angle: 60
 
-==== Berechnete Werte:
+===== Berechnete Werte:
   Time Out: 1.3888888888888888
   Speed Right: 100
   Speed Left: 140
 
-==== Deviation from entered to measured angle:
+===== Deviation from entered to measured angle:
   20.00%
 
 Enter base RPM: 100
@@ -39,21 +37,21 @@ Move? (y/n): n
 
 Enter measured angle: 30
 
-=== Test 2
+==== Test 2
 
-==== Eingegebene Werte:
+===== Eingegebene Werte:
   Base RPM: 100
   Angle: 40
 
-==== Gemessene Werte:
+===== Gemessene Werte:
   Measured Angle: 30
 
-==== Berechnete Werte:
+===== Berechnete Werte:
   Time Out: 0.2222222222222222
   Speed Right: -100
   Speed Left: 100
 
-==== Deviation from entered to measured angle:
+===== Deviation from entered to measured angle:
   -25.00%
 
 Enter base RPM: 100
@@ -64,25 +62,25 @@ Move? (y/n): y
 
 Enter measured angle: 60
 
-=== Test 3
+==== Test 3
 
-==== Eingegebene Werte:
+===== Eingegebene Werte:
   Base RPM: 100
   Angle: 80
 
-==== Gemessene Werte:
+===== Gemessene Werte:
   Measured Angle: 60
 
-==== Berechnete Werte:
+===== Berechnete Werte:
   Time Out: 2.2222222222222223
   Speed Right: 100
   Speed Left: 140
 
-==== Deviation from entered to measured angle:
+===== Deviation from entered to measured angle:
   -25.00%
 
-== Gesamtauswertung:
+=== Gesamtauswertung:
 
-=== Tests performed: 3
+==== Tests performed: 3
 
-=== Average Deviation: -10.00%
+==== Average Deviation: -10.00%

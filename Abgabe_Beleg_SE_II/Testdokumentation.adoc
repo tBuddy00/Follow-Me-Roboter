@@ -4,21 +4,17 @@
 
 == Test: Bewegungskalkulation + Verlaufsdokumentation
 
-include::../Documentation/test/Test_Bewegungskalkulation.adoc[leveloffset=+1]
-
-*Verlaufsdokumentation*
-
-include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.adoc[]
+include::../Documentation/test/Test_Bewegungskalkulation.adoc[lines=2..,leveloffset=+1]
 
 ''''
 
-== Test: Humandetection + Verlaufsdokumentation
+include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.adoc[leveloffset=+1]
 
-*Durchführung*
+== Test: Humandetection + Verlaufsdokumentation
 
 include::../Documentation/test/humandetection_tests.adoc[leveloffset=+1]
 
-*Verlaufsdokumentation*
+''''
 
 include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[leveloffset=+1]
 
