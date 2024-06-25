@@ -1,3 +1,5 @@
+:test-images: ../Documentation/test/Movement_calculation_test
+
 = Test Cases: Follow-Me Fahrroboter
 
 == Test: Bewegungskalkulation + Verlaufsdokumentation

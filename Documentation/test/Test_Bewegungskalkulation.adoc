@@ -1,4 +1,4 @@
-:imagesdir: Movement_calculation_test
+:test-images: Movement_calculation_test
 
 == Durchführung Test Bewegungskalkulation
 
@@ -28,15 +28,15 @@ https://github.com/tBuddy00/Follow-Me-Roboter/tree/main/src/Arduino/Test/calcula
 
 - Vor dem Start des Tests muss der PC über Bluetooth mit dem Arduino verbunden werden. (Passwort: 1234)
 
-image::connect_bluetooth.png[]
+image::{test-images}/connect_bluetooth.png[]
 
 - Dann muss der COM-Port des Arduinos ermittelt werden, beispielsweise mittels der Arduino IDE.
 
-image::arduino_ide_find_out_com_port_1.png[]
+image::{test-images}/arduino_ide_find_out_com_port_1.png[]
 
 - Testen der Connection mit dem Serial Monitor.
 
-image::arduino_ide_find_out_com_port_2.png[]
+image::{test-images}/arduino_ide_find_out_com_port_2.png[]
 
 - Anschließend muss der Port im Code auf dem PC angepasst werden.
 
@@ -52,9 +52,9 @@ image::arduino_ide_find_out_com_port_2.png[]
 
 - Daraufhin wird die neue Position des Roboters mit Klebeband markiert, und der Winkel zur alten Position wird gemessen.
 
-image::test_stage_2.png[]
+image::{test-images}/test_stage_2.png[]
 
-image::Measure_angle.png[]
+image::{test-images}/Measure_angle.png[]
 
 === Auf dem PC
 - Der Test wird gestartet
@@ -77,4 +77,4 @@ image::Measure_angle.png[]
 
 - Um den Nutzer eine Auswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
 
-image::Test_movement_Calculation.PNG[]
+image::{test-images}/Test_movement_Calculation.PNG[]
