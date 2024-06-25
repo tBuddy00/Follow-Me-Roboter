@@ -11,7 +11,7 @@ include::../_includes/default-attributes.inc.adoc[]
 Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte des Systems, die Einfluss auf Entwurf und Implementierung haben.
 
 == Architekturziele und Philosophie
-Unsere Philosophie in diesem Projekt ist es, das bestmögliche Ergebnis in gegebener Zeit zu erzielen und das Projekt so modular wie möglich zu gestalten. Übersichtlichkeit und Erweiterbarkeit sind unsere großen Ziele. Unsere Teamphilosophie ist es, aufkommende Aufgaben so schnell und bestmöglich für die jeweilige Iteration zu erledigen und einen funktionsfähigen Prototypen zu entwickeln. 
+Unsere Philosophie in diesem Projekt ist es, das bestmögliche Ergebnis in gegebener Zeit zu erzielen und das Projekt so modular wie möglich zu gestalten. Übersichtlichkeit und Erweiterbarkeit sind unsere großen Ziele. Unsere Teamphilosophie ist es, aufkommende Aufgaben so schnell und bestmöglich für die jeweilige Iteration zu erledigen und einen funktionsfähigen Prototyp zu entwickeln. 
 Besondere Herausforderungen sind: 
 
 * Die Integration mit bestehenden Systemen (z.B. ROS 2). 
@@ -53,8 +53,8 @@ Es gibt zwei ausschlaggebende Punkte, die unsere Architektur stark beeinflussen:
 1. *Verwendung von ROS 2 Humble*:
 Wir haben uns für die Nutzung von ROS 2 Humble entschieden. Diese Version von ROS 2 bietet eine Vielzahl an Softwarelösungen sowie eine umfassende Dokumentation. Jedoch ist ROS 2 generell sehr komplex und erfordert eine lange Einarbeitungszeit.
 
-2. *Verwendung von Ubuntu Server 22.04.03 LTS (64-bit)*:
-Als Betriebssystem haben wir Ubuntu Server 22.04.03 LTS (64-bit) ausgewählt, da es das empfohlene Betriebssystem für ROS 2 Humble ist. Es ist mit vielerlei Software kompatibel und gehört zu den aktuellsten Ubuntu-Versionen. Ein Nachteil besteht jedoch darin, dass es keine grafische Benutzeroberfläche bietet.
+2. *Verwendung von Ubuntu Server 22.04.03 LTS (64-Bit)*:
+Als Betriebssystem haben wir Ubuntu Server 22.04.03 LTS (64-Bit) ausgewählt, da es das empfohlene Betriebssystem für ROS 2 Humble ist. Es ist mit vielerlei Software kompatibel und gehört zu den aktuellsten Ubuntu-Versionen. Ein Nachteil besteht jedoch darin, dass es keine grafische Benutzeroberfläche bietet.
 
 3. *Verwendung von Python als Programmiersprache*:
 Für die Programmierung verwenden wir Python. Python ist eine der beiden Sprachen, die mit ROS 2 kompatibel sind, und lässt sich einfacher implementieren als C++. Allerdings können in ROS 2 mit Python keine Message-Formate erstellt werden, sodass man auf die Standardformate angewiesen ist.
@@ -119,7 +119,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 
 [discrete]
 ==== *Bilderfassung und -Vorverarbeitung: UC1 - Roboter starten*
-    * *Name*: Bilderfassung und -Vorverarbeitung
+    * *Name*: Bilderfassung und -vorverarbeitung
     * *Beschreibung*: Mechanismus zur Erfassung und Vorverarbeitung von Bildern.
     * *Entwurf*:
         ** *Kameraschnittstelle*: Entwicklung einer benutzerdefinierten Kameraschnittstelle
@@ -200,7 +200,7 @@ Unser Architektur-Framework wird durch die Verwendung von ROS II vorgegeben.
 
 Als Middleware verwendet ROS II dabei die Data Distribution Service (link:https://automaticaddison.com/ros-2-architecture-overview/[DDS) Architektur]. 
 
-Darauf baut dann der ROS II Client-Layer auf, welcher die Bibliotheken für die Verwendung von ROS zur Verfügung stelt. 
+Darauf baut dann der ROS II Client-Layer auf, welcher die Bibliotheken für die Verwendung von ROS zur Verfügung stellt. 
 
 Zuletzt der Application-Layer, welcher die eigentliche Anwendung enthält.
 
@@ -229,11 +229,11 @@ Wir verwenden folgende Hardware zur Betreibung der Software:
     ** 2 x DC Motoren
     ** USB-Webcam
     ** WLAN-Modul
-    ** Batteriepack 4 AA Baterien
+    ** Batteriepack 4 AA-Baterien
     ** Batteriepack 5V 4A
     ** Bluetooth HC-05 Modul (nur für Tests benötigt)
 
-Des weiteren wird ein PC für das Ausführen der Software benötigt.
+Des Weiteren wird ein PC für das Ausführen der Software benötigt.
 
 === Use Cases:
 

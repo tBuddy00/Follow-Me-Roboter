@@ -1,8 +1,8 @@
 = Troubleshooting
 
-== Problems with the WiFi
+== Problems with the Wi-Fi
 
-first check what isnt working by running the following command
+First, check what isn't  working by running the following commands:
 
 [source,shell]
 ----
@@ -19,7 +19,7 @@ sudo systemctl status unblock-wifi.service
 
 
 === fix softblock issue 
-if your wifi network doesnt boot properly check the following command
+If your Wi-Fi network doesn't boot properly, check the following commands:
 
 [source,shell]
 ----
@@ -35,16 +35,16 @@ if it looks like this
         Hard blocked: no
 ----
 
-then you have the softblock issue to fix it we have to create a script to unblock wlan0 on boot
+Then you have to fix the softblock issue. We have to create a script to unblock wlan0 on boot.
 
-run the following command to create the script
+Run the following command to create the script:
 
 [source,shell]
 ----
 sudo vi /etc/systemd/unblock-wifi.sh
 ----
 
-and add the following content
+Add the following content:
 
 [source,shell]
 ----
@@ -53,22 +53,21 @@ and add the following content
 # Ensure that wlan0 is unblocked
 sudo rfkill unblock wlan
 ----
-
-then run the following command to make the script executable
+Run the following command to make the script executable:
 
 [source,shell]
 ----
 sudo chmod +x /etc/systemd/unblock-wifi.sh
 ----
 
-then run the following command to create a service that runs the script on boot
+Run the following command to create a service that runs the script on boot:
 
 [source,shell]
 ----
 sudo vi /etc/systemd/system/unblock-wifi.service
 ----
 
-and add the following content
+Add the following content:
 
 [source,shell]
 ----
@@ -85,7 +84,7 @@ ExecStart=/etc/systemd/unblock-wifi.sh
 WantedBy=multi-user.target
 ----
 
-then run the following command to enable the service
+Run the following commands to enable the service:
 
 [source,shell]
 ----
@@ -93,7 +92,7 @@ sudo systemctl enable unblock-wifi.service
 sudo systemctl start unblock-wifi
 ----
 
-eddit the dnsmasq service file to make sure that the unblock-wifi service runs before the dnsmasq service
+Edit the dnsmasq service file to make sure that the unblock-wifi service runs before the dnsmasq service:
 
 [source,shell]
 ----
@@ -109,7 +108,7 @@ After=wlan0.service
 After=unblock-wifi.service
 ----
 
-then reboot the device
+Reboot the device:
 
 [source,shell]
 ----
@@ -118,7 +117,7 @@ sudo reboot
 
 === if softblock issue still persists
 
-if the softblock issue still persists we can try implementing a service that restarts dnsmasq service after boot 
+If the softblock issue still persists, we can try implementing a service that restarts dnsmasq service after boot.
 
 
 1. Create a script to check dnsmasq status and restart if necessary:

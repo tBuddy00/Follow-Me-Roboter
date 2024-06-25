@@ -9,7 +9,7 @@ Die Klasse CameraOpencv repräsentiert einen ROS-Node, der Bilddaten von einer K
 ==== Methoden:
 
 1. __init__(self):
-   Der Konstruktor der Klasse, initialisiert die ROS-Node mit dem Namen 'camera_subscriber', erstellt Publisher für Positionsdaten (/position_data) und Bilder (/opencv_image). Außerdem initialisiert er die OpenCV Videoaufnahme (vid0) und den Detektor für die Personenerkennung (detector). Ein Timer wird erstellt, der alle 0,5 Sekunden die Methode loop() aufruft.
+   Der Konstruktor der Klasse initialisiert die ROS-Node mit dem Namen 'camera_subscriber', erstellt Publisher für Positionsdaten (/position_data) und Bilder (/opencv_image). Außerdem initialisiert er die OpenCV Videoaufnahme (vid0) und den Detektor für die Personenerkennung (detector). Ein Timer wird erstellt, der alle 0,5 Sekunden die Methode loop() aufruft.
 
 2. loop(self):
    Diese Methode wird jedes Mal aufgerufen, wenn der Timer abläuft. Sie liest ein Bild von der Kamera, führt eine Personenerkennung durch und veröffentlicht die Positionsdaten sowie das verarbeitete Bild.
@@ -37,13 +37,13 @@ Die Klasse MovementControl repräsentiert einen ROS-Node, die Positionsdaten emp
 4. control(self, msg):
    Diese Methode wird aufgerufen, wenn allgemeine Steuerbefehle empfangen werden. Sie verarbeitet die erhaltenen Befehle und steuert die Bewegung entsprechend.
 
-== Utility Funktionen
+== Utility-Funktionen
 
 1. calculate_speed_variable_time(base_rpm, radius, angle,  wheel_distance, wheel_radius, correction_factor):
    Berechnet die Geschwindigkeiten der Räder basierend auf einer variablen Zeit, abhängig von der Basis-Drehzahl, dem Radius, dem Winkel, dem Radabstand, dem Radradius und einem Korrekturfaktor.
 
 2. calculate_movement_variable_time(self, base_rpm, angle, move):
-   Verarbeitet die von der calculate_speed_variable_time Funktion Berechneten Bewegungsparameter und gibt die gewünschten drezahlen sowie die bewegungsdauer für die Motoren zurück.
+   Verarbeitet die von der calculate_speed_variable_time Funktion Berechneten Bewegungsparameter und gibt die gewünschten Drehzahlen sowie die Bewegungsdauer für die Motoren zurück.
 
 3. calculate_angle(self, servo_pan):
    Berechnet die Winkel für die Servos basierend auf den aktuellen Koordinaten. Es kann zwischen horizontaler (Servo-Pan) und vertikaler (Servo-Tilt) Bewegung gewählt werden.
@@ -136,7 +136,7 @@ Die Flask-App wird verwendet, um ein Video-Stream und eine Benutzeroberfläche f
 
 == Motion_Driver
 
-=== Klasse MotinDriver 
+=== Klasse MotionDriver 
 
 Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die Motorgeschwindigkeiten des Alphabot2-Roboters entsprechend anzupassen.
 
@@ -146,16 +146,16 @@ Diese Klasse ist eine ROS2-Node welche Daten vom /motor-Topic empfängt um die M
    Initialisiert den Node und erstellt eine Subscription für die Motorgeschwindigkeiten.
 
 2. _clip(value, minimum, maximum): 
-   Diese Funktion begrenzt einen Wert innerhalb eines angegebenen Bereichs
+   Diese Funktion begrenzt einen Wert innerhalb eines angegebenen Bereichs.
    value: Der zu begrenzende Wert.
-   minimum: Der minimale erlaubte Wert.
-   maximum: Der maximale erlaubte Wert.
+   Minimum: Der minimale erlaubte Wert.
+   Maximum: Der maximale erlaubte Wert.
 
 3. move_PWMA(self, speed_percent):
    Diese Funktion wird verwendet, um die Geschwindigkeit des linken Motors einzustellen.
 
 4. move_PWMB(self, speed_percent)
-   Diese Funktion ist ähnlich wie move_PWMA, wird jedoch verwendet, um die Geschwindigkeitdes rechten Motors einzustellen.
+   Diese Funktion ist ähnlich wie move_PWMA, wird jedoch verwendet, um die Geschwindigkeit des rechten Motors einzustellen.
 
 5. set_motor_speeds(self, left_speed, right_speed, duration):
    Setzt die Geschwindigkeiten der linken und rechten Motoren für eine bestimmte Dauer.

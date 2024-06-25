@@ -16,21 +16,21 @@
 * 2 x DC Motors
 * USB-Webcam
 * WLAN-Module
-* Battery Pack 4 AA Bateries
+* Battery Pack 4 AA-Bateries
 * Battery Pack 5V 4A
-* Bloutooth HC-05 Module (only used for testing)
+* Bluetooth HC-05 Module (only used for testing)
 
 === Software
 * Ubuntu Server 22.04.3 LTS (64-bit)
 * ROS 2 Humble
 
 
-== Systemeinrichtung
+== System Setup
 
 include::../installation guide (english).adoc[lines=4..,leveloffset=+1]
 
 
-== Nutzung über SSH
+== Usage via SSH
 
 include::../user guide (english).adoc[leveloffset=+1]
 

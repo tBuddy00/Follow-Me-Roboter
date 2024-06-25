@@ -1,7 +1,7 @@
 = Human Detection Test Documentation Nr.1
 
 == Ziel des Tests
-Der Test soll die Effektivität des Human Detectors test und wie lange dieser tatsächlich im Durchschnitt braucht, um eine Person zu erkennen.
+Der Test soll die Effektivität des Human-Detectors-Test und wie lange dieser tatsächlich im Durchschnitt braucht, um eine Person zu erkennen.
 
 == Vorbereitung
 
@@ -44,7 +44,7 @@ Der Test soll die Effektivität des Human Detectors test und wie lange dieser ta
 == Human Detection Testdokumentation Nr. 2
 
 == Ziel des Tests
-Es soll die Effektivität des Human Detectors getestet werden und wie lange er tatsächlich im Schnitt braucht, um eine Person zu erkennen.
+Es soll die Effektivität des Human-Detector getestet werden und wie lange er tatsächlich im Schnitt braucht, um eine Person zu erkennen.
 
 == Vorbereitung
 

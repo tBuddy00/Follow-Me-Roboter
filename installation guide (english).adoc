@@ -42,12 +42,12 @@ Choose the following parameters:
 
 === Installing Jetson Nano - Ubuntu 20.04 image
 
-follow the following guide to install the image link:https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#jetson-nano-with-ubuntu-2004-os-image[Jetson Nano with Ubuntu 20.04 OS image]
+Follow this guide to install the image link:https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#jetson-nano-with-ubuntu-2004-os-image[Jetson Nano with Ubuntu 20.04 OS image]
 
 
 == Connecting to Your Raspberry Pi or Jetson Nano Using SSH
 
-Connect the Raspberry Pi or Jetson Nano to Ethernet either directly to your PC or to your local network.
+Connect the Raspberry Pi or Jetson Nano to Ethernet, either directly to your PC or to your local network.
 
 Find out the IP address of your Pi or Jetson Nano by using one of the following methods:
 

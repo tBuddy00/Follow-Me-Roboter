@@ -12,12 +12,12 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-|ROS II |_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.|-
+|ROS II |_Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebssystem für alle Arten von Robotern schaffen soll.|-
 
 | Open CV  | _Open Source Computer Vision_ - eine freie, plattformübergreifende Bildverarbeitungsbibliothek für die Echtzeit-Bildverarbeitung. |-
 
 | Implementierung/ +
-Implementation  | Prozess in dem Programmcode gemäß den Spezifikationen erstellt, getestet und in das System integriert wird. | Verwirklichung, Einsetzung.
+Implementation  | Prozess, in dem Programmcode gemäß den Spezifikationen erstellt, getestet und in das System integriert wird. | Verwirklichung, Einsetzung
 
 | Philosophie | bezeichnet die grundlegenden Prinzipien und Werte, die die Gestaltung und von Softwareentwicklung leitet.| Grund-/ Leitprinzipien, Kernwerte 
 
@@ -42,7 +42,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |Architect | definiert Softwarearchitektur und trifft Schlüsselentscheidungen, die Gesamtdesign und Implementierung des Systems bestimmen. | Architekt
 
-|Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich. | Hauptentwickler, Leitender Entwickler
+|Lead Developer | leitet die Entwicklung des Projekts und ist für die technische Umsetzung verantwortlich. | Hauptentwickler, leitender Entwickler
 
 |Entwickler | Person, die an Programmierung und Umsetzung des Projekts beteiligt sind. | Programmierer, Developer
 
@@ -72,21 +72,21 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |Wireframe[s] | Wireframes repräsentieren Teile der Informationsarchitektur, der Benutzerführung und der Navigation in einem Softwareprojekt.| Drahtgittermodell
 
-|Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
+|Use-Case[s] | Ein Use-Case bündelt viele Anwendungsszenarien und demonstriert diese auf akkurate Weise mit gleicher Anzahl an Anwendungsfällen, welche vorher definiert wurden für ein System und den dazugehörigen Akteuren bzw. Stakeholdern. | Anwendungsfall
 
-|Arduino|Arduino ist eine Plattform für Elektronik- und Mikrocontroller-Projekte. Diese Plattform umfasst zum einen die Arduino Elektronik-Hardware-Boards und zum anderen die Arduino Software mit deren Hilfe die Boards programmiert werden können.|-
+|Arduino|Arduino ist eine Plattform für Elektronik- und Mikrocontroller-Projekte. Diese Plattform umfasst zum einen die Arduino Elektronik-Hardware-Boards und zum anderen die Arduino-Software, mit deren Hilfe die Boards programmiert werden können.|-
 
 |YOLO (You Only Look Once)|YOLO ist eine Methode/Weg zur Objekterkennung. Es ist der Algorithmus bzw. eine Strategie zur Bilderkennung von Objekten.|-
 
 |LiDAR |LiDAR ist eine Lasertechnologie, die die Oberflächen eines Objekts oder eines Raums dreidimensional erfasst. Das Wort "LiDAR" ist eine Abkürzung für Light Detection And Ranging. | - 
 
-|Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mit Hilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
+|Punktwolkenverarbeitung | Um eine Punktwolke mit Photogrammetrie zu erstellen, muss der Raum zunächst mithilfe von Kameras aus allen Winkeln erfasst werden. Die aufgenommenen Bilder werden dann in einer speziellen Software verarbeitet, um den Raum in 3D zu rekonstruieren. | - 
 
-|Powerbank | Eine Powerbank ist ein externer Zusatzakku, mit dem man mobile Geräte wie Tablets, Notebooks oder Handys aufladen können, wenn keine Stromquelle verfügbar ist.| Zusatzakku, Akku
+|Powerbank | Eine Powerbank ist ein externer Zusatzakku, mit dem man mobile Geräte wie Tablets, Notebooks oder Handys aufladen kann, wenn keine Stromquelle verfügbar ist.| Zusatzakku, Akku
 
 |NVIDIA Jetsen Nano | Nvidia Jetson ist eine Serie von Embedded-Computing-Boards von Nvidia. Die Modelle Jetson TK1, TX1 und TX2 sind alle mit einem Tegra-Prozessor (oder SoC) von Nvidia ausgestattet, der eine CPU mit ARM-Architektur integriert. Jetson ist ein energiesparendes System und wurde zur Beschleunigung von maschinellen Lernanwendungen entwickelt.| Kleinrechner, Entwicklungsboard, Edge-Computing-Gerät  
 
-|Personenerkennung | Personenerkennung funktioniert durch Bilderkennung. Es darf sich nur eine Person im Bild befinden, da der Roboter nur einer Person folgen kann und nicht zwischen Personen unterscheidet. Zugehörige Software wird genauer in Entwicklerdokumentation beschrieben. | - 
+|Personenerkennung | Personenerkennung funktioniert durch Bilderkennung. Es darf sich nur eine Person im Bild befinden, da der Roboter nur einer Person folgen kann und nicht zwischen Personen unterscheidet. Die zugehörige Software wird genauer in der Entwicklerdokumentation beschrieben. | - 
 
 
 
@@ -98,7 +98,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 |===
 | Abkürzung | Bedeutung | Erläuterung
 
-| ROS II | Roboter Operating System 2 | _Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebsystem für alle Arten von Robotern schaffen soll.
+| ROS II | Roboter Operating System 2 | _Roboter Operating System 2_ - ein internationales Open-Source Projekt, welches ein universelles und freies Betriebssystem für alle Arten von Robotern schaffen soll.
 
 | IDE | Integrated Development Enviroment | Ist eine integrierte Entwicklungsumgebung für Software und für die Anwendungsentwicklung, die gängige Entwicklertools in einer zentralen grafischen Oberfläche vereint.
 
@@ -108,7 +108,7 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |UC| Use Case | Abkürzung für einen oder mehrere Use Cases.
 
-|SSH | Secure Shell|  SSH ist ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.
+|SSH | Secure Shell|  SSH ist ein kryptografisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.
 
 |FAQ | Frequently Asked Questions| Ein FAQ ist eine Sammlung von häufig gestellten Fragen, die bei der Verwendung des Projektes aufkommen. Es dient als erste Anlaufstelle für Problembehandlung.
 
@@ -121,12 +121,6 @@ Architekturmechanismen | Standardisierte Lösungen für häufige Probleme, die K
 
 |===
 | Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
-
-| Anmeldedaten
-| Zusammensetzung von Benutzername und Passwort.
-| String
-| Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
-| Login
 
 | Topic
 | Eine Topic ist ein Kommunkationskanal für ROS II, der es ermöglicht Daten zwischen verschiedenen Knoten (Nodes) in einem ROS II Netzwerk auszutauschen.
@@ -149,7 +143,7 @@ Image Formate
 |sensor_msgs.msg +
 Image Formate
 |'' +
-Bild mit Koordinatensystem sowie einer Visualisierung des trackings einer Person
+Bild mit Koordinatensystem sowie einer Visualisierung des Trackings einer Person
 |-
 
 |Topic: +
@@ -186,7 +180,7 @@ Der Wert für Winkel-y muss zwischen -80 und 30 liegen
 |-
 
 |Datastream
-|Übertragung von Daten innerhalb einer node. 
+|Übertragung von Daten innerhalb einer Node. 
 |-
 |-
 |-
@@ -204,7 +198,7 @@ Der Wert für Winkel-y muss zwischen -80 und 30 liegen
 |-
 
 |Processed Image
-|Das von der Human_Detection_Function bearbeitete Bild. Anfangs identisch mit dem von /opencv_image übertragenen Bild, wird dann in der Camera_Streamer-Node mit Hilfe von CV_Bridge in das OpenCV-Image Format umgewandelt.
+|Das von der Human_Detection_Function bearbeitete Bild. Anfangs identisch mit dem von /opencv_image übertragenen Bild, wird dann in der Camera_Streamer-Node mithilfe von CV_Bridge in das OpenCV-Image Format umgewandelt.
 |Beginn: +
 sensor_msgs.msg +
 Image Formate
@@ -213,7 +207,7 @@ Später: bgr8
 |
 
 |Koordinaten/Coordinates
-|Sind die von der Human_Detection-Function erzeugten Daten welche dann als /Position_Data weitergegeben werden. 
+|Sind die von der Human_Detection-Function erzeugten Daten, welche dann als /Position_Data weitergegeben werden. 
 |Array mit 7 int werten 
 (siehe /position_data)
 |siehe /position_data

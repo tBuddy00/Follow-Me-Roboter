@@ -8,7 +8,7 @@
 
 == Entwurfsdokumentation
 
-include::../Documentation/architecture/architecture_notebook_rework.adoc[lines=4..,leveloffset=+1]
+include::../Documentation/architecture/architecture_notebook_rework.adoc[lines=4..5;9..,leveloffset=+1]
 
 == Softwaredokumentation
 include::../Documentation/architecture/Softweardokumentation.adoc[lines=2..,leveloffset=+1]

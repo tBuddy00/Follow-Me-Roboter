@@ -3,7 +3,7 @@
 
 
 == Raspberry Pi 4B
-=== Conect to WiFi
+=== Connect to WiFi
 
 [source,bash]
 ----
@@ -12,7 +12,7 @@ ssid: Alphabot2
 Password: ubuntu1234
 ----
 
-=== Conect with SSH
+=== Connect with SSH
 
 [source,bash]
 ----
@@ -22,7 +22,7 @@ Pw: ubuntu1234
 ----
 
 == Jetson Nano
-=== Conect to WiFi
+=== Connect to Wi-Fi
 
 [source,bash]
 ----
@@ -31,7 +31,7 @@ ssid: JetsonNano
 Pw: jetson1234
 ----
 
-=== Conect with SSH
+=== Connect with SSH
 
 [source,bash]
 ----

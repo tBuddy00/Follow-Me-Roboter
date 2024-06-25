@@ -11,7 +11,7 @@ Dieses Handbuch soll Nutzern helfen, die Software für den Follow-Me-Fahrroboter
 
 == Einführung
 
-Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Es handelt sich um einen Prototypen einer Machbarkeitsstudie, daher sind die Interaktionsmöglichkeiten minimal.  Diese Anleitung bietet eine kurze Übersicht über die Nutzung der Software sowie einige Debugging-Kommandos.
+Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um einer Person zu folgen. Es handelt sich um einen Prototyp einer Machbarkeitsstudie, daher sind die Interaktionsmöglichkeiten minimal.  Diese Anleitung bietet eine kurze Übersicht über die Nutzung der Software sowie einige Debugging-Kommandos.
 
 == Wichtige Aufgaben
 
@@ -25,12 +25,12 @@ Der Follow-Me-Fahrroboter ist ein autonomer Roboter, der entwickelt wurde, um ei
 image::../Documentation/deployment/images/Arduino.png[]
 
 * Jetson Nano / Arduino
-** Als erstes müssen Sie den Roboter per USB mit einer Powerbank verbinden. Falls Ihnen keine Powerbank zur Verfügung gestellt wurde, wenden Sie sich an Ihren Systemadministrator. 
+** Als Erstes müssen Sie den Roboter per USB mit einer Powerbank verbinden. Falls Ihnen keine Powerbank zur Verfügung gestellt wurde, wenden Sie sich an Ihren Systemadministrator. 
 ** Verbinden Sie die Powerbank mit dem orangefarbenen Kabel des Jetson Nano.
 
 image::../Documentation/deployment/images/Raspberry_Pi.png[]
 
-Verbindung zum WiFi herstellen::
+Verbindung zum Wi-Fi herstellen::
 Der Roboter hostet nach dem Start ein eigenes WLAN. Öffnen Sie auf Ihrem PC die verfügbaren Netzwerke und verbinden Sie sich damit.
 
 Raspberry Pi 4B / Alphabot:::
@@ -63,7 +63,7 @@ Jetson Nano / Arduino:::
 * Passwort: jetson
 
 Projekt von der Konsole ausführen::
-In derselben Konsole, in der Sie gerade die Befehle für die SSH Verbindung ausgeführt haben, führen Sie die folgenden Befehle nacheinander aus.
+In derselben Konsole, in der Sie gerade die Befehle für die SSH-Verbindung ausgeführt haben, führen Sie die folgenden Befehle nacheinander aus.
 
  cd ~/ros2_humble/ && source install/setup.bash
 
@@ -147,7 +147,7 @@ Raspberry Pi 4B / Alphabot::
 
 Jetson Nano / Arduino::
 
-* Ziehen Sie das orangene Kabel aus dem Jetson Nano. Dies schaltet den Roboter aus.
+* Ziehen Sie das orange Kabel aus dem Jetson Nano. Dies schaltet den Roboter aus.
 
 == FAQ
 
@@ -155,6 +155,6 @@ Jetson Nano / Arduino::
 
 *A:* Derzeit ist der Follow-Me-Fahrroboter nur mit der bereitgestellten Software kompatibel. Anpassungen können jedoch vorgenommen werden, indem Sie die entsprechenden ROS2-Pakete modifizieren.
 
-Für weitere Fragen und Unterstützung, wenden Sie sich bitte an den Systemadministrator.
+Für weitere Fragen und Unterstützung wenden Sie sich bitte an den Systemadministrator.
 
 

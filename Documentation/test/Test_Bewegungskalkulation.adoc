@@ -69,12 +69,12 @@ image::Measure_angle.png[]
 
 * Bei komplett gerader Bewegung soll angegeben werden wie lange der Roboter fahren soll
 
-- Nachdem der Test durchgeführt wurde fordert das Programm den Nutzer auf den gemessenen Winkel einzugeben.
+- Nachdem der Test durchgeführt wurde, fordert das Programm den Nutzer auf den gemessenen Winkel einzugeben.
 
 ''''
 
 === Auswertung
 
-- Um den Nutzer eine Auwswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
+- Um den Nutzer eine Auswertung zu erleichtern, sind Eingabe, Ausgabe und Werte für jeden Test sowie eine Gesamtauswertung für die Werte aller Tests zum am Ende der Tests in der Konsole ausgegeben
 
 image::Test_movement_Calculation.PNG[]

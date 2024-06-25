@@ -1,12 +1,8 @@
 = Test Cases: Follow-Me Fahrroboter
 
-''''
-
 == Test: Bewegungskalkulation + Verlaufsdokumentation
 
-*Durchführung*
-
-include::../Documentation/test/Test_Bewegungskalkulation.adoc[]
+include::../Documentation/test/Test_Bewegungskalkulation.adoc[leveloffset=+1]
 
 *Verlaufsdokumentation*
 
@@ -18,10 +14,10 @@ include::../Documentation/test/Verlaufsdokumentation_zu_Bewegungskalkulation.ado
 
 *Durchführung*
 
-include::../Documentation/test/humandetection_tests.adoc[]
+include::../Documentation/test/humandetection_tests.adoc[leveloffset=+1]
 
 *Verlaufsdokumentation*
 
-include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[]
+include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[leveloffset=+1]
 
 ''''

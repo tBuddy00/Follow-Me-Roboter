@@ -25,7 +25,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-- *NFAU-1:* Die Bedienung des Alphabots soll leicht und ohne Vorkenntnisse möglich sein.
+- *NFAU-1:* Die Bedienung des Alphabot soll leicht und ohne Vorkenntnisse möglich sein.
 
 - *NFAU-2:* Das System soll als portable Möglichkeit zur Mitführung gestaltet werden.
 
@@ -37,11 +37,11 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 - *NFAR-1:* Das System sollte möglichst eine Stunde mit vollgeladenem Akku laufen.
 
-- *NFAR-2:* Der Roboter sollte in der Lage sein durch eine handelsübliche Powerbank, sobald dieser an den Zusatzakku angeschlossen wurde, in Betrieb genommen zu werden.
+- *NFAR-2:* Der Roboter sollte in der Lage sein, durch eine handelsübliche Powerbank, sobald dieser an den Zusatzakku angeschlossen wurde, in Betrieb genommen zu werden.
 
 **Wiederherstellbarkeit** +
 
-- *NFAR-3:* Bei einem Fehler soll das System einfach durch Error-Handling in der Lage sein, sich nicht vollständig zu Beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
+- *NFAR-3:* Bei einem Fehler soll das System einfach durch Error-Handling in der Lage sein, sich nicht vollständig zu beenden, sondern einen Fehler zu werfen und so weiterhin zu laufen.
 
 
 === Effizienz (Performance)
@@ -51,9 +51,9 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 - *NFAP-1:* Die Antwortzeit der Bilderkennung soll schnell genug sein um Personen folgen zu können. Eine Verarbeitungszeit muss hier bei < 1 Sekunde sein.
 
-**Durschsatz** +
+**Durchsatz** +
 
-- *NFAP-2:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
+- *NFAP-2:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein, innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
 
 **Kapazität** +
 
@@ -61,14 +61,14 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 **Zeiten zum Starten oder Beenden** +
 
-- *NFAP-4:* Der Alphabot 2 samt Software muss in der Lage dazu sein innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig sich zu beenden.
+- *NFAP-4:* Der Alphabot 2 samt Software muss in der Lage dazu sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 **Kompatibilität** +
 
-- *NFAS-1:* Durch die Integration mit dem OS ROS II, muss das System in der Lage mit anderen Systemen kompatibel zu sein.
+- *NFAS-1:* Durch die Integration mit dem Betriebssystem ROS II muss das System mit anderen Systemen kompatibel sein.
 
 **Systeminstallation** +
 
@@ -83,13 +83,13 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 * zu nutzende Komponenten (Alphabot 2 PI)
 * Vorgaben für die Programmiersprache (Python)
 * zu unterstützende Plattformen / Betriebssysteme (ROS II)
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll ( Raspberry Pi 4 8GB) 
+* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll (Raspberry Pi 4 8GB) 
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * fester Projektzeitraum - Abgabe 28.06.2024
 * Zwischenberichte und regelmäßige Iterations-Meilensteine
-* Ressourcenverfügbarkeit (Laborräume sofern nötig und digitale Infrastruktur)
+* Ressourcenverfügbarkeit (Laborräume, sofern nötig und digitale Infrastruktur)
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
