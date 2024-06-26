@@ -7,13 +7,13 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Systems Follow-Me zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das System Follow-Me Fahrroboter diese Bedarfe erfüllt, werden in der Use-Case- und Supplementary-Specification beschrieben.
+Der Zweck dieses Dokuments ist es, den wesentlichen Bedarf und Funktionalität des Systems Follow-Me zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieses Bedarfs. Die  Details, wie das System Follow-Me Fahrroboter diesen Bedarf erfüllt, werden in den Use Cases und der Supplementary-Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das von I01_Follow-Me-Team entwickelt wird. Das System wird es Herr Prof. Dr.-Ing. Neugebauer erlauben, den Fahrroboter ihn folgen zu lassen mittels der eigens entwickelten Bilderkennungssoftware durch das o. g. Team. Die Hauptaufgabe besteht darin, demjenigen zu folgen, welcher visuell die Führung angibt. 
+Dieses Visions-Dokument bezieht sich auf das System Follow-Me Fahrroboter, das vom I01_Follow-Me-Team entwickelt wird. Das System wird es Herr Prof. Dr.-Ing. Neugebauer erlauben, den Fahrroboter ihm folgen zu lassen mittels der eigens entwickelten Bilderkennungssoftware durch das o. g. Team. Die Hauptaufgabe besteht darin, demjenigen zu folgen, welcher visuell die Führung angibt. 
 
 === Definitionen, Akronyme und Abkürzungen
 Siehe <<#glossary, Glossar>>.
@@ -21,9 +21,9 @@ Siehe <<#glossary, Glossar>>.
 == Positionierung
 
 === Fachliche Motivation
-Die fachliche Motivation für das Projekt "Follow-Me Fahrroboter" liegt in der Synthese von zwei essenziellen Technologiebereichen: Robotik und Bilderkennung bzw. der nötigen Bilderkennungssoftware. Durch die Konstruktion eines Alphabot 2 auf Basis eines Raspberry Pi und der Integration einer von uns als Studiengruppe eigens entwickelten Bilderkennungssoftware streben wir an, ein effizientes und präzises System zu schaffen, das in der Lage ist, einer Person in einem Raum mit mehreren Personen oder sogar in komplexen Umgebungen im Innen- und Außenbereich zu verfolgen.
+Die fachliche Motivation für das Projekt "Follow-Me Fahrroboter" liegt in der Synthese von zwei essenziellen Technologiebereichen: Robotik und Bilderkennung bzw. der nötigen Bilderkennungssoftware. Durch die Konstruktion eines Roboters auf Basis eines Raspberry Pi und der Integration einer von uns als Studiengruppe eigens entwickelten Bilderkennungssoftware streben wir an, ein effizientes und präzises System zu schaffen, das in der Lage ist, einer Person in einem Raum zu verfolgen.
 
-Die Herausforderung besteht für uns im Allgemeinen noch darin, ein robustes und zuverlässiges System zu entwickeln, das in der Lage ist, Personen zuverlässig zu identifizieren und zu verfolgen, unabhängig von äußeren Einflüssen wie der unterschiedlichen Anzahl an Personen in einem Raum. Dies erfordert eine präzise Abstimmung zwischen der Hardware des Fahrroboters und der Software für die Bilderkennung sowie die Implementierung eigens entwickelter Algorithmen zur Personenerkennung.
+Die Herausforderung besteht für uns im Allgemeinen noch darin, ein robustes und zuverlässiges System zu entwickeln, welches trotz der limitierten Hardware performant genug ist. Dies erfordert eine präzise Abstimmung zwischen der Hardware des Fahrroboters und der Software für die Bilderkennung sowie die Implementierung eigens entwickelter Algorithmen zur Personenerkennung.
 
 Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für unseren Auftraggeber Herr Prof. Neugebauer dar und bietet uns als Gruppe von sieben Studierenden eine spannende Möglichkeit, uns auf dem Gebiet der Robotik und der Bilderkennung heranzutasten.
 
@@ -34,10 +34,10 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 [cols="1,3"]
 
 |===
-| Das Problem | Als Machbarkeitsstudie soll gezeigt werden, dass der Fahrroboter - basierend auf einem Raspberry Pi mit eigens entwickelter Bilderkennungssoftware - selbstständig in der Lage ist einer Person in einem Raum zu folgen. Als Erweiterung stellt dann weiterhin die Verfolgung exakt einer Person dar, jedoch unter dem Gesichtspunkt, dass sich nun mehrere Personen in einem Raum befinden und der Alphabot 2, weiterhin exakt der für sie fokussierten Person folgen muss.
+| Das Problem | Als Machbarkeitsstudie soll gezeigt werden, dass der Fahrroboter - basierend auf einem Raspberry Pi mit eigens entwickelter Bilderkennungssoftware - selbstständig in der Lage ist einer Person in einem Raum zu folgen. 
 | betrifft | Prof. Dr.-Ing. Neugebauer HTW Dresden
-| die Auswirkung davon ist | Es wurde gezeigt, dass der Alphabot 2 in der Lage ist, einer Person in einem Raum zu folgen.
-| eine erfolgreiche Lösung wäre | die Realisierung des Fahrroboters mittels einer Bilderkennungssoftware auf einem Raspberry-Pi und einem Alphabot 2.
+| die Auswirkung davon ist | Es wurde gezeigt, dass der Roboter in der Lage ist, einer Person in einem Raum zu folgen.
+| eine erfolgreiche Lösung wäre | Die Realisierung des Fahrroboters mittels einer Bilderkennungssoftware auf einem Raspberry-Pi und einem Roboter.
 |===
 
 === Positionierung des Produkts
@@ -46,10 +46,10 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 |===
 | Für | Prof. Dr.-Ing. Neugebauer
 | die | Als Machbarkeitsstudie einen Fahrroboter benötigen, welcher in der Lage ist, einer Person in einem Raum zu folgen.
-| die Lösung ist ein | Fahrroboter, basierend auf einem Alphabot 2 und dem OS ROS II
-| Das | Herr Prof. Dr.-Ing. Neugebauer zeigt, dass mittels Bilderkennungssoftware der Alphabot 2 der Person folgt.
-| Im Gegensatz zu | bisherigen Lösungen haben wir einen Follow-Me-Ansatz gewählt
-| Unser Produkt | Fahrroboter begleitet mittels Bilderkennungssoftware sein Ziel an ggf. jeden Ort.
+| die Lösung ist ein | Fahrroboter, basierend auf ROS II
+| Das | Herr Prof. Dr.-Ing. Neugebauer zeigt, dass mittels Bilderkennungssoftware der Roboter der Person folgt.
+| Im Gegensatz zu | bisherigen Lösungen haben wir einen neuartigen Ansatz gewählt, welcher eigens entwickelt wird. 
+| Unser Produkt | Fahrroboter begleitet mittels Bilderkennungssoftware sein Ziel.
 |===
 
 == Stakeholder Beschreibungen
