@@ -42,8 +42,8 @@ Es gibt zwei ausschlaggebende Punkte, die unsere Architektur stark beeinflussen:
     
 === Leistung (Performance)
     * NFAP-1: Die Antwortzeit der Bilderkennung soll schnell genug sein, um Personen folgen zu können. Eine Verarbeitungszeit muss hier bei < 1 Sekunde sein.
-    * NFAP-3: Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
-    * NFAP-4: Der Alphabot 2 samt Software muss in der Lage sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
+    * NFAP-3: Der Roboter muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
+    * NFAP-4: Der Roboter samt Software muss in der Lage sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
     
 === Wartbarkeit (Supportability)
     * NFAS-1: Durch die Integration mit dem OS ROS II, muss das System in der Lage sein, mit anderen Systemen kompatibel zu sein.

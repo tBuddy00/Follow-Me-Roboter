@@ -1,0 +1,151 @@
+:source-highlighter: highlight.js
+
+== Verlaufsdokumentation Bewegungskalkulation
+
+Number of test runs: 2
+
+=== Test 1
+
+- Erfolgt ohne Testen von Servomotoren
+
+==== Erwartungen
+- _servo_test_succes_ soll fehlschlagen, da keine Servos getestet werden
+- _motor_test_success_ soll gelingen
+- _motor_expected_results_ soll mit _motor_received_results_ übereinstimmen
+
+==== Durchführung
+- erhaltene Daten: 
+
+[source,shell]
+----
+[test_movement_control-2] number: 0
+[test_movement_control-2]         position_data: [-693, 158, 162, 626, 1920, 1080, 1, 0, 1142, 25306, 1142, 27306]
+[test_movement_control-2]         servo_expected_results: []
+[test_movement_control-2]         motor_expected_results: [131, 100, 499, 0, 0]
+[test_movement_control-2]         servo_received_results: []
+[test_movement_control-2]         motor_received_results: [131, 100, 499, 0, 0]
+[test_movement_control-2]         servo_test_success: False
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 1
+[test_movement_control-2]         position_data: [200, 100, 100, 500, 1920, 1080, 1, 0, 1142, 34306, 1142, 36306]
+[test_movement_control-2]         servo_expected_results: []
+[test_movement_control-2]         motor_expected_results: [100, 131, 133, 0, 0]
+[test_movement_control-2]         servo_received_results: []
+[test_movement_control-2]         motor_received_results: [100, 131, 133, 0, 0]
+[test_movement_control-2]         servo_test_success: False
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 2
+[test_movement_control-2]         position_data: [1000, 50, 170, 700, 1920, 1080, 1, 0, 1142, 43306, 1142, 45306]
+[test_movement_control-2]         servo_expected_results: []
+[test_movement_control-2]         motor_expected_results: [100, 131, 733, 0, 0]
+[test_movement_control-2]         servo_received_results: []
+[test_movement_control-2]         motor_received_results: [100, 131, 733, 0, 0]
+[test_movement_control-2]         servo_test_success: False
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 3
+[test_movement_control-2]         position_data: [-300, -10, 100, 500, 1920, 1080, 1, 0, 1142, 52306, 1142, 54306]
+[test_movement_control-2]         servo_expected_results: []
+[test_movement_control-2]         motor_expected_results: [131, 100, 216, 0, 0]
+[test_movement_control-2]         servo_received_results: []
+[test_movement_control-2]         motor_received_results: [131, 100, 216, 0, 0]
+[test_movement_control-2]         servo_test_success: False
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 4
+[test_movement_control-2]         position_data: [0, 0, 100, 500, 1920, 1080, 1, 0, 1143, 1306, 1143, 3306]
+[test_movement_control-2]         servo_expected_results: []
+[test_movement_control-2]         motor_expected_results: [100, 100, 1000, 0, 0]
+[test_movement_control-2]         servo_received_results: []
+[test_movement_control-2]         motor_received_results: [100, 100, 1000, 0, 0]
+[test_movement_control-2]         servo_test_success: False
+[test_movement_control-2]         motor_test_success: True
+----
+
+==== Ergebnisse
+
+- _servo_test_succes_ ist wie erwartet fehlgeschlagen
+- _motor_test_success_ ist wie erwartet gelungen
+- _motor_expected_results_ stimmt wie erwartet mit _motor_received_results_ überein
+
+=> Der Test war somit erfolgreich.
+
+=== Test 2
+
+- Erfolgt mit Testen von Servomotoren
+
+==== Erwartungen
+- _servo_test_succes_ soll gelingen, da Servos getestet werden
+- _motor_test_success_ soll gelingen
+- _motor_expected_results_ soll mit _motor_received_results_ übereinstimmen
+- _servo_exptected_results_ soll mit _servo_received_results_ übereinstimmen
+
+==== Durchführung
+- erhaltene Daten:
+
+[source,shell]
+----
+[test_movement_control-2] number: 0
+[test_movement_control-2]         position_data: [-693, 158, 162, 626, 1920, 1080, 1, 0, 1148, 34176, 1148, 36176]
+[test_movement_control-2]         servo_expected_results: [0, -30]
+[test_movement_control-2]         motor_expected_results: [131, 100, 499, 0, 0]
+[test_movement_control-2]         servo_received_results: [0, -30]
+[test_movement_control-2]         motor_received_results: [131, 100, 499, 0, 0]
+[test_movement_control-2]         servo_test_success: True
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 1
+[test_movement_control-2]         position_data: [200, 100, 100, 500, 1920, 1080, 1, 0, 1148, 43176, 1148, 45176]
+[test_movement_control-2]         servo_expected_results: [0, -22]
+[test_movement_control-2]         motor_expected_results: [100, 131, 133, 0, 0]
+[test_movement_control-2]         servo_received_results: [0, -22]
+[test_movement_control-2]         motor_received_results: [100, 131, 133, 0, 0]
+[test_movement_control-2]         servo_test_success: True
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 2
+[test_movement_control-2]         position_data: [1000, 50, 170, 700, 1920, 1080, 1, 0, 1148, 52176, 1148, 54176]
+[test_movement_control-2]         servo_expected_results: [0, 22]
+[test_movement_control-2]         motor_expected_results: [100, 131, 733, 0, 0]
+[test_movement_control-2]         servo_received_results: [0, 22]
+[test_movement_control-2]         motor_received_results: [100, 131, 733, 0, 0]
+[test_movement_control-2]         servo_test_success: True
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 3
+[test_movement_control-2]         position_data: [-300, -10, 100, 500, 1920, 1080, 1, 0, 1149, 1176, 1149, 3176]
+[test_movement_control-2]         servo_expected_results: [0, 9]
+[test_movement_control-2]         motor_expected_results: [131, 100, 216, 0, 0]
+[test_movement_control-2]         servo_received_results: [0, 9]
+[test_movement_control-2]         motor_received_results: [131, 100, 216, 0, 0]
+[test_movement_control-2]         servo_test_success: True
+[test_movement_control-2]         motor_test_success: True
+[test_movement_control-2]         
+[test_movement_control-2]         
+[test_movement_control-2] number: 4
+[test_movement_control-2]         position_data: [0, 0, 100, 500, 1920, 1080, 1, 0, 1149, 10176, 1149, 12176]
+[test_movement_control-2]         servo_expected_results: [0, 9]
+[test_movement_control-2]         motor_expected_results: [100, 100, 1000, 0, 0]
+[test_movement_control-2]         servo_received_results: [0, 9]
+[test_movement_control-2]         motor_received_results: [100, 100, 1000, 0, 0]
+[test_movement_control-2]         servo_test_success: True
+[test_movement_control-2]         motor_test_success: True
+----
+
+==== Ergebnisse
+
+- _servo_test_succes_ ist wie erwartet gelungen
+- _motor_test_success_ ist wie erwartet gelungen
+- _motor_expected_results_ stimmt wie erwartet mit _motor_received_results_ überein
+- _servo_expected_results_ stimmt wie erwartet mit _servo_received_results_ überein
+
+=> Der Test war somit erfolgreich.

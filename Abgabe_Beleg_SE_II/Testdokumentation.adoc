@@ -19,3 +19,13 @@ include::../Documentation/test/humandetection_tests.adoc[leveloffset=+1]
 include::../Documentation/test/Verlaufsdokumentation_Humandetection.adoc[leveloffset=+1]
 
 ''''
+
+== Unit-Test: Bewegungskontroll-Node + Verlaufsdokumentation
+
+include::../Documentation/test/Unit-Test_Bewegungskontroll-Node.adoc[leveloffset=+1]
+
+''''
+
+include::../Documentation/test/Verlaufsdokumentation_zu_Unit-Test_Bewegungskontroll-Node.adoc[leveloffset=+1]
+
+''''

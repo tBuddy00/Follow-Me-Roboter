@@ -1,0 +1,46 @@
+:source-highlighter: highlight.js
+
+== Durchführung Unit-Test Bewegungskontroll-Node
+
+=== Ziel
+Der Test zielt darauf ab, die korrekte Funktion der Bewegungskontroll-Node zu verifizieren, indem die erwarteten und empfangenen Ergebnisse für Motor- und Servosteuerungen verglichen werden.
+
+=== Vorbereitung
+
+- Für den Unit-Test wird die Bewegungskontroll-Node geprüft: https://github.com/cl-ire/camera_package/blob/main/camera_package/movement_control_node.py
+
+- Die Bewegungskontroll-Node wird von einer anderen Node getestet: https://github.com/cl-ire/camera_package/blob/main/camera_package/test_movement_control_node.py
+
+ - Die Konsole auf einem PC mit der eingerichteten Projektumgebung muss geöffnet werden und folgende Befehle müssen nacheinander ausgeführt werden:
+ 
+ cd ~/ros2_humble/ && source install/setup.bash
+ cd ~/ros2_ws/ && source install/setup.bash
+ cd ~/ros2_ws/src/camera_package/launch
+
+=== Durchführung
+
+- Nach abgeschlossener Vorbereitung muss folgender Befehl in der Konsole ausgeführt werden:
+
+ ros2 launch test_follow_me_arduino_launch.py
+
+- Der Test startet automatisch und die Bewegungskontroll-Node wird getestet.
+- Der Fortschritt wird in der Konsole angezeigt
+
+=== Auswertung
+
+- Jeder Test beinhaltet 5 Durchläufe, deren Ergebnisse wie folgt strukturiert sind:
+
+[source,shell]
+----
+[test_movement_control-2] number: 0
+[test_movement_control-2]         position_data: [x, x, x, x, x, x, x, x, x, x, x, x]
+[test_movement_control-2]         servo_expected_results: [x, x]
+[test_movement_control-2]         motor_expected_results: [x, x, x, x, x]
+[test_movement_control-2]         servo_received_results: [x, x]
+[test_movement_control-2]         motor_received_results: [x, x, x, x, x]
+[test_movement_control-2]         servo_test_success: True/False
+[test_movement_control-2]         motor_test_success: True/False
+----
+
+- Ob der Test erfolgreich war, ist an den letzten Zeilen der Ausgabe zu erkennen.
+- Fehlerquoten können durch Vergleichen von expected_results mit received_results errechnet werden.

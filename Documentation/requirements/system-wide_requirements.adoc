@@ -11,10 +11,6 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt Follow
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
 * zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
-NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. 
-//[hier ggf. Verweis einfügen]
-
-
 //== Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
@@ -25,7 +21,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-- *NFAU-1:* Die Bedienung des Alphabot soll leicht und ohne Vorkenntnisse möglich sein.
+- *NFAU-1:* Die Bedienung des Roboters soll leicht und ohne Vorkenntnisse möglich sein.
 
 - *NFAU-2:* Das System soll als portable Möglichkeit zur Mitführung gestaltet werden.
 
@@ -53,15 +49,15 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 **Durchsatz** +
 
-- *NFAP-2:* Der Alphabot 2 muss i. S. d. Datendurchsatzes in der Lage sein, innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
+- *NFAP-2:* Der Roboter muss i. S. d. Datendurchsatzes in der Lage sein, innerhalb von 60 Sekunden eine korrekte Antwort zur Bilderkennung zu liefern.
 
 **Kapazität** +
 
-- *NFAP-3:* Der Alphabot 2 muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
+- *NFAP-3:* Der Roboter muss in der Lage sein, Bewegungsdaten mit einer Rate von ca. 100-1000 Datenpaketen pro Sekunde zu verarbeiten.
 
 **Zeiten zum Starten oder Beenden** +
 
-- *NFAP-4:* Der Alphabot 2 samt Software muss in der Lage dazu sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
+- *NFAP-4:* Der Roboter samt Software muss in der Lage dazu sein, innerhalb von 10 Minuten zu starten und innerhalb von 1 Minute sich vollständig zu beenden.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
@@ -80,10 +76,11 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 //* Ressourcenbegrenzungen
-* zu nutzende Komponenten (Alphabot 2 PI)
+* zu nutzende Komponenten (Alphabot 2 PI) 
 * Vorgaben für die Programmiersprache (Python)
 * zu unterstützende Plattformen / Betriebssysteme (ROS II)
 * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll (Raspberry Pi 4 8GB) 
+* später Wechsel auf Jetson Nano und Arduino Uno mit Auftraggeber vereinbart
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren

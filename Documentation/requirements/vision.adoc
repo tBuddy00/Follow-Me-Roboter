@@ -60,8 +60,8 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| Prof. Dr.-Ing. Neugebauer | Als Auftraggeber möchte er eine Machbarkeitsstudie durchführen, dabei soll festgestellt werden, inwiefern es möglich ist, mit leistungsschwacher Hardware einer Person zu folgen, mittels Bilderkennung.
-| Herr Prof. Neugebauer legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht demnach dieses auch. Herr Prof. Neugebauer stellte auch den Fahrroboter Alphabot 2 und den Raspberry-Pi plus die hierfür benötigte Kamera zur Verfügung.
+| Prof. Dr.-Ing. Neugebauer | Als Auftraggeber möchte er eine Machbarkeitsstudie durchführen, dabei soll festgestellt werden, inwiefern es möglich ist, mit leistungsschwacher Hardware einer mittles Bilderkennung Person zu folgen.
+| Herr Prof. Neugebauer legt den Rahmen und die Bedingungen an dieses Projekt fest und überwacht dieses demnach auch. Herr Prof. Neugebauer stellte auch den Fahrroboter Alphabot 2 und den Raspberry-Pi plus die hierfür benötigte Kamera zur Verfügung.
 
 | Benutzer | Person, welche das System benutzt | keine
 
@@ -71,7 +71,7 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 |Im Allgemeinen ist hier ebenfalls der Schutz der personenbezogenen Daten zu betrachten. Der Alphabot 2 nimmt kontinuierlich Personen mit der hierfür geeigneten Kamera auf. Jene Personen sind sich vielleicht auch der Tatsache nicht bewusst, dass sie aktuell aufgenommen werden und so ist dies mit zu berücksichtigen. Demnach ist dies behutsam zu handhaben, sofern sich Personen im Blickfeld der Kamera befinden oder in Aufnahmen, die getätigt worden sind, ohne das Einverständnis der jeweiligen Personen.
 |Schutz der personenbezogenen Daten.
 
-|Entwickler | Streben die Entwicklung der eigenen Bilderkennungssoftware an | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrroboters zusammen.
+|Entwickler | Streben die Entwicklung einer eigenen Software zum folgen von Personen an | Legen die Umsetzung und die Möglichkeiten in Verbindung mit Software und Hardware des Fahrroboters zusammen.
 
 |===
 
@@ -91,26 +91,24 @@ Insgesamt stellt das Follow-Me-Fahrroboter-Projekt eine Machbarkeitsstudie für 
 
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
-    - Das OS ROS II ist im Einsatz und muss mit dem Alphabot 2 integriert werden.
+    - Das OS ROS II ist im Einsatz und muss mit dem Roboter integriert werden.
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 
 == Produkt-/Lösungsüberblick
 
-=== Bedarfe und Hauptfunktionen
+=== Bedarf und Hauptfunktionen
 
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
 
-| Optimierung Bilderkennungssoftware | hoch | Erkennung einer Person mittels YOLO Face Detection| 9. Iteration
+| Optimierung Bilderkennung | hoch | Erkennung einer Person mittels eines performanten Bilderkennungsalgorithmus Face Detection| 9. Iteration
 
-| Bau des 2. Prototyps | hoch | Bau und Einrichtung der neuen Plattform mit Jetson Nano und Arduino | 7. Iteration
+| erster Prototyp | hoch | Erkennung einer Person | 5. Iteration
 
-| Bilderkennungssoftware | hoch | Erkennung einer Person | 5. Iteration
-
-|Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| 2. Iteration
+| Aufsetzen des OS ROS II | hoch | Das System dient der allgemeinen Struktur für das Projekt| 2. Iteration
 
 | Konstruktion des Alphabot 2 | hoch | Plattform ist der Raspberry Pi mit einem Alphabot 2 | 1. Iteration
 |===
