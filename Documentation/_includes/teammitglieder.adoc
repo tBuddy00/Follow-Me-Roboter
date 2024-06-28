@@ -6,7 +6,7 @@
 
 |**Theresa Stasch, Wirtschaftsingenieurwesen,s82413**| Frau Stasch übernimmt zunächst die Aufgabe als Entwicklerin und teilt ebenfalls Aufgaben an die anderen Teammitglieder zu. 
 
-|**Johann Marthaus, Wirtschaftsinformatik, s85567**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
+|**Johann Marthaus, Wirtschaftsinformatik, s85892**| Herr Marthaus übernimmt die Rolle als **Lead Developer** und organisiert sich mit **Jonathan Palermo**, **Danny Miersch** und zum Aufbau der Bilderkennung für den Fahrroboter.
 
 |**Jonathan Palermo, Wirtschaftsinformatik, s85287** | Herr Palermo trägt die Rolle als **Entwickler** und trägt mit zur Entwicklung des Fahrroboters bei und insbesondere in der Bilderkennung.
 
