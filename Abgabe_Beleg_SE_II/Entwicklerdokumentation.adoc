@@ -1,10 +1,15 @@
 :development-images: ../Documentation/development/images
 :requirements-images: ../Documentation/requirements/images
 :architecture-images: ../Documentation/architecture/images
+:toc:
+:toc-title: Inhaltsverzeichnis
+:sectnums:
 
-
-
-= Entwicklerdokumentation
+= Follow-Me Fahrroboter: Entwicklerdokumentation
+// --- 2. Teammitglieder -----------------------
+Taylan Özer s85500@htw-dresden.de; Claire Schubert s85609@htw-dresden.de; Johann Marthaus s85567@htw-dresden.de; Jonathan Palermo s85287@htw-dresden.de; Danny Miersch s85567@htw-dresden.de; Jeremy Ziegert s85299@htw-dresden.de; Luca Kurth s85449@htw-dresden.de
+// --- 3. Abgabedatum --------------------------
+28. Juni 2024
 
 == Entwurfsdokumentation
 

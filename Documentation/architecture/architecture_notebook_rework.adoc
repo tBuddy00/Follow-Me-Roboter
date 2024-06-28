@@ -194,6 +194,7 @@ Schließlich sind wir auf YOLO (You Only Look Once) umgestiegen, da es eine bess
 
 == Schichten oder Architektur-Framework
 
+.Diagramm der ROS2 Architektur
 image::{architecture-images}/ros-architecture.jpg[]
 
 Unser Architektur-Framework wird durch die Verwendung von ROS II vorgegeben.
@@ -237,4 +238,5 @@ Des Weiteren wird ein PC für das Ausführen der Software benötigt.
 
 === Use Cases:
 
+.Use Case Diagramm
 image::{requirements-images}/use_case_model.drawio.png[]

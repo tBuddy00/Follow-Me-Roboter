@@ -8,8 +8,9 @@
 
 Der Winkel zur Person wird berechnet, indem man den Maximalwinkel der Kamera mit der Dimension des Bildes gleichsetzt und dann mittels Dreisatz den Winkel zur Person aus der Position im Bild berechnet.
 
-
+.Visualisierung Kamerawinkel
 image::{development-images}/Mathe_Kamera_Berechnung_0.png[]
+.Winkel zur Personenberechnung
 image::{development-images}/Mathe_Kamera_Berechnung_1.png[]
 
 
@@ -17,8 +18,12 @@ image::{development-images}/Mathe_Kamera_Berechnung_1.png[]
 
 Die Geschwindigkeit im Verhältnis zum ersten Rad wird berechnet, sodass der Roboter einen bestimmten Winkel fährt. Somit kann man den Roboter mithilfe von Winkeln steuern.
 
+.Visualisierung Geschwindigkeitsberechnung
 image::{development-images}/Mathe_Geschwindigkeitsberechnung_0.png[]
+.Geschwindigkeitsberechnung 1
 image::{development-images}/Mathe_Geschwindigkeitsberechnung_1.png[]
+.Geschwindigkeitsberechnung 2
 image::{development-images}/Mathe_Geschwindigkeitsberechnung_2.png[]
+.Geschwindigkeitsberechnung 3
 image::{development-images}/Mathe_Geschwindigkeitsberechnung_3.png[]
 

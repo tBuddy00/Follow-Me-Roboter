@@ -41,7 +41,9 @@ Dieser Entwurf entstand im Rahmen der Testphase und so sind noch keine konkreter
 
 .Systemarchitekturdiagramm  für Entwurf 3
 image::{development-images}/Design_Entwurf_3.png[]
-_(Abbildung 2 entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten.)_
+
+_Abbildung entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
+
 
 === Änderung zum letzten Entwurf
 
@@ -98,7 +100,7 @@ _(Abbildung 2 entspricht keinen Modellierungsstandards und ist eher als Vorentwu
 
 .Systemarchitekturdiagramm  für Entwurf 4
 image::{development-images}/Design_Entwurf_4.png[]
-_Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem Prototyp. (Abbildung 3 entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten.)_
+_Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit einem Prototyp. Abbildung entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
 
 === Änderung zum letzten Entwurf
 
@@ -116,7 +118,7 @@ _Entwurf 4 ist der erste funktionale Entwurf und auch der erste Entwurf mit eine
 
 .Systemarchitekturdiagramm für Entwurf 5
 image::{development-images}/Design_Entwurf_5.png[]
-_Abbildung 4 entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
+_Abbildung entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
 
 === Technische Entscheidung
 
@@ -179,10 +181,10 @@ Zum aktuellen Zeitpunkt ist noch nicht klar, ob wir YOLO einsetzen können, da e
 
 == Entwurf 7 - Prototyp 2
 
-_Abbildung 8 entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
-
 .Systemarchitekturdiagramm  für Entwurf 7
 image::{development-images}/design_Entwurf_7.png[]
+
+_Abbildung entspricht keinen Modellierungsstandards und ist eher als Vorentwurf zu betrachten._
 
 .C4-Context Entwurf 7
 image::{development-images}/Design_Entwurf_7_C4_Context.drawio.png[]
